@@ -16,10 +16,11 @@ export default defineConfig({
         theme_color: "#FCF9F3",
         background_color: "#FCF9F3",
         display: "standalone",
-        start_url: "/",
+        start_url: ".",
+        scope: ".",
         icons: [
-          { src: "/favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
-          { src: "/favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "maskable" },
+          { src: "favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+          { src: "favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "maskable" },
         ],
       },
       workbox: {
