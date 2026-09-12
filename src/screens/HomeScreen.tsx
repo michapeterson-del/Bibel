@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getDailyVerse, type DailyVerseInfo } from "../lib/db/bibleDb";
+import { getDailyVerse, getChapterCountsAllBooks, type DailyVerseInfo } from "../lib/db/bibleDb";
 import { getCurrentStreakCount, getSettings, listChats } from "../lib/db/userDb";
-import { createChat, saveChat } from "../lib/db/userDb";
+import { anzahlGeleseneKapitel, createChat, getGeleseneKapitel, saveChat } from "../lib/db/userDb";
 import type { ChatGespraech } from "../types";
 import { useVerseDetail } from "../lib/VerseDetailContext";
 
@@ -27,12 +27,17 @@ export default function HomeScreen() {
   const [daily, setDaily] = useState<DailyVerseInfo | null>(null);
   const [streak, setStreak] = useState(0);
   const [recentChats, setRecentChats] = useState<ChatGespraech[]>([]);
+  const [fortschritt, setFortschritt] = useState<{ gelesen: number; gesamt: number } | null>(null);
 
   useEffect(() => {
     getSettings().then((s) => setName(s.profilName));
     getDailyVerse().then(setDaily);
     getCurrentStreakCount().then(setStreak);
     listChats().then((chats) => setRecentChats(chats.slice(0, 3)));
+    Promise.all([getChapterCountsAllBooks(), getGeleseneKapitel()]).then(([counts, gelesen]) => {
+      const gesamt = Object.values(counts).reduce((s, n) => s + n, 0);
+      setFortschritt({ gelesen: anzahlGeleseneKapitel(gelesen), gesamt });
+    });
   }, []);
 
   async function startChat(modus: "alltag" | "bibel", titel: string) {
@@ -107,6 +112,31 @@ export default function HomeScreen() {
       <div className="card" style={{ marginTop: 16 }}>
         <p style={{ margin: 0 }}>🔥 Serie: {streak} {streak === 1 ? "Tag" : "Tage"}</p>
       </div>
+
+      {fortschritt && (
+        <div
+          className="card"
+          style={{ marginTop: 10, cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
+          onClick={() => navigate("/fortschritt")}
+        >
+          <div style={{ flex: 1 }}>
+            <p style={{ margin: 0 }}>
+              📖 Lesefortschritt: {fortschritt.gelesen}/{fortschritt.gesamt} Kapitel
+              {fortschritt.gesamt > 0 && ` (${Math.round((fortschritt.gelesen / fortschritt.gesamt) * 100)}%)`}
+            </p>
+            <div style={{ height: 6, background: "var(--border)", borderRadius: 3, marginTop: 6, overflow: "hidden" }}>
+              <div
+                style={{
+                  height: "100%",
+                  width: `${fortschritt.gesamt > 0 ? (fortschritt.gelesen / fortschritt.gesamt) * 100 : 0}%`,
+                  background: "var(--salbei-fg)",
+                }}
+              />
+            </div>
+          </div>
+          <span style={{ marginLeft: 10, color: "var(--text-muted)" }}>›</span>
+        </div>
+      )}
 
       {recentChats.length > 0 && (
         <div style={{ marginTop: 16 }}>
