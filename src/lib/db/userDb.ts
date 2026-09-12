@@ -245,6 +245,34 @@ export async function saveLeseFortschritt(p: Omit<LeseFortschritt, "aktualisiert
   await kvSet("lesefortschritt", { ...p, aktualisiert_am: nowIso() });
 }
 
+// ---------- Gelesene Kapitel (Lesefortschritts-Uebersicht) ----------
+// Osis-Buchcode -> Liste gelesener Kapitelnummern.
+export type GeleseneKapitel = Record<string, number[]>;
+
+export async function getGeleseneKapitel(): Promise<GeleseneKapitel> {
+  return (await kvGet<GeleseneKapitel>("gelesene_kapitel")) ?? {};
+}
+
+export async function istKapitelGelesen(osis: string, kapitel: number): Promise<boolean> {
+  const alle = await getGeleseneKapitel();
+  return (alle[osis] ?? []).includes(kapitel);
+}
+
+export async function setKapitelGelesen(osis: string, kapitel: number, gelesen: boolean): Promise<GeleseneKapitel> {
+  const alle = await getGeleseneKapitel();
+  const bisherige = alle[osis] ?? [];
+  const naechste = gelesen
+    ? Array.from(new Set([...bisherige, kapitel])).sort((a, b) => a - b)
+    : bisherige.filter((k) => k !== kapitel);
+  const aktualisiert: GeleseneKapitel = { ...alle, [osis]: naechste };
+  await kvSet("gelesene_kapitel", aktualisiert);
+  return aktualisiert;
+}
+
+export function anzahlGeleseneKapitel(alle: GeleseneKapitel): number {
+  return Object.values(alle).reduce((sum, arr) => sum + arr.length, 0);
+}
+
 export async function getStreak(): Promise<StreakStatus> {
   const stored = await kvGet<StreakStatus>("streak");
   return stored ?? { tage: [], freezesVerfuegbar: 2, laengsteSerie: 0 };

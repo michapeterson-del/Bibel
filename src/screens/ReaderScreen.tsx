@@ -7,7 +7,14 @@ import {
   getChapterCount,
   getChapterVerses,
 } from "../lib/db/bibleDb";
-import { addAktivMinuten, getLeseFortschritt, listLesezeichen, saveLeseFortschritt } from "../lib/db/userDb";
+import {
+  addAktivMinuten,
+  getLeseFortschritt,
+  istKapitelGelesen,
+  listLesezeichen,
+  saveLeseFortschritt,
+  setKapitelGelesen,
+} from "../lib/db/userDb";
 import { useSettings } from "../lib/SettingsContext";
 import { useVerseDetail } from "../lib/VerseDetailContext";
 import TranslationSwitch from "../components/TranslationSwitch";
@@ -72,7 +79,7 @@ export default function ReaderScreen() {
     if (!book || !settings) return;
     getChapterVerses(book.osis, chapter, settings.standardUebersetzung).then(setVerses);
     saveLeseFortschritt({ osis: book.osis, kapitel: chapter, vers: 1, uebersetzung: settings.standardUebersetzung });
-    setFertigMsg(false);
+    istKapitelGelesen(book.osis, chapter).then(setFertigMsg);
   }, [book, chapter, settings?.standardUebersetzung]);
 
   useEffect(() => {
@@ -98,8 +105,10 @@ export default function ReaderScreen() {
   }
 
   async function kapitelFertig() {
-    await addAktivMinuten(5);
-    setFertigMsg(true);
+    const neuerStatus = !fertigMsg;
+    await setKapitelGelesen(book!.osis, chapter, neuerStatus);
+    if (neuerStatus) await addAktivMinuten(5);
+    setFertigMsg(neuerStatus);
   }
 
   return (
@@ -178,8 +187,12 @@ export default function ReaderScreen() {
         })}
       </div>
 
-      <button className="btn" style={{ width: "100%", marginTop: 14 }} onClick={kapitelFertig}>
-        {fertigMsg ? "✓ Kapitel fertig gelesen" : "Kapitel fertig gelesen"}
+      <button
+        className={fertigMsg ? "btn" : "btn secondary"}
+        style={{ width: "100%", marginTop: 14 }}
+        onClick={kapitelFertig}
+      >
+        {fertigMsg ? "✓ Kapitel fertig gelesen" : "Als gelesen markieren"}
       </button>
 
       {showPicker && (

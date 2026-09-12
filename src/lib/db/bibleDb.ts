@@ -107,6 +107,21 @@ export async function getChapterCount(osis: string): Promise<number> {
   return rows[0]?.n ?? 0;
 }
 
+/** Kapitelzahl je Buch in einer einzigen Abfrage (fuer die Lesefortschritts-
+ * Uebersicht, statt 66 Einzelabfragen). */
+export async function getChapterCountsAllBooks(): Promise<Record<string, number>> {
+  const db = await loadBibleDb();
+  const rows = rowsToObjects<{ osis: string; n: number }>(
+    db,
+    `SELECT b.osis as osis, MAX(v.chapter) as n
+     FROM verses v JOIN books b ON b.id = v.book_id
+     GROUP BY b.osis`
+  );
+  const out: Record<string, number> = {};
+  for (const r of rows) out[r.osis] = r.n;
+  return out;
+}
+
 export interface SearchHit extends VerseRow {
   matchedTerms: string[];
 }
