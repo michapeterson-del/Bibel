@@ -11,6 +11,11 @@ import AboutScreen from "./screens/AboutScreen";
 import LearnScreen from "./screens/LearnScreen";
 import ExploreScreen from "./screens/ExploreScreen";
 import ComingSoonScreen from "./screens/ComingSoonScreen";
+import GamesHomeScreen from "./screens/games/GamesHomeScreen";
+import QuizScreen from "./screens/games/QuizScreen";
+import TabuScreen from "./screens/games/TabuScreen";
+import HeadsUpScreen from "./screens/games/HeadsUpScreen";
+import SpionScreen from "./screens/games/SpionScreen";
 
 export default function App() {
   return (
@@ -25,7 +30,11 @@ export default function App() {
         <Route path="/chat/:id" element={<ChatScreen />} />
         <Route path="/lernen" element={<LearnScreen />} />
         <Route path="/erforschen" element={<ExploreScreen />} />
-        <Route path="/spiele" element={<ComingSoonScreen titel="BibelSpiele" />} />
+        <Route path="/spiele" element={<GamesHomeScreen />} />
+        <Route path="/spiele/quiz" element={<QuizScreen />} />
+        <Route path="/spiele/tabu" element={<TabuScreen />} />
+        <Route path="/spiele/headsup" element={<HeadsUpScreen />} />
+        <Route path="/spiele/spion" element={<SpionScreen />} />
         <Route path="/leseplan" element={<ComingSoonScreen titel="Leseplan" />} />
         <Route path="/einstellungen" element={<SettingsScreen />} />
         <Route path="/ueber" element={<AboutScreen />} />

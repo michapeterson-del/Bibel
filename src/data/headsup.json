@@ -1,0 +1,62 @@
+[
+  {
+    "kategorie": "Bibel",
+    "begriffe": [
+      "Arche Noah", "Zehn Gebote", "Goliath", "Regenbogen", "Manna",
+      "Auferstehung", "Engel", "Hirte", "Tempel", "Kreuz",
+      "Fischernetz", "Weinstock", "Senfkorn", "Ölberg", "Wüste",
+      "Prophet", "Apostel", "Gleichnis", "Taufe", "Abendmahl",
+      "Pfingsten", "Regenbogen-Bund", "Verlorener Sohn", "Barmherziger Samariter", "Turmbau zu Babel"
+    ]
+  },
+  {
+    "kategorie": "Tiere",
+    "begriffe": [
+      "Löwe", "Elefant", "Schaf", "Kamel", "Adler",
+      "Fisch", "Schlange", "Taube", "Esel", "Ziege",
+      "Wolf", "Biene", "Ameise", "Storch", "Rabe",
+      "Pferd", "Hirsch", "Fuchs", "Bär", "Frosch",
+      "Schmetterling", "Kuh", "Schwein", "Huhn", "Maus"
+    ]
+  },
+  {
+    "kategorie": "Essen & Trinken",
+    "begriffe": [
+      "Brot", "Wein", "Honig", "Fisch", "Oliven",
+      "Feigen", "Trauben", "Milch", "Käse", "Linsen",
+      "Granatapfel", "Datteln", "Salz", "Öl", "Wasser",
+      "Suppe", "Kuchen", "Apfel", "Nüsse", "Getreide",
+      "Ei", "Kartoffel", "Reis", "Tee", "Kaffee"
+    ]
+  },
+  {
+    "kategorie": "Berufe",
+    "begriffe": [
+      "Hirte", "Fischer", "Zimmermann", "Bäcker", "Schmied",
+      "Priester", "König", "Bauer", "Arzt", "Lehrer",
+      "Töpfer", "Weber", "Soldat", "Kaufmann", "Richter",
+      "Musiker", "Wächter", "Diener", "Prophet", "Hebamme",
+      "Koch", "Gärtner", "Steinmetz", "Winzer", "Schreiber"
+    ]
+  },
+  {
+    "kategorie": "Natur & Orte",
+    "begriffe": [
+      "Berg", "Fluss", "Wüste", "Meer", "Wald",
+      "Höhle", "Tal", "Quelle", "Stern", "Regenbogen",
+      "Blitz", "Wind", "Sonne", "Mond", "Wolke",
+      "Insel", "Garten", "Feld", "Weinberg", "Brunnen",
+      "Jerusalem", "Bethlehem", "Nazareth", "Ägypten", "Jordan"
+    ]
+  },
+  {
+    "kategorie": "Alltag & Haushalt",
+    "begriffe": [
+      "Lampe", "Krug", "Korb", "Zelt", "Sandalen",
+      "Mantel", "Schlüssel", "Tür", "Fenster", "Tisch",
+      "Stuhl", "Bett", "Seil", "Werkzeug", "Spiegel",
+      "Kerze", "Waage", "Sack", "Netz", "Leiter",
+      "Rad", "Wagen", "Münze", "Ring", "Krone"
+    ]
+  }
+]

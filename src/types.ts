@@ -139,3 +139,38 @@ export interface AntwortFeedback {
   grund?: string;
   erstellt_am: string;
 }
+
+// ---------- BibelSpiele ----------
+
+export type QuizStufe = "lehrling" | "erwachsener" | "diakon" | "gemeindeleiter";
+export type QuizTyp = "single" | "multi" | "wahrfalsch" | "zahl" | "orden";
+
+export interface QuizBeleg {
+  osis: string;
+  bookName: string;
+  kapitel: number;
+  versVon: number;
+  versBis: number;
+}
+
+export interface QuizFrage {
+  id: string;
+  stufe: QuizStufe;
+  typ: QuizTyp;
+  frage: string;
+  optionen: string[] | null;
+  richtig: string | string[];
+  beleg: QuizBeleg;
+  erklaerung: string;
+}
+
+export interface QuizSpieler {
+  name: string;
+  punkte: number;
+}
+
+export interface QuizSpielleiterErgebnis {
+  datum: string;
+  stufe: QuizStufe;
+  spieler: QuizSpieler[];
+}

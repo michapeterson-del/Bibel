@@ -1,0 +1,34 @@
+[
+  {
+    "kategorie": "Alltag",
+    "woerter": ["Frühstück", "Regenschirm", "Zahnbürste", "Wecker", "Schlüsselbund", "Bushaltestelle", "Kopfkissen", "Seife", "Handtuch", "Kalender", "Mülleimer", "Fernbedienung", "Steckdose", "Türklingel", "Briefkasten", "Waschmaschine", "Staubsauger", "Toaster", "Bügeleisen", "Wäscheleine"]
+  },
+  {
+    "kategorie": "Reisen",
+    "woerter": ["Koffer", "Flughafen", "Reisepass", "Landkarte", "Zelt", "Rucksack", "Kompass", "Strand", "Hotel", "Bahnhof", "Fähre", "Sonnencreme", "Wanderweg", "Souvenir", "Grenze", "Sprachführer", "Campingplatz", "Aussichtspunkt", "Gepäck", "Fahrplan"]
+  },
+  {
+    "kategorie": "Technik",
+    "woerter": ["Smartphone", "Kopfhörer", "Ladekabel", "Bildschirm", "Tastatur", "Drucker", "Kamera", "Router", "Akku", "Fernseher", "Lautsprecher", "Mikrofon", "Festplatte", "Software", "Roboter", "Sensor", "Satellit", "Batterie", "Glühbirne", "Antenne"]
+  },
+  {
+    "kategorie": "Essen & Trinken",
+    "woerter": ["Pizza", "Suppe", "Schokolade", "Kaffee", "Käse", "Brot", "Salat", "Nudeln", "Kuchen", "Eis", "Honig", "Tee", "Reis", "Marmelade", "Wurst", "Joghurt", "Limonade", "Popcorn", "Pfannkuchen", "Sandwich"]
+  },
+  {
+    "kategorie": "Orte & Länder",
+    "woerter": ["Jerusalem", "Rom", "Ägypten", "Griechenland", "Berlin", "Paris", "Wüste", "Insel", "Gebirge", "Dorf", "Großstadt", "Bibliothek", "Marktplatz", "Kirche", "Museum", "Hafen", "Stadion", "Krankenhaus", "Schule", "Bauernhof"]
+  },
+  {
+    "kategorie": "Berufe",
+    "woerter": ["Lehrer", "Arzt", "Bäcker", "Polizist", "Feuerwehrmann", "Koch", "Pilot", "Elektriker", "Gärtner", "Friseur", "Musiker", "Schreiner", "Bauer", "Richter", "Krankenpfleger", "Fotograf", "Ingenieur", "Verkäufer", "Schauspieler", "Journalist"]
+  },
+  {
+    "kategorie": "Natur & Tiere",
+    "woerter": ["Löwe", "Adler", "Wal", "Biene", "Eiche", "Vulkan", "Wasserfall", "Schmetterling", "Gletscher", "Koralle", "Eule", "Delfin", "Kaktus", "Regenwald", "Ameisenhaufen", "Sonnenblume", "Igel", "Spinnennetz", "Nebel", "Gewitter"]
+  },
+  {
+    "kategorie": "Bibel",
+    "woerter": ["Licht", "Brot", "Schaf", "Fischer", "Jerusalem", "Hirte", "Engel", "Kreuz", "Arche", "Regenbogen", "Manna", "Tempel", "Prophet", "Jünger", "Gleichnis", "Wüste", "Ölberg", "Weinstock", "Senfkorn", "Bund"]
+  }
+]
