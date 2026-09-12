@@ -1,0 +1,248 @@
+@import "./tokens.css";
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  margin: 0 0 0.4em;
+  line-height: 1.3;
+}
+
+p { margin: 0 0 0.8em; }
+
+a { color: inherit; }
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.app-shell {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  position: relative;
+}
+
+.app-main {
+  flex: 1;
+  padding: 16px 16px 96px;
+  overflow-x: hidden;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 16px;
+}
+
+.tile {
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.12s ease;
+  width: 100%;
+}
+.tile:active { transform: scale(0.98); }
+.tile-title { font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; }
+.tile-sub { font-size: 0.85rem; opacity: 0.85; }
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text-2);
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.chip.active {
+  background: var(--salbei-bg);
+  color: var(--salbei-fg);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+.chip-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.chip-row::-webkit-scrollbar { display: none; }
+
+.btn {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--salbei-bg);
+  color: var(--salbei-fg);
+}
+.btn.secondary {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn.send {
+  background: var(--send-bg);
+  color: var(--send-fg);
+}
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-2);
+  padding: 8px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:active { background: var(--border); }
+
+.header-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--bg);
+  padding: env(safe-area-inset-top, 0) 16px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid transparent;
+}
+.header-bar h1, .header-bar h2 { margin: 0; }
+
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  padding: 8px 4px calc(8px + env(safe-area-inset-bottom, 0));
+  z-index: 10;
+}
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.68rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.bottom-nav a.active {
+  color: var(--salbei-fg);
+  background: var(--salbei-bg);
+}
+
+.belegstufe {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.belegstufe.klar { background: var(--salbei-bg); color: var(--salbei-fg); }
+.belegstufe.auslegungsfrage { background: var(--gelb-bg); color: var(--gelb-fg); }
+.belegstufe.keine_biblische_aussage { background: var(--lila-bg); color: var(--lila-fg); }
+.belegstufe.grundsatz { background: var(--blau-bg); color: var(--blau-fg); }
+.belegstufe.alltag { background: var(--blau-hell-bg); color: var(--blau-hell-fg); }
+
+.msg {
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  max-width: 88%;
+}
+.msg.user {
+  background: var(--apricot-bg);
+  color: var(--apricot-fg);
+  margin-left: auto;
+}
+.msg.assistant {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+input[type="text"], input[type="search"], input[type="password"], input[type="number"], textarea, select {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.verse-row { padding: 4px 0; border-radius: 6px; scroll-margin-top: 80px; }
+.verse-row.marked { padding: 4px 6px; margin: 0 -6px; }
+.verse-num { color: var(--text-muted); font-size: 0.72em; font-weight: 700; margin-right: 4px; vertical-align: super; }
+.bookmark-divider { height: 4px; border-radius: 2px; margin: 2px 0; }
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 50;
+}
+.modal-sheet {
+  width: 100%;
+  max-width: 640px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom, 0));
+}
+
+@media (min-width: 640px) {
+  .app-shell { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
+}
