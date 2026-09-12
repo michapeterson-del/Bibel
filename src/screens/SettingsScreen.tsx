@@ -7,6 +7,7 @@ import { clearAllChats, clearFeedback, kvGet, kvSet, listFeedback, resetStreak }
 import { testConnection } from "../lib/ai/provider";
 
 const PROVIDER_LABEL: Record<AiProvider, string> = {
+  anthropic: "Claude (Anthropic)",
   openai: "OpenAI (ChatGPT)",
   gemini: "Google Gemini",
   deepseek: "DeepSeek",

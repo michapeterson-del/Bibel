@@ -14,6 +14,7 @@ interface ChatTurn {
 }
 
 const DEFAULT_MODELS: Record<Exclude<AiProvider, "aus">, string> = {
+  anthropic: "claude-sonnet-5",
   openai: "gpt-4o-mini",
   gemini: "gemini-1.5-flash",
   deepseek: "deepseek-chat",
@@ -46,7 +47,12 @@ export function buildMessages(params: {
   if (params.versKontext) hinweise.push(params.versKontext);
   turns.push({ role: "system", content: hinweise.join("\n\n") });
 
-  const letzte = params.verlauf.slice(-6);
+  // verlauf kann die aktuelle Frage bereits als letzten Eintrag enthalten
+  // (sie wird vor dem KI-Aufruf im Chat gespeichert) - Duplikat vermeiden.
+  const vorherigerVerlauf = params.verlauf.filter(
+    (m, i) => !(i === params.verlauf.length - 1 && m.rolle === "user" && m.text === params.frage)
+  );
+  const letzte = vorherigerVerlauf.slice(-6);
   for (const m of letzte) {
     turns.push({ role: m.rolle === "user" ? "user" : "assistant", content: m.text });
   }
@@ -115,8 +121,46 @@ async function callGemini(apiKey: string, model: string, messages: ChatTurn[]): 
   return content;
 }
 
+async function callAnthropic(apiKey: string, model: string, messages: ChatTurn[]): Promise<string> {
+  const system = messages.filter((m) => m.role === "system").map((m) => m.content).join("\n\n");
+  const rest = messages.filter((m) => m.role !== "system");
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      // Direkter Aufruf aus dem Browser: von Anthropic ausdruecklich vorgesehener
+      // Opt-in-Header (der API-Schluessel liegt damit im Client, wie bei den
+      // anderen Anbietern auch - siehe Hinweistext in den Einstellungen).
+      "anthropic-dangerous-direct-browser-access": "true",
+    },
+    body: JSON.stringify({
+      model,
+      max_tokens: 2400,
+      temperature: 0.25,
+      system,
+      messages: rest.map((m) => ({ role: m.role, content: m.content })),
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`KI-Anfrage fehlgeschlagen (${res.status}): ${body.slice(0, 300)}`);
+  }
+  const data = await res.json();
+  const content = (data?.content ?? [])
+    .filter((b: { type: string }) => b.type === "text")
+    .map((b: { text: string }) => b.text)
+    .join("\n");
+  if (!content) throw new Error("Leere Antwort vom KI-Anbieter.");
+  return content;
+}
+
 async function callProviderRaw(opts: AiCallOptions, messages: ChatTurn[], jsonMode = true): Promise<string> {
   const model = opts.model || (opts.provider !== "aus" ? DEFAULT_MODELS[opts.provider] : "");
+  if (opts.provider === "anthropic") {
+    return callAnthropic(opts.apiKey, model, messages);
+  }
   if (opts.provider === "openai") {
     return callOpenAiCompatible("https://api.openai.com/v1/chat/completions", opts.apiKey, model, messages, jsonMode);
   }
