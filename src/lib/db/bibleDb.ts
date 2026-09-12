@@ -7,9 +7,9 @@ export function loadBibleDb(): Promise<Database> {
   if (!dbPromise) {
     dbPromise = (async () => {
       const SQL = await initSqlJs({
-        locateFile: (file: string) => `/sqljs/${file}`,
+        locateFile: (file: string) => `${import.meta.env.BASE_URL}sqljs/${file}`,
       });
-      const res = await fetch("/bible-data/bible.db");
+      const res = await fetch(`${import.meta.env.BASE_URL}bible-data/bible.db`);
       if (!res.ok) throw new Error("bible.db konnte nicht geladen werden");
       const buf = await res.arrayBuffer();
       return new SQL.Database(new Uint8Array(buf));
