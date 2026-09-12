@@ -14,11 +14,16 @@ interface ChatTurn {
 }
 
 const DEFAULT_MODELS: Record<Exclude<AiProvider, "aus">, string> = {
+  gemeinsam: "claude-sonnet-5",
   anthropic: "claude-sonnet-5",
   openai: "gpt-4o-mini",
   gemini: "gemini-1.5-flash",
   deepseek: "deepseek-chat",
 };
+
+// Wird nach der Cloudflare-Worker-Einrichtung mit der echten Adresse befuellt
+// (siehe cloudflare-worker/README.md). Leer = "Gemeinsam"-Modus noch nicht startklar.
+const GEMEINSAMER_PROXY_URL = "";
 
 function klarheitsHinweis(stufe: Klarheitsstufe): string {
   if (stufe === "kurz") return "Klarheitsstufe: kurz (erklaerung: 3-4 Saetze).";
@@ -121,28 +126,19 @@ async function callGemini(apiKey: string, model: string, messages: ChatTurn[]): 
   return content;
 }
 
-async function callAnthropic(apiKey: string, model: string, messages: ChatTurn[]): Promise<string> {
+function anthropicRequestBody(model: string, messages: ChatTurn[]) {
   const system = messages.filter((m) => m.role === "system").map((m) => m.content).join("\n\n");
   const rest = messages.filter((m) => m.role !== "system");
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-      // Direkter Aufruf aus dem Browser: von Anthropic ausdruecklich vorgesehener
-      // Opt-in-Header (der API-Schluessel liegt damit im Client, wie bei den
-      // anderen Anbietern auch - siehe Hinweistext in den Einstellungen).
-      "anthropic-dangerous-direct-browser-access": "true",
-    },
-    body: JSON.stringify({
-      model,
-      max_tokens: 2400,
-      temperature: 0.25,
-      system,
-      messages: rest.map((m) => ({ role: m.role, content: m.content })),
-    }),
+  return JSON.stringify({
+    model,
+    max_tokens: 2400,
+    temperature: 0.25,
+    system,
+    messages: rest.map((m) => ({ role: m.role, content: m.content })),
   });
+}
+
+async function parseAnthropicResponse(res: Response): Promise<string> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
     throw new Error(`KI-Anfrage fehlgeschlagen (${res.status}): ${body.slice(0, 300)}`);
@@ -156,8 +152,45 @@ async function callAnthropic(apiKey: string, model: string, messages: ChatTurn[]
   return content;
 }
 
+async function callAnthropic(apiKey: string, model: string, messages: ChatTurn[]): Promise<string> {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      // Direkter Aufruf aus dem Browser: von Anthropic ausdruecklich vorgesehener
+      // Opt-in-Header (der API-Schluessel liegt damit im Client, wie bei den
+      // anderen Anbietern auch - siehe Hinweistext in den Einstellungen).
+      "anthropic-dangerous-direct-browser-access": "true",
+    },
+    body: anthropicRequestBody(model, messages),
+  });
+  return parseAnthropicResponse(res);
+}
+
+/** "Gemeinsamer" Modus: Anfrage geht an den Cloudflare-Worker-Proxy des
+ * Betreibers statt direkt an Anthropic - der Worker haengt dort den echten,
+ * nur ihm bekannten API-Schluessel an. Kein Schluessel im Browser noetig. */
+async function callViaProxy(model: string, messages: ChatTurn[]): Promise<string> {
+  if (!GEMEINSAMER_PROXY_URL) {
+    throw new Error(
+      "Der gemeinsame KI-Zugang ist noch nicht eingerichtet. Wähle in den Einstellungen einen eigenen Anbieter mit API-Schlüssel."
+    );
+  }
+  const res = await fetch(GEMEINSAMER_PROXY_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: anthropicRequestBody(model, messages),
+  });
+  return parseAnthropicResponse(res);
+}
+
 async function callProviderRaw(opts: AiCallOptions, messages: ChatTurn[], jsonMode = true): Promise<string> {
   const model = opts.model || (opts.provider !== "aus" ? DEFAULT_MODELS[opts.provider] : "");
+  if (opts.provider === "gemeinsam") {
+    return callViaProxy(model, messages);
+  }
   if (opts.provider === "anthropic") {
     return callAnthropic(opts.apiKey, model, messages);
   }

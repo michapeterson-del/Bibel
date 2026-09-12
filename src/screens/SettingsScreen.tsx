@@ -7,10 +7,11 @@ import { clearAllChats, clearFeedback, kvGet, kvSet, listFeedback, resetStreak }
 import { testConnection } from "../lib/ai/provider";
 
 const PROVIDER_LABEL: Record<AiProvider, string> = {
-  anthropic: "Claude (Anthropic)",
-  openai: "OpenAI (ChatGPT)",
-  gemini: "Google Gemini",
-  deepseek: "DeepSeek",
+  gemeinsam: "Gemeinsam (kein eigener Schlüssel nötig)",
+  anthropic: "Claude (Anthropic) - eigener Schlüssel",
+  openai: "OpenAI (ChatGPT) - eigener Schlüssel",
+  gemini: "Google Gemini - eigener Schlüssel",
+  deepseek: "DeepSeek - eigener Schlüssel",
   aus: "Aus",
 };
 
@@ -139,7 +140,13 @@ export default function SettingsScreen() {
             ))}
           </select>
         </Row>
-        {settings.aiProvider !== "aus" && (
+        {settings.aiProvider === "gemeinsam" && (
+          <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", margin: 0 }}>
+            Der Chat läuft über einen von der Betreiberin/dem Betreiber bereitgestellten Zugang.
+            Du musst keinen eigenen API-Schlüssel eintragen.
+          </p>
+        )}
+        {settings.aiProvider !== "aus" && settings.aiProvider !== "gemeinsam" && (
           <>
             <Row label="API-Schlüssel">
               <span style={{ fontFamily: "monospace" }}>{savedKeyMasked || "– kein Schlüssel –"}</span>
