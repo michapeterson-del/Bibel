@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "l1",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer baute die Arche?",
+    "optionen": [
+      "Noah",
+      "Abraham",
+      "Mose",
+      "David"
+    ],
+    "richtig": "Noah",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 6,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Gott beauftragte Noah, eine Arche aus Holz zu bauen, um seine Familie und die Tiere vor der Flut zu retten."
+  },
+  {
+    "id": "l2",
+    "stufe": "lehrling",
+    "typ": "wahrfalsch",
+    "frage": "Jesus wurde in Bethlehem geboren.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 2,
+      "versVon": 4,
+      "versBis": 7
+    },
+    "erklaerung": "Josef und Maria reisten nach Bethlehem, wo Jesus geboren wurde, wie es die Propheten vorausgesagt hatten."
+  },
+  {
+    "id": "l3",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wie viele Jünger wählte Jesus als engsten Kreis aus?",
+    "optionen": [
+      "10",
+      "12",
+      "7",
+      "70"
+    ],
+    "richtig": "12",
+    "beleg": {
+      "osis": "MRK",
+      "bookName": "Markus",
+      "kapitel": 3,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Jesus setzte zwölf Männer ein, die er Apostel nannte und die eng mit ihm unterwegs waren."
+  },
+  {
+    "id": "l4",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer führte das Volk Israel aus Ägypten?",
+    "optionen": [
+      "Mose",
+      "Josua",
+      "Aaron",
+      "David"
+    ],
+    "richtig": "Mose",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 3,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Gott sandte Mose zum Pharao, um sein Volk aus der Sklaverei in Ägypten herauszuführen."
+  },
+  {
+    "id": "l5",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie viele Tage und Nächte regnete es bei der großen Flut?",
+    "optionen": null,
+    "richtig": "40",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 7,
+      "versVon": 12,
+      "versBis": 12
+    },
+    "erklaerung": "Der Regen dauerte vierzig Tage und vierzig Nächte, bis die ganze Erde mit Wasser bedeckt war."
+  },
+  {
+    "id": "l6",
+    "stufe": "lehrling",
+    "typ": "wahrfalsch",
+    "frage": "David besiegte Goliath mit einem Schwert.",
+    "optionen": null,
+    "richtig": "falsch",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 17,
+      "versVon": 49,
+      "versBis": 50
+    },
+    "erklaerung": "David besiegte den Riesen Goliath mit einer Steinschleuder, nicht mit einem Schwert."
+  },
+  {
+    "id": "l7",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer verriet Jesus für dreißig Silberstücke?",
+    "optionen": [
+      "Judas",
+      "Petrus",
+      "Thomas",
+      "Johannes"
+    ],
+    "richtig": "Judas",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 15,
+      "versBis": 15
+    },
+    "erklaerung": "Judas Iskariot vereinbarte mit den Hohepriestern, Jesus für dreißig Silberstücke auszuliefern."
+  },
+  {
+    "id": "l8",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war der erste Mensch, den Gott erschuf?",
+    "optionen": [
+      "Adam",
+      "Kain",
+      "Abel",
+      "Set"
+    ],
+    "richtig": "Adam",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 2,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Gott formte den Menschen aus Erde vom Acker und blies ihm den Odem des Lebens ein."
+  },
+  {
+    "id": "l9",
+    "stufe": "lehrling",
+    "typ": "multi",
+    "frage": "Welche drei gehören zu den Erzvätern Israels?",
+    "optionen": [
+      "Abraham",
+      "Isaak",
+      "Jakob",
+      "Saul"
+    ],
+    "richtig": [
+      "Abraham",
+      "Isaak",
+      "Jakob"
+    ],
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 3,
+      "versVon": 6,
+      "versBis": 6
+    },
+    "erklaerung": "Gott stellt sich Mose als der Gott Abrahams, Isaaks und Jakobs vor - die drei Erzväter Israels."
+  },
+  {
+    "id": "l10",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer wurde von einem großen Fisch verschlungen?",
+    "optionen": [
+      "Jona",
+      "Jeremia",
+      "Elia",
+      "Daniel"
+    ],
+    "richtig": "Jona",
+    "beleg": {
+      "osis": "JON",
+      "bookName": "Jona",
+      "kapitel": 1,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Der HERR bestellte einen großen Fisch, der Jona verschlang, als dieser vor Gottes Auftrag floh."
+  },
+  {
+    "id": "l11",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wie viele Plagen sandte Gott über Ägypten?",
+    "optionen": [
+      "10",
+      "7",
+      "12",
+      "3"
+    ],
+    "richtig": "10",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 11,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Zehn Plagen trafen Ägypten, bis der Pharao das Volk Israel ziehen ließ."
+  },
+  {
+    "id": "l12",
+    "stufe": "lehrling",
+    "typ": "wahrfalsch",
+    "frage": "Petrus verleugnete Jesus dreimal.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 75,
+      "versBis": 75
+    },
+    "erklaerung": "Wie Jesus vorausgesagt hatte, verleugnete Petrus ihn dreimal, bevor der Hahn krähte."
+  },
+  {
+    "id": "l13",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war die Mutter von Jesus?",
+    "optionen": [
+      "Maria",
+      "Elisabeth",
+      "Martha",
+      "Maria Magdalena"
+    ],
+    "richtig": "Maria",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 1,
+      "versVon": 30,
+      "versBis": 31
+    },
+    "erklaerung": "Der Engel Gabriel verkündete Maria, dass sie den Sohn Gottes zur Welt bringen würde."
+  },
+  {
+    "id": "l14",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer half Mose beim Sprechen vor dem Pharao?",
+    "optionen": [
+      "Aaron",
+      "Josua",
+      "Kaleb",
+      "Jitro"
+    ],
+    "richtig": "Aaron",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 4,
+      "versVon": 14,
+      "versBis": 16
+    },
+    "erklaerung": "Weil Mose sich für einen schlechten Redner hielt, gab Gott ihm seinen Bruder Aaron als Sprecher zur Seite."
+  },
+  {
+    "id": "l15",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "In welcher Stadt wuchs Jesus auf?",
+    "optionen": [
+      "Nazareth",
+      "Bethlehem",
+      "Jerusalem",
+      "Kapernaum"
+    ],
+    "richtig": "Nazareth",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 2,
+      "versVon": 39,
+      "versBis": 40
+    },
+    "erklaerung": "Josef und Maria kehrten mit Jesus nach Nazareth zurück, wo er aufwuchs."
+  },
+  {
+    "id": "e1",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "An welchem Berg empfing Mose die zehn Gebote?",
+    "optionen": [
+      "Sinai",
+      "Ararat",
+      "Karmel",
+      "Nebo"
+    ],
+    "richtig": "Sinai",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 19,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Der HERR stieg auf den Berg Sinai herab und rief Mose zu sich, um ihm die Gebote zu geben."
+  },
+  {
+    "id": "e2",
+    "stufe": "erwachsener",
+    "typ": "zahl",
+    "frage": "Wie viele Jahre wanderte Israel durch die Wüste?",
+    "optionen": null,
+    "richtig": "40",
+    "beleg": {
+      "osis": "NUM",
+      "bookName": "4. Mose",
+      "kapitel": 14,
+      "versVon": 33,
+      "versBis": 33
+    },
+    "erklaerung": "Wegen des Unglaubens des Volkes ließ Gott Israel vierzig Jahre in der Wüste umherziehen."
+  },
+  {
+    "id": "e3",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der erste König Israels?",
+    "optionen": [
+      "Saul",
+      "David",
+      "Salomo",
+      "Samuel"
+    ],
+    "richtig": "Saul",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 10,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Samuel salbte Saul im Auftrag Gottes zum ersten König über Israel."
+  },
+  {
+    "id": "e4",
+    "stufe": "erwachsener",
+    "typ": "wahrfalsch",
+    "frage": "Salomo war für seine Weisheit bekannt.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 3,
+      "versVon": 12,
+      "versBis": 12
+    },
+    "erklaerung": "Gott gab Salomo ein weises und verständiges Herz, wie es vor ihm niemand hatte."
+  },
+  {
+    "id": "e5",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Auf welchem Berg besiegte Elia die Baalspriester?",
+    "optionen": [
+      "Karmel",
+      "Sinai",
+      "Tabor",
+      "Ararat"
+    ],
+    "richtig": "Karmel",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 18,
+      "versVon": 19,
+      "versBis": 19
+    },
+    "erklaerung": "Elia forderte die Baalspriester auf dem Berg Karmel zu einem Gottesbeweis heraus."
+  },
+  {
+    "id": "e6",
+    "stufe": "erwachsener",
+    "typ": "multi",
+    "frage": "Welche drei Männer wurden in den Feuerofen geworfen?",
+    "optionen": [
+      "Schadrach",
+      "Meschach",
+      "Abed-Nego",
+      "Daniel"
+    ],
+    "richtig": [
+      "Schadrach",
+      "Meschach",
+      "Abed-Nego"
+    ],
+    "beleg": {
+      "osis": "DAN",
+      "bookName": "Daniel",
+      "kapitel": 3,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Nebukadnezar ließ Schadrach, Meschach und Abed-Nego in den glühenden Ofen werfen, weil sie sein Standbild nicht anbeten wollten."
+  },
+  {
+    "id": "e7",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer deutete den Traum des Pharao von den Kühen?",
+    "optionen": [
+      "Josef",
+      "Daniel",
+      "Mose",
+      "Salomo"
+    ],
+    "richtig": "Josef",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 41,
+      "versVon": 25,
+      "versBis": 25
+    },
+    "erklaerung": "Josef deutete dem Pharao, dass sieben fruchtbare Jahre und sieben Hungerjahre bevorstünden."
+  },
+  {
+    "id": "e8",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "An welchem Fest wurde der Heilige Geist ausgegossen?",
+    "optionen": [
+      "Pfingsten",
+      "Passah",
+      "Laubhüttenfest",
+      "Chanukka"
+    ],
+    "richtig": "Pfingsten",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 2,
+      "versVon": 1,
+      "versBis": 4
+    },
+    "erklaerung": "Am Pfingsttag kam der Heilige Geist über die versammelten Jünger in Jerusalem."
+  },
+  {
+    "id": "e9",
+    "stufe": "erwachsener",
+    "typ": "wahrfalsch",
+    "frage": "Paulus wurde auf dem Weg nach Damaskus bekehrt.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 9,
+      "versVon": 3,
+      "versBis": 6
+    },
+    "erklaerung": "Ein helles Licht und die Stimme Jesu veränderten das Leben des Saulus auf dem Weg nach Damaskus für immer."
+  },
+  {
+    "id": "e10",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer verurteilte Jesus zum Tod?",
+    "optionen": [
+      "Pontius Pilatus",
+      "Herodes",
+      "Kaiphas",
+      "Annas"
+    ],
+    "richtig": "Pontius Pilatus",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 27,
+      "versVon": 24,
+      "versBis": 26
+    },
+    "erklaerung": "Obwohl Pilatus Jesus für unschuldig hielt, gab er dem Druck der Menge nach und ließ ihn kreuzigen."
+  },
+  {
+    "id": "e11",
+    "stufe": "erwachsener",
+    "typ": "zahl",
+    "frage": "Wie viele Menschen waren nach Petrus in der Arche gerettet?",
+    "optionen": null,
+    "richtig": "8",
+    "beleg": {
+      "osis": "1PE",
+      "bookName": "1. Petrus",
+      "kapitel": 3,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Petrus erinnert daran, dass acht Menschen durch das Wasser der Flut hindurch gerettet wurden."
+  },
+  {
+    "id": "e12",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welcher Prophet wurde in die Löwengrube geworfen?",
+    "optionen": [
+      "Daniel",
+      "Jesaja",
+      "Jeremia",
+      "Hesekiel"
+    ],
+    "richtig": "Daniel",
+    "beleg": {
+      "osis": "DAN",
+      "bookName": "Daniel",
+      "kapitel": 6,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Weil Daniel weiter zu Gott betete, wurde er in die Löwengrube geworfen - Gott bewahrte ihn."
+  },
+  {
+    "id": "e13",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Vater von Johannes dem Täufer?",
+    "optionen": [
+      "Zacharias",
+      "Joseph",
+      "Simeon",
+      "Nathanael"
+    ],
+    "richtig": "Zacharias",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 1,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Ein Engel verkündete dem Priester Zacharias, dass seine Frau Elisabeth einen Sohn gebären würde."
+  },
+  {
+    "id": "e14",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "In welchem Buch steht die Geschichte von Ruth und Boas?",
+    "optionen": [
+      "Ruth",
+      "Ester",
+      "Richter",
+      "1. Samuel"
+    ],
+    "richtig": "Ruth",
+    "beleg": {
+      "osis": "RUT",
+      "bookName": "Ruth",
+      "kapitel": 2,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Das Buch Ruth erzählt, wie die moabitische Witwe Ruth den wohlhabenden Boas kennenlernt."
+  },
+  {
+    "id": "e15",
+    "stufe": "erwachsener",
+    "typ": "orden",
+    "frage": "Bringe die Schöpfung in die richtige Reihenfolge (zuerst zuletzt):",
+    "optionen": [
+      "Licht",
+      "Pflanzen",
+      "Sonne, Mond und Sterne",
+      "Der Mensch"
+    ],
+    "richtig": [
+      "Licht",
+      "Pflanzen",
+      "Sonne, Mond und Sterne",
+      "Der Mensch"
+    ],
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 1,
+      "versVon": 3,
+      "versBis": 27
+    },
+    "erklaerung": "Nach dem Schöpfungsbericht schuf Gott zuerst das Licht, dann die Pflanzen, dann die Gestirne und zuletzt den Menschen."
+  },
+  {
+    "id": "d1",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Hohepriester, vor dem Jesus verhört wurde?",
+    "optionen": [
+      "Kaiphas",
+      "Hannas",
+      "Zacharias",
+      "Simeon"
+    ],
+    "richtig": "Kaiphas",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 57,
+      "versBis": 57
+    },
+    "erklaerung": "Man führte Jesus zum Hohepriester Kaiphas, wo die Schriftgelehrten und Ältesten versammelt waren."
+  },
+  {
+    "id": "d2",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher Apostel wird 'der Zwilling' genannt?",
+    "optionen": [
+      "Thomas",
+      "Andreas",
+      "Bartholomäus",
+      "Matthäus"
+    ],
+    "richtig": "Thomas",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 11,
+      "versVon": 16,
+      "versBis": 16
+    },
+    "erklaerung": "Thomas, der auch Zwilling genannt wird, sagt zu den anderen Jüngern, mit Jesus sterben zu wollen."
+  },
+  {
+    "id": "d3",
+    "stufe": "diakon",
+    "typ": "wahrfalsch",
+    "frage": "Paulus schrieb den Epheserbrief als Gefangener.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "EPH",
+      "bookName": "Epheser",
+      "kapitel": 3,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Paulus bezeichnet sich selbst als 'Gefangener Christi Jesu' zu Beginn des dritten Kapitels."
+  },
+  {
+    "id": "d4",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wie hieß die Frau, die zusammen mit Aquila lehrte?",
+    "optionen": [
+      "Priszilla",
+      "Lydia",
+      "Phöbe",
+      "Junia"
+    ],
+    "richtig": "Priszilla",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 18,
+      "versVon": 26,
+      "versBis": 26
+    },
+    "erklaerung": "Priszilla und Aquila nahmen Apollos beiseite und legten ihm den Weg Gottes noch genauer aus."
+  },
+  {
+    "id": "d5",
+    "stufe": "diakon",
+    "typ": "multi",
+    "frage": "Welche gehören zur Frucht des Geistes (Galater 5)?",
+    "optionen": [
+      "Liebe",
+      "Freude",
+      "Neid",
+      "Friede"
+    ],
+    "richtig": [
+      "Liebe",
+      "Freude",
+      "Friede"
+    ],
+    "beleg": {
+      "osis": "GAL",
+      "bookName": "Galater",
+      "kapitel": 5,
+      "versVon": 22,
+      "versBis": 22
+    },
+    "erklaerung": "Die Frucht des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Treue, Sanftmut und Keuschheit."
+  },
+  {
+    "id": "d6",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der erste Märtyrer der jungen Gemeinde?",
+    "optionen": [
+      "Stephanus",
+      "Jakobus",
+      "Petrus",
+      "Paulus"
+    ],
+    "richtig": "Stephanus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 7,
+      "versVon": 59,
+      "versBis": 60
+    },
+    "erklaerung": "Stephanus wurde gesteinigt, während er für seine Verfolger betete - der erste christliche Märtyrer."
+  },
+  {
+    "id": "d7",
+    "stufe": "diakon",
+    "typ": "zahl",
+    "frage": "Nach wie vielen Tagen stand Jesus von den Toten auf?",
+    "optionen": null,
+    "richtig": "3",
+    "beleg": {
+      "osis": "1CO",
+      "bookName": "1. Korinther",
+      "kapitel": 15,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Paulus überliefert die Kernaussage: Christus ist gestorben, begraben und am dritten Tag auferstanden."
+  },
+  {
+    "id": "d8",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wie viele Aussätzige wurden geheilt, aber nur einer dankte?",
+    "optionen": [
+      "10",
+      "7",
+      "5",
+      "3"
+    ],
+    "richtig": "10",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 17,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Jesus heilte zehn Aussätzige, doch nur ein Samariter kehrte zurück, um Gott zu danken."
+  },
+  {
+    "id": "d9",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher Apostel wird als 'der, den Jesus liebhatte' bezeichnet?",
+    "optionen": [
+      "Johannes",
+      "Petrus",
+      "Jakobus",
+      "Andreas"
+    ],
+    "richtig": "Johannes",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 21,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Im Johannesevangelium wird der Jünger, den Jesus liebte, mehrfach so umschrieben - meist mit Johannes identifiziert."
+  },
+  {
+    "id": "d10",
+    "stufe": "diakon",
+    "typ": "wahrfalsch",
+    "frage": "Barnabas begleitete Paulus auf seiner ersten Missionsreise.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 13,
+      "versVon": 2,
+      "versBis": 3
+    },
+    "erklaerung": "Der Heilige Geist sonderte Barnabas und Saulus (Paulus) für das Missionswerk aus."
+  },
+  {
+    "id": "d11",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "In welcher Stadt wurden die Jünger zuerst 'Christen' genannt?",
+    "optionen": [
+      "Antiochia",
+      "Jerusalem",
+      "Ephesus",
+      "Korinth"
+    ],
+    "richtig": "Antiochia",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 11,
+      "versVon": 26,
+      "versBis": 26
+    },
+    "erklaerung": "In Antiochia wurden die Jünger zum ersten Mal Christen genannt."
+  },
+  {
+    "id": "d12",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der römische Hauptmann, der als erster Heide getauft wurde?",
+    "optionen": [
+      "Kornelius",
+      "Kaiphas",
+      "Pilatus",
+      "Felix"
+    ],
+    "richtig": "Kornelius",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 10,
+      "versVon": 44,
+      "versBis": 48
+    },
+    "erklaerung": "Der Heilige Geist fiel auf Kornelius und sein Haus, noch bevor Petrus die Predigt beendet hatte."
+  },
+  {
+    "id": "d13",
+    "stufe": "diakon",
+    "typ": "multi",
+    "frage": "Welche zwei Städte wurden wegen ihrer Sünde zerstört?",
+    "optionen": [
+      "Sodom",
+      "Gomorra",
+      "Ninive",
+      "Babylon"
+    ],
+    "richtig": [
+      "Sodom",
+      "Gomorra"
+    ],
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 19,
+      "versVon": 24,
+      "versBis": 24
+    },
+    "erklaerung": "Der HERR ließ Schwefel und Feuer vom Himmel auf Sodom und Gomorra regnen."
+  },
+  {
+    "id": "d14",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher König ließ Johannes den Täufer enthaupten?",
+    "optionen": [
+      "Herodes",
+      "Pilatus",
+      "Kaiphas",
+      "Nero"
+    ],
+    "richtig": "Herodes",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 14,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Auf Wunsch der Tochter der Herodias ließ Herodes Johannes den Täufer im Gefängnis enthaupten."
+  },
+  {
+    "id": "d15",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Schwiegervater des Mose, der ihm riet, Richter einzusetzen?",
+    "optionen": [
+      "Jitro",
+      "Aaron",
+      "Kaleb",
+      "Josua"
+    ],
+    "richtig": "Jitro",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 18,
+      "versVon": 17,
+      "versBis": 21
+    },
+    "erklaerung": "Jitro riet Mose, fähige Männer als Richter über kleinere Streitfälle einzusetzen, um ihn zu entlasten."
+  },
+  {
+    "id": "g1",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Prophet aß auf Gottes Geheiß eine Schriftrolle?",
+    "optionen": [
+      "Hesekiel",
+      "Jesaja",
+      "Jeremia",
+      "Daniel"
+    ],
+    "richtig": "Hesekiel",
+    "beleg": {
+      "osis": "EZK",
+      "bookName": "Hesekiel",
+      "kapitel": 3,
+      "versVon": 1,
+      "versBis": 3
+    },
+    "erklaerung": "Gott ließ Hesekiel eine Schriftrolle essen, bevor er ihn zum Haus Israel sandte."
+  },
+  {
+    "id": "g2",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Auf welchem Berg sollte Abraham Isaak opfern?",
+    "optionen": [
+      "Morija",
+      "Sinai",
+      "Ararat",
+      "Nebo"
+    ],
+    "richtig": "Morija",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 22,
+      "versVon": 2,
+      "versBis": 2
+    },
+    "erklaerung": "Gott wies Abraham an, seinen Sohn Isaak auf einem Berg im Land Morija zu opfern."
+  },
+  {
+    "id": "g3",
+    "stufe": "gemeindeleiter",
+    "typ": "wahrfalsch",
+    "frage": "Melchisedek war König von Salem und Priester Gottes.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 14,
+      "versVon": 18,
+      "versBis": 18
+    },
+    "erklaerung": "Melchisedek, König von Salem, brachte Abraham Brot und Wein und segnete ihn als Priester Gottes."
+  },
+  {
+    "id": "g4",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Prophet musste eine untreue Frau heiraten als Zeichen für Israel?",
+    "optionen": [
+      "Hosea",
+      "Amos",
+      "Micha",
+      "Joel"
+    ],
+    "richtig": "Hosea",
+    "beleg": {
+      "osis": "HOS",
+      "bookName": "Hosea",
+      "kapitel": 1,
+      "versVon": 2,
+      "versBis": 2
+    },
+    "erklaerung": "Gott befahl Hosea, eine Hure zu heiraten, als lebendiges Bild für Israels Untreue gegenüber Gott."
+  },
+  {
+    "id": "g5",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer schrieb den Römerbrief als Sekretär für Paulus nieder?",
+    "optionen": [
+      "Tertius",
+      "Silas",
+      "Timotheus",
+      "Lukas"
+    ],
+    "richtig": "Tertius",
+    "beleg": {
+      "osis": "ROM",
+      "bookName": "Römer",
+      "kapitel": 16,
+      "versVon": 22,
+      "versBis": 22
+    },
+    "erklaerung": "Tertius, der den Brief niederschrieb, grüßt die Gemeinde in Rom mit eigenen Worten."
+  },
+  {
+    "id": "g6",
+    "stufe": "gemeindeleiter",
+    "typ": "multi",
+    "frage": "Welche Frauen werden im Stammbaum Jesu (Matthäus 1) genannt?",
+    "optionen": [
+      "Tamar",
+      "Rahab",
+      "Ruth",
+      "Debora"
+    ],
+    "richtig": [
+      "Tamar",
+      "Rahab",
+      "Ruth"
+    ],
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 1,
+      "versVon": 3,
+      "versBis": 5
+    },
+    "erklaerung": "Matthäus nennt in Jesu Stammbaum ungewöhnlicherweise die Frauen Tamar, Rahab und Ruth."
+  },
+  {
+    "id": "g7",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Von welchem Berg sah Mose das verheißene Land, bevor er starb?",
+    "optionen": [
+      "Nebo",
+      "Sinai",
+      "Karmel",
+      "Hermon"
+    ],
+    "richtig": "Nebo",
+    "beleg": {
+      "osis": "DEU",
+      "bookName": "5. Mose",
+      "kapitel": 34,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Mose stieg auf den Berg Nebo, und der HERR zeigte ihm von dort das ganze verheißene Land."
+  },
+  {
+    "id": "g8",
+    "stufe": "gemeindeleiter",
+    "typ": "zahl",
+    "frage": "Wie viele Söhne hatte Jakob, die zu den Stämmen Israels wurden?",
+    "optionen": null,
+    "richtig": "12",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 35,
+      "versVon": 22,
+      "versBis": 22
+    },
+    "erklaerung": "Am Ende von Genesis 35 fasst der Text zusammen: Der Söhne Jakobs waren zwölf."
+  },
+  {
+    "id": "g9",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher babylonische König sah die Schrift an der Wand?",
+    "optionen": [
+      "Belsazar",
+      "Nebukadnezar",
+      "Kyrus",
+      "Darius"
+    ],
+    "richtig": "Belsazar",
+    "beleg": {
+      "osis": "DAN",
+      "bookName": "Daniel",
+      "kapitel": 5,
+      "versVon": 5,
+      "versBis": 5
+    },
+    "erklaerung": "Während des Festmahls erschienen Finger einer Menschenhand und schrieben an die Wand des Palastes."
+  },
+  {
+    "id": "g10",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Prophet wurde von Isebel verfolgt?",
+    "optionen": [
+      "Elia",
+      "Elisa",
+      "Jesaja",
+      "Jeremia"
+    ],
+    "richtig": "Elia",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 19,
+      "versVon": 2,
+      "versBis": 2
+    },
+    "erklaerung": "Isebel schwor, Elia zu töten, nachdem er die Baalspriester am Karmel besiegt hatte."
+  },
+  {
+    "id": "g11",
+    "stufe": "gemeindeleiter",
+    "typ": "wahrfalsch",
+    "frage": "Der Philemonbrief handelt von einem entlaufenen Sklaven namens Onesimus.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "PHM",
+      "bookName": "Philemon",
+      "kapitel": 1,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Paulus bittet Philemon, seinen entlaufenen Sklaven Onesimus wie einen Bruder aufzunehmen."
+  },
+  {
+    "id": "g12",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welche Prophetin führte Israel zur Zeit der Richter?",
+    "optionen": [
+      "Debora",
+      "Rut",
+      "Ester",
+      "Hulda"
+    ],
+    "richtig": "Debora",
+    "beleg": {
+      "osis": "JDG",
+      "bookName": "Richter",
+      "kapitel": 4,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Debora, eine Prophetin, richtete Israel zu jener Zeit und führte das Volk in den Sieg."
+  },
+  {
+    "id": "g13",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher der zwölf Apostel wird 'der Zelot' genannt?",
+    "optionen": [
+      "Simon",
+      "Judas Thaddäus",
+      "Bartholomäus",
+      "Matthäus"
+    ],
+    "richtig": "Simon",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 6,
+      "versVon": 15,
+      "versBis": 15
+    },
+    "erklaerung": "In der Liste der zwölf Apostel wird Simon mit dem Beinamen 'der Zelot' erwähnt."
+  },
+  {
+    "id": "g14",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Prokurator, vor dem Paulus in Cäsarea verhört wurde?",
+    "optionen": [
+      "Felix",
+      "Pilatus",
+      "Herodes Agrippa",
+      "Kaiphas"
+    ],
+    "richtig": "Felix",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 24,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Der Statthalter Felix hörte Paulus' Verteidigungsrede in Cäsarea an."
+  },
+  {
+    "id": "g15",
+    "stufe": "gemeindeleiter",
+    "typ": "orden",
+    "frage": "Bringe die Ereignisse der Karwoche in die richtige Reihenfolge:",
+    "optionen": [
+      "Einzug in Jerusalem",
+      "Letztes Abendmahl",
+      "Kreuzigung",
+      "Auferstehung"
+    ],
+    "richtig": [
+      "Einzug in Jerusalem",
+      "Letztes Abendmahl",
+      "Kreuzigung",
+      "Auferstehung"
+    ],
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 21,
+      "versVon": 1,
+      "versBis": 11
+    },
+    "erklaerung": "Die Karwoche beginnt mit dem Einzug in Jerusalem, gefolgt vom letzten Abendmahl, der Kreuzigung und schließlich der Auferstehung."
+  }
+]
