@@ -1,0 +1,83 @@
+/* Amibel Design-System: Pastell-Palette, Farbe = Bedeutung.
+   Jedes Token-Paar hat eine Hell- und eine Dunkel-Variante. */
+
+:root {
+  color-scheme: light;
+
+  /* Grundflaechen */
+  --bg: #FCF9F3;
+  --card: #FFFFFF;
+  --border: #EBE2D3;
+  --text: #3E3629;
+  --text-2: #5E5443;
+  --text-muted: #827968;
+
+  /* Bedeutungsfarben (bg/fg-Paare) */
+  --creme-bg: #F0D7B5; --creme-fg: #6C420A;
+  --bibel-bg: #F1EEC0; --bibel-fg: #5D580B;
+  --gelb-bg: #EFE5BC; --gelb-fg: #62510D;
+  --apricot-bg: #EAC7AD; --apricot-fg: #6A3610;
+  --send-bg: #E6B8A9; --send-fg: #652713;
+  --rose-bg: #E6BAC5; --rose-fg: #771F35;
+  --lavendel-bg: #C8B0CC; --lavendel-fg: #482C4D;
+  --blau-hell-bg: #ABBEDA; --blau-hell-fg: #20385C;
+  --blau-bg: #ABC6E4; --blau-fg: #173E69;
+  --blau-weich-bg: #B0D2E8; --blau-weich-fg: #134667;
+  --salbei-bg: #B2D2C2; --salbei-fg: #254836;
+  --lila-bg: #D3B4CC; --lila-fg: #532A4A;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-card: 0 1px 3px rgba(62, 54, 41, 0.08), 0 1px 2px rgba(62, 54, 41, 0.06);
+  --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #1B1D21;
+    --card: #26292E;
+    --border: #373C44;
+    --text: #E7E2D8;
+    --text-2: #BEB8AB;
+    --text-muted: #A69E8F;
+
+    --creme-bg: #3A3123; --creme-fg: #E8C795;
+    --bibel-bg: #3A3820; --bibel-fg: #E4E2AE;
+    --gelb-bg: #393318; --gelb-fg: #E6DA9E;
+    --apricot-bg: #3A2A1E; --apricot-fg: #E0B493;
+    --send-bg: #3E2418; --send-fg: #E2A28C;
+    --rose-bg: #3E222B; --rose-fg: #E5A9BB;
+    --lavendel-bg: #2E2431; --lavendel-fg: #C9A7D0;
+    --blau-hell-bg: #1E2835; --blau-hell-fg: #A9C4E4;
+    --blau-bg: #1D2A3C; --blau-fg: #A5C5EC;
+    --blau-weich-bg: #1D2E3A; --blau-weich-fg: #A8D3EC;
+    --salbei-bg: #1F2D26; --salbei-fg: #A6CDB6;
+    --lila-bg: #2E1F2C; --lila-fg: #D3A6CA;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1B1D21;
+  --card: #26292E;
+  --border: #373C44;
+  --text: #E7E2D8;
+  --text-2: #BEB8AB;
+  --text-muted: #A69E8F;
+
+  --creme-bg: #3A3123; --creme-fg: #E8C795;
+  --bibel-bg: #3A3820; --bibel-fg: #E4E2AE;
+  --gelb-bg: #393318; --gelb-fg: #E6DA9E;
+  --apricot-bg: #3A2A1E; --apricot-fg: #E0B493;
+  --send-bg: #3E2418; --send-fg: #E2A28C;
+  --rose-bg: #3E222B; --rose-fg: #E5A9BB;
+  --lavendel-bg: #2E2431; --lavendel-fg: #C9A7D0;
+  --blau-hell-bg: #1E2835; --blau-hell-fg: #A9C4E4;
+  --blau-bg: #1D2A3C; --blau-fg: #A5C5EC;
+  --blau-weich-bg: #1D2E3A; --blau-weich-fg: #A8D3EC;
+  --salbei-bg: #1F2D26; --salbei-fg: #A6CDB6;
+  --lila-bg: #2E1F2C; --lila-fg: #D3A6CA;
+}
