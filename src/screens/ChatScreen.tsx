@@ -71,12 +71,15 @@ export default function ChatScreen() {
     }
     setBusy(true);
     try {
-      const apiKeyEnc = await kvGet<string>(`api_key_${settings.aiProvider}`);
-      const apiKey = apiKeyEnc ? await decryptSecret(apiKeyEnc) : "";
-      if (!apiKey) {
-        setError("Kein API-Schlüssel für diesen Anbieter hinterlegt. Öffne Einstellungen → KI.");
-        setBusy(false);
-        return;
+      let apiKey = "";
+      if (settings.aiProvider !== "gemeinsam") {
+        const apiKeyEnc = await kvGet<string>(`api_key_${settings.aiProvider}`);
+        apiKey = apiKeyEnc ? await decryptSecret(apiKeyEnc) : "";
+        if (!apiKey) {
+          setError("Kein API-Schlüssel für diesen Anbieter hinterlegt. Öffne Einstellungen → KI.");
+          setBusy(false);
+          return;
+        }
       }
       const antwort = await askAmibel(
         { provider: settings.aiProvider, apiKey, model: settings.aiModell || undefined },

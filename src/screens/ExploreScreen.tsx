@@ -43,11 +43,14 @@ export default function ExploreScreen() {
         setError("Zu diesem Thema wurden keine passenden Bibelstellen gefunden. Versuch ein anderes Stichwort.");
         return;
       }
-      const apiKeyEnc = await kvGet<string>(`api_key_${settings.aiProvider}`);
-      const apiKey = apiKeyEnc ? await decryptSecret(apiKeyEnc) : "";
-      if (!apiKey) {
-        setError("Kein API-Schlüssel hinterlegt. Öffne Einstellungen → KI.");
-        return;
+      let apiKey = "";
+      if (settings.aiProvider !== "gemeinsam") {
+        const apiKeyEnc = await kvGet<string>(`api_key_${settings.aiProvider}`);
+        apiKey = apiKeyEnc ? await decryptSecret(apiKeyEnc) : "";
+        if (!apiKey) {
+          setError("Kein API-Schlüssel hinterlegt. Öffne Einstellungen → KI.");
+          return;
+        }
       }
       const referenzen = verse.map((v) => ({ referenz: `${v.bookName} ${v.chapter},${v.verse}`, text: v.text }));
       const text = await askEssay(

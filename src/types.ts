@@ -44,7 +44,7 @@ export interface LesezeichenExport {
 }
 
 export type Klarheitsstufe = "kurz" | "normal" | "ausfuehrlich";
-export type AiProvider = "anthropic" | "openai" | "gemini" | "deepseek" | "aus";
+export type AiProvider = "gemeinsam" | "anthropic" | "openai" | "gemini" | "deepseek" | "aus";
 export type ChatModus = "bibel" | "alltag";
 
 export interface Bibelstelle {
