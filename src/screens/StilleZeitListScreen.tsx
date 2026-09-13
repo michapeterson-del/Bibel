@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import type { StilleZeitEintrag } from "../types";
-import { listStilleZeit } from "../lib/db/userDb";
+import { useNavigate, useParams } from "react-router-dom";
+import type { BookMeta, StilleZeitEintrag } from "../types";
+import { getBookByOsis } from "../lib/db/bibleDb";
+import { getStilleZeitFuerKapitel, listStilleZeit } from "../lib/db/userDb";
 import Header from "../components/Header";
 
 function formatDatum(iso: string): string {
@@ -9,26 +10,49 @@ function formatDatum(iso: string): string {
 }
 
 export default function StilleZeitListScreen() {
+  const { osis, kapitel } = useParams();
   const navigate = useNavigate();
+  const [book, setBook] = useState<BookMeta | null>(null);
   const [eintraege, setEintraege] = useState<StilleZeitEintrag[]>([]);
   const [geladen, setGeladen] = useState(false);
 
+  const kapitelNr = kapitel ? parseInt(kapitel, 10) : undefined;
+  const gefiltert = Boolean(osis && kapitelNr);
+
   useEffect(() => {
-    listStilleZeit().then((all) => {
+    if (osis) getBookByOsis(osis).then((b) => setBook(b ?? null));
+  }, [osis]);
+
+  useEffect(() => {
+    const laden = gefiltert && osis && kapitelNr ? getStilleZeitFuerKapitel(osis, kapitelNr) : listStilleZeit();
+    laden.then((all) => {
       setEintraege(all);
       setGeladen(true);
     });
-  }, []);
+  }, [osis, kapitelNr, gefiltert]);
+
+  const titel = gefiltert ? `Einträge zu ${book ? book.name_de : "…"} ${kapitelNr}` : "Meine Stille Zeit";
 
   return (
     <div>
-      <Header title="Meine Stille Zeit" onBack />
+      <Header title={titel} onBack />
+
+      {gefiltert && osis && (
+        <button
+          className="btn secondary"
+          style={{ width: "100%", marginBottom: 16 }}
+          onClick={() => navigate(`/stillezeit/${osis}/${kapitelNr}`)}
+        >
+          ✏️ Neuen Eintrag zu diesem Kapitel schreiben
+        </button>
+      )}
 
       {geladen && eintraege.length === 0 && (
         <div className="card">
           <p style={{ margin: 0, color: "var(--text-muted)" }}>
-            Noch keine Einträge. Wenn du ein Kapitel als gelesen markierst, kannst du dort deine
-            Gedanken und Gebete festhalten – sie erscheinen dann hier.
+            {gefiltert
+              ? "Noch keine Einträge zu diesem Kapitel."
+              : "Noch keine Einträge. Wenn du ein Kapitel als gelesen markierst, kannst du dort deine Gedanken und Gebete festhalten – sie erscheinen dann hier."}
           </p>
         </div>
       )}

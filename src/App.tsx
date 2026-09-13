@@ -19,6 +19,7 @@ import SpionScreen from "./screens/games/SpionScreen";
 import ReadingProgressScreen from "./screens/ReadingProgressScreen";
 import StilleZeitScreen from "./screens/StilleZeitScreen";
 import StilleZeitListScreen from "./screens/StilleZeitListScreen";
+import ChapterDetailScreen from "./screens/ChapterDetailScreen";
 
 export default function App() {
   return (
@@ -39,7 +40,9 @@ export default function App() {
         <Route path="/spiele/headsup" element={<HeadsUpScreen />} />
         <Route path="/spiele/spion" element={<SpionScreen />} />
         <Route path="/fortschritt" element={<ReadingProgressScreen />} />
+        <Route path="/fortschritt/:osis/:kapitel" element={<ChapterDetailScreen />} />
         <Route path="/stillezeit" element={<StilleZeitListScreen />} />
+        <Route path="/stillezeit/kapitel/:osis/:kapitel" element={<StilleZeitListScreen />} />
         <Route path="/stillezeit/:osis/:kapitel" element={<StilleZeitScreen />} />
         <Route path="/stillezeit-eintrag/:id" element={<StilleZeitScreen />} />
         <Route path="/leseplan" element={<ComingSoonScreen titel="Leseplan" />} />
