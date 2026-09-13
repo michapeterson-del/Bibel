@@ -4,6 +4,7 @@ import type { BookMeta } from "../types";
 import { getAllBooks, getChapterCountsAllBooks } from "../lib/db/bibleDb";
 import { anzahlGeleseneKapitel, getGeleseneKapitel, setKapitelGelesen, type GeleseneKapitel } from "../lib/db/userDb";
 import Header from "../components/Header";
+import BookPickerModal from "../components/BookPickerModal";
 
 export default function ReadingProgressScreen() {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ export default function ReadingProgressScreen() {
   const [chapterCounts, setChapterCounts] = useState<Record<string, number>>({});
   const [gelesen, setGelesen] = useState<GeleseneKapitel>({});
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [showPicker, setShowPicker] = useState(false);
 
   async function refresh() {
     const [b, c, g] = await Promise.all([getAllBooks(), getChapterCountsAllBooks(), getGeleseneKapitel()]);
@@ -31,6 +33,14 @@ export default function ReadingProgressScreen() {
     const istGelesen = (gelesen[osis] ?? []).includes(kapitel);
     const naechste = await setKapitelGelesen(osis, kapitel, !istGelesen);
     setGelesen(naechste);
+    if (!istGelesen) navigate(`/stillezeit/${osis}/${kapitel}`);
+  }
+
+  async function kapitelManuellEintragen(osis: string, kapitel: number) {
+    setShowPicker(false);
+    const naechste = await setKapitelGelesen(osis, kapitel, true);
+    setGelesen(naechste);
+    navigate(`/stillezeit/${osis}/${kapitel}`);
   }
 
   function summe(liste: BookMeta[], quelle: Record<string, number> | GeleseneKapitel, laenge: boolean) {
@@ -126,11 +136,19 @@ export default function ReadingProgressScreen() {
         manuell an-/abhaken.
       </p>
 
+      <button className="btn secondary" style={{ width: "100%", marginBottom: 16 }} onClick={() => setShowPicker(true)}>
+        ✓ Kapitel als gelesen eintragen
+      </button>
+
       <h3>Altes Testament ({summe(at, gelesen, true)}/{summe(at, chapterCounts, false)})</h3>
       {at.map(renderBuch)}
 
       <h3 style={{ marginTop: 20 }}>Neues Testament ({summe(nt, gelesen, true)}/{summe(nt, chapterCounts, false)})</h3>
       {nt.map(renderBuch)}
+
+      {showPicker && (
+        <BookPickerModal onClose={() => setShowPicker(false)} onSelect={kapitelManuellEintragen} />
+      )}
     </div>
   );
 }
