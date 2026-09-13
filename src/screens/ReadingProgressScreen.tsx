@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { BookMeta } from "../types";
 import { getAllBooks, getChapterCountsAllBooks } from "../lib/db/bibleDb";
-import { anzahlGeleseneKapitel, getGeleseneKapitel, setKapitelGelesen, type GeleseneKapitel } from "../lib/db/userDb";
+import { anzahlGeleseneKapitel, getGeleseneKapitel, type GeleseneKapitel } from "../lib/db/userDb";
 import Header from "../components/Header";
 import BookPickerModal from "../components/BookPickerModal";
 
@@ -29,18 +29,13 @@ export default function ReadingProgressScreen() {
   const totalGelesen = anzahlGeleseneKapitel(gelesen);
   const prozent = totalChapters > 0 ? Math.round((totalGelesen / totalChapters) * 100) : 0;
 
-  async function toggleKapitel(osis: string, kapitel: number) {
-    const istGelesen = (gelesen[osis] ?? []).includes(kapitel);
-    const naechste = await setKapitelGelesen(osis, kapitel, !istGelesen);
-    setGelesen(naechste);
-    if (!istGelesen) navigate(`/stillezeit/${osis}/${kapitel}`);
+  function kapitelOeffnen(osis: string, kapitel: number) {
+    navigate(`/fortschritt/${osis}/${kapitel}`);
   }
 
-  async function kapitelManuellEintragen(osis: string, kapitel: number) {
+  function kapitelManuellEintragen(osis: string, kapitel: number) {
     setShowPicker(false);
-    const naechste = await setKapitelGelesen(osis, kapitel, true);
-    setGelesen(naechste);
-    navigate(`/stillezeit/${osis}/${kapitel}`);
+    navigate(`/fortschritt/${osis}/${kapitel}`);
   }
 
   function summe(liste: BookMeta[], quelle: Record<string, number> | GeleseneKapitel, laenge: boolean) {
@@ -82,7 +77,7 @@ export default function ReadingProgressScreen() {
                     key={k}
                     onClick={(e) => {
                       e.stopPropagation();
-                      toggleKapitel(b.osis, k);
+                      kapitelOeffnen(b.osis, k);
                     }}
                     style={{
                       aspectRatio: "1",
@@ -140,8 +135,9 @@ export default function ReadingProgressScreen() {
       </div>
 
       <p style={{ fontSize: "0.82rem", color: "var(--text-muted)", marginTop: -8, marginBottom: 16 }}>
-        Tipp: Auf ein Buch tippen öffnet die Kapitelübersicht - einzelne Kapitel lassen sich dort auch
-        manuell an-/abhaken.
+        Tipp: Auf ein Buch tippen öffnet die Kapitelübersicht. Auf ein Kapitel tippen öffnet die
+        Kapitelseite - dort kannst du es als gelesen markieren und deine Stille-Zeit-Einträge dazu
+        einsehen oder schreiben.
       </p>
 
       <button className="btn secondary" style={{ width: "100%", marginBottom: 16 }} onClick={() => setShowPicker(true)}>

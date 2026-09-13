@@ -18,7 +18,9 @@ export default function Header({
           ←
         </button>
       )}
-      <h2 style={{ flex: 1 }}>{title}</h2>
+      <h2 style={{ flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+        {title}
+      </h2>
       {right}
     </div>
   );
