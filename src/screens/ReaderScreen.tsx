@@ -122,7 +122,10 @@ export default function ReaderScreen() {
         <button className="chip" onClick={() => setShowPicker(true)} style={{ fontWeight: 700 }}>
           {book.name_de} {chapter} ▾
         </button>
-        <div style={{ marginLeft: "auto", display: "flex", gap: 4 }}>
+        <div style={{ marginLeft: "auto", display: "flex", gap: 4, alignItems: "center" }}>
+          <button className="chip" onClick={() => navigate(`/stillezeit/kapitel/${book.osis}/${chapter}`)}>
+            📋 Einträge
+          </button>
           <button className="icon-btn" onClick={() => goChapter(-1)} disabled={chapter <= 1}>‹</button>
           <button className="icon-btn" onClick={() => goChapter(1)} disabled={chapter >= chapterCount}>›</button>
         </div>

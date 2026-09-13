@@ -30,12 +30,12 @@ export default function ReadingProgressScreen() {
   const prozent = totalChapters > 0 ? Math.round((totalGelesen / totalChapters) * 100) : 0;
 
   function kapitelOeffnen(osis: string, kapitel: number) {
-    navigate(`/fortschritt/${osis}/${kapitel}`);
+    navigate(`/lesen/${osis}/${kapitel}`);
   }
 
   function kapitelManuellEintragen(osis: string, kapitel: number) {
     setShowPicker(false);
-    navigate(`/fortschritt/${osis}/${kapitel}`);
+    navigate(`/lesen/${osis}/${kapitel}`);
   }
 
   function summe(liste: BookMeta[], quelle: Record<string, number> | GeleseneKapitel, laenge: boolean) {
@@ -135,9 +135,9 @@ export default function ReadingProgressScreen() {
       </div>
 
       <p style={{ fontSize: "0.82rem", color: "var(--text-muted)", marginTop: -8, marginBottom: 16 }}>
-        Tipp: Auf ein Buch tippen öffnet die Kapitelübersicht. Auf ein Kapitel tippen öffnet die
-        Kapitelseite - dort kannst du es als gelesen markieren und deine Stille-Zeit-Einträge dazu
-        einsehen oder schreiben.
+        Tipp: Auf ein Buch tippen öffnet die Kapitelübersicht. Auf ein Kapitel tippen öffnet den
+        Bibeltext - dort kannst du es als gelesen markieren und über "📋 Einträge" deine
+        Stille-Zeit-Einträge dazu einsehen oder schreiben.
       </p>
 
       <button className="btn secondary" style={{ width: "100%", marginBottom: 16 }} onClick={() => setShowPicker(true)}>
