@@ -345,3 +345,25 @@ export async function saveStilleZeit(entry: Omit<StilleZeitEintrag, "id" | "erst
   await db.put("stillezeit", full);
   return full;
 }
+
+export async function getStilleZeit(id: string): Promise<StilleZeitEintrag | undefined> {
+  const db = await getDb();
+  return db.get("stillezeit", id);
+}
+
+export async function updateStilleZeit(
+  id: string,
+  patch: Partial<Omit<StilleZeitEintrag, "id" | "erstellt_am">>
+): Promise<StilleZeitEintrag | undefined> {
+  const db = await getDb();
+  const existing = await db.get("stillezeit", id);
+  if (!existing) return undefined;
+  const updated = { ...existing, ...patch };
+  await db.put("stillezeit", updated);
+  return updated;
+}
+
+export async function deleteStilleZeit(id: string): Promise<void> {
+  const db = await getDb();
+  await db.delete("stillezeit", id);
+}

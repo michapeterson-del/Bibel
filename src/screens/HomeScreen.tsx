@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getDailyVerse, getChapterCountsAllBooks, type DailyVerseInfo } from "../lib/db/bibleDb";
-import { getCurrentStreakCount, getSettings, listChats } from "../lib/db/userDb";
+import { getCurrentStreakCount, getSettings, listChats, listStilleZeit } from "../lib/db/userDb";
 import { anzahlGeleseneKapitel, createChat, getGeleseneKapitel, saveChat } from "../lib/db/userDb";
 import type { ChatGespraech } from "../types";
 import { useVerseDetail } from "../lib/VerseDetailContext";
@@ -28,6 +28,7 @@ export default function HomeScreen() {
   const [streak, setStreak] = useState(0);
   const [recentChats, setRecentChats] = useState<ChatGespraech[]>([]);
   const [fortschritt, setFortschritt] = useState<{ gelesen: number; gesamt: number } | null>(null);
+  const [stilleZeitAnzahl, setStilleZeitAnzahl] = useState(0);
 
   useEffect(() => {
     getSettings().then((s) => setName(s.profilName));
@@ -38,6 +39,7 @@ export default function HomeScreen() {
       const gesamt = Object.values(counts).reduce((s, n) => s + n, 0);
       setFortschritt({ gelesen: anzahlGeleseneKapitel(gelesen), gesamt });
     });
+    listStilleZeit().then((all) => setStilleZeitAnzahl(all.length));
   }, []);
 
   async function startChat(modus: "alltag" | "bibel", titel: string) {
@@ -135,6 +137,19 @@ export default function HomeScreen() {
             </div>
           </div>
           <span style={{ marginLeft: 10, color: "var(--text-muted)" }}>›</span>
+        </div>
+      )}
+
+      {stilleZeitAnzahl > 0 && (
+        <div
+          className="card"
+          style={{ marginTop: 10, cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
+          onClick={() => navigate("/stillezeit")}
+        >
+          <p style={{ margin: 0 }}>
+            📝 Meine Stille Zeit: {stilleZeitAnzahl} {stilleZeitAnzahl === 1 ? "Eintrag" : "Einträge"}
+          </p>
+          <span style={{ color: "var(--text-muted)" }}>›</span>
         </div>
       )}
 

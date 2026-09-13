@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import type { BookMeta } from "../types";
 import { getBookByOsis } from "../lib/db/bibleDb";
-import { saveStilleZeit } from "../lib/db/userDb";
+import { deleteStilleZeit, getStilleZeit, saveStilleZeit, updateStilleZeit } from "../lib/db/userDb";
 import Header from "../components/Header";
 
 const ICH_SUCHE = [
@@ -40,9 +40,13 @@ function Feld({
 }
 
 export default function StilleZeitScreen() {
-  const { osis, kapitel } = useParams();
+  const { osis: osisParam, kapitel: kapitelParam, id } = useParams();
   const navigate = useNavigate();
   const [book, setBook] = useState<BookMeta | null>(null);
+  const [osis, setOsis] = useState(osisParam ?? "");
+  const [kapitelNr, setKapitelNr] = useState(kapitelParam ? parseInt(kapitelParam, 10) : 0);
+  const [erstelltAm, setErstelltAm] = useState<string | null>(null);
+  const [geladen, setGeladen] = useState(!id);
 
   const [betenUm, setBetenUm] = useState("");
   const [gedanken, setGedanken] = useState("");
@@ -54,29 +58,53 @@ export default function StilleZeitScreen() {
   const [handeln, setHandeln] = useState("");
 
   useEffect(() => {
+    if (!id) return;
+    getStilleZeit(id).then((entry) => {
+      if (!entry) {
+        navigate("/stillezeit", { replace: true });
+        return;
+      }
+      setOsis(entry.osis);
+      setKapitelNr(entry.kapitel);
+      setErstelltAm(entry.erstellt_am);
+      setBetenUm(entry.betenUm);
+      setGedanken(entry.gedanken);
+      setDank(entry.dank);
+      setSuenden(entry.suenden);
+      setSorgen(entry.sorgen);
+      setPersonen(entry.personen);
+      setAnliegen(entry.anliegen);
+      setHandeln(entry.handeln);
+      setGeladen(true);
+    });
+  }, [id, navigate]);
+
+  useEffect(() => {
     if (osis) getBookByOsis(osis).then((b) => setBook(b ?? null));
   }, [osis]);
 
-  const kapitelNr = kapitel ? parseInt(kapitel, 10) : 0;
   const kannSpeichern = gedanken.trim().length > 0;
 
   async function speichern() {
     if (!osis || !book) return;
-    await saveStilleZeit({
-      osis,
-      bookName: book.name_de,
-      kapitel: kapitelNr,
-      betenUm,
-      gedanken,
-      dank,
-      suenden,
-      sorgen,
-      personen,
-      anliegen,
-      handeln,
-    });
-    navigate(-1);
+    const daten = { osis, bookName: book.name_de, kapitel: kapitelNr, betenUm, gedanken, dank, suenden, sorgen, personen, anliegen, handeln };
+    if (id) {
+      await updateStilleZeit(id, daten);
+      navigate("/stillezeit");
+    } else {
+      await saveStilleZeit(daten);
+      navigate(-1);
+    }
   }
+
+  async function loeschen() {
+    if (!id) return;
+    if (!confirm("Diesen Stille-Zeit-Eintrag wirklich löschen?")) return;
+    await deleteStilleZeit(id);
+    navigate("/stillezeit", { replace: true });
+  }
+
+  if (!geladen) return <p>Lädt…</p>;
 
   return (
     <div>
@@ -87,6 +115,11 @@ export default function StilleZeitScreen() {
         <p style={{ margin: "4px 0 0", color: "var(--bibel-fg)" }}>
           Gelesener Text: {book ? book.name_de : "…"} {kapitelNr}
         </p>
+        {erstelltAm && (
+          <p style={{ margin: "4px 0 0", color: "var(--bibel-fg)", fontSize: "0.8rem" }}>
+            Eingetragen am {new Date(erstelltAm).toLocaleDateString("de-DE")}
+          </p>
+        )}
       </div>
 
       <div className="card">
@@ -138,6 +171,11 @@ export default function StilleZeitScreen() {
         <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", textAlign: "center", marginTop: 6 }}>
           Trag mindestens einen Gedanken zum Text ein, um zu speichern.
         </p>
+      )}
+      {id && (
+        <button className="btn secondary" style={{ width: "100%", marginTop: 10 }} onClick={loeschen}>
+          Eintrag löschen
+        </button>
       )}
     </div>
   );
