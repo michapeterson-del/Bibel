@@ -6,6 +6,7 @@ import type {
   LeseFortschritt,
   LernVers,
   LesezeichenEintrag,
+  StilleZeitEintrag,
   StreakStatus,
   StreakTag,
 } from "../../types";
@@ -15,6 +16,7 @@ interface AmibelDbSchema extends DBSchema {
   chats: { key: string; value: ChatGespraech };
   lernverse: { key: string; value: LernVers };
   feedback: { key: string; value: AntwortFeedback };
+  stillezeit: { key: string; value: StilleZeitEintrag };
   kv: { key: string; value: unknown };
 }
 
@@ -22,13 +24,18 @@ let dbPromise: Promise<IDBPDatabase<AmibelDbSchema>> | null = null;
 
 function getDb() {
   if (!dbPromise) {
-    dbPromise = openDB<AmibelDbSchema>("amibel", 1, {
-      upgrade(db) {
-        db.createObjectStore("lesezeichen", { keyPath: "id" });
-        db.createObjectStore("chats", { keyPath: "id" });
-        db.createObjectStore("lernverse", { keyPath: "id" });
-        db.createObjectStore("feedback", { keyPath: "id" });
-        db.createObjectStore("kv");
+    dbPromise = openDB<AmibelDbSchema>("amibel", 2, {
+      upgrade(db, oldVersion) {
+        if (oldVersion < 1) {
+          db.createObjectStore("lesezeichen", { keyPath: "id" });
+          db.createObjectStore("chats", { keyPath: "id" });
+          db.createObjectStore("lernverse", { keyPath: "id" });
+          db.createObjectStore("feedback", { keyPath: "id" });
+          db.createObjectStore("kv");
+        }
+        if (oldVersion < 2) {
+          db.createObjectStore("stillezeit", { keyPath: "id" });
+        }
       },
     });
   }
@@ -317,4 +324,24 @@ export async function getCurrentStreakCount(): Promise<number> {
 
 export async function resetStreak(): Promise<void> {
   await kvSet("streak", { tage: [], freezesVerfuegbar: 2, laengsteSerie: 0 } satisfies StreakStatus);
+}
+
+// ---------- Stille Zeit ----------
+
+export async function listStilleZeit(): Promise<StilleZeitEintrag[]> {
+  const db = await getDb();
+  const all = await db.getAll("stillezeit");
+  return all.sort((a, b) => (a.erstellt_am < b.erstellt_am ? 1 : -1));
+}
+
+export async function getStilleZeitFuerKapitel(osis: string, kapitel: number): Promise<StilleZeitEintrag[]> {
+  const all = await listStilleZeit();
+  return all.filter((e) => e.osis === osis && e.kapitel === kapitel);
+}
+
+export async function saveStilleZeit(entry: Omit<StilleZeitEintrag, "id" | "erstellt_am">): Promise<StilleZeitEintrag> {
+  const db = await getDb();
+  const full: StilleZeitEintrag = { ...entry, id: uuid(), erstellt_am: nowIso() };
+  await db.put("stillezeit", full);
+  return full;
 }

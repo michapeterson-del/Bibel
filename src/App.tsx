@@ -17,6 +17,7 @@ import TabuScreen from "./screens/games/TabuScreen";
 import HeadsUpScreen from "./screens/games/HeadsUpScreen";
 import SpionScreen from "./screens/games/SpionScreen";
 import ReadingProgressScreen from "./screens/ReadingProgressScreen";
+import StilleZeitScreen from "./screens/StilleZeitScreen";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/spiele/headsup" element={<HeadsUpScreen />} />
         <Route path="/spiele/spion" element={<SpionScreen />} />
         <Route path="/fortschritt" element={<ReadingProgressScreen />} />
+        <Route path="/stillezeit/:osis/:kapitel" element={<StilleZeitScreen />} />
         <Route path="/leseplan" element={<ComingSoonScreen titel="Leseplan" />} />
         <Route path="/einstellungen" element={<SettingsScreen />} />
         <Route path="/ueber" element={<AboutScreen />} />

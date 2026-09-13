@@ -174,3 +174,21 @@ export interface QuizSpielleiterErgebnis {
   stufe: QuizStufe;
   spieler: QuizSpieler[];
 }
+
+// ---------- Stille Zeit ----------
+
+export interface StilleZeitEintrag {
+  id: string;
+  osis: string;
+  bookName: string;
+  kapitel: number;
+  betenUm: string;
+  gedanken: string;
+  dank: string;
+  suenden: string;
+  sorgen: string;
+  personen: string;
+  anliegen: string;
+  handeln: string;
+  erstellt_am: string;
+}

@@ -107,7 +107,12 @@ export default function ReaderScreen() {
   async function kapitelFertig() {
     const neuerStatus = !fertigMsg;
     await setKapitelGelesen(book!.osis, chapter, neuerStatus);
-    if (neuerStatus) await addAktivMinuten(5);
+    if (neuerStatus) {
+      await addAktivMinuten(5);
+      setFertigMsg(neuerStatus);
+      navigate(`/stillezeit/${book!.osis}/${chapter}`);
+      return;
+    }
     setFertigMsg(neuerStatus);
   }
 
