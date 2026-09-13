@@ -17,6 +17,19 @@ export default function AboutScreen() {
         <p style={{ margin: 0 }}>Amibel Web – Version 0.1 (erste Ausbaustufe)</p>
       </div>
 
+      <div className="card" style={{ marginBottom: 16 }}>
+        <p style={{ margin: "0 0 8px", fontWeight: 600 }}>Glaubensgrundlage der KI-Antworten</p>
+        <p style={{ margin: 0, fontSize: "0.9rem" }}>
+          Der KI-Chat antwortet auf Basis eines evangelikalen Grundverständnisses. Bei Taufe, Abendmahl,
+          Geistesgaben und Heiligung folgt er zusätzlich dem Bekenntnis der Bruderschaft der
+          EvangeliumsChristen-Baptisten EBEN-EZER (Gläubigentaufe durch Untertauchen, Gedächtnismahl für
+          getaufte Gemeindeglieder, Pfingsten als einmaliges Ereignis, fortschreitende Heiligung) statt
+          beide Seiten neutral nebeneinanderzustellen. Bei anderen strittigen Themen (z. B. Erwählung,
+          genauer Zeitpunkt der Entrückung, Frauen im Leitungsdienst) nennt er weiterhin die
+          Hauptpositionen verschiedener Christen.
+        </p>
+      </div>
+
       <h3>Quellen &amp; Lizenzen</h3>
       {QUELLEN.map((q) => (
         <div key={q.inhalt} className="card" style={{ marginBottom: 8 }}>
