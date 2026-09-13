@@ -122,7 +122,15 @@ export default function ReadingProgressScreen() {
 
   return (
     <div>
-      <Header title="Lesefortschritt" onBack />
+      <Header
+        title="Lesefortschritt"
+        onBack
+        right={
+          <button className="chip" onClick={() => navigate("/stillezeit")}>
+            📝 Meine Stille Zeit
+          </button>
+        }
+      />
 
       <div className="card" style={{ marginBottom: 16, textAlign: "center", background: "var(--bibel-bg)", borderColor: "transparent" }}>
         <p style={{ margin: 0, fontSize: "2.2rem", fontWeight: 700, color: "var(--bibel-fg)" }}>{prozent}%</p>
