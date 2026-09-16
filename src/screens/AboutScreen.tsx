@@ -44,10 +44,10 @@ export default function AboutScreen() {
         <p style={{ margin: 0, fontSize: "0.9rem" }}>
           Strong-Lexikon / Wort-für-Wort-Studium, Kommentare (Matthew Henry, Calvin, Bob Utley) und
           Leseplan-Import folgen in späteren Ausbaustufen. Das Bibelquiz enthält aktuell 170 (statt der
-          finalen 478) gegen die Bibel-Datenbank geprüfte Fragen, Bibel Tabu 40 Karten, Heads Up! sechs
-          Kategorien und Der Spion unter uns acht eigene Wortlisten sowie alle 66 Bibelbücher als
-          Wortquelle – alle Spielmechaniken (Solo/Spielleiter, Teams, Abstimmung mit Stichwahl,
-          Sonderregel) sind vollständig umgesetzt.
+          finalen 478) gegen die Bibel-Datenbank geprüfte Fragen, Bibel Tabu 95 Karten, Heads Up! sechs
+          Kategorien mit über 300 Begriffen und Der Spion unter uns acht eigene Wortlisten sowie alle 66
+          Bibelbücher als Wortquelle – alle Spielmechaniken (Solo/Spielleiter, Teams, Abstimmung mit
+          Stichwahl, Sonderregel) sind vollständig umgesetzt.
         </p>
       </div>
 
