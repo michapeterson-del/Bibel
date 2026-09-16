@@ -6,7 +6,15 @@
       "Auferstehung", "Engel", "Hirte", "Tempel", "Kreuz",
       "Fischernetz", "Weinstock", "Senfkorn", "Ölberg", "Wüste",
       "Prophet", "Apostel", "Gleichnis", "Taufe", "Abendmahl",
-      "Pfingsten", "Regenbogen-Bund", "Verlorener Sohn", "Barmherziger Samariter", "Turmbau zu Babel"
+      "Pfingsten", "Regenbogen-Bund", "Verlorener Sohn", "Barmherziger Samariter", "Turmbau zu Babel",
+      "Noah", "Mose", "Abraham", "David", "Salomo",
+      "Elia", "Jona", "Daniel", "Hiob", "Ruth",
+      "Esther", "Simson", "Delila", "Petrus", "Paulus",
+      "Judas", "Maria", "Josef", "Lazarus", "Zachäus",
+      "Thomas", "Bethlehem", "Jerusalem", "Nazareth", "Golgatha",
+      "Dornenkrone", "Bergpredigt", "Vaterunser", "Seligpreisungen", "Sündenfall",
+      "Schöpfung", "Sintflut", "Bundeslade", "Zehnt", "Synagoge",
+      "Pharisäer", "Messias", "Heiliger Geist", "Palmsonntag", "Karfreitag"
     ]
   },
   {
@@ -16,7 +24,12 @@
       "Fisch", "Schlange", "Taube", "Esel", "Ziege",
       "Wolf", "Biene", "Ameise", "Storch", "Rabe",
       "Pferd", "Hirsch", "Fuchs", "Bär", "Frosch",
-      "Schmetterling", "Kuh", "Schwein", "Huhn", "Maus"
+      "Schmetterling", "Kuh", "Schwein", "Huhn", "Maus",
+      "Tiger", "Giraffe", "Nashorn", "Zebra", "Affe",
+      "Delfin", "Wal", "Hai", "Krokodil", "Schildkröte",
+      "Eule", "Papagei", "Pinguin", "Känguru", "Panda",
+      "Nilpferd", "Eichhörnchen", "Igel", "Hase", "Ente",
+      "Gans", "Spinne", "Libelle", "Heuschrecke", "Skorpion"
     ]
   },
   {
@@ -26,7 +39,12 @@
       "Feigen", "Trauben", "Milch", "Käse", "Linsen",
       "Granatapfel", "Datteln", "Salz", "Öl", "Wasser",
       "Suppe", "Kuchen", "Apfel", "Nüsse", "Getreide",
-      "Ei", "Kartoffel", "Reis", "Tee", "Kaffee"
+      "Ei", "Kartoffel", "Reis", "Tee", "Kaffee",
+      "Zwiebel", "Knoblauch", "Gurke", "Tomate", "Mandel",
+      "Walnuss", "Pfeffer", "Zimt", "Essig", "Butter",
+      "Joghurt", "Sahne", "Schokolade", "Zucker", "Mehl",
+      "Hefe", "Gerste", "Weizen", "Mais", "Banane",
+      "Orange", "Zitrone", "Melone", "Pilz", "Bohnen"
     ]
   },
   {
@@ -36,7 +54,12 @@
       "Priester", "König", "Bauer", "Arzt", "Lehrer",
       "Töpfer", "Weber", "Soldat", "Kaufmann", "Richter",
       "Musiker", "Wächter", "Diener", "Prophet", "Hebamme",
-      "Koch", "Gärtner", "Steinmetz", "Winzer", "Schreiber"
+      "Koch", "Gärtner", "Steinmetz", "Winzer", "Schreiber",
+      "Zöllner", "Gerber", "Sattler", "Maurer", "Müller",
+      "Metzger", "Fährmann", "Wäscher", "Weinbauer", "Imker",
+      "Astrologe", "Wahrsager", "Goldschmied", "Seiler", "Korbmacher",
+      "Nachtwächter", "Feldherr", "Statthalter", "Zenturio", "Rabbi",
+      "Schatzmeister", "Schiffsbauer", "Karawanenführer", "Weinhändler", "Töpferin"
     ]
   },
   {
@@ -46,7 +69,12 @@
       "Höhle", "Tal", "Quelle", "Stern", "Regenbogen",
       "Blitz", "Wind", "Sonne", "Mond", "Wolke",
       "Insel", "Garten", "Feld", "Weinberg", "Brunnen",
-      "Jerusalem", "Bethlehem", "Nazareth", "Ägypten", "Jordan"
+      "Jerusalem", "Bethlehem", "Nazareth", "Ägypten", "Jordan",
+      "Sinai", "Galiläa", "Kanaan", "Babylon", "Ninive",
+      "Damaskus", "Rom", "Athen", "Korinth", "Jericho",
+      "Bethanien", "Kapernaum", "Karmel", "Hermon", "Totes Meer",
+      "Mittelmeer", "Euphrat", "Tigris", "Nil", "Olivenhain",
+      "Felsen", "Ebene", "Küste", "Oase", "Regenwolke"
     ]
   },
   {
@@ -56,7 +84,12 @@
       "Mantel", "Schlüssel", "Tür", "Fenster", "Tisch",
       "Stuhl", "Bett", "Seil", "Werkzeug", "Spiegel",
       "Kerze", "Waage", "Sack", "Netz", "Leiter",
-      "Rad", "Wagen", "Münze", "Ring", "Krone"
+      "Rad", "Wagen", "Münze", "Ring", "Krone",
+      "Gürtel", "Kopftuch", "Schleier", "Stab", "Axt",
+      "Hammer", "Nagel", "Säge", "Eimer", "Schüssel",
+      "Topf", "Pfanne", "Löffel", "Messer", "Becher",
+      "Fass", "Amphore", "Teppich", "Vorhang", "Lampenöl",
+      "Räucherwerk", "Siegel", "Pergament", "Tinte", "Feder"
     ]
   }
 ]
