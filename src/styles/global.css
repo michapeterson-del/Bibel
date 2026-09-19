@@ -218,8 +218,7 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
   width: 100%;
 }
 
-.verse-row { padding: 4px 0; border-radius: 6px; scroll-margin-top: 80px; }
-.verse-row.marked { padding: 4px 6px; margin: 0 -6px; }
+.verse-row { border-radius: 2px; scroll-margin-top: 80px; }
 .verse-num { color: var(--text-muted); font-size: 0.72em; font-weight: 700; margin-right: 4px; vertical-align: super; }
 .bookmark-divider { height: 4px; border-radius: 2px; margin: 2px 0; }
 
