@@ -4,6 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ReaderScreen from "./screens/ReaderScreen";
 import SearchScreen from "./screens/SearchScreen";
 import BookmarksScreen from "./screens/BookmarksScreen";
+import MarkierungenScreen from "./screens/MarkierungenScreen";
 import ChatListScreen from "./screens/ChatListScreen";
 import ChatScreen from "./screens/ChatScreen";
 import SettingsScreen from "./screens/SettingsScreen";
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/lesen/:osis/:kapitel" element={<ReaderScreen />} />
         <Route path="/suche" element={<SearchScreen />} />
         <Route path="/lesezeichen" element={<BookmarksScreen />} />
+        <Route path="/markierungen" element={<MarkierungenScreen />} />
         <Route path="/chat" element={<ChatListScreen />} />
         <Route path="/chat/:id" element={<ChatScreen />} />
         <Route path="/lernen" element={<LearnScreen />} />
