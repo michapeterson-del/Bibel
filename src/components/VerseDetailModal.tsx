@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useVerseDetail } from "../lib/VerseDetailContext";
-import type { Farbe, FarbLabels, Translation } from "../types";
+import type { Farbe, FarbLabels, LesezeichenEintrag, Translation } from "../types";
 import { getVerseRange } from "../lib/db/bibleDb";
-import { getFarbLabels, saveLesezeichen } from "../lib/db/userDb";
+import { deleteLesezeichen, getFarbLabels, listLesezeichen, saveLesezeichen } from "../lib/db/userDb";
 import { createChat, saveChat } from "../lib/db/userDb";
 import TranslationSwitch from "./TranslationSwitch";
 import { useSettings } from "../lib/SettingsContext";
@@ -27,16 +27,33 @@ export default function VerseDetailModal() {
   const [noteText, setNoteText] = useState("");
   const [savedMsg, setSavedMsg] = useState("");
   const [farbLabels, setFarbLabels] = useState<FarbLabels | null>(null);
+  const [bestehendeMarkierung, setBestehendeMarkierung] = useState<LesezeichenEintrag | null>(null);
+  const [bestehendeNotiz, setBestehendeNotiz] = useState<LesezeichenEintrag | null>(null);
 
   useEffect(() => {
     if (!target) return;
     getFarbLabels().then(setFarbLabels);
+    ladeBestehendeEintraege();
     setTranslation(settings?.standardUebersetzung ?? "LUT1912");
     setZeigeFarbauswahl(false);
     setShowNote(false);
     setNoteText("");
     setSavedMsg("");
   }, [target, settings?.standardUebersetzung]);
+
+  async function ladeBestehendeEintraege() {
+    if (!target) return;
+    const alle = await listLesezeichen();
+    const passtAufVers = (m: LesezeichenEintrag) =>
+      m.buch === target.osis &&
+      m.kapitel === target.chapter &&
+      m.vers_von === target.verseVon &&
+      m.vers_bis === target.verseBis;
+    setBestehendeMarkierung(alle.find((m) => m.typ === "markierung" && passtAufVers(m)) ?? null);
+    const notiz = alle.find((m) => m.typ === "notiz" && passtAufVers(m)) ?? null;
+    setBestehendeNotiz(notiz);
+    setNoteText(notiz?.notiz ?? "");
+  }
 
   useEffect(() => {
     if (!target) return;
@@ -73,6 +90,7 @@ export default function VerseDetailModal() {
   async function addMarkierung(farbe: Farbe) {
     if (!target) return;
     await saveLesezeichen({
+      id: bestehendeMarkierung?.id,
       typ: "markierung",
       uebersetzung: translation,
       buch: target.osis,
@@ -85,11 +103,22 @@ export default function VerseDetailModal() {
     setZeigeFarbauswahl(false);
     setSavedMsg("Markierung gespeichert.");
     bumpMarksVersion();
+    ladeBestehendeEintraege();
+  }
+
+  async function markierungEntfernen() {
+    if (!bestehendeMarkierung) return;
+    await deleteLesezeichen(bestehendeMarkierung.id);
+    setBestehendeMarkierung(null);
+    setZeigeFarbauswahl(false);
+    setSavedMsg("Markierung entfernt.");
+    bumpMarksVersion();
   }
 
   async function saveNote() {
     if (!target || !noteText.trim()) return;
     await saveLesezeichen({
+      id: bestehendeNotiz?.id,
       typ: "notiz",
       uebersetzung: translation,
       buch: target.osis,
@@ -102,6 +131,17 @@ export default function VerseDetailModal() {
     });
     setShowNote(false);
     setSavedMsg("Notiz gespeichert.");
+    bumpMarksVersion();
+    ladeBestehendeEintraege();
+  }
+
+  async function notizEntfernen() {
+    if (!bestehendeNotiz) return;
+    await deleteLesezeichen(bestehendeNotiz.id);
+    setBestehendeNotiz(null);
+    setNoteText("");
+    setShowNote(false);
+    setSavedMsg("Notiz entfernt.");
     bumpMarksVersion();
   }
 
@@ -162,9 +202,11 @@ export default function VerseDetailModal() {
             className={`chip ${zeigeFarbauswahl ? "active" : ""}`}
             onClick={() => setZeigeFarbauswahl((v) => !v)}
           >
-            🖍 Markieren
+            🖍 {bestehendeMarkierung ? "Markierung ändern" : "Markieren"}
           </button>
-          <button className="chip" onClick={() => setShowNote((v) => !v)}>📝 Notiz</button>
+          <button className="chip" onClick={() => setShowNote((v) => !v)}>
+            📝 {bestehendeNotiz ? "Notiz bearbeiten" : "Notiz"}
+          </button>
           <button className="chip" onClick={shareText}>↗ Teilen</button>
           <button className="chip" onClick={copyText}>📋 Kopieren</button>
           <button className="chip" onClick={readChapter}>📖 Kapitel lesen</button>
@@ -172,32 +214,47 @@ export default function VerseDetailModal() {
         </div>
 
         {zeigeFarbauswahl && (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginTop: 10 }}>
-            {FARBEN.map((f) => (
-              <div key={f.value} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-                <button
-                  onClick={() => addMarkierung(f.value)}
-                  aria-label={f.value}
-                  title={farbLabels?.[f.value]}
-                  style={{
-                    width: 32,
-                    height: 32,
-                    borderRadius: "50%",
-                    background: f.hex,
-                    border: "1px solid var(--border)",
-                    cursor: "pointer",
-                  }}
-                />
-                <span style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}>{farbLabels?.[f.value]}</span>
-              </div>
-            ))}
+          <div style={{ marginTop: 10 }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
+              {FARBEN.map((f) => {
+                const aktiv = bestehendeMarkierung?.farbe === f.value;
+                return (
+                  <div key={f.value} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+                    <button
+                      onClick={() => addMarkierung(f.value)}
+                      aria-label={f.value}
+                      title={farbLabels?.[f.value]}
+                      style={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: "50%",
+                        background: f.hex,
+                        border: aktiv ? "3px solid var(--salbei-fg)" : "1px solid var(--border)",
+                        cursor: "pointer",
+                      }}
+                    />
+                    <span style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}>{farbLabels?.[f.value]}</span>
+                  </div>
+                );
+              })}
+            </div>
+            {bestehendeMarkierung && (
+              <button className="chip" style={{ marginTop: 10 }} onClick={markierungEntfernen}>
+                🚫 Markierung entfernen
+              </button>
+            )}
           </div>
         )}
 
         {showNote && (
           <div style={{ marginTop: 10 }}>
             <textarea rows={3} value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Deine Notiz…" />
-            <button className="btn" style={{ marginTop: 8 }} onClick={saveNote}>Notiz speichern</button>
+            <div style={{ display: "flex", gap: 8, marginTop: 8 }}>
+              <button className="btn" onClick={saveNote}>Notiz speichern</button>
+              {bestehendeNotiz && (
+                <button className="btn secondary" onClick={notizEntfernen}>🚫 Entfernen</button>
+              )}
+            </div>
           </div>
         )}
       </div>

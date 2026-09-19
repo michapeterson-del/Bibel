@@ -110,6 +110,12 @@ export default function ReaderScreen() {
     );
   }
 
+  function notizFuerVerse(verseNum: number) {
+    return marks.find(
+      (m) => m.typ === "notiz" && verseNum >= m.vers_von && verseNum <= m.vers_bis
+    );
+  }
+
   async function kapitelFertig() {
     const neuerStatus = !fertigMsg;
     await setKapitelGelesen(book!.osis, chapter, neuerStatus);
@@ -174,6 +180,7 @@ export default function ReaderScreen() {
       >
         {verses.map((v) => {
           const mark = markForVerse(v.verse);
+          const notiz = notizFuerVerse(v.verse);
           return (
             <span
               key={v.verse}
@@ -201,6 +208,11 @@ export default function ReaderScreen() {
               }
             >
               {settings.versnummernAn && <sup className="verse-num">{v.verse}</sup>}
+              {notiz && (
+                <sup title={notiz.notiz} style={{ marginRight: 2 }}>
+                  📝
+                </sup>
+              )}
               {v.text}{" "}
             </span>
           );
