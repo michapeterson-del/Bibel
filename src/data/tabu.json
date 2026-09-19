@@ -1,97 +1,1552 @@
 [
-  { "begriff": "Arche", "tabu": ["Noah", "Schiff", "Flut", "Tiere", "Regen"] },
-  { "begriff": "Kreuz", "tabu": ["Jesus", "Kreuzigung", "Golgatha", "Holz", "Sterben"] },
-  { "begriff": "Hirte", "tabu": ["Schafe", "Herde", "Stab", "David", "Weide"] },
-  { "begriff": "Taufe", "tabu": ["Wasser", "Johannes", "Jordan", "Untertauchen", "Bekehrung"] },
-  { "begriff": "Engel", "tabu": ["Flügel", "Gabriel", "Himmel", "Bote", "Licht"] },
-  { "begriff": "Tempel", "tabu": ["Jerusalem", "Salomo", "Gebäude", "Priester", "Vorhang"] },
-  { "begriff": "Manna", "tabu": ["Wüste", "Brot", "Himmel", "Israel", "Essen"] },
-  { "begriff": "Prophet", "tabu": ["Gott", "Botschaft", "Elia", "Voraussagen", "Reden"] },
-  { "begriff": "Sünde", "tabu": ["Schuld", "Unrecht", "Vergebung", "Fall", "Böse"] },
-  { "begriff": "Gnade", "tabu": ["Geschenk", "Unverdient", "Vergebung", "Barmherzigkeit", "Gott"] },
-  { "begriff": "Auferstehung", "tabu": ["Ostern", "Grab", "Jesus", "Tod", "Leben"] },
-  { "begriff": "Gleichnis", "tabu": ["Geschichte", "Jesus", "Bild", "Lehre", "Erzählung"] },
-  { "begriff": "Jünger", "tabu": ["Zwölf", "Nachfolger", "Petrus", "Lernen", "Apostel"] },
-  { "begriff": "Wüste", "tabu": ["Sand", "Trocken", "Israel", "40 Jahre", "Durst"] },
-  { "begriff": "Regenbogen", "tabu": ["Noah", "Bund", "Farben", "Himmel", "Zeichen"] },
-  { "begriff": "Goliath", "tabu": ["Riese", "David", "Schleuder", "Philister", "Kampf"] },
-  { "begriff": "Leviten", "tabu": ["Priester", "Tempel", "Stamm", "Dienst", "Israel"] },
-  { "begriff": "Sabbat", "tabu": ["Ruhetag", "Woche", "Gebot", "Arbeit", "Heilig"] },
-  { "begriff": "Pfingsten", "tabu": ["Heiliger Geist", "Feuer", "Apostel", "Sprachen", "Jerusalem"] },
-  { "begriff": "Gebet", "tabu": ["Beten", "Gott", "Sprechen", "Vaterunser", "Bitten"] },
-  { "begriff": "Bibel", "tabu": ["Buch", "Wort Gottes", "Altes Testament", "Neues Testament", "Lesen"] },
-  { "begriff": "Wunder", "tabu": ["Heilung", "Jesus", "Übernatürlich", "Zeichen", "Kraft"] },
-  { "begriff": "Fischer", "tabu": ["Netz", "See", "Petrus", "Boot", "Fangen"] },
-  { "begriff": "Verlorener Sohn", "tabu": ["Vater", "Erbe", "Zurückkehren", "Gleichnis", "Schweine"] },
-  { "begriff": "Zöllner", "tabu": ["Steuer", "Zachäus", "Geld", "Verachtet", "Sammeln"] },
-  { "begriff": "Pharisäer", "tabu": ["Gesetz", "Streng", "Heuchler", "Schriftgelehrte", "Jesus"] },
-  { "begriff": "Weisheit", "tabu": ["Salomo", "Klug", "Verstand", "Erkenntnis", "Sprüche"] },
-  { "begriff": "Bund", "tabu": ["Abraham", "Versprechen", "Gott", "Vertrag", "Israel"] },
-  { "begriff": "Opfer", "tabu": ["Altar", "Lamm", "Priester", "Blut", "Darbringen"] },
-  { "begriff": "Erlösung", "tabu": ["Rettung", "Sünde", "Kreuz", "Freikaufen", "Jesus"] },
-  { "begriff": "Himmel", "tabu": ["Gott", "Ewigkeit", "Paradies", "Wohnort", "Engel"] },
-  { "begriff": "Hölle", "tabu": ["Feuer", "Strafe", "Teufel", "Verdammnis", "Ewig"] },
-  { "begriff": "Satan", "tabu": ["Teufel", "Böse", "Versuchung", "Schlange", "Feind"] },
-  { "begriff": "Zehn Gebote", "tabu": ["Mose", "Sinai", "Steintafeln", "Gesetz", "Zehn"] },
-  { "begriff": "Turmbau zu Babel", "tabu": ["Sprachen", "Turm", "Verwirrung", "Himmel", "Bauen"] },
-  { "begriff": "Josef", "tabu": ["Brüder", "Ägypten", "Mantel", "Träume", "Jakob"] },
-  { "begriff": "Passah", "tabu": ["Ägypten", "Lamm", "Blut", "Auszug", "Fest"] },
-  { "begriff": "Offenbarung", "tabu": ["Johannes", "Endzeit", "Buch", "Zukunft", "Vision"] },
-  { "begriff": "Paulus", "tabu": ["Apostel", "Damaskus", "Briefe", "Missionar", "Bekehrung"] },
-  { "begriff": "Abendmahl", "tabu": ["Brot", "Wein", "Jesus", "Jünger", "Gedächtnis"] },
-  { "begriff": "Adam", "tabu": ["Eva", "Garten Eden", "Rippe", "Erster Mensch", "Sünde"] },
-  { "begriff": "Eva", "tabu": ["Adam", "Schlange", "Apfel", "Garten Eden", "Verführung"] },
-  { "begriff": "Kain", "tabu": ["Abel", "Bruder", "Mord", "Zeichen", "Acker"] },
-  { "begriff": "Abel", "tabu": ["Kain", "Bruder", "Opfer", "Hirte", "Ermordet"] },
-  { "begriff": "Noah", "tabu": ["Arche", "Flut", "Tiere", "Regenbogen", "Sintflut"] },
-  { "begriff": "Abraham", "tabu": ["Sara", "Isaak", "Bund", "Kanaan", "Vater des Glaubens"] },
-  { "begriff": "Sara", "tabu": ["Abraham", "Isaak", "Lachen", "Unfruchtbar", "Zelt"] },
-  { "begriff": "Isaak", "tabu": ["Abraham", "Opfer", "Rebekka", "Berg Morija", "Sohn"] },
-  { "begriff": "Jakob", "tabu": ["Esau", "Leiter", "Engel", "Zwölf Söhne", "Rahel"] },
-  { "begriff": "Mose", "tabu": ["Pharao", "Rotes Meer", "Zehn Gebote", "Ägypten", "Dornbusch"] },
-  { "begriff": "Aaron", "tabu": ["Mose", "Bruder", "Priester", "Goldenes Kalb", "Stab"] },
-  { "begriff": "Josua", "tabu": ["Mose", "Jericho", "Mauern", "Kanaan", "Nachfolger"] },
-  { "begriff": "Simson", "tabu": ["Delila", "Haare", "Kraft", "Löwe", "Philister"] },
-  { "begriff": "Ruth", "tabu": ["Noomi", "Boas", "Ähren", "Moab", "Schwiegertochter"] },
-  { "begriff": "Samuel", "tabu": ["Saul", "David", "Prophet", "Eli", "Salben"] },
-  { "begriff": "Saul", "tabu": ["David", "König", "Samuel", "Eifersucht", "Erster König"] },
-  { "begriff": "David", "tabu": ["Goliath", "König", "Harfe", "Bathseba", "Salomo"] },
-  { "begriff": "Salomo", "tabu": ["David", "Weisheit", "Tempel", "König", "Reichtum"] },
-  { "begriff": "Elia", "tabu": ["Baal", "Feuer", "Himmelfahrt", "Prophet", "Rabe"] },
-  { "begriff": "Elisa", "tabu": ["Elia", "Wunder", "Prophet", "Mantel", "Naeman"] },
-  { "begriff": "Jona", "tabu": ["Fisch", "Ninive", "Wal", "Flucht", "Prophet"] },
-  { "begriff": "Daniel", "tabu": ["Löwengrube", "Babylon", "Traum", "Prophet", "König"] },
-  { "begriff": "Hiob", "tabu": ["Leiden", "Satan", "Geduld", "Freunde", "Reichtum"] },
-  { "begriff": "Esther", "tabu": ["Königin", "Mordechai", "Haman", "Perser", "Volk"] },
-  { "begriff": "Maria", "tabu": ["Jesus", "Mutter", "Engel", "Bethlehem", "Jungfrau"] },
-  { "begriff": "Johannes der Täufer", "tabu": ["Jordan", "Taufe", "Wüste", "Heuschrecken", "Jesus"] },
-  { "begriff": "Petrus", "tabu": ["Fischer", "Fels", "Verleugnung", "Jünger", "Schlüssel"] },
-  { "begriff": "Thomas", "tabu": ["Zweifel", "Jesus", "Wunden", "Jünger", "Glauben"] },
-  { "begriff": "Judas Iskariot", "tabu": ["Verrat", "Silberlinge", "Kuss", "Jünger", "Jesus"] },
-  { "begriff": "Lazarus", "tabu": ["Tod", "Grab", "Jesus", "Auferwecken", "Martha"] },
-  { "begriff": "Zachäus", "tabu": ["Baum", "Zöllner", "Klein", "Jesus", "Jericho"] },
-  { "begriff": "Maria Magdalena", "tabu": ["Grab", "Auferstehung", "Jesus", "Jünger", "Ostern"] },
-  { "begriff": "Bergpredigt", "tabu": ["Jesus", "Berg", "Seligpreisungen", "Lehre", "Menge"] },
-  { "begriff": "Vaterunser", "tabu": ["Gebet", "Jesus", "Jünger", "Himmel", "Beten"] },
-  { "begriff": "Verlorenes Schaf", "tabu": ["Hirte", "Herde", "Suchen", "Gleichnis", "Freude"] },
-  { "begriff": "Hochzeit zu Kana", "tabu": ["Wein", "Wunder", "Jesus", "Wasser", "Fest"] },
-  { "begriff": "Speisung der 5000", "tabu": ["Brot", "Fische", "Wunder", "Jesus", "Menge"] },
-  { "begriff": "Sturmstillung", "tabu": ["See", "Boot", "Jesus", "Wind", "Jünger"] },
-  { "begriff": "Himmelfahrt", "tabu": ["Jesus", "Wolke", "Himmel", "Jünger", "Ölberg"] },
-  { "begriff": "Dornenkrone", "tabu": ["Jesus", "Kreuzigung", "Soldaten", "Spott", "Kopf"] },
-  { "begriff": "Golgatha", "tabu": ["Kreuz", "Jesus", "Schädelstätte", "Kreuzigung", "Jerusalem"] },
-  { "begriff": "Messias", "tabu": ["Jesus", "Retter", "Gesalbter", "Erwartet", "König"] },
-  { "begriff": "Heiliger Geist", "tabu": ["Pfingsten", "Taube", "Tröster", "Gott", "Feuer"] },
-  { "begriff": "Dreieinigkeit", "tabu": ["Vater", "Sohn", "Heiliger Geist", "Gott", "Drei"] },
-  { "begriff": "Schöpfung", "tabu": ["Gott", "Sechs Tage", "Anfang", "Adam", "Welt"] },
-  { "begriff": "Sintflut", "tabu": ["Noah", "Arche", "Regen", "Wasser", "40 Tage"] },
-  { "begriff": "Rotes Meer", "tabu": ["Mose", "Durchzug", "Ägypter", "Wunder", "Teilung"] },
-  { "begriff": "Goldenes Kalb", "tabu": ["Aaron", "Götze", "Wüste", "Anbetung", "Sinai"] },
-  { "begriff": "Bundeslade", "tabu": ["Zehn Gebote", "Gold", "Israel", "Tempel", "Heilig"] },
-  { "begriff": "Beschneidung", "tabu": ["Bund", "Abraham", "Zeichen", "Israel", "Tradition"] },
-  { "begriff": "Synagoge", "tabu": ["Gebet", "Versammlung", "Juden", "Gottesdienst", "Lehre"] },
-  { "begriff": "Schriftgelehrte", "tabu": ["Gesetz", "Pharisäer", "Lehrer", "Schreiben", "Tora"] },
-  { "begriff": "Samariter", "tabu": ["Barmherzig", "Jude", "Fremd", "Gleichnis", "Hilfe"] },
-  { "begriff": "Zehnt", "tabu": ["Geben", "Zehn Prozent", "Opfer", "Einkommen", "Gott"] },
-  { "begriff": "Cherub", "tabu": ["Engel", "Garten Eden", "Flammenschwert", "Bewachen", "Himmel"] }
+  {
+    "begriff": "Arche",
+    "tabu": [
+      "Noah",
+      "Schiff",
+      "Flut",
+      "Tiere",
+      "Regen"
+    ]
+  },
+  {
+    "begriff": "Kreuz",
+    "tabu": [
+      "Jesus",
+      "Kreuzigung",
+      "Golgatha",
+      "Holz",
+      "Sterben"
+    ]
+  },
+  {
+    "begriff": "Hirte",
+    "tabu": [
+      "Schafe",
+      "Herde",
+      "Stab",
+      "David",
+      "Weide"
+    ]
+  },
+  {
+    "begriff": "Taufe",
+    "tabu": [
+      "Wasser",
+      "Johannes",
+      "Jordan",
+      "Untertauchen",
+      "Bekehrung"
+    ]
+  },
+  {
+    "begriff": "Engel",
+    "tabu": [
+      "Flügel",
+      "Gabriel",
+      "Himmel",
+      "Bote",
+      "Licht"
+    ]
+  },
+  {
+    "begriff": "Tempel",
+    "tabu": [
+      "Jerusalem",
+      "Salomo",
+      "Gebäude",
+      "Priester",
+      "Vorhang"
+    ]
+  },
+  {
+    "begriff": "Manna",
+    "tabu": [
+      "Wüste",
+      "Brot",
+      "Himmel",
+      "Israel",
+      "Essen"
+    ]
+  },
+  {
+    "begriff": "Prophet",
+    "tabu": [
+      "Gott",
+      "Botschaft",
+      "Elia",
+      "Voraussagen",
+      "Reden"
+    ]
+  },
+  {
+    "begriff": "Sünde",
+    "tabu": [
+      "Schuld",
+      "Unrecht",
+      "Vergebung",
+      "Fall",
+      "Böse"
+    ]
+  },
+  {
+    "begriff": "Gnade",
+    "tabu": [
+      "Geschenk",
+      "Unverdient",
+      "Vergebung",
+      "Barmherzigkeit",
+      "Gott"
+    ]
+  },
+  {
+    "begriff": "Auferstehung",
+    "tabu": [
+      "Ostern",
+      "Grab",
+      "Jesus",
+      "Tod",
+      "Leben"
+    ]
+  },
+  {
+    "begriff": "Gleichnis",
+    "tabu": [
+      "Geschichte",
+      "Jesus",
+      "Bild",
+      "Lehre",
+      "Erzählung"
+    ]
+  },
+  {
+    "begriff": "Jünger",
+    "tabu": [
+      "Zwölf",
+      "Nachfolger",
+      "Petrus",
+      "Lernen",
+      "Apostel"
+    ]
+  },
+  {
+    "begriff": "Wüste",
+    "tabu": [
+      "Sand",
+      "Trocken",
+      "Israel",
+      "40 Jahre",
+      "Durst"
+    ]
+  },
+  {
+    "begriff": "Regenbogen",
+    "tabu": [
+      "Noah",
+      "Bund",
+      "Farben",
+      "Himmel",
+      "Zeichen"
+    ]
+  },
+  {
+    "begriff": "Goliath",
+    "tabu": [
+      "Riese",
+      "David",
+      "Schleuder",
+      "Philister",
+      "Kampf"
+    ]
+  },
+  {
+    "begriff": "Leviten",
+    "tabu": [
+      "Priester",
+      "Tempel",
+      "Stamm",
+      "Dienst",
+      "Israel"
+    ]
+  },
+  {
+    "begriff": "Sabbat",
+    "tabu": [
+      "Ruhetag",
+      "Woche",
+      "Gebot",
+      "Arbeit",
+      "Heilig"
+    ]
+  },
+  {
+    "begriff": "Pfingsten",
+    "tabu": [
+      "Heiliger Geist",
+      "Feuer",
+      "Apostel",
+      "Sprachen",
+      "Jerusalem"
+    ]
+  },
+  {
+    "begriff": "Gebet",
+    "tabu": [
+      "Beten",
+      "Gott",
+      "Sprechen",
+      "Vaterunser",
+      "Bitten"
+    ]
+  },
+  {
+    "begriff": "Bibel",
+    "tabu": [
+      "Buch",
+      "Wort Gottes",
+      "Altes Testament",
+      "Neues Testament",
+      "Lesen"
+    ]
+  },
+  {
+    "begriff": "Wunder",
+    "tabu": [
+      "Heilung",
+      "Jesus",
+      "Übernatürlich",
+      "Zeichen",
+      "Kraft"
+    ]
+  },
+  {
+    "begriff": "Fischer",
+    "tabu": [
+      "Netz",
+      "See",
+      "Petrus",
+      "Boot",
+      "Fangen"
+    ]
+  },
+  {
+    "begriff": "Verlorener Sohn",
+    "tabu": [
+      "Vater",
+      "Erbe",
+      "Zurückkehren",
+      "Gleichnis",
+      "Schweine"
+    ]
+  },
+  {
+    "begriff": "Zöllner",
+    "tabu": [
+      "Steuer",
+      "Zachäus",
+      "Geld",
+      "Verachtet",
+      "Sammeln"
+    ]
+  },
+  {
+    "begriff": "Pharisäer",
+    "tabu": [
+      "Gesetz",
+      "Streng",
+      "Heuchler",
+      "Schriftgelehrte",
+      "Jesus"
+    ]
+  },
+  {
+    "begriff": "Weisheit",
+    "tabu": [
+      "Salomo",
+      "Klug",
+      "Verstand",
+      "Erkenntnis",
+      "Sprüche"
+    ]
+  },
+  {
+    "begriff": "Bund",
+    "tabu": [
+      "Abraham",
+      "Versprechen",
+      "Gott",
+      "Vertrag",
+      "Israel"
+    ]
+  },
+  {
+    "begriff": "Opfer",
+    "tabu": [
+      "Altar",
+      "Lamm",
+      "Priester",
+      "Blut",
+      "Darbringen"
+    ]
+  },
+  {
+    "begriff": "Erlösung",
+    "tabu": [
+      "Rettung",
+      "Sünde",
+      "Kreuz",
+      "Freikaufen",
+      "Jesus"
+    ]
+  },
+  {
+    "begriff": "Himmel",
+    "tabu": [
+      "Gott",
+      "Ewigkeit",
+      "Paradies",
+      "Wohnort",
+      "Engel"
+    ]
+  },
+  {
+    "begriff": "Hölle",
+    "tabu": [
+      "Feuer",
+      "Strafe",
+      "Teufel",
+      "Verdammnis",
+      "Ewig"
+    ]
+  },
+  {
+    "begriff": "Satan",
+    "tabu": [
+      "Teufel",
+      "Böse",
+      "Versuchung",
+      "Schlange",
+      "Feind"
+    ]
+  },
+  {
+    "begriff": "Zehn Gebote",
+    "tabu": [
+      "Mose",
+      "Sinai",
+      "Steintafeln",
+      "Gesetz",
+      "Zehn"
+    ]
+  },
+  {
+    "begriff": "Turmbau zu Babel",
+    "tabu": [
+      "Sprachen",
+      "Turm",
+      "Verwirrung",
+      "Himmel",
+      "Bauen"
+    ]
+  },
+  {
+    "begriff": "Josef",
+    "tabu": [
+      "Brüder",
+      "Ägypten",
+      "Mantel",
+      "Träume",
+      "Jakob"
+    ]
+  },
+  {
+    "begriff": "Passah",
+    "tabu": [
+      "Ägypten",
+      "Lamm",
+      "Blut",
+      "Auszug",
+      "Fest"
+    ]
+  },
+  {
+    "begriff": "Offenbarung",
+    "tabu": [
+      "Johannes",
+      "Endzeit",
+      "Buch",
+      "Zukunft",
+      "Vision"
+    ]
+  },
+  {
+    "begriff": "Paulus",
+    "tabu": [
+      "Apostel",
+      "Damaskus",
+      "Briefe",
+      "Missionar",
+      "Bekehrung"
+    ]
+  },
+  {
+    "begriff": "Abendmahl",
+    "tabu": [
+      "Brot",
+      "Wein",
+      "Jesus",
+      "Jünger",
+      "Gedächtnis"
+    ]
+  },
+  {
+    "begriff": "Adam",
+    "tabu": [
+      "Eva",
+      "Garten Eden",
+      "Rippe",
+      "Erster Mensch",
+      "Sünde"
+    ]
+  },
+  {
+    "begriff": "Eva",
+    "tabu": [
+      "Adam",
+      "Schlange",
+      "Apfel",
+      "Garten Eden",
+      "Verführung"
+    ]
+  },
+  {
+    "begriff": "Kain",
+    "tabu": [
+      "Abel",
+      "Bruder",
+      "Mord",
+      "Zeichen",
+      "Acker"
+    ]
+  },
+  {
+    "begriff": "Abel",
+    "tabu": [
+      "Kain",
+      "Bruder",
+      "Opfer",
+      "Hirte",
+      "Ermordet"
+    ]
+  },
+  {
+    "begriff": "Noah",
+    "tabu": [
+      "Arche",
+      "Flut",
+      "Tiere",
+      "Regenbogen",
+      "Sintflut"
+    ]
+  },
+  {
+    "begriff": "Abraham",
+    "tabu": [
+      "Sara",
+      "Isaak",
+      "Bund",
+      "Kanaan",
+      "Vater des Glaubens"
+    ]
+  },
+  {
+    "begriff": "Sara",
+    "tabu": [
+      "Abraham",
+      "Isaak",
+      "Lachen",
+      "Unfruchtbar",
+      "Zelt"
+    ]
+  },
+  {
+    "begriff": "Isaak",
+    "tabu": [
+      "Abraham",
+      "Opfer",
+      "Rebekka",
+      "Berg Morija",
+      "Sohn"
+    ]
+  },
+  {
+    "begriff": "Jakob",
+    "tabu": [
+      "Esau",
+      "Leiter",
+      "Engel",
+      "Zwölf Söhne",
+      "Rahel"
+    ]
+  },
+  {
+    "begriff": "Mose",
+    "tabu": [
+      "Pharao",
+      "Rotes Meer",
+      "Zehn Gebote",
+      "Ägypten",
+      "Dornbusch"
+    ]
+  },
+  {
+    "begriff": "Aaron",
+    "tabu": [
+      "Mose",
+      "Bruder",
+      "Priester",
+      "Goldenes Kalb",
+      "Stab"
+    ]
+  },
+  {
+    "begriff": "Josua",
+    "tabu": [
+      "Mose",
+      "Jericho",
+      "Mauern",
+      "Kanaan",
+      "Nachfolger"
+    ]
+  },
+  {
+    "begriff": "Simson",
+    "tabu": [
+      "Delila",
+      "Haare",
+      "Kraft",
+      "Löwe",
+      "Philister"
+    ]
+  },
+  {
+    "begriff": "Ruth",
+    "tabu": [
+      "Noomi",
+      "Boas",
+      "Ähren",
+      "Moab",
+      "Schwiegertochter"
+    ]
+  },
+  {
+    "begriff": "Samuel",
+    "tabu": [
+      "Saul",
+      "David",
+      "Prophet",
+      "Eli",
+      "Salben"
+    ]
+  },
+  {
+    "begriff": "Saul",
+    "tabu": [
+      "David",
+      "König",
+      "Samuel",
+      "Eifersucht",
+      "Erster König"
+    ]
+  },
+  {
+    "begriff": "David",
+    "tabu": [
+      "Goliath",
+      "König",
+      "Harfe",
+      "Bathseba",
+      "Salomo"
+    ]
+  },
+  {
+    "begriff": "Salomo",
+    "tabu": [
+      "David",
+      "Weisheit",
+      "Tempel",
+      "König",
+      "Reichtum"
+    ]
+  },
+  {
+    "begriff": "Elia",
+    "tabu": [
+      "Baal",
+      "Feuer",
+      "Himmelfahrt",
+      "Prophet",
+      "Rabe"
+    ]
+  },
+  {
+    "begriff": "Elisa",
+    "tabu": [
+      "Elia",
+      "Wunder",
+      "Prophet",
+      "Mantel",
+      "Naeman"
+    ]
+  },
+  {
+    "begriff": "Jona",
+    "tabu": [
+      "Fisch",
+      "Ninive",
+      "Wal",
+      "Flucht",
+      "Prophet"
+    ]
+  },
+  {
+    "begriff": "Daniel",
+    "tabu": [
+      "Löwengrube",
+      "Babylon",
+      "Traum",
+      "Prophet",
+      "König"
+    ]
+  },
+  {
+    "begriff": "Hiob",
+    "tabu": [
+      "Leiden",
+      "Satan",
+      "Geduld",
+      "Freunde",
+      "Reichtum"
+    ]
+  },
+  {
+    "begriff": "Esther",
+    "tabu": [
+      "Königin",
+      "Mordechai",
+      "Haman",
+      "Perser",
+      "Volk"
+    ]
+  },
+  {
+    "begriff": "Maria",
+    "tabu": [
+      "Jesus",
+      "Mutter",
+      "Engel",
+      "Bethlehem",
+      "Jungfrau"
+    ]
+  },
+  {
+    "begriff": "Johannes der Täufer",
+    "tabu": [
+      "Jordan",
+      "Taufe",
+      "Wüste",
+      "Heuschrecken",
+      "Jesus"
+    ]
+  },
+  {
+    "begriff": "Petrus",
+    "tabu": [
+      "Fischer",
+      "Fels",
+      "Verleugnung",
+      "Jünger",
+      "Schlüssel"
+    ]
+  },
+  {
+    "begriff": "Thomas",
+    "tabu": [
+      "Zweifel",
+      "Jesus",
+      "Wunden",
+      "Jünger",
+      "Glauben"
+    ]
+  },
+  {
+    "begriff": "Judas Iskariot",
+    "tabu": [
+      "Verrat",
+      "Silberlinge",
+      "Kuss",
+      "Jünger",
+      "Jesus"
+    ]
+  },
+  {
+    "begriff": "Lazarus",
+    "tabu": [
+      "Tod",
+      "Grab",
+      "Jesus",
+      "Auferwecken",
+      "Martha"
+    ]
+  },
+  {
+    "begriff": "Zachäus",
+    "tabu": [
+      "Baum",
+      "Zöllner",
+      "Klein",
+      "Jesus",
+      "Jericho"
+    ]
+  },
+  {
+    "begriff": "Maria Magdalena",
+    "tabu": [
+      "Grab",
+      "Auferstehung",
+      "Jesus",
+      "Jünger",
+      "Ostern"
+    ]
+  },
+  {
+    "begriff": "Bergpredigt",
+    "tabu": [
+      "Jesus",
+      "Berg",
+      "Seligpreisungen",
+      "Lehre",
+      "Menge"
+    ]
+  },
+  {
+    "begriff": "Vaterunser",
+    "tabu": [
+      "Gebet",
+      "Jesus",
+      "Jünger",
+      "Himmel",
+      "Beten"
+    ]
+  },
+  {
+    "begriff": "Verlorenes Schaf",
+    "tabu": [
+      "Hirte",
+      "Herde",
+      "Suchen",
+      "Gleichnis",
+      "Freude"
+    ]
+  },
+  {
+    "begriff": "Hochzeit zu Kana",
+    "tabu": [
+      "Wein",
+      "Wunder",
+      "Jesus",
+      "Wasser",
+      "Fest"
+    ]
+  },
+  {
+    "begriff": "Speisung der 5000",
+    "tabu": [
+      "Brot",
+      "Fische",
+      "Wunder",
+      "Jesus",
+      "Menge"
+    ]
+  },
+  {
+    "begriff": "Sturmstillung",
+    "tabu": [
+      "See",
+      "Boot",
+      "Jesus",
+      "Wind",
+      "Jünger"
+    ]
+  },
+  {
+    "begriff": "Himmelfahrt",
+    "tabu": [
+      "Jesus",
+      "Wolke",
+      "Himmel",
+      "Jünger",
+      "Ölberg"
+    ]
+  },
+  {
+    "begriff": "Dornenkrone",
+    "tabu": [
+      "Jesus",
+      "Kreuzigung",
+      "Soldaten",
+      "Spott",
+      "Kopf"
+    ]
+  },
+  {
+    "begriff": "Golgatha",
+    "tabu": [
+      "Kreuz",
+      "Jesus",
+      "Schädelstätte",
+      "Kreuzigung",
+      "Jerusalem"
+    ]
+  },
+  {
+    "begriff": "Messias",
+    "tabu": [
+      "Jesus",
+      "Retter",
+      "Gesalbter",
+      "Erwartet",
+      "König"
+    ]
+  },
+  {
+    "begriff": "Heiliger Geist",
+    "tabu": [
+      "Pfingsten",
+      "Taube",
+      "Tröster",
+      "Gott",
+      "Feuer"
+    ]
+  },
+  {
+    "begriff": "Dreieinigkeit",
+    "tabu": [
+      "Vater",
+      "Sohn",
+      "Heiliger Geist",
+      "Gott",
+      "Drei"
+    ]
+  },
+  {
+    "begriff": "Schöpfung",
+    "tabu": [
+      "Gott",
+      "Sechs Tage",
+      "Anfang",
+      "Adam",
+      "Welt"
+    ]
+  },
+  {
+    "begriff": "Sintflut",
+    "tabu": [
+      "Noah",
+      "Arche",
+      "Regen",
+      "Wasser",
+      "40 Tage"
+    ]
+  },
+  {
+    "begriff": "Rotes Meer",
+    "tabu": [
+      "Mose",
+      "Durchzug",
+      "Ägypter",
+      "Wunder",
+      "Teilung"
+    ]
+  },
+  {
+    "begriff": "Goldenes Kalb",
+    "tabu": [
+      "Aaron",
+      "Götze",
+      "Wüste",
+      "Anbetung",
+      "Sinai"
+    ]
+  },
+  {
+    "begriff": "Bundeslade",
+    "tabu": [
+      "Zehn Gebote",
+      "Gold",
+      "Israel",
+      "Tempel",
+      "Heilig"
+    ]
+  },
+  {
+    "begriff": "Beschneidung",
+    "tabu": [
+      "Bund",
+      "Abraham",
+      "Zeichen",
+      "Israel",
+      "Tradition"
+    ]
+  },
+  {
+    "begriff": "Synagoge",
+    "tabu": [
+      "Gebet",
+      "Versammlung",
+      "Juden",
+      "Gottesdienst",
+      "Lehre"
+    ]
+  },
+  {
+    "begriff": "Schriftgelehrte",
+    "tabu": [
+      "Gesetz",
+      "Pharisäer",
+      "Lehrer",
+      "Schreiben",
+      "Tora"
+    ]
+  },
+  {
+    "begriff": "Samariter",
+    "tabu": [
+      "Barmherzig",
+      "Jude",
+      "Fremd",
+      "Gleichnis",
+      "Hilfe"
+    ]
+  },
+  {
+    "begriff": "Zehnt",
+    "tabu": [
+      "Geben",
+      "Zehn Prozent",
+      "Opfer",
+      "Einkommen",
+      "Gott"
+    ]
+  },
+  {
+    "begriff": "Cherub",
+    "tabu": [
+      "Engel",
+      "Garten Eden",
+      "Flammenschwert",
+      "Bewachen",
+      "Himmel"
+    ]
+  },
+  {
+    "begriff": "Rebekka",
+    "tabu": [
+      "Isaak",
+      "Kamele",
+      "Brunnen",
+      "Laban",
+      "Zwillinge"
+    ]
+  },
+  {
+    "begriff": "Esau",
+    "tabu": [
+      "Jakob",
+      "Linsengericht",
+      "Erstgeburtsrecht",
+      "Zwilling",
+      "Jäger"
+    ]
+  },
+  {
+    "begriff": "Lea",
+    "tabu": [
+      "Jakob",
+      "Rahel",
+      "Schwester",
+      "Kinder",
+      "Laban"
+    ]
+  },
+  {
+    "begriff": "Rahel",
+    "tabu": [
+      "Jakob",
+      "Lea",
+      "Schwester",
+      "Unfruchtbar",
+      "Benjamin"
+    ]
+  },
+  {
+    "begriff": "Debora",
+    "tabu": [
+      "Richterin",
+      "Barak",
+      "Palme",
+      "Prophetin",
+      "Sisera"
+    ]
+  },
+  {
+    "begriff": "Barak",
+    "tabu": [
+      "Debora",
+      "Heer",
+      "Sisera",
+      "Kedes",
+      "Schlacht"
+    ]
+  },
+  {
+    "begriff": "Gideon",
+    "tabu": [
+      "Midianiter",
+      "Vlies",
+      "300 Mann",
+      "Fackeln",
+      "Krüge"
+    ]
+  },
+  {
+    "begriff": "Boas",
+    "tabu": [
+      "Ruth",
+      "Löser",
+      "Feld",
+      "Ähren",
+      "Bethlehem"
+    ]
+  },
+  {
+    "begriff": "Noomi",
+    "tabu": [
+      "Ruth",
+      "Moab",
+      "Bethlehem",
+      "Schwiegertochter",
+      "Boas"
+    ]
+  },
+  {
+    "begriff": "Eli",
+    "tabu": [
+      "Priester",
+      "Silo",
+      "Hofni",
+      "Pinehas",
+      "Samuel"
+    ]
+  },
+  {
+    "begriff": "Hanna",
+    "tabu": [
+      "Samuel",
+      "Gebet",
+      "Unfruchtbar",
+      "Silo",
+      "Gelübde"
+    ]
+  },
+  {
+    "begriff": "Absalom",
+    "tabu": [
+      "David",
+      "Sohn",
+      "Haare",
+      "Rebellion",
+      "Eiche"
+    ]
+  },
+  {
+    "begriff": "Nathan",
+    "tabu": [
+      "Prophet",
+      "David",
+      "Gleichnis",
+      "Batseba",
+      "Schuld"
+    ]
+  },
+  {
+    "begriff": "Batseba",
+    "tabu": [
+      "David",
+      "Uria",
+      "Salomo",
+      "Ehebruch",
+      "Dach"
+    ]
+  },
+  {
+    "begriff": "Isebel",
+    "tabu": [
+      "Ahab",
+      "Baal",
+      "Königin",
+      "Propheten",
+      "Hunde"
+    ]
+  },
+  {
+    "begriff": "Ahab",
+    "tabu": [
+      "Isebel",
+      "Baal",
+      "Nabot",
+      "König",
+      "Elia"
+    ]
+  },
+  {
+    "begriff": "Hiskia",
+    "tabu": [
+      "König",
+      "Krankheit",
+      "Assyrer",
+      "Tempel",
+      "Gebet"
+    ]
+  },
+  {
+    "begriff": "Josia",
+    "tabu": [
+      "König",
+      "Gesetzbuch",
+      "Reform",
+      "Tempel",
+      "Juda"
+    ]
+  },
+  {
+    "begriff": "Nebukadnezar",
+    "tabu": [
+      "Babylon",
+      "Traum",
+      "Feuerofen",
+      "König",
+      "Daniel"
+    ]
+  },
+  {
+    "begriff": "Belsazar",
+    "tabu": [
+      "Babylon",
+      "Handschrift",
+      "Wand",
+      "Fest",
+      "Daniel"
+    ]
+  },
+  {
+    "begriff": "Esra",
+    "tabu": [
+      "Priester",
+      "Gesetz",
+      "Babylon",
+      "Jerusalem",
+      "Schriftgelehrter"
+    ]
+  },
+  {
+    "begriff": "Nehemia",
+    "tabu": [
+      "Mauer",
+      "Jerusalem",
+      "Mundschenk",
+      "Wiederaufbau",
+      "Perser"
+    ]
+  },
+  {
+    "begriff": "Haman",
+    "tabu": [
+      "Esther",
+      "Mordechai",
+      "Galgen",
+      "Perser",
+      "Böse"
+    ]
+  },
+  {
+    "begriff": "Mordechai",
+    "tabu": [
+      "Esther",
+      "Haman",
+      "Onkel",
+      "Tor",
+      "Jude"
+    ]
+  },
+  {
+    "begriff": "Hesekiel",
+    "tabu": [
+      "Prophet",
+      "Totengebeine",
+      "Vision",
+      "Babylon",
+      "Rad"
+    ]
+  },
+  {
+    "begriff": "Jesaja",
+    "tabu": [
+      "Prophet",
+      "Messias",
+      "Jungfrau",
+      "Jerusalem",
+      "Buch"
+    ]
+  },
+  {
+    "begriff": "Jeremia",
+    "tabu": [
+      "Prophet",
+      "Klagelieder",
+      "Jerusalem",
+      "Tränen",
+      "Zisterne"
+    ]
+  },
+  {
+    "begriff": "Amos",
+    "tabu": [
+      "Prophet",
+      "Hirte",
+      "Gerechtigkeit",
+      "Israel",
+      "Recht"
+    ]
+  },
+  {
+    "begriff": "Melchisedek",
+    "tabu": [
+      "Priester",
+      "Salem",
+      "Abraham",
+      "Brot",
+      "Wein"
+    ]
+  },
+  {
+    "begriff": "Gethsemane",
+    "tabu": [
+      "Garten",
+      "Jesus",
+      "Beten",
+      "Jünger",
+      "Verrat"
+    ]
+  },
+  {
+    "begriff": "Emmaus",
+    "tabu": [
+      "Jünger",
+      "Weg",
+      "Auferstehung",
+      "Brotbrechen",
+      "Erkennen"
+    ]
+  },
+  {
+    "begriff": "Kaiphas",
+    "tabu": [
+      "Hoherpriester",
+      "Jesus",
+      "Verhör",
+      "Rat",
+      "Kreuzigung"
+    ]
+  },
+  {
+    "begriff": "Pontius Pilatus",
+    "tabu": [
+      "Statthalter",
+      "Jesus",
+      "Kreuzigung",
+      "Waschen",
+      "Hände"
+    ]
+  },
+  {
+    "begriff": "Nikodemus",
+    "tabu": [
+      "Pharisäer",
+      "Nacht",
+      "Wiedergeburt",
+      "Jesus",
+      "Rat"
+    ]
+  },
+  {
+    "begriff": "Barnabas",
+    "tabu": [
+      "Paulus",
+      "Apostel",
+      "Zypern",
+      "Ermutigung",
+      "Missionsreise"
+    ]
+  },
+  {
+    "begriff": "Timotheus",
+    "tabu": [
+      "Paulus",
+      "Brief",
+      "Jung",
+      "Mutter",
+      "Ephesus"
+    ]
+  },
+  {
+    "begriff": "Lukas",
+    "tabu": [
+      "Arzt",
+      "Evangelium",
+      "Apostelgeschichte",
+      "Paulus",
+      "Schreiber"
+    ]
+  },
+  {
+    "begriff": "Markus",
+    "tabu": [
+      "Evangelium",
+      "Petrus",
+      "Barnabas",
+      "Paulus",
+      "Schreiber"
+    ]
+  },
+  {
+    "begriff": "Stephanus",
+    "tabu": [
+      "Diakon",
+      "Steinigung",
+      "Märtyrer",
+      "Rede",
+      "Saulus"
+    ]
+  },
+  {
+    "begriff": "Apollos",
+    "tabu": [
+      "Alexandria",
+      "Beredt",
+      "Ephesus",
+      "Priszilla",
+      "Prediger"
+    ]
+  },
+  {
+    "begriff": "Priszilla und Aquila",
+    "tabu": [
+      "Zeltmacher",
+      "Ehepaar",
+      "Apollos",
+      "Paulus",
+      "Ephesus"
+    ]
+  },
+  {
+    "begriff": "Kornelius",
+    "tabu": [
+      "Hauptmann",
+      "Petrus",
+      "Heide",
+      "Taufe",
+      "Engel"
+    ]
+  },
+  {
+    "begriff": "Agabus",
+    "tabu": [
+      "Prophet",
+      "Hungersnot",
+      "Gürtel",
+      "Paulus",
+      "Weissagung"
+    ]
+  },
+  {
+    "begriff": "Onesimus",
+    "tabu": [
+      "Sklave",
+      "Philemon",
+      "Paulus",
+      "Kolossä",
+      "Flucht"
+    ]
+  },
+  {
+    "begriff": "Epaphroditus",
+    "tabu": [
+      "Philipper",
+      "Krank",
+      "Paulus",
+      "Bote",
+      "Gesandter"
+    ]
+  },
+  {
+    "begriff": "Wiedergeburt",
+    "tabu": [
+      "Neues Leben",
+      "Heiliger Geist",
+      "Nikodemus",
+      "Glaube",
+      "Bekehrung"
+    ]
+  },
+  {
+    "begriff": "Rechtfertigung",
+    "tabu": [
+      "Gnade",
+      "Glaube",
+      "Gericht",
+      "Sünde",
+      "Paulus"
+    ]
+  },
+  {
+    "begriff": "Buße",
+    "tabu": [
+      "Umkehr",
+      "Sünde",
+      "Reue",
+      "Vergebung",
+      "Täufer"
+    ]
+  },
+  {
+    "begriff": "Vergebung",
+    "tabu": [
+      "Sünde",
+      "Gnade",
+      "Schuld",
+      "Kreuz",
+      "Barmherzigkeit"
+    ]
+  },
+  {
+    "begriff": "Barmherzigkeit",
+    "tabu": [
+      "Mitleid",
+      "Gnade",
+      "Samariter",
+      "Gott",
+      "Hilfe"
+    ]
+  },
+  {
+    "begriff": "Anbetung",
+    "tabu": [
+      "Gott",
+      "Loben",
+      "Gebet",
+      "Gottesdienst",
+      "Knien"
+    ]
+  },
+  {
+    "begriff": "Fürbitte",
+    "tabu": [
+      "Gebet",
+      "Für andere",
+      "Beten",
+      "Priester",
+      "Anliegen"
+    ]
+  },
+  {
+    "begriff": "Fasten",
+    "tabu": [
+      "Verzicht",
+      "Beten",
+      "Buße",
+      "Nahrung",
+      "Wüste"
+    ]
+  },
+  {
+    "begriff": "Laubhüttenfest",
+    "tabu": [
+      "Fest",
+      "Wüste",
+      "Hütten",
+      "Israel",
+      "Erntedank"
+    ]
+  },
+  {
+    "begriff": "Jüngstes Gericht",
+    "tabu": [
+      "Gott",
+      "Urteil",
+      "Ewigkeit",
+      "Bücher",
+      "Thron"
+    ]
+  },
+  {
+    "begriff": "Wiederkunft Christi",
+    "tabu": [
+      "Jesus",
+      "Wolken",
+      "Posaune",
+      "Ende",
+      "Hoffnung"
+    ]
+  },
+  {
+    "begriff": "Guter Hirte",
+    "tabu": [
+      "Jesus",
+      "Schafe",
+      "Hüten",
+      "Leben lassen",
+      "Herde"
+    ]
+  },
+  {
+    "begriff": "Licht der Welt",
+    "tabu": [
+      "Jesus",
+      "Finsternis",
+      "Scheinen",
+      "Nachfolge",
+      "Lampe"
+    ]
+  },
+  {
+    "begriff": "Brot des Lebens",
+    "tabu": [
+      "Jesus",
+      "Hunger",
+      "Manna",
+      "Essen",
+      "Ewiges Leben"
+    ]
+  },
+  {
+    "begriff": "Reicher Jüngling",
+    "tabu": [
+      "Jesus",
+      "Gebote",
+      "Besitz",
+      "Traurig",
+      "Nachfolge"
+    ]
+  }
 ]
