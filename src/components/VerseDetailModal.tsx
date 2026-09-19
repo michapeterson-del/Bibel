@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useVerseDetail } from "../lib/VerseDetailContext";
-import type { Farbe, Translation } from "../types";
+import type { Farbe, FarbLabels, Translation } from "../types";
 import { getVerseRange } from "../lib/db/bibleDb";
-import { saveLesezeichen } from "../lib/db/userDb";
+import { getFarbLabels, saveLesezeichen } from "../lib/db/userDb";
 import { createChat, saveChat } from "../lib/db/userDb";
 import TranslationSwitch from "./TranslationSwitch";
 import { useSettings } from "../lib/SettingsContext";
@@ -17,20 +17,22 @@ const FARBEN: { value: Farbe; hex: string }[] = [
 ];
 
 export default function VerseDetailModal() {
-  const { target, close } = useVerseDetail();
+  const { target, close, bumpMarksVersion } = useVerseDetail();
   const { settings } = useSettings();
   const navigate = useNavigate();
   const [translation, setTranslation] = useState<Translation>(settings?.standardUebersetzung ?? "LUT1912");
   const [text, setText] = useState<string>("");
-  const [showColorPicker, setShowColorPicker] = useState(false);
+  const [colorPickerModus, setColorPickerModus] = useState<"lesezeichen" | "markierung" | null>(null);
   const [showNote, setShowNote] = useState(false);
   const [noteText, setNoteText] = useState("");
   const [savedMsg, setSavedMsg] = useState("");
+  const [farbLabels, setFarbLabels] = useState<FarbLabels | null>(null);
 
   useEffect(() => {
     if (!target) return;
+    getFarbLabels().then(setFarbLabels);
     setTranslation(settings?.standardUebersetzung ?? "LUT1912");
-    setShowColorPicker(false);
+    setColorPickerModus(null);
     setShowNote(false);
     setNoteText("");
     setSavedMsg("");
@@ -51,9 +53,9 @@ export default function VerseDetailModal() {
       : `${target.bookName} ${target.chapter},${target.verseVon}-${target.verseBis}`;
 
   async function addBookmark(farbe: Farbe) {
-    if (!target) return;
+    if (!target || !colorPickerModus) return;
     await saveLesezeichen({
-      typ: "lesezeichen",
+      typ: colorPickerModus,
       uebersetzung: translation,
       buch: target.osis,
       kapitel: target.chapter,
@@ -62,8 +64,9 @@ export default function VerseDetailModal() {
       farbe,
       tags: [],
     });
-    setShowColorPicker(false);
-    setSavedMsg("Lesezeichen gespeichert.");
+    setColorPickerModus(null);
+    setSavedMsg(colorPickerModus === "markierung" ? "Markierung gespeichert." : "Lesezeichen gespeichert.");
+    bumpMarksVersion();
   }
 
   async function saveNote() {
@@ -81,6 +84,7 @@ export default function VerseDetailModal() {
     });
     setShowNote(false);
     setSavedMsg("Notiz gespeichert.");
+    bumpMarksVersion();
   }
 
   async function copyText() {
@@ -135,7 +139,18 @@ export default function VerseDetailModal() {
         {savedMsg && <p style={{ color: "var(--salbei-fg)", fontSize: "0.85rem" }}>{savedMsg}</p>}
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
-          <button className="chip" onClick={() => setShowColorPicker((v) => !v)}>☆ Lesezeichen</button>
+          <button
+            className={`chip ${colorPickerModus === "lesezeichen" ? "active" : ""}`}
+            onClick={() => setColorPickerModus((v) => (v === "lesezeichen" ? null : "lesezeichen"))}
+          >
+            ☆ Lesezeichen
+          </button>
+          <button
+            className={`chip ${colorPickerModus === "markierung" ? "active" : ""}`}
+            onClick={() => setColorPickerModus((v) => (v === "markierung" ? null : "markierung"))}
+          >
+            🖍 Markieren
+          </button>
           <button className="chip" onClick={() => setShowNote((v) => !v)}>📝 Notiz</button>
           <button className="chip" onClick={shareText}>↗ Teilen</button>
           <button className="chip" onClick={copyText}>📋 Kopieren</button>
@@ -143,22 +158,25 @@ export default function VerseDetailModal() {
           <button className="chip" onClick={askInChat}>💬 Dazu fragen</button>
         </div>
 
-        {showColorPicker && (
-          <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
+        {colorPickerModus && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginTop: 10 }}>
             {FARBEN.map((f) => (
-              <button
-                key={f.value}
-                onClick={() => addBookmark(f.value)}
-                aria-label={f.value}
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: "50%",
-                  background: f.hex,
-                  border: "1px solid var(--border)",
-                  cursor: "pointer",
-                }}
-              />
+              <div key={f.value} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+                <button
+                  onClick={() => addBookmark(f.value)}
+                  aria-label={f.value}
+                  title={farbLabels?.[f.value]}
+                  style={{
+                    width: 32,
+                    height: 32,
+                    borderRadius: "50%",
+                    background: f.hex,
+                    border: "1px solid var(--border)",
+                    cursor: "pointer",
+                  }}
+                />
+                <span style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}>{farbLabels?.[f.value]}</span>
+              </div>
             ))}
           </div>
         )}

@@ -21,6 +21,7 @@ export interface VerseRow extends VerseRef {
 
 export type LesezeichenTyp = "lesezeichen" | "markierung" | "notiz";
 export type Farbe = "gelb" | "gruen" | "blau" | "rosa" | "lila";
+export type FarbLabels = Record<Farbe, string>;
 
 export interface LesezeichenEintrag {
   id: string;
