@@ -213,13 +213,22 @@ Zwischenueberschriften und kurze Absaetze (3-5 Saetze), aktive Sprache, wie ein 
 KEINE Saetze wie "Es ist wichtig zu...". Antworte NUR mit reinem Text (kein JSON, kein Markdown wie
 #### oder **fett**). Nenne nur Stellen, die dir vorgelegt wurden.`;
 
+const ESSAY_SYSTEM_PROMPT_STICHWORTE = `Du bist Amibel und antwortest zu einem Thema NICHT mit einem
+ausformulierten Aufsatz, sondern stichwortartig und kurz. Aufbau: eine knappe Einleitung (1-2 Saetze),
+danach 6-12 kurze Stichpunkte (je ein Gedanke/Aspekt des Themas in einem kurzen Satz oder Stichwort,
+mit Bibelstellen-Bezug in Klammern wo passend), jeder Stichpunkt beginnt mit "- " am Zeilenanfang.
+Keine langen Absaetze, keine Ueberschriften. Zitiere Luther 1912 nur kurz und sparsam, wenn es den
+Punkt staerkt. Antworte NUR mit reinem Text (kein JSON, kein Markdown wie #### oder **fett**).
+Nenne nur Stellen, die dir vorgelegt wurden.`;
+
 export async function askEssay(
   opts: AiCallOptions,
-  params: { thema: string; verse: { referenz: string; text: string }[] }
+  params: { thema: string; verse: { referenz: string; text: string }[]; stil?: "text" | "stichworte" }
 ): Promise<string> {
   const versListe = params.verse.map((v) => `${v.referenz}: "${v.text}"`).join("\n");
+  const systemPrompt = params.stil === "stichworte" ? ESSAY_SYSTEM_PROMPT_STICHWORTE : ESSAY_SYSTEM_PROMPT;
   const messages: ChatTurn[] = [
-    { role: "system", content: ESSAY_SYSTEM_PROMPT },
+    { role: "system", content: systemPrompt },
     {
       role: "user",
       content: `Thema: ${params.thema}\n\nVorgelegte Bibelstellen (Luther 1912):\n${versListe}`,

@@ -4,7 +4,7 @@ import type { Topic } from "../lib/db/bibleDb";
 import { getTopicVerses, getTopics, searchFullText } from "../lib/db/bibleDb";
 import { useSettings } from "../lib/SettingsContext";
 import { askEssay } from "../lib/ai/provider";
-import { kvGet } from "../lib/db/userDb";
+import { kvGet, kvSet } from "../lib/db/userDb";
 import { decryptSecret } from "../lib/crypto";
 import { createChat, listChats, saveChat } from "../lib/db/userDb";
 import type { ChatGespraech, VerseRow } from "../types";
@@ -21,11 +21,18 @@ export default function ExploreScreen() {
   const [essay, setEssay] = useState<{ thema: string; text: string; verse: VerseRow[] } | null>(null);
   const [gespeicherteThemen, setGespeicherteThemen] = useState<ChatGespraech[]>([]);
   const [stichwort, setStichwort] = useState("");
+  const [stil, setStil] = useState<"text" | "stichworte">("text");
 
   useEffect(() => {
     getTopics().then(setTopics);
     ladeGespeicherteThemen();
+    kvGet<"text" | "stichworte">("erforschen_stil").then((v) => v && setStil(v));
   }, []);
+
+  function stilWaehlen(neu: "text" | "stichworte") {
+    setStil(neu);
+    kvSet("erforschen_stil", neu);
+  }
 
   async function ladeGespeicherteThemen() {
     const alle = await listChats();
@@ -69,7 +76,7 @@ export default function ExploreScreen() {
       const referenzen = verse.map((v) => ({ referenz: `${v.bookName} ${v.chapter},${v.verse}`, text: v.text }));
       const text = await askEssay(
         { provider: settings.aiProvider, apiKey, model: settings.aiModell || undefined },
-        { thema, verse: referenzen }
+        { thema, verse: referenzen, stil }
       );
       setEssay({ thema, text, verse });
 
@@ -106,6 +113,15 @@ export default function ExploreScreen() {
       </div>
 
       <p style={{ color: "var(--text-muted)" }}>Wähle ein Thema oder gib ein eigenes ein – Amibel schreibt dir dazu einen Aufsatz mit Bibelzitaten.</p>
+
+      <div className="chip-row" style={{ marginBottom: 10 }}>
+        <button className={`chip ${stil === "text" ? "active" : ""}`} onClick={() => stilWaehlen("text")}>
+          📝 Ausführlicher Text
+        </button>
+        <button className={`chip ${stil === "stichworte" ? "active" : ""}`} onClick={() => stilWaehlen("stichworte")}>
+          🔑 Stichwortartig
+        </button>
+      </div>
 
       <div className="chip-row" style={{ marginBottom: 14 }}>
         {topics.map((t) => (
