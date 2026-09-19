@@ -32,13 +32,23 @@ function fragenFuerStufe(stufe: QuizStufe, anzahl: number, bevorzugt: string[] =
 }
 
 function pruefeAntwort(frage: QuizFrage, antwort: string | string[]): boolean {
-  if (frage.typ === "multi" || frage.typ === "orden") {
+  if (frage.typ === "multi") {
+    const a = [...(antwort as string[])].sort();
+    const r = [...(frage.richtig as string[])].sort();
+    if (a.length !== r.length) return false;
+    return a.every((v, i) => v === r[i]);
+  }
+  if (frage.typ === "orden") {
     const a = antwort as string[];
     const r = frage.richtig as string[];
     if (a.length !== r.length) return false;
     return a.every((v, i) => v === r[i]);
   }
   return antwort === frage.richtig;
+}
+
+function anzahlFragenFuerStufe(stufe: QuizStufe): number {
+  return ALLE_FRAGEN.filter((f) => f.stufe === stufe).length;
 }
 
 function VersBeleg({ frage }: { frage: QuizFrage }) {
@@ -207,7 +217,7 @@ export default function QuizScreen() {
   async function starteSolo(gewaehlteStufe: QuizStufe) {
     setStufe(gewaehlteStufe);
     const wiederholung = (await kvGet<string[]>(`quiz_wiederholung_${gewaehlteStufe}`)) ?? [];
-    const fragen = fragenFuerStufe(gewaehlteStufe, 10, wiederholung);
+    const fragen = fragenFuerStufe(gewaehlteStufe, Infinity, wiederholung);
     setSoloFragen(fragen);
     setSoloIndex(0);
     setSoloPunkte(0);
@@ -251,7 +261,7 @@ export default function QuizScreen() {
     const gueltig = spielerNamen.map((n) => n.trim()).filter(Boolean);
     if (gueltig.length < 1) return;
     setGlSpieler(gueltig.map((name) => ({ name, punkte: 0 })));
-    setGlFragen(fragenFuerStufe(stufe, 10));
+    setGlFragen(fragenFuerStufe(stufe, Infinity));
     setGlIndex(0);
     setGlAntwortSichtbar(false);
     setModus("spielleiter");
@@ -449,11 +459,16 @@ export default function QuizScreen() {
     <div>
       <Header title="Bibelquiz" onBack />
       <h3>Solo-Runde</h3>
+      <p style={{ color: "var(--text-muted)", fontSize: "0.85rem", marginTop: -8 }}>
+        Eine Runde geht durch alle Fragen der gewählten Stufe - dein bester Lauf wird als Rekord gespeichert.
+      </p>
       {STUFEN.map((s) => (
         <div key={s.value} className="card" style={{ marginBottom: 8, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
             <p style={{ margin: 0, fontWeight: 600 }}>{s.label}</p>
-            <p style={{ margin: 0, fontSize: "0.82rem", color: "var(--text-muted)" }}>Rekord: {highscores[s.value]}/10</p>
+            <p style={{ margin: 0, fontSize: "0.82rem", color: "var(--text-muted)" }}>
+              Rekord: {highscores[s.value]}/{anzahlFragenFuerStufe(s.value)}
+            </p>
           </div>
           <button className="btn" onClick={() => starteSolo(s.value)}>Spielen</button>
         </div>

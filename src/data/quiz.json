@@ -3449,5 +3449,3467 @@
       "versBis": 9
     },
     "erklaerung": "Elisa bat: Dass mir ein zwiefältiger Teil von deinem Geist widerfahre."
+  },
+  {
+    "id": "l36",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war der erste Mensch, den Gott erschuf?",
+    "optionen": [
+      "Adam",
+      "Kain",
+      "Set",
+      "Noah"
+    ],
+    "richtig": "Adam",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 2,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Gott machte den Menschen aus einem Erdenkloß und blies ihm den Odem des Lebens ein; er hieß Adam."
+  },
+  {
+    "id": "l37",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wie hieß die erste Frau?",
+    "optionen": [
+      "Eva",
+      "Sara",
+      "Rebekka",
+      "Rahel"
+    ],
+    "richtig": "Eva",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 3,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Adam nannte seine Frau Eva, weil sie die Mutter aller Lebendigen wurde."
+  },
+  {
+    "id": "l38",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Welches Tier verführte Eva im Garten Eden?",
+    "optionen": [
+      "Die Schlange",
+      "Der Löwe",
+      "Der Fuchs",
+      "Der Adler"
+    ],
+    "richtig": "Die Schlange",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 3,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Die Schlange war listiger als alle Tiere und verführte Eva zum Ungehorsam."
+  },
+  {
+    "id": "l39",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie viele Söhne hatte Jakob?",
+    "optionen": null,
+    "richtig": "12",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 35,
+      "versVon": 22,
+      "versBis": 26
+    },
+    "erklaerung": "Jakob hatte zwölf Söhne, die zu den Stammvätern der zwölf Stämme Israels wurden."
+  },
+  {
+    "id": "l40",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer verriet Jesus für dreißig Silberlinge?",
+    "optionen": [
+      "Judas Iskariot",
+      "Petrus",
+      "Thomas",
+      "Andreas"
+    ],
+    "richtig": "Judas Iskariot",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 15,
+      "versBis": 15
+    },
+    "erklaerung": "Judas Iskariot vereinbarte mit den Hohenpriestern, Jesus für dreißig Silberlinge zu verraten."
+  },
+  {
+    "id": "l41",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "In welcher Stadt wuchs Jesus als Kind auf?",
+    "optionen": [
+      "Nazareth",
+      "Bethlehem",
+      "Jerusalem",
+      "Kapernaum"
+    ],
+    "richtig": "Nazareth",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 2,
+      "versVon": 23,
+      "versBis": 23
+    },
+    "erklaerung": "Josef und Maria ließen sich in Nazareth nieder, wo Jesus aufwuchs."
+  },
+  {
+    "id": "l42",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer taufte Jesus im Jordan?",
+    "optionen": [
+      "Johannes der Täufer",
+      "Petrus",
+      "Elia",
+      "Andreas"
+    ],
+    "richtig": "Johannes der Täufer",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 3,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Jesus kam zu Johannes an den Jordan, um sich von ihm taufen zu lassen."
+  },
+  {
+    "id": "l43",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "In welcher Stadt wollten die Menschen einen Turm bauen, der bis zum Himmel reicht?",
+    "optionen": [
+      "Babel",
+      "Ninive",
+      "Ur",
+      "Sichem"
+    ],
+    "richtig": "Babel",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 11,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "In Babel wollten die Menschen einen Turm bauen, um sich einen Namen zu machen."
+  },
+  {
+    "id": "l44",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wie hieß Abrahams Frau?",
+    "optionen": [
+      "Sara",
+      "Rebekka",
+      "Rahel",
+      "Lea"
+    ],
+    "richtig": "Sara",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 17,
+      "versVon": 15,
+      "versBis": 15
+    },
+    "erklaerung": "Gott änderte den Namen von Sarai in Sara und verhieß, dass sie einen Sohn bekommen werde."
+  },
+  {
+    "id": "l45",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wie hieß Isaaks Frau?",
+    "optionen": [
+      "Rebekka",
+      "Sara",
+      "Rahel",
+      "Lea"
+    ],
+    "richtig": "Rebekka",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 24,
+      "versVon": 67,
+      "versBis": 67
+    },
+    "erklaerung": "Isaak nahm Rebekka zur Frau und gewann sie lieb."
+  },
+  {
+    "id": "l46",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie viele Jahre musste Jakob zunächst für Rahel arbeiten?",
+    "optionen": null,
+    "richtig": "7",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 29,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Jakob diente sieben Jahre um Rahel, doch sie kamen ihm vor wie einzelne Tage, so lieb hatte er sie."
+  },
+  {
+    "id": "l47",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer wurde von seinen Brüdern aus Eifersucht nach Ägypten verkauft?",
+    "optionen": [
+      "Josef",
+      "Benjamin",
+      "Ruben",
+      "Juda"
+    ],
+    "richtig": "Josef",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 37,
+      "versVon": 28,
+      "versBis": 28
+    },
+    "erklaerung": "Josefs Brüder verkauften ihn an vorbeiziehende Kaufleute, die ihn nach Ägypten brachten."
+  },
+  {
+    "id": "l48",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Welcher Prophet wurde von einem großen Fisch verschlungen?",
+    "optionen": [
+      "Jona",
+      "Elia",
+      "Jesaja",
+      "Jeremia"
+    ],
+    "richtig": "Jona",
+    "beleg": {
+      "osis": "JON",
+      "bookName": "Jona",
+      "kapitel": 1,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Der HERR schickte einen großen Fisch, der Jona verschlang; drei Tage und Nächte war er in seinem Bauch."
+  },
+  {
+    "id": "l49",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer empfing die Zehn Gebote auf zwei steinernen Tafeln?",
+    "optionen": [
+      "Mose",
+      "Aaron",
+      "Josua",
+      "Samuel"
+    ],
+    "richtig": "Mose",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 31,
+      "versVon": 18,
+      "versBis": 18
+    },
+    "erklaerung": "Gott gab Mose auf dem Berg Sinai die zwei Tafeln mit den Zehn Geboten."
+  },
+  {
+    "id": "l50",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie viele Gebote stehen auf den Steintafeln vom Sinai?",
+    "optionen": null,
+    "richtig": "10",
+    "beleg": {
+      "osis": "DEU",
+      "bookName": "5. Mose",
+      "kapitel": 4,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Gott verkündigte den 'zehn Worten', die Zehn Gebote, und schrieb sie auf zwei steinerne Tafeln."
+  },
+  {
+    "id": "l51",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wessen Kraft lag in seinen Haaren?",
+    "optionen": [
+      "Simson",
+      "David",
+      "Goliath",
+      "Gideon"
+    ],
+    "richtig": "Simson",
+    "beleg": {
+      "osis": "JDG",
+      "bookName": "Richter",
+      "kapitel": 16,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Simson erzählte Delila, dass seine Kraft von seinem ungeschnittenen Haar käme."
+  },
+  {
+    "id": "l52",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer verriet Simsons Geheimnis an die Philister?",
+    "optionen": [
+      "Delila",
+      "Rahab",
+      "Debora",
+      "Isebel"
+    ],
+    "richtig": "Delila",
+    "beleg": {
+      "osis": "JDG",
+      "bookName": "Richter",
+      "kapitel": 16,
+      "versVon": 18,
+      "versBis": 18
+    },
+    "erklaerung": "Delila ließ Simsons Haare abschneiden und lieferte ihn den Philistern aus."
+  },
+  {
+    "id": "l53",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wie hieß der Riese, den der junge David besiegte?",
+    "optionen": [
+      "Goliath",
+      "Og",
+      "Nimrod",
+      "Anak"
+    ],
+    "richtig": "Goliath",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 17,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Goliath aus Gat war der Riese aus dem Heer der Philister, den David im Zweikampf besiegte."
+  },
+  {
+    "id": "l54",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Welcher König tanzte voller Freude vor der Bundeslade?",
+    "optionen": [
+      "David",
+      "Saul",
+      "Salomo",
+      "Hiskia"
+    ],
+    "richtig": "David",
+    "beleg": {
+      "osis": "2SA",
+      "bookName": "2. Samuel",
+      "kapitel": 6,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "David tanzte mit aller Macht vor dem HERRN, als die Bundeslade nach Jerusalem gebracht wurde."
+  },
+  {
+    "id": "l55",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer baute den ersten Tempel in Jerusalem?",
+    "optionen": [
+      "Salomo",
+      "David",
+      "Hiskia",
+      "Josia"
+    ],
+    "richtig": "Salomo",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 6,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "König Salomo baute das Haus des HERRN in Jerusalem und vollendete es."
+  },
+  {
+    "id": "l56",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war der Vater von Johannes dem Täufer?",
+    "optionen": [
+      "Zacharias",
+      "Joseph",
+      "Simeon",
+      "Nathanael"
+    ],
+    "richtig": "Zacharias",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 1,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Der Engel verhieß dem Priester Zacharias, dass seine Frau Elisabeth einen Sohn namens Johannes gebären werde."
+  },
+  {
+    "id": "l57",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie viele steinerne Wasserkrüge ließ Jesus bei der Hochzeit zu Kana in Wein verwandeln?",
+    "optionen": null,
+    "richtig": "6",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 2,
+      "versVon": 6,
+      "versBis": 6
+    },
+    "erklaerung": "Dort standen sechs steinerne Wasserkrüge, die Jesus mit Wein füllte."
+  },
+  {
+    "id": "l58",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer ging auf dem Wasser zu Jesus, begann aber wegen seines Zweifels zu sinken?",
+    "optionen": [
+      "Petrus",
+      "Johannes",
+      "Andreas",
+      "Jakobus"
+    ],
+    "richtig": "Petrus",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 14,
+      "versVon": 29,
+      "versBis": 30
+    },
+    "erklaerung": "Petrus ging auf dem Wasser zu Jesus, doch als er den starken Wind sah, erschrak er und begann zu sinken."
+  },
+  {
+    "id": "l59",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie viele Brote hatte der Junge bei der Speisung der 5000?",
+    "optionen": null,
+    "richtig": "5",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 6,
+      "versVon": 9,
+      "versBis": 9
+    },
+    "erklaerung": "Ein Knabe hatte fünf Gerstenbrote und zwei Fische bei sich."
+  },
+  {
+    "id": "l60",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Welcher Jünger wollte die Wunden des auferstandenen Jesus erst sehen, bevor er glaubte?",
+    "optionen": [
+      "Thomas",
+      "Philippus",
+      "Bartholomäus",
+      "Matthäus"
+    ],
+    "richtig": "Thomas",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 20,
+      "versVon": 25,
+      "versBis": 25
+    },
+    "erklaerung": "Thomas sagte, er werde nicht glauben, wenn er nicht die Nägelmale sehe."
+  },
+  {
+    "id": "l61",
+    "stufe": "lehrling",
+    "typ": "zahl",
+    "frage": "Wie oft verleugnete Petrus Jesus, bevor der Hahn krähte?",
+    "optionen": null,
+    "richtig": "3",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 34,
+      "versBis": 34
+    },
+    "erklaerung": "Jesus sagte voraus, dass Petrus ihn noch in derselben Nacht dreimal verleugnen werde."
+  },
+  {
+    "id": "l62",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war der erste Märtyrer der christlichen Kirche?",
+    "optionen": [
+      "Stephanus",
+      "Jakobus",
+      "Paulus",
+      "Timotheus"
+    ],
+    "richtig": "Stephanus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 7,
+      "versVon": 59,
+      "versBis": 60
+    },
+    "erklaerung": "Stephanus wurde gesteinigt, während er für seine Peiniger betete."
+  },
+  {
+    "id": "l63",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war ein Christenverfolger, der auf dem Weg nach Damaskus zum Glauben kam?",
+    "optionen": [
+      "Saulus (Paulus)",
+      "Barnabas",
+      "Silas",
+      "Timotheus"
+    ],
+    "richtig": "Saulus (Paulus)",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 9,
+      "versVon": 3,
+      "versBis": 5
+    },
+    "erklaerung": "Ein Licht vom Himmel umleuchtete Saulus, und Jesus selbst sprach zu ihm; danach wurde er zum Apostel Paulus."
+  },
+  {
+    "id": "l64",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war Moses Bruder, der ihm half, mit dem Pharao zu reden?",
+    "optionen": [
+      "Aaron",
+      "Josua",
+      "Kaleb",
+      "Nadab"
+    ],
+    "richtig": "Aaron",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 4,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Gott bestimmte Aaron, den Bruder Moses, als seinen Wortführer vor dem Pharao."
+  },
+  {
+    "id": "l65",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war Ruths Schwiegermutter?",
+    "optionen": [
+      "Noomi",
+      "Debora",
+      "Hanna",
+      "Abigail"
+    ],
+    "richtig": "Noomi",
+    "beleg": {
+      "osis": "RUT",
+      "bookName": "Ruth",
+      "kapitel": 1,
+      "versVon": 8,
+      "versBis": 8
+    },
+    "erklaerung": "Noomi war die Schwiegermutter von Ruth, die trotz allem bei ihr blieb."
+  },
+  {
+    "id": "l66",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer war der jüngste Sohn Jakobs?",
+    "optionen": [
+      "Benjamin",
+      "Josef",
+      "Juda",
+      "Levi"
+    ],
+    "richtig": "Benjamin",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 35,
+      "versVon": 18,
+      "versBis": 18
+    },
+    "erklaerung": "Rahel starb bei der Geburt ihres zweiten Sohnes Benjamin, des jüngsten von Jakobs zwölf Söhnen."
+  },
+  {
+    "id": "l67",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Welches Meer teilte sich, damit die Israeliten trockenen Fußes hindurchziehen konnten?",
+    "optionen": [
+      "Das Rote Meer",
+      "Das Tote Meer",
+      "Der See Genezareth",
+      "Das Mittelmeer"
+    ],
+    "richtig": "Das Rote Meer",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 14,
+      "versVon": 21,
+      "versBis": 22
+    },
+    "erklaerung": "Der HERR ließ das Wasser des Roten Meeres zurückweichen, sodass Israel auf trockenem Boden hindurchging."
+  },
+  {
+    "id": "l68",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Auf welchem Berg empfing Mose die Zehn Gebote?",
+    "optionen": [
+      "Sinai",
+      "Karmel",
+      "Nebo",
+      "Tabor"
+    ],
+    "richtig": "Sinai",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 19,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Der HERR stieg auf den Berg Sinai herab und rief Mose zu sich hinauf."
+  },
+  {
+    "id": "l69",
+    "stufe": "lehrling",
+    "typ": "wahrfalsch",
+    "frage": "Elia wurde in einem feurigen Wagen in den Himmel aufgenommen.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 2,
+      "versVon": 11,
+      "versBis": 11
+    },
+    "erklaerung": "Ein feuriger Wagen mit feurigen Pferden trennte Elia von Elisa, und Elia fuhr im Wetter gen Himmel."
+  },
+  {
+    "id": "l70",
+    "stufe": "lehrling",
+    "typ": "single",
+    "frage": "Wer bat Gott um doppelte Kraft von Elias Geist, bevor dieser in den Himmel fuhr?",
+    "optionen": [
+      "Elisa",
+      "Gehasi",
+      "Micha",
+      "Obadja"
+    ],
+    "richtig": "Elisa",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 2,
+      "versVon": 9,
+      "versBis": 9
+    },
+    "erklaerung": "Elisa bat Elia, dass ein doppelter Teil seines Geistes auf ihn komme."
+  },
+  {
+    "id": "e46",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wie hieß der Garten, in dem Jesus vor seiner Gefangennahme betete?",
+    "optionen": [
+      "Gethsemane",
+      "Eden",
+      "Gethsemani-Hain",
+      "Getsemani-Berg"
+    ],
+    "richtig": "Gethsemane",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 36,
+      "versBis": 36
+    },
+    "erklaerung": "Jesus kam mit seinen Jüngern an einen Ort namens Gethsemane, um dort zu beten."
+  },
+  {
+    "id": "e47",
+    "stufe": "erwachsener",
+    "typ": "zahl",
+    "frage": "Wie viele Jahre wanderte Israel durch die Wüste?",
+    "optionen": null,
+    "richtig": "40",
+    "beleg": {
+      "osis": "NUM",
+      "bookName": "4. Mose",
+      "kapitel": 14,
+      "versVon": 33,
+      "versBis": 33
+    },
+    "erklaerung": "Israel musste vierzig Jahre in der Wüste umherziehen, bis die ungehorsame Generation gestorben war."
+  },
+  {
+    "id": "e48",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Statthalter, der Jesus zum Tode verurteilte?",
+    "optionen": [
+      "Pontius Pilatus",
+      "Herodes Antipas",
+      "Kaiphas",
+      "Felix"
+    ],
+    "richtig": "Pontius Pilatus",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 27,
+      "versVon": 26,
+      "versBis": 26
+    },
+    "erklaerung": "Pilatus gab Jesus frei zur Geißelung und Kreuzigung, obwohl er keine Schuld an ihm fand."
+  },
+  {
+    "id": "e49",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welcher Prophet salbte sowohl Saul als auch David zum König?",
+    "optionen": [
+      "Samuel",
+      "Nathan",
+      "Gad",
+      "Ahia"
+    ],
+    "richtig": "Samuel",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 16,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Samuel salbte David mitten unter seinen Brüdern, und der Geist des HERRN kam über ihn."
+  },
+  {
+    "id": "e50",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war die Königin, die Salomos Weisheit auf die Probe stellte?",
+    "optionen": [
+      "Die Königin von Saba",
+      "Isebel",
+      "Esther",
+      "Athalja"
+    ],
+    "richtig": "Die Königin von Saba",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 10,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Die Königin von Saba kam nach Jerusalem, um Salomo mit schwierigen Fragen zu prüfen."
+  },
+  {
+    "id": "e51",
+    "stufe": "erwachsener",
+    "typ": "wahrfalsch",
+    "frage": "Nebukadnezar warf Sadrach, Mesach und Abed-Nego in einen glühenden Ofen.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "DAN",
+      "bookName": "Daniel",
+      "kapitel": 3,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Weil sie das goldene Standbild nicht anbeten wollten, ließ Nebukadnezar sie in den Feuerofen werfen."
+  },
+  {
+    "id": "e52",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer deutete dem Pharao seine Träume von den sieben fetten und sieben mageren Kühen?",
+    "optionen": [
+      "Josef",
+      "Daniel",
+      "Mose",
+      "Jakob"
+    ],
+    "richtig": "Josef",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 41,
+      "versVon": 25,
+      "versBis": 25
+    },
+    "erklaerung": "Josef deutete dem Pharao, dass sieben Jahre Überfluss von sieben Jahren Hungersnot gefolgt würden."
+  },
+  {
+    "id": "e53",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welcher Apostel wird als 'der Jünger, den Jesus lieb hatte' bezeichnet?",
+    "optionen": [
+      "Johannes",
+      "Petrus",
+      "Jakobus",
+      "Andreas"
+    ],
+    "richtig": "Johannes",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 21,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Johannes bezeichnet sich in seinem Evangelium selbst als den Jünger, den Jesus liebte."
+  },
+  {
+    "id": "e54",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der römische Hauptmann, der als erster Heide getauft wurde?",
+    "optionen": [
+      "Kornelius",
+      "Julius",
+      "Claudius Lysias",
+      "Gallio"
+    ],
+    "richtig": "Kornelius",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 10,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Kornelius, ein Hauptmann der italienischen Abteilung, kam durch Petrus zum Glauben und wurde getauft."
+  },
+  {
+    "id": "e55",
+    "stufe": "erwachsener",
+    "typ": "zahl",
+    "frage": "Wie viele Männer kämpften mit Gideon gegen die Midianiter, nachdem Gott das Heer verkleinert hatte?",
+    "optionen": null,
+    "richtig": "300",
+    "beleg": {
+      "osis": "JDG",
+      "bookName": "Richter",
+      "kapitel": 7,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Der HERR sagte, mit den 300 Männern, die aus der Hand geleckt hatten, wolle er Israel erretten."
+  },
+  {
+    "id": "e56",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der auf dem Berg Karmel gegen die Baalspriester antrat?",
+    "optionen": [
+      "Elia",
+      "Elisa",
+      "Jesaja",
+      "Amos"
+    ],
+    "richtig": "Elia",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 18,
+      "versVon": 19,
+      "versBis": 19
+    },
+    "erklaerung": "Elia forderte alle Propheten Baals auf dem Berg Karmel zu einem Gottesbeweis heraus."
+  },
+  {
+    "id": "e57",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Vater von König David?",
+    "optionen": [
+      "Isai",
+      "Boas",
+      "Obed",
+      "Jesse (identisch mit Isai)"
+    ],
+    "richtig": "Isai",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 16,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Der HERR sandte Samuel zu Isai nach Bethlehem, um einen seiner Söhne zum König zu salben."
+  },
+  {
+    "id": "e58",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welche Stadt wurde von Josua und Israel durch das Umschreiten und Posaunenblasen zum Einsturz gebracht?",
+    "optionen": [
+      "Jericho",
+      "Ai",
+      "Hazor",
+      "Gibeon"
+    ],
+    "richtig": "Jericho",
+    "beleg": {
+      "osis": "JOS",
+      "bookName": "Josua",
+      "kapitel": 6,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Als das Volk ein großes Kriegsgeschrei erhob, fielen die Mauern von Jericho in sich zusammen."
+  },
+  {
+    "id": "e59",
+    "stufe": "erwachsener",
+    "typ": "multi",
+    "frage": "Welche zwei Personen wurden laut der Bibel nicht durch den Tod, sondern lebend von Gott hinweggenommen?",
+    "optionen": [
+      "Henoch",
+      "Elia",
+      "Mose",
+      "Aaron"
+    ],
+    "richtig": [
+      "Henoch",
+      "Elia"
+    ],
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 2,
+      "versVon": 11,
+      "versBis": 11
+    },
+    "erklaerung": "Henoch wandelte mit Gott und war nicht mehr da, weil Gott ihn nahm (1. Mose 5,24); Elia fuhr in einem feurigen Wagen gen Himmel."
+  },
+  {
+    "id": "e60",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der treue Freund Davids, der ihn vor seinem Vater Saul warnte?",
+    "optionen": [
+      "Jonathan",
+      "Abner",
+      "Joab",
+      "Ittai"
+    ],
+    "richtig": "Jonathan",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 20,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Jonathan, Sauls Sohn, liebte David wie sein eigenes Leben und half ihm, sich vor Saul zu verbergen."
+  },
+  {
+    "id": "e61",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war die tapfere Richterin und Prophetin Israels, die mit Barak gegen die Kanaaniter zog?",
+    "optionen": [
+      "Debora",
+      "Hulda",
+      "Mirjam",
+      "Anna"
+    ],
+    "richtig": "Debora",
+    "beleg": {
+      "osis": "JDG",
+      "bookName": "Richter",
+      "kapitel": 4,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Debora war Richterin und Prophetin über Israel und zog mit Barak in die Schlacht gegen Sisera."
+  },
+  {
+    "id": "e62",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer erkannte Jesus als Kind im Tempel und lobte Gott, weil er nun in Frieden sterben könne?",
+    "optionen": [
+      "Simeon",
+      "Zacharias",
+      "Nikodemus",
+      "Josef von Arimathia"
+    ],
+    "richtig": "Simeon",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 2,
+      "versVon": 29,
+      "versBis": 30
+    },
+    "erklaerung": "Simeon nahm das Jesuskind in seine Arme und pries Gott, weil seine Augen den Heiland gesehen hatten."
+  },
+  {
+    "id": "e63",
+    "stufe": "erwachsener",
+    "typ": "wahrfalsch",
+    "frage": "Zachäus war ein kleinwüchsiger Zöllner, der auf einen Baum stieg, um Jesus zu sehen.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 19,
+      "versVon": 3,
+      "versBis": 4
+    },
+    "erklaerung": "Weil Zachäus klein von Gestalt war, kletterte er auf einen Maulbeerbaum, um Jesus sehen zu können."
+  },
+  {
+    "id": "e64",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welcher Apostel wurde durch ein Erdbeben aus dem Gefängnis in Philippi befreit?",
+    "optionen": [
+      "Paulus",
+      "Petrus",
+      "Silas",
+      "Beide, Paulus und Silas"
+    ],
+    "richtig": "Beide, Paulus und Silas",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 16,
+      "versVon": 26,
+      "versBis": 26
+    },
+    "erklaerung": "Ein plötzliches Erdbeben erschütterte das Gefängnis, sodass sich alle Türen öffneten und Paulus und Silas frei wurden."
+  },
+  {
+    "id": "e65",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Hohepriester, vor dem Jesus verhört wurde?",
+    "optionen": [
+      "Kaiphas",
+      "Hannas",
+      "Zacharias",
+      "Eleasar"
+    ],
+    "richtig": "Kaiphas",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 26,
+      "versVon": 57,
+      "versBis": 57
+    },
+    "erklaerung": "Jesus wurde zu Kaiphas, dem Hohenpriester, geführt, wo die Schriftgelehrten und Ältesten versammelt waren."
+  },
+  {
+    "id": "e66",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war Timotheus' gläubige Mutter, die ihm die Heilige Schrift lehrte?",
+    "optionen": [
+      "Eunike",
+      "Lois",
+      "Priszilla",
+      "Lydia"
+    ],
+    "richtig": "Eunike",
+    "beleg": {
+      "osis": "2TI",
+      "bookName": "2. Timotheus",
+      "kapitel": 1,
+      "versVon": 5,
+      "versBis": 5
+    },
+    "erklaerung": "Paulus erinnert Timotheus an den ungeheuchelten Glauben seiner Mutter Eunike und seiner Großmutter Lois."
+  },
+  {
+    "id": "e67",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war die Purpurhändlerin aus Thyatira, die zum Glauben kam und Paulus gastfrei aufnahm?",
+    "optionen": [
+      "Lydia",
+      "Priszilla",
+      "Phöbe",
+      "Damaris"
+    ],
+    "richtig": "Lydia",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 16,
+      "versVon": 14,
+      "versBis": 15
+    },
+    "erklaerung": "Lydia, eine Purpurhändlerin, öffnete der HERR das Herz, sodass sie sich taufen ließ und Paulus beherbergte."
+  },
+  {
+    "id": "e68",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welcher König befahl die Ermordung aller Jungen unter zwei Jahren in Bethlehem?",
+    "optionen": [
+      "Herodes der Große",
+      "Herodes Antipas",
+      "Herodes Agrippa",
+      "Archelaus"
+    ],
+    "richtig": "Herodes der Große",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 2,
+      "versVon": 16,
+      "versBis": 16
+    },
+    "erklaerung": "Herodes ließ aus Zorn über die Weisen alle Knaben in Bethlehem und Umgebung töten."
+  },
+  {
+    "id": "e69",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Vater der Zwölf Stämme Israels?",
+    "optionen": [
+      "Jakob",
+      "Isaak",
+      "Abraham",
+      "Josef"
+    ],
+    "richtig": "Jakob",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 32,
+      "versVon": 29,
+      "versBis": 29
+    },
+    "erklaerung": "Jakob erhielt den Namen Israel, und seine zwölf Söhne wurden zu den Stammvätern der zwölf Stämme."
+  },
+  {
+    "id": "e70",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der Nathan-Gleichnis nutzte, um König David seine Sünde vor Augen zu führen?",
+    "optionen": [
+      "Nathan",
+      "Gad",
+      "Ahia",
+      "Semaja"
+    ],
+    "richtig": "Nathan",
+    "beleg": {
+      "osis": "2SA",
+      "bookName": "2. Samuel",
+      "kapitel": 12,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Nathan sprach zu David: 'Du bist der Mann!' und deckte damit Davids Sünde mit Bathseba auf."
+  },
+  {
+    "id": "e71",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wie hieß der Sklave, für den Paulus im Brief an Philemon eintritt?",
+    "optionen": [
+      "Onesimus",
+      "Tychikus",
+      "Epaphras",
+      "Archippus"
+    ],
+    "richtig": "Onesimus",
+    "beleg": {
+      "osis": "PHM",
+      "bookName": "Philemon",
+      "kapitel": 1,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Paulus bittet Philemon, seinen entlaufenen Sklaven Onesimus als Bruder wieder aufzunehmen."
+  },
+  {
+    "id": "e72",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Welche Stadt war die Hauptstadt des Nordreichs Israel?",
+    "optionen": [
+      "Samaria",
+      "Sichem",
+      "Bethel",
+      "Dan"
+    ],
+    "richtig": "Samaria",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 16,
+      "versVon": 24,
+      "versBis": 24
+    },
+    "erklaerung": "König Omri kaufte den Berg Samaria und baute dort die Stadt, die zur Hauptstadt des Nordreichs wurde."
+  },
+  {
+    "id": "e73",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der Jerusalems Zerstörung beweinte?",
+    "optionen": [
+      "Jeremia",
+      "Jesaja",
+      "Hesekiel",
+      "Micha"
+    ],
+    "richtig": "Jeremia",
+    "beleg": {
+      "osis": "LAM",
+      "bookName": "Klagelieder",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Die Klagelieder werden Jeremia zugeschrieben, der über die zerstörte Stadt Jerusalem klagt."
+  },
+  {
+    "id": "e74",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Schwiegervater Moses, der ihm riet, Richter über das Volk einzusetzen?",
+    "optionen": [
+      "Jethro",
+      "Laban",
+      "Reguel (identisch mit Jethro)",
+      "Hobab"
+    ],
+    "richtig": "Jethro",
+    "beleg": {
+      "osis": "EXO",
+      "bookName": "2. Mose",
+      "kapitel": 18,
+      "versVon": 21,
+      "versBis": 22
+    },
+    "erklaerung": "Jethro riet Mose, tüchtige Männer als Richter über kleinere Streitigkeiten einzusetzen."
+  },
+  {
+    "id": "e75",
+    "stufe": "erwachsener",
+    "typ": "wahrfalsch",
+    "frage": "Rahab versteckte die israelitischen Kundschafter in Jericho und wurde später verschont.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "JOS",
+      "bookName": "Josua",
+      "kapitel": 6,
+      "versVon": 25,
+      "versBis": 25
+    },
+    "erklaerung": "Weil Rahab die Boten versteckt hatte, ließ Josua sie und ihre Familie am Leben."
+  },
+  {
+    "id": "e76",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der König, der Israel in zwei Reiche spaltete, weil er auf seine jungen Ratgeber hörte?",
+    "optionen": [
+      "Rehabeam",
+      "Jerobeam",
+      "Salomo",
+      "Abija"
+    ],
+    "richtig": "Rehabeam",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 12,
+      "versVon": 16,
+      "versBis": 16
+    },
+    "erklaerung": "Weil Rehabeam die harte Antwort der jungen Ratgeber gab, fielen die zehn Nordstämme von ihm ab."
+  },
+  {
+    "id": "e77",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer wurde der erste König Israels?",
+    "optionen": [
+      "Saul",
+      "David",
+      "Salomo",
+      "Ischboset"
+    ],
+    "richtig": "Saul",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 10,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Samuel salbte Saul und machte ihn so zum ersten König über Israel."
+  },
+  {
+    "id": "e78",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Sohn der Sunamitin, den Elisa vom Tode auferweckte?",
+    "optionen": [
+      "Ihr Sohn (kein Name genannt)",
+      "Gehasi",
+      "Naeman",
+      "Obadja"
+    ],
+    "richtig": "Ihr Sohn (kein Name genannt)",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 4,
+      "versVon": 35,
+      "versBis": 35
+    },
+    "erklaerung": "Elisa erweckte den namenlos bleibenden Sohn der Sunamitin wieder zum Leben."
+  },
+  {
+    "id": "e79",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der aussätzige Feldhauptmann, der durch ein Bad im Jordan geheilt wurde?",
+    "optionen": [
+      "Naeman",
+      "Gehasi",
+      "Hasael",
+      "Ben-Hadad"
+    ],
+    "richtig": "Naeman",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 5,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Naeman tauchte sich siebenmal im Jordan unter, wie Elisa es angeordnet hatte, und wurde rein."
+  },
+  {
+    "id": "e80",
+    "stufe": "erwachsener",
+    "typ": "zahl",
+    "frage": "Wie oft musste sich Naeman im Jordan untertauchen, um von seinem Aussatz geheilt zu werden?",
+    "optionen": null,
+    "richtig": "7",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 5,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Naeman tauchte sich siebenmal im Jordan unter, wie es der Mann Gottes gesagt hatte."
+  },
+  {
+    "id": "e81",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Diener Elisas, der aus Habgier heimlich Geschenke von Naeman annahm?",
+    "optionen": [
+      "Gehasi",
+      "Obadja",
+      "Baruch",
+      "Ebedmelech"
+    ],
+    "richtig": "Gehasi",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 5,
+      "versVon": 20,
+      "versBis": 20
+    },
+    "erklaerung": "Gehasi lief Naeman heimlich nach, um sich Geschenke zu erschleichen, und wurde dafür mit Aussatz bestraft."
+  },
+  {
+    "id": "e82",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der persische König, der Esther zur Königin machte?",
+    "optionen": [
+      "Ahasveros (Xerxes)",
+      "Kyrus",
+      "Darius",
+      "Artaxerxes"
+    ],
+    "richtig": "Ahasveros (Xerxes)",
+    "beleg": {
+      "osis": "EST",
+      "bookName": "Esther",
+      "kapitel": 2,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "König Ahasveros gewann Esther lieber als alle anderen Frauen und setzte ihr die königliche Krone auf."
+  },
+  {
+    "id": "e83",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der böse Höfling, der die Vernichtung aller Juden im Perserreich plante?",
+    "optionen": [
+      "Haman",
+      "Memuchan",
+      "Bigtan",
+      "Teresch"
+    ],
+    "richtig": "Haman",
+    "beleg": {
+      "osis": "EST",
+      "bookName": "Esther",
+      "kapitel": 3,
+      "versVon": 6,
+      "versBis": 6
+    },
+    "erklaerung": "Haman trachtete danach, alle Juden im ganzen Reich des Ahasveros zu vernichten."
+  },
+  {
+    "id": "e84",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer baute mit dem Volk in Jerusalem trotz Widerstand die Stadtmauer wieder auf?",
+    "optionen": [
+      "Nehemia",
+      "Esra",
+      "Serubbabel",
+      "Josua (Hoherpriester)"
+    ],
+    "richtig": "Nehemia",
+    "beleg": {
+      "osis": "NEH",
+      "bookName": "Nehemia",
+      "kapitel": 6,
+      "versVon": 15,
+      "versBis": 15
+    },
+    "erklaerung": "Nehemia vollendete den Mauerbau in Jerusalem in zweiundfünfzig Tagen trotz Anfeindungen."
+  },
+  {
+    "id": "e85",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer führte eine Gruppe von Exilanten zurück nach Jerusalem und lehrte dem Volk das Gesetz?",
+    "optionen": [
+      "Esra",
+      "Nehemia",
+      "Serubbabel",
+      "Haggai"
+    ],
+    "richtig": "Esra",
+    "beleg": {
+      "osis": "EZR",
+      "bookName": "Esra",
+      "kapitel": 7,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Esra hatte sein Herz darauf gerichtet, das Gesetz des HERRN zu erforschen, zu tun und in Israel zu lehren."
+  },
+  {
+    "id": "e86",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der geduldige Mann, der trotz großen Leidens an Gott festhielt?",
+    "optionen": [
+      "Hiob",
+      "Jeremia",
+      "Elia",
+      "David"
+    ],
+    "richtig": "Hiob",
+    "beleg": {
+      "osis": "JOB",
+      "bookName": "Hiob",
+      "kapitel": 1,
+      "versVon": 21,
+      "versBis": 22
+    },
+    "erklaerung": "Trotz des Verlustes all seines Besitzes und seiner Kinder sündigte Hiob nicht und klagte Gott nicht an."
+  },
+  {
+    "id": "e87",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer schrieb die meisten Briefe des Neuen Testaments?",
+    "optionen": [
+      "Paulus",
+      "Petrus",
+      "Johannes",
+      "Jakobus"
+    ],
+    "richtig": "Paulus",
+    "beleg": {
+      "osis": "ROM",
+      "bookName": "Römer",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Paulus, ein Knecht Jesu Christi, berufen zum Apostel, verfasste den größten Teil der neutestamentlichen Briefe."
+  },
+  {
+    "id": "e88",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Wegbegleiter des Paulus auf seiner ersten Missionsreise, mit dem er sich später überwarf?",
+    "optionen": [
+      "Barnabas",
+      "Silas",
+      "Titus",
+      "Lukas"
+    ],
+    "richtig": "Barnabas",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 15,
+      "versVon": 39,
+      "versBis": 39
+    },
+    "erklaerung": "Paulus und Barnabas trennten sich wegen eines heftigen Streits über Johannes Markus."
+  },
+  {
+    "id": "e89",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer war der Arzt und Verfasser des dritten Evangeliums sowie der Apostelgeschichte?",
+    "optionen": [
+      "Lukas",
+      "Markus",
+      "Matthäus",
+      "Johannes"
+    ],
+    "richtig": "Lukas",
+    "beleg": {
+      "osis": "COL",
+      "bookName": "Kolosser",
+      "kapitel": 4,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Paulus nennt Lukas 'den geliebten Arzt' unter seinen Mitarbeitern."
+  },
+  {
+    "id": "e90",
+    "stufe": "erwachsener",
+    "typ": "single",
+    "frage": "Wer schrieb das Buch der Offenbarung?",
+    "optionen": [
+      "Johannes",
+      "Petrus",
+      "Paulus",
+      "Jakobus"
+    ],
+    "richtig": "Johannes",
+    "beleg": {
+      "osis": "REV",
+      "bookName": "Offenbarung",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Die Offenbarung wurde durch Jesus Christus seinem Knecht Johannes gezeigt."
+  },
+  {
+    "id": "d46",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Schwiegervater Simsons und Vater seiner ersten Frau?",
+    "optionen": [
+      "Ein Philister aus Timna (Name nicht genannt)",
+      "Kaleb",
+      "Achan",
+      "Otniel"
+    ],
+    "richtig": "Ein Philister aus Timna (Name nicht genannt)",
+    "beleg": {
+      "osis": "JDG",
+      "bookName": "Richter",
+      "kapitel": 14,
+      "versVon": 1,
+      "versBis": 2
+    },
+    "erklaerung": "Simson sah in Timna eine Philisterfrau und begehrte sie zur Ehe; ihr Vater wird nicht namentlich genannt."
+  },
+  {
+    "id": "d47",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der Ahab wegen Nabots Weinberg verurteilte?",
+    "optionen": [
+      "Elia",
+      "Elisa",
+      "Micha ben Jimla",
+      "Ahia"
+    ],
+    "richtig": "Elia",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 21,
+      "versVon": 19,
+      "versBis": 19
+    },
+    "erklaerung": "Elia verkündete Ahab Gottes Gericht, weil er Nabot wegen dessen Weinberg hatte töten lassen."
+  },
+  {
+    "id": "d48",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war die böse Königin, die Isebel hieß und die Baalsverehrung förderte?",
+    "optionen": [
+      "Isebel, Frau Ahabs",
+      "Athalja",
+      "Isebel, Frau Jehus",
+      "Sema"
+    ],
+    "richtig": "Isebel, Frau Ahabs",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 16,
+      "versVon": 31,
+      "versBis": 31
+    },
+    "erklaerung": "Isebel, die Frau Ahabs, förderte den Baalsdienst in Israel und verfolgte die Propheten des HERRN."
+  },
+  {
+    "id": "d49",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher König Judas wurde durch ein Zeichen ein verlängertes Leben von 15 Jahren zugesagt?",
+    "optionen": [
+      "Hiskia",
+      "Josia",
+      "Usija",
+      "Manasse"
+    ],
+    "richtig": "Hiskia",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 20,
+      "versVon": 6,
+      "versBis": 6
+    },
+    "erklaerung": "Der HERR fügte Hiskias Leben fünfzehn Jahre hinzu, nachdem dieser inständig gebetet hatte."
+  },
+  {
+    "id": "d50",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der letzte gute König Judas vor dem babylonischen Exil, der das Gesetzbuch im Tempel wiederfand?",
+    "optionen": [
+      "Josia",
+      "Hiskia",
+      "Jojakim",
+      "Zedekia"
+    ],
+    "richtig": "Josia",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 22,
+      "versVon": 8,
+      "versBis": 8
+    },
+    "erklaerung": "Unter König Josia fand der Hohepriester Hilkia das Buch des Gesetzes im Tempel."
+  },
+  {
+    "id": "d51",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der die Vision vom Tal der Totengebeine hatte?",
+    "optionen": [
+      "Hesekiel",
+      "Jeremia",
+      "Daniel",
+      "Sacharja"
+    ],
+    "richtig": "Hesekiel",
+    "beleg": {
+      "osis": "EZK",
+      "bookName": "Hesekiel",
+      "kapitel": 37,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Der HERR führte Hesekiel im Geist auf ein Feld voller Totengebeine, die wieder lebendig wurden."
+  },
+  {
+    "id": "d52",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer deutete dem babylonischen König Belsazar die Schrift an der Wand?",
+    "optionen": [
+      "Daniel",
+      "Hananja",
+      "Mischael",
+      "Asarja"
+    ],
+    "richtig": "Daniel",
+    "beleg": {
+      "osis": "DAN",
+      "bookName": "Daniel",
+      "kapitel": 5,
+      "versVon": 25,
+      "versBis": 26
+    },
+    "erklaerung": "Daniel deutete die Worte 'Mene, Mene, Tekel, Upharsin' als Gottes Gericht über Belsazars Reich."
+  },
+  {
+    "id": "d53",
+    "stufe": "diakon",
+    "typ": "zahl",
+    "frage": "Wie viele Jahre dauerte das babylonische Exil laut Jeremias Weissagung?",
+    "optionen": null,
+    "richtig": "70",
+    "beleg": {
+      "osis": "JER",
+      "bookName": "Jeremia",
+      "kapitel": 25,
+      "versVon": 11,
+      "versBis": 11
+    },
+    "erklaerung": "Jeremia weissagte, dass diese Länder Babel siebzig Jahre dienen würden."
+  },
+  {
+    "id": "d54",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der persische König, der den Juden erlaubte, aus dem Exil zurückzukehren?",
+    "optionen": [
+      "Kyrus",
+      "Darius",
+      "Xerxes",
+      "Kambyses"
+    ],
+    "richtig": "Kyrus",
+    "beleg": {
+      "osis": "EZR",
+      "bookName": "Esra",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Der HERR erweckte den Geist des Kyrus, König von Persien, sodass er den Juden die Rückkehr erlaubte."
+  },
+  {
+    "id": "d55",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Statthalter, der zusammen mit dem Hohenpriester Josua den Wiederaufbau des zweiten Tempels leitete?",
+    "optionen": [
+      "Serubbabel",
+      "Nehemia",
+      "Esra",
+      "Scheschbazar"
+    ],
+    "richtig": "Serubbabel",
+    "beleg": {
+      "osis": "EZR",
+      "bookName": "Esra",
+      "kapitel": 3,
+      "versVon": 8,
+      "versBis": 8
+    },
+    "erklaerung": "Serubbabel und der Hohepriester Josua begannen mit dem Wiederaufbau des Tempels des HERRN."
+  },
+  {
+    "id": "d56",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der Amos zeitlich nahesteht und gegen soziale Ungerechtigkeit in Israel predigte?",
+    "optionen": [
+      "Amos",
+      "Hosea",
+      "Micha",
+      "Joel"
+    ],
+    "richtig": "Amos",
+    "beleg": {
+      "osis": "AMO",
+      "bookName": "Amos",
+      "kapitel": 5,
+      "versVon": 24,
+      "versBis": 24
+    },
+    "erklaerung": "Amos rief dazu auf, dass das Recht wie Wasser fließen solle - eine seiner bekanntesten Botschaften."
+  },
+  {
+    "id": "d57",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher Prophet musste eine untreue Frau namens Gomer heiraten als Zeichen für Israels Untreue?",
+    "optionen": [
+      "Hosea",
+      "Amos",
+      "Joel",
+      "Micha"
+    ],
+    "richtig": "Hosea",
+    "beleg": {
+      "osis": "HOS",
+      "bookName": "Hosea",
+      "kapitel": 1,
+      "versVon": 2,
+      "versBis": 3
+    },
+    "erklaerung": "Der HERR gebot Hosea, eine hurerische Frau zu nehmen, als Bild für Israels Abfall von Gott."
+  },
+  {
+    "id": "d58",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer weissagte, dass der Messias in Bethlehem geboren werde?",
+    "optionen": [
+      "Micha",
+      "Jesaja",
+      "Maleachi",
+      "Sacharja"
+    ],
+    "richtig": "Micha",
+    "beleg": {
+      "osis": "MIC",
+      "bookName": "Micha",
+      "kapitel": 5,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Micha weissagte, dass aus Bethlehem der kommen werde, der Herrscher in Israel sein solle."
+  },
+  {
+    "id": "d59",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher Prophet weissagte den Einzug des Königs auf einem Eselsfüllen?",
+    "optionen": [
+      "Sacharja",
+      "Maleachi",
+      "Haggai",
+      "Obadja"
+    ],
+    "richtig": "Sacharja",
+    "beleg": {
+      "osis": "ZEC",
+      "bookName": "Sacharja",
+      "kapitel": 9,
+      "versVon": 9,
+      "versBis": 9
+    },
+    "erklaerung": "Sacharja weissagte, dass der König demütig und reitend auf einem Esel nach Zion kommen werde."
+  },
+  {
+    "id": "d60",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der zu Ninive predigen sollte, aber zunächst nach Tarsis floh?",
+    "optionen": [
+      "Jona",
+      "Nahum",
+      "Obadja",
+      "Habakuk"
+    ],
+    "richtig": "Jona",
+    "beleg": {
+      "osis": "JON",
+      "bookName": "Jona",
+      "kapitel": 1,
+      "versVon": 3,
+      "versBis": 3
+    },
+    "erklaerung": "Jona floh vor dem Auftrag des HERRN und wollte nach Tarsis segeln."
+  },
+  {
+    "id": "d61",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher Prophet kündigte den Untergang Ninives an, das schon durch Jona zur Buße gebracht worden war?",
+    "optionen": [
+      "Nahum",
+      "Habakuk",
+      "Zephanja",
+      "Obadja"
+    ],
+    "richtig": "Nahum",
+    "beleg": {
+      "osis": "NAM",
+      "bookName": "Nahum",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Nahums Weissagung ist ein Ausspruch über Ninive, dessen endgültiger Fall angekündigt wird."
+  },
+  {
+    "id": "d62",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher Prophet fragte Gott, warum er das Unrecht in Juda durch die noch gottloseren Babylonier bestrafen wolle?",
+    "optionen": [
+      "Habakuk",
+      "Zephanja",
+      "Nahum",
+      "Joel"
+    ],
+    "richtig": "Habakuk",
+    "beleg": {
+      "osis": "HAB",
+      "bookName": "Habakuk",
+      "kapitel": 1,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Habakuk rang mit Gott über die Frage, wie ein gerechter Gott die Chaldäer als Strafwerkzeug benutzen könne."
+  },
+  {
+    "id": "d63",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der zum Wiederaufbau des Tempels nach dem Exil aufrief?",
+    "optionen": [
+      "Haggai",
+      "Sacharja (allein)",
+      "Maleachi",
+      "Joel"
+    ],
+    "richtig": "Haggai",
+    "beleg": {
+      "osis": "HAG",
+      "bookName": "Haggai",
+      "kapitel": 1,
+      "versVon": 8,
+      "versBis": 8
+    },
+    "erklaerung": "Haggai rief das Volk auf, Holz zu holen und das Haus des HERRN wieder zu bauen."
+  },
+  {
+    "id": "d64",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welches ist das letzte Buch des Alten Testaments?",
+    "optionen": [
+      "Maleachi",
+      "Sacharja",
+      "Haggai",
+      "Obadja"
+    ],
+    "richtig": "Maleachi",
+    "beleg": {
+      "osis": "MAL",
+      "bookName": "Maleachi",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Maleachi steht als letztes Buch am Ende des alttestamentlichen Kanons."
+  },
+  {
+    "id": "d65",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Schwiegersohn Sauls und engster Freund, der David das Leben rettete?",
+    "optionen": [
+      "Jonathan",
+      "Abner",
+      "Ahimelech",
+      "Michal (Tochter, nicht Schwiegersohn)"
+    ],
+    "richtig": "Jonathan",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 19,
+      "versVon": 2,
+      "versBis": 2
+    },
+    "erklaerung": "Jonathan warnte David heimlich vor dem Mordplan seines Vaters Saul."
+  },
+  {
+    "id": "d66",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Priester, der David geweihtes Brot gab und dafür später von Saul getötet wurde?",
+    "optionen": [
+      "Ahimelech",
+      "Abjatar",
+      "Zadok",
+      "Eli"
+    ],
+    "richtig": "Ahimelech",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 21,
+      "versVon": 1,
+      "versBis": 6
+    },
+    "erklaerung": "Der Priester Ahimelech gab David die Schaubrote; Saul ließ ihn und die Priester von Nob später hinrichten."
+  },
+  {
+    "id": "d67",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war Davids Feldhauptmann, der Abner und Absalom tötete?",
+    "optionen": [
+      "Joab",
+      "Abisai",
+      "Benaja",
+      "Amasa"
+    ],
+    "richtig": "Joab",
+    "beleg": {
+      "osis": "2SA",
+      "bookName": "2. Samuel",
+      "kapitel": 3,
+      "versVon": 27,
+      "versBis": 27
+    },
+    "erklaerung": "Joab, Davids Heerführer, tötete Abner aus Rache für seinen Bruder Asaël."
+  },
+  {
+    "id": "d68",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war Davids Sohn, der gegen ihn rebellierte und dabei im Wald umkam?",
+    "optionen": [
+      "Absalom",
+      "Amnon",
+      "Adonija",
+      "Salomo"
+    ],
+    "richtig": "Absalom",
+    "beleg": {
+      "osis": "2SA",
+      "bookName": "2. Samuel",
+      "kapitel": 18,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Joab durchbohrte Absalom, der mit seinem Haar in den Ästen einer Eiche hängen geblieben war."
+  },
+  {
+    "id": "d69",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer beriet Absalom, dessen Rat aber von Gott zunichtegemacht wurde, sodass er sich erhängte?",
+    "optionen": [
+      "Ahitofel",
+      "Huschai",
+      "Amasa",
+      "Schimei"
+    ],
+    "richtig": "Ahitofel",
+    "beleg": {
+      "osis": "2SA",
+      "bookName": "2. Samuel",
+      "kapitel": 17,
+      "versVon": 23,
+      "versBis": 23
+    },
+    "erklaerung": "Als Ahitofels Rat nicht befolgt wurde, ordnete er sein Haus und erhängte sich."
+  },
+  {
+    "id": "d70",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer versuchte, sich anstelle Salomos zum König zu machen, obwohl David Salomo bestimmt hatte?",
+    "optionen": [
+      "Adonija",
+      "Absalom",
+      "Amnon",
+      "Simei"
+    ],
+    "richtig": "Adonija",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 1,
+      "versVon": 5,
+      "versBis": 5
+    },
+    "erklaerung": "Adonija erhob sich und sprach: 'Ich will König werden', und ließ sich Wagen und Reiter bereiten."
+  },
+  {
+    "id": "d71",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Hohepriester zur Zeit Salomos, der Abjatar wegen seiner Beteiligung an Adonijas Verschwörung ablöste?",
+    "optionen": [
+      "Zadok",
+      "Abjatar (wurde abgesetzt)",
+      "Ahimelech",
+      "Eleasar"
+    ],
+    "richtig": "Zadok",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 2,
+      "versVon": 35,
+      "versBis": 35
+    },
+    "erklaerung": "Salomo setzte Zadok als Hohenpriester anstelle Abjatars ein."
+  },
+  {
+    "id": "d72",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Prophet, der Jerobeam ein zerrissenes Gewand als Zeichen der Reichsteilung gab?",
+    "optionen": [
+      "Ahia von Silo",
+      "Semaja",
+      "Ahia (identisch)",
+      "Jedo"
+    ],
+    "richtig": "Ahia von Silo",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 11,
+      "versVon": 30,
+      "versBis": 31
+    },
+    "erklaerung": "Der Prophet Ahia zerriss sein neues Gewand in zwölf Stücke und gab Jerobeam zehn davon als Zeichen."
+  },
+  {
+    "id": "d73",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Welcher König Israels errichtete goldene Kälber in Bethel und Dan?",
+    "optionen": [
+      "Jerobeam I.",
+      "Ahab",
+      "Omri",
+      "Jehu"
+    ],
+    "richtig": "Jerobeam I.",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 12,
+      "versVon": 28,
+      "versBis": 29
+    },
+    "erklaerung": "Jerobeam ließ zwei goldene Kälber machen, damit das Volk nicht mehr nach Jerusalem zum Tempel ziehen musste."
+  },
+  {
+    "id": "d74",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Feldherr, der im Auftrag des HERRN das Haus Ahabs ausrottete?",
+    "optionen": [
+      "Jehu",
+      "Hasael",
+      "Joab",
+      "Benaja"
+    ],
+    "richtig": "Jehu",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 9,
+      "versVon": 6,
+      "versBis": 7
+    },
+    "erklaerung": "Jehu wurde von Elisas Boten zum König über Israel gesalbt mit dem Auftrag, das Haus Ahabs zu schlagen."
+  },
+  {
+    "id": "d75",
+    "stufe": "diakon",
+    "typ": "wahrfalsch",
+    "frage": "Isebel wurde aus dem Fenster gestürzt und von Hunden gefressen.",
+    "optionen": null,
+    "richtig": "wahr",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 9,
+      "versVon": 33,
+      "versBis": 35
+    },
+    "erklaerung": "Auf Jehus Befehl wurde Isebel aus dem Fenster gestoßen; von ihr blieb nur Schädel, Füße und Handflächen übrig."
+  },
+  {
+    "id": "d76",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war die einzige regierende Königin Judas, die versuchte, die ganze königliche Nachkommenschaft auszurotten?",
+    "optionen": [
+      "Athalja",
+      "Isebel",
+      "Esther",
+      "Vasthi"
+    ],
+    "richtig": "Athalja",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 11,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Athalja brachte allen königlichen Samen um, um selbst über Juda zu herrschen."
+  },
+  {
+    "id": "d77",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer versteckte den kleinen Joas sieben Jahre lang vor Athalja im Tempel?",
+    "optionen": [
+      "Joschabeath / der Priester Jojada",
+      "Debora",
+      "Hulda",
+      "Serach"
+    ],
+    "richtig": "Joschabeath / der Priester Jojada",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 11,
+      "versVon": 2,
+      "versBis": 3
+    },
+    "erklaerung": "Joschabeath versteckte Joas vor Athalja, und der Priester Jojada erzog ihn im Tempel."
+  },
+  {
+    "id": "d78",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war die Prophetin, die zur Zeit Josias das wiedergefundene Gesetzbuch bestätigte?",
+    "optionen": [
+      "Hulda",
+      "Debora",
+      "Mirjam",
+      "Noadja"
+    ],
+    "richtig": "Hulda",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 22,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Die Priester gingen zu der Prophetin Hulda, die das Wort des HERRN über das gefundene Gesetzbuch bestätigte."
+  },
+  {
+    "id": "d79",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der gottloseste König Judas, unter dem selbst Kindesopfer dargebracht wurden?",
+    "optionen": [
+      "Manasse",
+      "Ahas",
+      "Amon",
+      "Jojakim"
+    ],
+    "richtig": "Manasse",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 21,
+      "versVon": 6,
+      "versBis": 6
+    },
+    "erklaerung": "Manasse ließ seinen Sohn durchs Feuer gehen und trieb Zauberei und Wahrsagerei, was den HERRN sehr erzürnte."
+  },
+  {
+    "id": "d80",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der letzte König Judas vor der Zerstörung Jerusalems durch Babylon?",
+    "optionen": [
+      "Zedekia",
+      "Jojachin",
+      "Jojakim",
+      "Joahas"
+    ],
+    "richtig": "Zedekia",
+    "beleg": {
+      "osis": "2KI",
+      "bookName": "2. Könige",
+      "kapitel": 25,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Zedekia war der letzte König Judas; er wurde geblendet und nach Babel weggeführt."
+  },
+  {
+    "id": "d81",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Verwandte Elimelechs, der Ruth als Löser heiratete?",
+    "optionen": [
+      "Boas",
+      "Machlon",
+      "Kiljon",
+      "Tola"
+    ],
+    "richtig": "Boas",
+    "beleg": {
+      "osis": "RUT",
+      "bookName": "Ruth",
+      "kapitel": 4,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Boas nahm Ruth zur Frau, nachdem er sie als naher Verwandter ausgelöst hatte."
+  },
+  {
+    "id": "d82",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Vater Samuels, der jedes Jahr mit seiner Familie nach Silo zum Opfern zog?",
+    "optionen": [
+      "Elkana",
+      "Eli",
+      "Pinehas",
+      "Hofni"
+    ],
+    "richtig": "Elkana",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 1,
+      "versVon": 3,
+      "versBis": 3
+    },
+    "erklaerung": "Elkana zog jährlich mit seiner Familie hinauf nach Silo, um dem HERRN Zebaoth zu opfern."
+  },
+  {
+    "id": "d83",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer waren die verdorbenen Söhne Elis, die als Priester Missbrauch trieben?",
+    "optionen": [
+      "Hofni und Pinehas",
+      "Nadab und Abihu",
+      "Mahlon und Kiljon",
+      "Simeon und Levi"
+    ],
+    "richtig": "Hofni und Pinehas",
+    "beleg": {
+      "osis": "1SA",
+      "bookName": "1. Samuel",
+      "kapitel": 2,
+      "versVon": 12,
+      "versBis": 12
+    },
+    "erklaerung": "Hofni und Pinehas, Elis Söhne, waren ruchlose Männer, die den HERRN nicht kannten."
+  },
+  {
+    "id": "d84",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer waren die zwei Söhne Aarons, die durch fremdes Feuer vor dem HERRN starben?",
+    "optionen": [
+      "Nadab und Abihu",
+      "Eleasar und Itamar",
+      "Hofni und Pinehas",
+      "Kehat und Merari"
+    ],
+    "richtig": "Nadab und Abihu",
+    "beleg": {
+      "osis": "LEV",
+      "bookName": "3. Mose",
+      "kapitel": 10,
+      "versVon": 1,
+      "versBis": 2
+    },
+    "erklaerung": "Nadab und Abihu brachten fremdes Feuer vor den HERRN, das er ihnen nicht geboten hatte, und ein Feuer verzehrte sie."
+  },
+  {
+    "id": "d85",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Priester und Schreiber, dessen Söhne die Reformbewegung nach dem Exil unterstützten?",
+    "optionen": [
+      "Esra",
+      "Serubbabel",
+      "Josua (Hoherpriester)",
+      "Mordechai"
+    ],
+    "richtig": "Esra",
+    "beleg": {
+      "osis": "EZR",
+      "bookName": "Esra",
+      "kapitel": 7,
+      "versVon": 6,
+      "versBis": 6
+    },
+    "erklaerung": "Esra war ein Schriftgelehrter, der im Gesetz des Mose wohl bewandert war."
+  },
+  {
+    "id": "d86",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Mundschenk des persischen Königs, der zum Statthalter über Juda berufen wurde?",
+    "optionen": [
+      "Nehemia",
+      "Esra",
+      "Serubbabel",
+      "Mordechai"
+    ],
+    "richtig": "Nehemia",
+    "beleg": {
+      "osis": "NEH",
+      "bookName": "Nehemia",
+      "kapitel": 1,
+      "versVon": 11,
+      "versBis": 11
+    },
+    "erklaerung": "Nehemia war Mundschenk des Königs Artaxerxes, bevor er nach Jerusalem geschickt wurde."
+  },
+  {
+    "id": "d87",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer waren die Hauptwidersacher Nehemias beim Mauerbau?",
+    "optionen": [
+      "Sanballat und Tobija",
+      "Haman und Memuchan",
+      "Rezin und Pekah",
+      "Gaschmu und Geschem (identisch mit Sanballat-Bündnis)"
+    ],
+    "richtig": "Sanballat und Tobija",
+    "beleg": {
+      "osis": "NEH",
+      "bookName": "Nehemia",
+      "kapitel": 4,
+      "versVon": 1,
+      "versBis": 3
+    },
+    "erklaerung": "Sanballat und Tobija verspotteten und bedrohten die Israeliten während des Mauerbaus."
+  },
+  {
+    "id": "d88",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Cousin und Ziehvater Esthers?",
+    "optionen": [
+      "Mordechai",
+      "Haman",
+      "Hegai",
+      "Memuchan"
+    ],
+    "richtig": "Mordechai",
+    "beleg": {
+      "osis": "EST",
+      "bookName": "Esther",
+      "kapitel": 2,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Mordechai zog seine Base Esther, die Waise war, als seine eigene Tochter groß."
+  },
+  {
+    "id": "d89",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Vorgänger von Elia im Prophetenamt, der auf dem Karmel wirkte, bevor... (Elia selbst tritt zuerst auf, daher: Wer war Elias Nachfolger?)",
+    "optionen": [
+      "Elisa",
+      "Gehasi",
+      "Ahia",
+      "Micha ben Jimla"
+    ],
+    "richtig": "Elisa",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 19,
+      "versVon": 16,
+      "versBis": 16
+    },
+    "erklaerung": "Gott wies Elia an, Elisa zu seinem Nachfolger im Prophetenamt zu salben."
+  },
+  {
+    "id": "d90",
+    "stufe": "diakon",
+    "typ": "single",
+    "frage": "Wer war der Mann Gottes aus Juda, der gegen den Altar in Bethel weissagte?",
+    "optionen": [
+      "Ein namenloser Prophet (2. Könige nennt ihn nicht)",
+      "Ahia",
+      "Semaja",
+      "Iddo"
+    ],
+    "richtig": "Ein namenloser Prophet (2. Könige nennt ihn nicht)",
+    "beleg": {
+      "osis": "1KI",
+      "bookName": "1. Könige",
+      "kapitel": 13,
+      "versVon": 1,
+      "versBis": 2
+    },
+    "erklaerung": "Ein Mann Gottes aus Juda kam nach Bethel und weissagte gegen den dortigen Altar Jerobeams."
+  },
+  {
+    "id": "g47",
+    "stufe": "gemeindeleiter",
+    "typ": "zahl",
+    "frage": "Wie viele Jahre lag zwischen der Verheißung an Abraham und dem Auszug aus Ägypten laut Paulus im Galaterbrief?",
+    "optionen": null,
+    "richtig": "430",
+    "beleg": {
+      "osis": "GAL",
+      "bookName": "Galater",
+      "kapitel": 3,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Paulus schreibt, dass das Gesetz, das 430 Jahre später kam, den zuvor von Gott bestätigten Bund nicht aufhebt."
+  },
+  {
+    "id": "g48",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Titel wird Melchisedek gegeben, der Abraham segnete?",
+    "optionen": [
+      "König von Salem und Priester Gottes des Höchsten",
+      "König von Sodom",
+      "Fürst von Ägypten",
+      "Richter über Kanaan"
+    ],
+    "richtig": "König von Salem und Priester Gottes des Höchsten",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 14,
+      "versVon": 18,
+      "versBis": 18
+    },
+    "erklaerung": "Melchisedek, König von Salem, war Priester Gottes des Höchsten und brachte Brot und Wein heraus."
+  },
+  {
+    "id": "g49",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Brief vergleicht Christi Priestertum ausführlich mit dem Priestertum Melchisedeks?",
+    "optionen": [
+      "Der Hebräerbrief",
+      "Der Römerbrief",
+      "Der Galaterbrief",
+      "Der Kolosserbrief"
+    ],
+    "richtig": "Der Hebräerbrief",
+    "beleg": {
+      "osis": "HEB",
+      "bookName": "Hebräer",
+      "kapitel": 7,
+      "versVon": 17,
+      "versBis": 17
+    },
+    "erklaerung": "Der Hebräerbrief zitiert Psalm 110 und erklärt Christus als Priester nach der Ordnung Melchisedeks."
+  },
+  {
+    "id": "g50",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Schwiegervater Josefs in Ägypten, ein Priester von On?",
+    "optionen": [
+      "Potifera",
+      "Potifar",
+      "Asenat (seine Frau, nicht der Priester)",
+      "Sera"
+    ],
+    "richtig": "Potifera",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 41,
+      "versVon": 45,
+      "versBis": 45
+    },
+    "erklaerung": "Der Pharao gab Josef Asenat, die Tochter Potiferas, des Priesters zu On, zur Frau."
+  },
+  {
+    "id": "g51",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wie hieß der Ägypter, dessen Frau Josef fälschlich der Belästigung beschuldigte?",
+    "optionen": [
+      "Potifar",
+      "Potifera",
+      "Pharao selbst",
+      "Aseneths Vater"
+    ],
+    "richtig": "Potifar",
+    "beleg": {
+      "osis": "GEN",
+      "bookName": "1. Mose",
+      "kapitel": 39,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Josef wurde als Sklave in das Haus Potifars verkauft, eines Hofbeamten des Pharao."
+  },
+  {
+    "id": "g52",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher der zwölf kleinen Propheten weissagt über das Gericht an Edom?",
+    "optionen": [
+      "Obadja",
+      "Joel",
+      "Nahum",
+      "Zephanja"
+    ],
+    "richtig": "Obadja",
+    "beleg": {
+      "osis": "OBA",
+      "bookName": "Obadja",
+      "kapitel": 1,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Das kürzeste Buch des Alten Testaments, Obadja, richtet sich gegen Edom wegen seiner Gewalt an Jakob."
+  },
+  {
+    "id": "g53",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Prophet beschreibt den 'Tag des HERRN' im Zusammenhang mit einer Heuschreckenplage?",
+    "optionen": [
+      "Joel",
+      "Amos",
+      "Zephanja",
+      "Maleachi"
+    ],
+    "richtig": "Joel",
+    "beleg": {
+      "osis": "JOL",
+      "bookName": "Joel",
+      "kapitel": 1,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Joel beschreibt eine verheerende Heuschreckenplage als Vorzeichen des kommenden Tages des HERRN."
+  },
+  {
+    "id": "g54",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Vater von Timotheus, der laut Apostelgeschichte ein Grieche war?",
+    "optionen": [
+      "Sein Vater (Name nicht genannt, war Grieche)",
+      "Silas",
+      "Aquila",
+      "Gajus"
+    ],
+    "richtig": "Sein Vater (Name nicht genannt, war Grieche)",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 16,
+      "versVon": 1,
+      "versBis": 1
+    },
+    "erklaerung": "Timotheus war der Sohn einer gläubigen jüdischen Frau, sein Vater aber war ein Grieche."
+  },
+  {
+    "id": "g55",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer waren Priszilla und Aquila von Beruf?",
+    "optionen": [
+      "Zeltmacher",
+      "Fischer",
+      "Weber",
+      "Kaufleute mit Purpur"
+    ],
+    "richtig": "Zeltmacher",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 18,
+      "versVon": 3,
+      "versBis": 3
+    },
+    "erklaerung": "Paulus blieb bei Aquila und Priszilla und arbeitete mit ihnen, da sie desselben Handwerks waren, nämlich Zeltmacher."
+  },
+  {
+    "id": "g56",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "In welcher Stadt unterwies Priszilla zusammen mit Aquila den beredten Apollos genauer im Weg Gottes?",
+    "optionen": [
+      "Ephesus",
+      "Korinth",
+      "Antiochia",
+      "Rom"
+    ],
+    "richtig": "Ephesus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 18,
+      "versVon": 26,
+      "versBis": 26
+    },
+    "erklaerung": "In Ephesus nahmen Priszilla und Aquila Apollos zu sich und legten ihm den Weg Gottes noch genauer aus."
+  },
+  {
+    "id": "g57",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der beredte, in der Schrift mächtige Mann aus Alexandria, der in Ephesus wirkte?",
+    "optionen": [
+      "Apollos",
+      "Apelles",
+      "Epaphroditus",
+      "Trophimus"
+    ],
+    "richtig": "Apollos",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 18,
+      "versVon": 24,
+      "versBis": 24
+    },
+    "erklaerung": "Apollos, ein Jude aus Alexandria, war beredt und mächtig in der Schrift."
+  },
+  {
+    "id": "g58",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Diakon der Urgemeinde wird in Apostelgeschichte 6 als 'voll Glaubens und Heiligen Geistes' beschrieben und war der erste Märtyrer?",
+    "optionen": [
+      "Stephanus",
+      "Philippus",
+      "Prochorus",
+      "Nikanor"
+    ],
+    "richtig": "Stephanus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 6,
+      "versVon": 5,
+      "versBis": 5
+    },
+    "erklaerung": "Stephanus, ein Mann voll Glaubens und Heiligen Geistes, wurde als einer der sieben ersten Diakone gewählt."
+  },
+  {
+    "id": "g59",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher der sieben ersten Diakone wirkte später als Evangelist in Samarien und taufte den äthiopischen Kämmerer?",
+    "optionen": [
+      "Philippus",
+      "Prochorus",
+      "Nikanor",
+      "Timon"
+    ],
+    "richtig": "Philippus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 8,
+      "versVon": 5,
+      "versBis": 5
+    },
+    "erklaerung": "Philippus zog nach Samarien hinab und predigte dort Christus, später taufte er den äthiopischen Kämmerer."
+  },
+  {
+    "id": "g60",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welches Amt bekleidete der Kämmerer, den Philippus auf dem Weg nach Gaza taufte?",
+    "optionen": [
+      "Schatzmeister der Königin von Äthiopien (Kandaze)",
+      "Statthalter von Ägypten",
+      "Hauptmann der römischen Garde",
+      "Zöllner in Jericho"
+    ],
+    "richtig": "Schatzmeister der Königin von Äthiopien (Kandaze)",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 8,
+      "versVon": 27,
+      "versBis": 27
+    },
+    "erklaerung": "Der Kämmerer war ein Mann von großer Macht unter Kandaze, der Königin der Äthiopier, über ihren ganzen Schatz."
+  },
+  {
+    "id": "g61",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Prophet aus Jerusalem sagte in Antiochia eine große Hungersnot voraus, die unter Kaiser Claudius eintrat?",
+    "optionen": [
+      "Agabus",
+      "Silas",
+      "Judas Barsabbas",
+      "Manaen"
+    ],
+    "richtig": "Agabus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 11,
+      "versVon": 28,
+      "versBis": 28
+    },
+    "erklaerung": "Agabus deutete durch den Geist eine große Hungersnot an, die über den ganzen Erdkreis kommen sollte."
+  },
+  {
+    "id": "g62",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer band sich laut Apostelgeschichte 21 mit Paulus' eigenem Gürtel Hände und Füße, um dessen Gefangennahme zu weissagen?",
+    "optionen": [
+      "Agabus",
+      "Trophimus",
+      "Tychikus",
+      "Aristarchus"
+    ],
+    "richtig": "Agabus",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 21,
+      "versVon": 11,
+      "versBis": 11
+    },
+    "erklaerung": "Agabus nahm Paulus' Gürtel, band sich damit die Hände und Füße und weissagte dessen Gefangenschaft."
+  },
+  {
+    "id": "g63",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "In welcher Stadt wurden die Jünger zum ersten Mal 'Christen' genannt?",
+    "optionen": [
+      "Antiochia",
+      "Jerusalem",
+      "Ephesus",
+      "Damaskus"
+    ],
+    "richtig": "Antiochia",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 11,
+      "versVon": 26,
+      "versBis": 26
+    },
+    "erklaerung": "In Antiochia wurden die Jünger zum ersten Mal Christen genannt."
+  },
+  {
+    "id": "g64",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der römische Statthalter, vor dem Paulus in Cäsarea zwei Jahre gefangen gehalten wurde?",
+    "optionen": [
+      "Felix",
+      "Festus",
+      "Gallio",
+      "Sergius Paulus"
+    ],
+    "richtig": "Felix",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 24,
+      "versVon": 27,
+      "versBis": 27
+    },
+    "erklaerung": "Nach zwei Jahren wurde Felix von Porzius Festus im Amt abgelöst, doch Paulus blieb gefangen."
+  },
+  {
+    "id": "g65",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Vor welchem König verteidigte sich Paulus mit den Worten 'Es fehlt nicht viel, du überredest mich, ein Christ zu werden'?",
+    "optionen": [
+      "König Agrippa II.",
+      "Kaiser Nero",
+      "Herodes Antipas",
+      "König Aretas"
+    ],
+    "richtig": "König Agrippa II.",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 26,
+      "versVon": 28,
+      "versBis": 28
+    },
+    "erklaerung": "König Agrippa antwortete Paulus mit diesen Worten, nachdem dieser seine Bekehrung geschildert hatte."
+  },
+  {
+    "id": "g66",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Auf welcher Insel erlitt Paulus nach seinem Schiffbruch einen Schlangenbiss, ohne Schaden zu nehmen?",
+    "optionen": [
+      "Malta",
+      "Kreta",
+      "Zypern",
+      "Sizilien"
+    ],
+    "richtig": "Malta",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 28,
+      "versVon": 1,
+      "versBis": 3
+    },
+    "erklaerung": "Die Insel, auf der Paulus nach dem Schiffbruch strandete, hieß Malta; dort biss ihn eine Viper, ohne ihm zu schaden."
+  },
+  {
+    "id": "g67",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Mitarbeiter des Paulus wird als 'der geliebte Arzt' bezeichnet?",
+    "optionen": [
+      "Lukas",
+      "Demas",
+      "Markus",
+      "Aristarchus"
+    ],
+    "richtig": "Lukas",
+    "beleg": {
+      "osis": "COL",
+      "bookName": "Kolosser",
+      "kapitel": 4,
+      "versVon": 14,
+      "versBis": 14
+    },
+    "erklaerung": "Paulus grüßt in seinem Brief 'Lukas, der geliebte Arzt'."
+  },
+  {
+    "id": "g68",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher frühere Weggefährte des Paulus wird im 2. Timotheusbrief erwähnt, weil er 'die jetzige Welt lieb gewonnen' hatte und Paulus verließ?",
+    "optionen": [
+      "Demas",
+      "Krescens",
+      "Titus",
+      "Tychikus"
+    ],
+    "richtig": "Demas",
+    "beleg": {
+      "osis": "2TI",
+      "bookName": "2. Timotheus",
+      "kapitel": 4,
+      "versVon": 10,
+      "versBis": 10
+    },
+    "erklaerung": "Paulus schreibt, Demas habe ihn verlassen, weil er die jetzige Welt lieb gewonnen habe."
+  },
+  {
+    "id": "g69",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wem schreibt Paulus im Brief an die Philipper, er habe 'gelernt, genügsam zu sein'?",
+    "optionen": [
+      "Den Philippern (über sich selbst)",
+      "Timotheus persönlich",
+      "Epaphroditus",
+      "Den Ältesten von Ephesus"
+    ],
+    "richtig": "Den Philippern (über sich selbst)",
+    "beleg": {
+      "osis": "PHP",
+      "bookName": "Philipper",
+      "kapitel": 4,
+      "versVon": 11,
+      "versBis": 11
+    },
+    "erklaerung": "Paulus schreibt den Philippern, er habe gelernt, in welchem Stand er auch sei, sich genügen zu lassen."
+  },
+  {
+    "id": "g70",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wie hieß der Bote, den Paulus den Philippern zurückschickte, nachdem er schwer krank gewesen war?",
+    "optionen": [
+      "Epaphroditus",
+      "Epaphras",
+      "Tychikus",
+      "Onesiphorus"
+    ],
+    "richtig": "Epaphroditus",
+    "beleg": {
+      "osis": "PHP",
+      "bookName": "Philipper",
+      "kapitel": 2,
+      "versVon": 25,
+      "versBis": 25
+    },
+    "erklaerung": "Epaphroditus, der Bruder und Mitarbeiter der Philipper, war todkrank geworden im Dienst für Paulus."
+  },
+  {
+    "id": "g71",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer gründete vermutlich die Gemeinde in Kolossä, ohne dass Paulus selbst dort gewesen wäre?",
+    "optionen": [
+      "Epaphras",
+      "Epaphroditus",
+      "Archippus",
+      "Onesimus"
+    ],
+    "richtig": "Epaphras",
+    "beleg": {
+      "osis": "COL",
+      "bookName": "Kolosser",
+      "kapitel": 1,
+      "versVon": 7,
+      "versBis": 7
+    },
+    "erklaerung": "Die Kolosser lernten das Evangelium von Epaphras, einem treuen Diener Christi."
+  },
+  {
+    "id": "g72",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher der sieben Sendschreiben in der Offenbarung wird vorgeworfen, weder kalt noch warm, sondern lau zu sein?",
+    "optionen": [
+      "Laodizea",
+      "Sardes",
+      "Philadelphia",
+      "Thyatira"
+    ],
+    "richtig": "Laodizea",
+    "beleg": {
+      "osis": "REV",
+      "bookName": "Offenbarung",
+      "kapitel": 3,
+      "versVon": 15,
+      "versBis": 16
+    },
+    "erklaerung": "Der Gemeinde in Laodizea wird vorgeworfen, lau zu sein, weder kalt noch heiß, sodass Christus sie ausspeien will."
+  },
+  {
+    "id": "g73",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Gemeinde in der Offenbarung wird gesagt, sie habe ihre erste Liebe verlassen?",
+    "optionen": [
+      "Ephesus",
+      "Smyrna",
+      "Pergamon",
+      "Sardes"
+    ],
+    "richtig": "Ephesus",
+    "beleg": {
+      "osis": "REV",
+      "bookName": "Offenbarung",
+      "kapitel": 2,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Christus wirft der Gemeinde in Ephesus vor, ihre erste Liebe verlassen zu haben."
+  },
+  {
+    "id": "g74",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welche der sieben Gemeinden der Offenbarung erhält keinerlei Tadel, nur Lob und Ermutigung?",
+    "optionen": [
+      "Philadelphia und Smyrna",
+      "Nur Sardes",
+      "Nur Thyatira",
+      "Nur Laodizea"
+    ],
+    "richtig": "Philadelphia und Smyrna",
+    "beleg": {
+      "osis": "REV",
+      "bookName": "Offenbarung",
+      "kapitel": 3,
+      "versVon": 8,
+      "versBis": 8
+    },
+    "erklaerung": "Philadelphia (wie auch Smyrna) wird von Christus ohne Tadel angesprochen, nur ermutigt und gelobt."
+  },
+  {
+    "id": "g75",
+    "stufe": "gemeindeleiter",
+    "typ": "zahl",
+    "frage": "Wie viele Älteste sitzen laut Offenbarung 4 um den Thron Gottes?",
+    "optionen": null,
+    "richtig": "24",
+    "beleg": {
+      "osis": "REV",
+      "bookName": "Offenbarung",
+      "kapitel": 4,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Um den Thron standen vierundzwanzig Throne, und auf den Thronen saßen vierundzwanzig Älteste."
+  },
+  {
+    "id": "g76",
+    "stufe": "gemeindeleiter",
+    "typ": "zahl",
+    "frage": "Wie viele Gemeinden werden in den ersten Kapiteln der Offenbarung angesprochen?",
+    "optionen": null,
+    "richtig": "7",
+    "beleg": {
+      "osis": "REV",
+      "bookName": "Offenbarung",
+      "kapitel": 1,
+      "versVon": 4,
+      "versBis": 4
+    },
+    "erklaerung": "Johannes schreibt an die sieben Gemeinden in der Provinz Asia."
+  },
+  {
+    "id": "g77",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Hohepriester, der laut Johannes 11 unwissentlich prophezeite, dass Jesus für das Volk sterben werde?",
+    "optionen": [
+      "Kaiphas",
+      "Hannas",
+      "Zadok (falscher Zeitraum)",
+      "Ananias"
+    ],
+    "richtig": "Kaiphas",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 11,
+      "versVon": 49,
+      "versBis": 51
+    },
+    "erklaerung": "Kaiphas, der Hohepriester jenes Jahres, weissagte, dass Jesus für das Volk sterben werde, ohne die Tragweite selbst zu verstehen."
+  },
+  {
+    "id": "g78",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Schwiegervater von Kaiphas, der Jesus zuerst verhörte?",
+    "optionen": [
+      "Hannas",
+      "Gamaliel",
+      "Nikodemus",
+      "Josef von Arimathia"
+    ],
+    "richtig": "Hannas",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 18,
+      "versVon": 13,
+      "versBis": 13
+    },
+    "erklaerung": "Jesus wurde zuerst zu Hannas geführt, dem Schwiegervater des amtierenden Hohenpriesters Kaiphas."
+  },
+  {
+    "id": "g79",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der angesehene Pharisäer und Lehrer des Gesetzes, der im Hohen Rat für Vorsicht gegenüber den Aposteln warb?",
+    "optionen": [
+      "Gamaliel",
+      "Nikodemus",
+      "Josef von Arimathia",
+      "Saulus"
+    ],
+    "richtig": "Gamaliel",
+    "beleg": {
+      "osis": "ACT",
+      "bookName": "Apostelgeschichte",
+      "kapitel": 5,
+      "versVon": 34,
+      "versBis": 34
+    },
+    "erklaerung": "Gamaliel, ein im Volk angesehener Gesetzeslehrer, riet dem Hohen Rat, von den Aposteln abzulassen."
+  },
+  {
+    "id": "g80",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Pharisäer, der Jesus nachts aufsuchte und später bei seiner Bestattung half?",
+    "optionen": [
+      "Nikodemus",
+      "Gamaliel",
+      "Josef von Arimathia (getrennte Person)",
+      "Simon von Cyrene"
+    ],
+    "richtig": "Nikodemus",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 19,
+      "versVon": 39,
+      "versBis": 39
+    },
+    "erklaerung": "Nikodemus, der zuvor bei Nacht zu Jesus gekommen war, brachte Myrrhe und Aloe zur Grablegung."
+  },
+  {
+    "id": "g81",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war das reiche Ratsmitglied, das sein eigenes neues Grab für Jesu Leichnam zur Verfügung stellte?",
+    "optionen": [
+      "Josef von Arimathia",
+      "Nikodemus",
+      "Simon von Cyrene",
+      "Barnabas"
+    ],
+    "richtig": "Josef von Arimathia",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 27,
+      "versVon": 57,
+      "versBis": 60
+    },
+    "erklaerung": "Josef von Arimathia, selbst ein Jünger Jesu, legte den Leichnam in sein eigenes neues Grab."
+  },
+  {
+    "id": "g82",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer wurde gezwungen, das Kreuz Jesu auf dem Weg nach Golgatha zu tragen?",
+    "optionen": [
+      "Simon von Cyrene",
+      "Josef von Arimathia",
+      "Barnabas",
+      "Alexander"
+    ],
+    "richtig": "Simon von Cyrene",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 27,
+      "versVon": 32,
+      "versBis": 32
+    },
+    "erklaerung": "Die Soldaten zwangen Simon von Cyrene, das Kreuz Jesu zu tragen."
+  },
+  {
+    "id": "g83",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Hauptmann unter dem Kreuz, der bekannte 'Wahrlich, dieser ist Gottes Sohn gewesen'?",
+    "optionen": [
+      "Ein römischer Hauptmann (Name nicht genannt)",
+      "Kornelius",
+      "Julius",
+      "Claudius Lysias"
+    ],
+    "richtig": "Ein römischer Hauptmann (Name nicht genannt)",
+    "beleg": {
+      "osis": "MAT",
+      "bookName": "Matthäus",
+      "kapitel": 27,
+      "versVon": 54,
+      "versBis": 54
+    },
+    "erklaerung": "Der Hauptmann und die mit ihm Jesus bewachten, erschraken beim Erdbeben und bekannten, dass Jesus Gottes Sohn war."
+  },
+  {
+    "id": "g84",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war die erste Person, der der auferstandene Jesus laut Johannes erschien?",
+    "optionen": [
+      "Maria Magdalena",
+      "Petrus",
+      "Johannes",
+      "Die Emmausjünger"
+    ],
+    "richtig": "Maria Magdalena",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 20,
+      "versVon": 14,
+      "versBis": 16
+    },
+    "erklaerung": "Maria Magdalena stand weinend am Grab, als Jesus ihr erschien und sie beim Namen rief."
+  },
+  {
+    "id": "g85",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wie hießen die zwei Jünger, denen der auferstandene Jesus auf dem Weg nach Emmaus die Schrift auslegte?",
+    "optionen": [
+      "Kleophas und ein Unbenannter",
+      "Petrus und Johannes",
+      "Jakobus und Judas",
+      "Andreas und Philippus"
+    ],
+    "richtig": "Kleophas und ein Unbenannter",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 24,
+      "versVon": 18,
+      "versBis": 18
+    },
+    "erklaerung": "Einer der beiden Emmausjünger wird namentlich als Kleophas genannt, der andere bleibt ungenannt."
+  },
+  {
+    "id": "g86",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Jünger wird im Neuen Testament auch 'Didymus' (der Zwilling) genannt?",
+    "optionen": [
+      "Thomas",
+      "Bartholomäus",
+      "Nathanael",
+      "Judas Thaddäus"
+    ],
+    "richtig": "Thomas",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 11,
+      "versVon": 16,
+      "versBis": 16
+    },
+    "erklaerung": "Thomas, genannt Didymus, sprach zu den Mitjüngern, sie sollten mit Jesus gehen, um mit ihm zu sterben."
+  },
+  {
+    "id": "g87",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher Jünger wird von Jesus mit den Worten begrüßt: 'Siehe, ein rechter Israeliter, in dem kein Falsch ist'?",
+    "optionen": [
+      "Nathanael",
+      "Philippus",
+      "Bartholomäus (evtl. identisch)",
+      "Andreas"
+    ],
+    "richtig": "Nathanael",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 1,
+      "versVon": 47,
+      "versBis": 47
+    },
+    "erklaerung": "Jesus sprach dies über Nathanael, bevor dieser ihn als Sohn Gottes und König Israels bekannte."
+  },
+  {
+    "id": "g88",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer war der Jünger, der Nathanael zu Jesus brachte?",
+    "optionen": [
+      "Philippus",
+      "Andreas",
+      "Petrus",
+      "Judas Thaddäus"
+    ],
+    "richtig": "Philippus",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 1,
+      "versVon": 45,
+      "versBis": 45
+    },
+    "erklaerung": "Philippus fand Nathanael und sagte ihm, sie hätten den gefunden, von dem Mose und die Propheten geschrieben hätten."
+  },
+  {
+    "id": "g89",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Wer brachte seinen Bruder Simon (Petrus) zu Jesus?",
+    "optionen": [
+      "Andreas",
+      "Jakobus",
+      "Johannes",
+      "Philippus"
+    ],
+    "richtig": "Andreas",
+    "beleg": {
+      "osis": "JHN",
+      "bookName": "Johannes",
+      "kapitel": 1,
+      "versVon": 41,
+      "versBis": 42
+    },
+    "erklaerung": "Andreas fand zuerst seinen Bruder Simon und führte ihn zu Jesus."
+  },
+  {
+    "id": "g90",
+    "stufe": "gemeindeleiter",
+    "typ": "single",
+    "frage": "Welcher der Zwölf wird im Neuen Testament auch 'der Kananäer' bzw. 'Zelotes' genannt?",
+    "optionen": [
+      "Simon",
+      "Judas Thaddäus",
+      "Matthäus",
+      "Jakobus, Sohn des Alphäus"
+    ],
+    "richtig": "Simon",
+    "beleg": {
+      "osis": "LUK",
+      "bookName": "Lukas",
+      "kapitel": 6,
+      "versVon": 15,
+      "versBis": 15
+    },
+    "erklaerung": "Unter den Zwölf wird Simon, genannt der Zelot (Eiferer), aufgeführt."
   }
 ]
