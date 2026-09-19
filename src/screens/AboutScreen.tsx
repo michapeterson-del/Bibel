@@ -23,10 +23,11 @@ export default function AboutScreen() {
           Der KI-Chat antwortet auf Basis eines evangelikalen Grundverständnisses und folgt zusätzlich dem
           Bekenntnis und der "Biblischen Grundlage des Gemeindelebens" der Bruderschaft der
           EvangeliumsChristen-Baptisten EBEN-EZER - u. a. zu Heiliger Schrift (Irrtumslosigkeit im
-          Urtext), Bekehrung/Wiedergeburt, Gemeindeverständnis und -mitgliedschaft, Taufe (Gläubigentaufe
+          Urtext), Bekehrung/Wiedergeburt, Gemeindeverständnis, -leitung und -zucht, Taufe (Gläubigentaufe
           durch Untertauchen), Abendmahl (Gedächtnismahl für getaufte Gemeindeglieder), Geistesgaben
-          (Pfingsten als einmaliges Ereignis), Heiligung (fortschreitender Prozess) sowie zur Absonderung
-          von der Welt und Lebensführung (u. a. Kleidung/Äußeres, Medien und Musik). Bei diesen Themen
+          (Pfingsten als einmaliges Ereignis), Heiligung (fortschreitender Prozess), Absonderung von der
+          Welt und Lebensführung (u. a. Kleidung/Äußeres, Medien und Musik) sowie Ehe und Familie
+          (Unauflöslichkeit der Ehe, Rollenverständnis von Mann und Frau). Bei diesen Themen
           vertritt die KI diese Position klar statt beide Seiten neutral nebeneinanderzustellen. Bei
           anderen strittigen Themen (z. B. Erwählung, genauer Zeitpunkt der Entrückung, Frauen im
           Leitungsdienst) nennt sie weiterhin die Hauptpositionen verschiedener Christen.
