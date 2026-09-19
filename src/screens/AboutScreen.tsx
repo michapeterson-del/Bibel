@@ -20,13 +20,16 @@ export default function AboutScreen() {
       <div className="card" style={{ marginBottom: 16 }}>
         <p style={{ margin: "0 0 8px", fontWeight: 600 }}>Glaubensgrundlage der KI-Antworten</p>
         <p style={{ margin: 0, fontSize: "0.9rem" }}>
-          Der KI-Chat antwortet auf Basis eines evangelikalen Grundverständnisses. Bei Taufe, Abendmahl,
-          Geistesgaben und Heiligung folgt er zusätzlich dem Bekenntnis der Bruderschaft der
-          EvangeliumsChristen-Baptisten EBEN-EZER (Gläubigentaufe durch Untertauchen, Gedächtnismahl für
-          getaufte Gemeindeglieder, Pfingsten als einmaliges Ereignis, fortschreitende Heiligung) statt
-          beide Seiten neutral nebeneinanderzustellen. Bei anderen strittigen Themen (z. B. Erwählung,
-          genauer Zeitpunkt der Entrückung, Frauen im Leitungsdienst) nennt er weiterhin die
-          Hauptpositionen verschiedener Christen.
+          Der KI-Chat antwortet auf Basis eines evangelikalen Grundverständnisses und folgt zusätzlich dem
+          Bekenntnis und der "Biblischen Grundlage des Gemeindelebens" der Bruderschaft der
+          EvangeliumsChristen-Baptisten EBEN-EZER - u. a. zu Heiliger Schrift (Irrtumslosigkeit im
+          Urtext), Bekehrung/Wiedergeburt, Gemeindeverständnis und -mitgliedschaft, Taufe (Gläubigentaufe
+          durch Untertauchen), Abendmahl (Gedächtnismahl für getaufte Gemeindeglieder), Geistesgaben
+          (Pfingsten als einmaliges Ereignis), Heiligung (fortschreitender Prozess) sowie zur Absonderung
+          von der Welt und Lebensführung (u. a. Kleidung/Äußeres, Medien und Musik). Bei diesen Themen
+          vertritt die KI diese Position klar statt beide Seiten neutral nebeneinanderzustellen. Bei
+          anderen strittigen Themen (z. B. Erwählung, genauer Zeitpunkt der Entrückung, Frauen im
+          Leitungsdienst) nennt sie weiterhin die Hauptpositionen verschiedener Christen.
         </p>
       </div>
 
