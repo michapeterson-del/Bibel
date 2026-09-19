@@ -182,6 +182,11 @@ export default function ReaderScreen() {
               style={{
                 display: "inline",
                 background: mark && mark.typ === "markierung" ? FARBE_HEX[mark.farbe] : undefined,
+                color: mark && mark.typ === "markierung" ? "#332f1a" : undefined,
+                boxDecorationBreak: mark && mark.typ === "markierung" ? "clone" : undefined,
+                WebkitBoxDecorationBreak: mark && mark.typ === "markierung" ? "clone" : undefined,
+                borderRadius: mark && mark.typ === "markierung" ? 3 : undefined,
+                padding: mark && mark.typ === "markierung" ? "0.05em 0" : undefined,
                 borderLeft: mark && mark.typ === "lesezeichen" ? `4px solid ${FARBE_HEX[mark.farbe]}` : undefined,
                 cursor: "pointer",
               }}

@@ -233,6 +233,7 @@ export default function SettingsScreen() {
 
       <Section title="Daten">
         <button className="btn secondary" onClick={() => navigate("/lesezeichen")}>Lesezeichen verwalten</button>
+        <button className="btn secondary" onClick={() => navigate("/markierungen")}>🖍 Meine Markierungen</button>
         <button
           className="btn secondary"
           onClick={async () => {

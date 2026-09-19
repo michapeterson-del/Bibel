@@ -22,7 +22,7 @@ export default function VerseDetailModal() {
   const navigate = useNavigate();
   const [translation, setTranslation] = useState<Translation>(settings?.standardUebersetzung ?? "LUT1912");
   const [text, setText] = useState<string>("");
-  const [colorPickerModus, setColorPickerModus] = useState<"lesezeichen" | "markierung" | null>(null);
+  const [zeigeFarbauswahl, setZeigeFarbauswahl] = useState(false);
   const [showNote, setShowNote] = useState(false);
   const [noteText, setNoteText] = useState("");
   const [savedMsg, setSavedMsg] = useState("");
@@ -32,7 +32,7 @@ export default function VerseDetailModal() {
     if (!target) return;
     getFarbLabels().then(setFarbLabels);
     setTranslation(settings?.standardUebersetzung ?? "LUT1912");
-    setColorPickerModus(null);
+    setZeigeFarbauswahl(false);
     setShowNote(false);
     setNoteText("");
     setSavedMsg("");
@@ -52,10 +52,28 @@ export default function VerseDetailModal() {
       ? `${target.bookName} ${target.chapter},${target.verseVon}`
       : `${target.bookName} ${target.chapter},${target.verseVon}-${target.verseBis}`;
 
-  async function addBookmark(farbe: Farbe) {
-    if (!target || !colorPickerModus) return;
+  const LESEZEICHEN_FARBE: Farbe = "lila";
+
+  async function addLesezeichen() {
+    if (!target) return;
     await saveLesezeichen({
-      typ: colorPickerModus,
+      typ: "lesezeichen",
+      uebersetzung: translation,
+      buch: target.osis,
+      kapitel: target.chapter,
+      vers_von: target.verseVon,
+      vers_bis: target.verseBis,
+      farbe: LESEZEICHEN_FARBE,
+      tags: [],
+    });
+    setSavedMsg("Lesezeichen gespeichert.");
+    bumpMarksVersion();
+  }
+
+  async function addMarkierung(farbe: Farbe) {
+    if (!target) return;
+    await saveLesezeichen({
+      typ: "markierung",
       uebersetzung: translation,
       buch: target.osis,
       kapitel: target.chapter,
@@ -64,8 +82,8 @@ export default function VerseDetailModal() {
       farbe,
       tags: [],
     });
-    setColorPickerModus(null);
-    setSavedMsg(colorPickerModus === "markierung" ? "Markierung gespeichert." : "Lesezeichen gespeichert.");
+    setZeigeFarbauswahl(false);
+    setSavedMsg("Markierung gespeichert.");
     bumpMarksVersion();
   }
 
@@ -139,15 +157,10 @@ export default function VerseDetailModal() {
         {savedMsg && <p style={{ color: "var(--salbei-fg)", fontSize: "0.85rem" }}>{savedMsg}</p>}
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
+          <button className="chip" onClick={addLesezeichen}>☆ Lesezeichen</button>
           <button
-            className={`chip ${colorPickerModus === "lesezeichen" ? "active" : ""}`}
-            onClick={() => setColorPickerModus((v) => (v === "lesezeichen" ? null : "lesezeichen"))}
-          >
-            ☆ Lesezeichen
-          </button>
-          <button
-            className={`chip ${colorPickerModus === "markierung" ? "active" : ""}`}
-            onClick={() => setColorPickerModus((v) => (v === "markierung" ? null : "markierung"))}
+            className={`chip ${zeigeFarbauswahl ? "active" : ""}`}
+            onClick={() => setZeigeFarbauswahl((v) => !v)}
           >
             🖍 Markieren
           </button>
@@ -158,12 +171,12 @@ export default function VerseDetailModal() {
           <button className="chip" onClick={askInChat}>💬 Dazu fragen</button>
         </div>
 
-        {colorPickerModus && (
+        {zeigeFarbauswahl && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginTop: 10 }}>
             {FARBEN.map((f) => (
               <div key={f.value} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
                 <button
-                  onClick={() => addBookmark(f.value)}
+                  onClick={() => addMarkierung(f.value)}
                   aria-label={f.value}
                   title={farbLabels?.[f.value]}
                   style={{
