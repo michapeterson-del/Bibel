@@ -6,8 +6,10 @@ import { useSettings } from "../lib/SettingsContext";
 import { askEssay } from "../lib/ai/provider";
 import { kvGet } from "../lib/db/userDb";
 import { decryptSecret } from "../lib/crypto";
-import { createChat, saveChat } from "../lib/db/userDb";
-import type { VerseRow } from "../types";
+import { createChat, listChats, saveChat } from "../lib/db/userDb";
+import type { ChatGespraech, VerseRow } from "../types";
+
+const ERFORSCHEN_PRAEFIX = "Erforschen: ";
 
 export default function ExploreScreen() {
   const { settings } = useSettings();
@@ -17,10 +19,22 @@ export default function ExploreScreen() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [essay, setEssay] = useState<{ thema: string; text: string; verse: VerseRow[] } | null>(null);
+  const [gespeicherteThemen, setGespeicherteThemen] = useState<ChatGespraech[]>([]);
+  const [stichwort, setStichwort] = useState("");
 
   useEffect(() => {
     getTopics().then(setTopics);
+    ladeGespeicherteThemen();
   }, []);
+
+  async function ladeGespeicherteThemen() {
+    const alle = await listChats();
+    setGespeicherteThemen(alle.filter((c) => c.titel.startsWith(ERFORSCHEN_PRAEFIX)));
+  }
+
+  const gefilterteThemen = gespeicherteThemen.filter((c) =>
+    c.titel.slice(ERFORSCHEN_PRAEFIX.length).toLowerCase().includes(stichwort.trim().toLowerCase())
+  );
 
   async function verseForThema(thema: string, topicId?: number): Promise<VerseRow[]> {
     if (topicId) return getTopicVerses(topicId);
@@ -67,6 +81,7 @@ export default function ExploreScreen() {
         erstellt_am: new Date().toISOString(),
       });
       await saveChat(chat);
+      await ladeGespeicherteThemen();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Unbekannter Fehler.");
     } finally {
@@ -132,6 +147,30 @@ export default function ExploreScreen() {
             <button className="chip" onClick={share}>📤 Teilen</button>
             <button className="chip" onClick={() => navigator.clipboard.writeText(essay.text)}>📋 Kopieren</button>
           </div>
+        </div>
+      )}
+
+      {gespeicherteThemen.length > 0 && (
+        <div style={{ marginTop: 20 }}>
+          <h3>Deine bisherigen Themen</h3>
+          <input
+            type="text"
+            placeholder="Nach Stichwort suchen…"
+            value={stichwort}
+            onChange={(e) => setStichwort(e.target.value)}
+            style={{ marginBottom: 10 }}
+          />
+          {gefilterteThemen.length === 0 && (
+            <p style={{ color: "var(--text-muted)", fontSize: "0.9rem" }}>Kein gespeichertes Thema passt zu „{stichwort}".</p>
+          )}
+          {gefilterteThemen.map((c) => (
+            <div key={c.id} className="card" style={{ marginBottom: 8, cursor: "pointer" }} onClick={() => navigate(`/chat/${c.id}`)}>
+              <p style={{ margin: 0, fontWeight: 600 }}>{c.titel.slice(ERFORSCHEN_PRAEFIX.length)}</p>
+              <p style={{ margin: "2px 0 0", fontSize: "0.82rem", color: "var(--text-muted)" }}>
+                {new Date(c.erstellt_am).toLocaleDateString("de-DE")}
+              </p>
+            </div>
+          ))}
         </div>
       )}
     </div>
