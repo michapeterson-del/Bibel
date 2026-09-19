@@ -180,21 +180,20 @@ export default function ReaderScreen() {
       >
         {verses.map((v) => {
           const mark = markForVerse(v.verse);
+          const istMarkierung = mark?.typ === "markierung";
+          const istLesezeichen = mark?.typ === "lesezeichen";
           const notiz = notizFuerVerse(v.verse);
           return (
             <span
               key={v.verse}
               className={`verse-row ${mark ? "marked" : ""}`}
-              title={mark ? farbLabels?.[mark.farbe] : undefined}
+              title={istMarkierung ? farbLabels?.[mark!.farbe] : undefined}
               style={{
                 display: "inline",
-                background: mark && mark.typ === "markierung" ? FARBE_HEX[mark.farbe] : undefined,
-                color: mark && mark.typ === "markierung" ? "#332f1a" : undefined,
-                boxDecorationBreak: mark && mark.typ === "markierung" ? "clone" : undefined,
-                WebkitBoxDecorationBreak: mark && mark.typ === "markierung" ? "clone" : undefined,
-                borderRadius: mark && mark.typ === "markierung" ? 3 : undefined,
-                padding: mark && mark.typ === "markierung" ? "0.05em 0" : undefined,
-                borderLeft: mark && mark.typ === "lesezeichen" ? `4px solid ${FARBE_HEX[mark.farbe]}` : undefined,
+                background: istMarkierung ? FARBE_HEX[mark!.farbe] : undefined,
+                color: istMarkierung ? "#332f1a" : undefined,
+                boxDecorationBreak: istMarkierung ? "clone" : undefined,
+                WebkitBoxDecorationBreak: istMarkierung ? "clone" : undefined,
                 cursor: "pointer",
               }}
               onClick={() =>
@@ -208,12 +207,14 @@ export default function ReaderScreen() {
               }
             >
               {settings.versnummernAn && <sup className="verse-num">{v.verse}</sup>}
+              {istLesezeichen && <span title="Lesezeichen" style={{ marginRight: 2 }}>⭐</span>}
+              {v.text}
               {notiz && (
-                <sup title={notiz.notiz} style={{ marginRight: 2 }}>
-                  📝
-                </sup>
+                <span title={notiz.notiz} style={{ marginLeft: 3, marginRight: 3 }}>
+                  ✏️
+                </span>
               )}
-              {v.text}{" "}
+              {" "}
             </span>
           );
         })}
