@@ -3,6 +3,7 @@ import type {
   AntwortFeedback,
   ChatGespraech,
   Einstellungen,
+  FarbLabels,
   LeseFortschritt,
   LernVers,
   LesezeichenEintrag,
@@ -324,6 +325,25 @@ export async function getCurrentStreakCount(): Promise<number> {
 
 export async function resetStreak(): Promise<void> {
   await kvSet("streak", { tage: [], freezesVerfuegbar: 2, laengsteSerie: 0 } satisfies StreakStatus);
+}
+
+// ---------- Farb-Bedeutungen (fuer Lesezeichen/Markierungen) ----------
+
+const DEFAULT_FARB_LABELS: FarbLabels = {
+  gelb: "Gelb",
+  gruen: "Grün",
+  blau: "Blau",
+  rosa: "Rosa",
+  lila: "Lila",
+};
+
+export async function getFarbLabels(): Promise<FarbLabels> {
+  const stored = await kvGet<FarbLabels>("farb_labels");
+  return { ...DEFAULT_FARB_LABELS, ...stored };
+}
+
+export async function saveFarbLabels(labels: FarbLabels): Promise<void> {
+  await kvSet("farb_labels", labels);
 }
 
 // ---------- Stille Zeit ----------

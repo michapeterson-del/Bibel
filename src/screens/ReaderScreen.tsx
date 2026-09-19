@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import type { BookMeta, Farbe, LesezeichenEintrag, VerseRow } from "../types";
+import type { BookMeta, Farbe, FarbLabels, LesezeichenEintrag, VerseRow } from "../types";
 import {
   getAllBooks,
   getBookByOsis,
@@ -9,6 +9,7 @@ import {
 } from "../lib/db/bibleDb";
 import {
   addAktivMinuten,
+  getFarbLabels,
   getLeseFortschritt,
   istKapitelGelesen,
   listLesezeichen,
@@ -32,7 +33,7 @@ export default function ReaderScreen() {
   const { osis: osisParam, kapitel: kapitelParam } = useParams();
   const navigate = useNavigate();
   const { settings, update } = useSettings();
-  const { open: openVerseDetail } = useVerseDetail();
+  const { open: openVerseDetail, marksVersion } = useVerseDetail();
 
   const [book, setBook] = useState<BookMeta | null>(null);
   const [chapter, setChapter] = useState<number>(kapitelParam ? parseInt(kapitelParam, 10) : 1);
@@ -41,6 +42,11 @@ export default function ReaderScreen() {
   const [showPicker, setShowPicker] = useState(false);
   const [marks, setMarks] = useState<LesezeichenEintrag[]>([]);
   const [fertigMsg, setFertigMsg] = useState(false);
+  const [farbLabels, setFarbLabels] = useState<FarbLabels | null>(null);
+
+  useEffect(() => {
+    getFarbLabels().then(setFarbLabels);
+  }, []);
 
   // Initiales Buch/Kapitel bestimmen: aus URL, sonst Lesefortschritt, sonst Johannes 1
   useEffect(() => {
@@ -87,7 +93,7 @@ export default function ReaderScreen() {
     listLesezeichen().then((all) =>
       setMarks(all.filter((m) => m.buch === book.osis && m.kapitel === chapter))
     );
-  }, [book, chapter]);
+  }, [book, chapter, marksVersion]);
 
   if (!book || !settings) return <p>Lädt…</p>;
 
@@ -172,6 +178,7 @@ export default function ReaderScreen() {
             <span
               key={v.verse}
               className={`verse-row ${mark ? "marked" : ""}`}
+              title={mark ? farbLabels?.[mark.farbe] : undefined}
               style={{
                 display: "inline",
                 background: mark && mark.typ === "markierung" ? FARBE_HEX[mark.farbe] : undefined,
