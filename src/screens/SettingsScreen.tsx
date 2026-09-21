@@ -5,6 +5,7 @@ import type { AiProvider } from "../types";
 import { decryptSecret, encryptSecret, maskSecret } from "../lib/crypto";
 import { clearAllChats, clearFeedback, kvGet, kvSet, listFeedback, resetStreak } from "../lib/db/userDb";
 import { testConnection } from "../lib/ai/provider";
+import { listVoices, type ElevenLabsVoice } from "../lib/tts/elevenlabs";
 
 const PROVIDER_LABEL: Record<AiProvider, string> = {
   gemeinsam: "Gemeinsam (kein eigener Schlüssel nötig)",
@@ -44,9 +45,19 @@ export default function SettingsScreen() {
   const [testing, setTesting] = useState(false);
   const [feedbackCount, setFeedbackCount] = useState(0);
   const [dataMsg, setDataMsg] = useState("");
+  const [elevenlabsKeyInput, setElevenlabsKeyInput] = useState("");
+  const [elevenlabsSavedKeyMasked, setElevenlabsSavedKeyMasked] = useState("");
+  const [elevenlabsVoices, setElevenlabsVoices] = useState<ElevenLabsVoice[]>([]);
+  const [elevenlabsLadeVoices, setElevenlabsLadeVoices] = useState(false);
+  const [elevenlabsMsg, setElevenlabsMsg] = useState("");
 
   useEffect(() => {
     listFeedback().then((f) => setFeedbackCount(f.length));
+    kvGet<string>("api_key_elevenlabs").then(async (enc) => {
+      if (!enc) return;
+      const plain = await decryptSecret(enc);
+      setElevenlabsSavedKeyMasked(maskSecret(plain));
+    });
   }, []);
 
   useEffect(() => {
@@ -81,6 +92,35 @@ export default function SettingsScreen() {
     const result = await testConnection({ provider: settings!.aiProvider, apiKey, model: settings!.aiModell || undefined });
     setTestMsg(result.message);
     setTesting(false);
+  }
+
+  async function saveElevenlabsKey() {
+    if (!elevenlabsKeyInput.trim()) return;
+    const enc = await encryptSecret(elevenlabsKeyInput.trim());
+    await kvSet("api_key_elevenlabs", enc);
+    setElevenlabsSavedKeyMasked(maskSecret(elevenlabsKeyInput.trim()));
+    setElevenlabsKeyInput("");
+    setElevenlabsMsg("Gespeichert.");
+  }
+
+  async function elevenlabsStimmenLaden() {
+    setElevenlabsLadeVoices(true);
+    setElevenlabsMsg("");
+    try {
+      const enc = await kvGet<string>("api_key_elevenlabs");
+      const apiKey = enc ? await decryptSecret(enc) : elevenlabsKeyInput.trim();
+      if (!apiKey) {
+        setElevenlabsMsg("Bitte zuerst einen API-Schlüssel speichern.");
+        return;
+      }
+      const voices = await listVoices(apiKey);
+      setElevenlabsVoices(voices);
+      if (voices.length === 0) setElevenlabsMsg("Keine Stimmen gefunden.");
+    } catch (e) {
+      setElevenlabsMsg(e instanceof Error ? e.message : "Stimmen konnten nicht geladen werden.");
+    } finally {
+      setElevenlabsLadeVoices(false);
+    }
   }
 
   return (
@@ -204,6 +244,51 @@ export default function SettingsScreen() {
         <Row label="Versnummern anzeigen">
           <input type="checkbox" checked={settings.versnummernAn} onChange={(e) => update({ versnummernAn: e.target.checked })} />
         </Row>
+      </Section>
+
+      <Section title="Vorlesen (ElevenLabs)">
+        <Row label="API-Schlüssel">
+          <span style={{ fontFamily: "monospace" }}>{elevenlabsSavedKeyMasked || "– kein Schlüssel –"}</span>
+        </Row>
+        <div style={{ display: "flex", gap: 8 }}>
+          <input
+            type="password"
+            placeholder="ElevenLabs API-Schlüssel eingeben…"
+            value={elevenlabsKeyInput}
+            onChange={(e) => setElevenlabsKeyInput(e.target.value)}
+          />
+          <button className="btn secondary" onClick={saveElevenlabsKey}>Speichern</button>
+        </div>
+        <button className="btn secondary" onClick={elevenlabsStimmenLaden} disabled={elevenlabsLadeVoices}>
+          {elevenlabsLadeVoices ? "Lädt…" : "Stimmen laden"}
+        </button>
+        {elevenlabsVoices.length > 0 && (
+          <Row label="Stimme">
+            <select
+              value={settings.elevenlabsVoiceId}
+              onChange={(e) => {
+                const voice = elevenlabsVoices.find((v) => v.voice_id === e.target.value);
+                update({ elevenlabsVoiceId: e.target.value, elevenlabsVoiceName: voice?.name ?? "" });
+              }}
+            >
+              <option value="">– wählen –</option>
+              {elevenlabsVoices.map((v) => (
+                <option key={v.voice_id} value={v.voice_id}>{v.name}</option>
+              ))}
+            </select>
+          </Row>
+        )}
+        {!elevenlabsVoices.length && settings.elevenlabsVoiceName && (
+          <Row label="Gewählte Stimme">
+            <span>{settings.elevenlabsVoiceName}</span>
+          </Row>
+        )}
+        {elevenlabsMsg && <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>{elevenlabsMsg}</p>}
+        <p style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
+          Mit einem eigenen ElevenLabs-Konto kannst du dir Bibelkapitel beim Lesen mit einer natürlichen
+          Stimme vorlesen lassen. Der Schlüssel wird lokal verschlüsselt gespeichert und nur direkt an
+          ElevenLabs gesendet.
+        </p>
       </Section>
 
       <Section title="Serie & Erinnerungen">
