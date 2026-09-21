@@ -54,6 +54,9 @@ export default function ReaderScreen() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioUrlsRef = useRef<string[]>([]);
   const audioIndexRef = useRef(0);
+  // true, waehrend ein automatischer Kapitelwechsel läuft, damit die
+  // laufende Wiedergabe dabei nicht durch den Kapitelwechsel-Cleanup gestoppt wird
+  const autoWeiterRef = useRef(false);
 
   useEffect(() => {
     getFarbLabels().then(setFarbLabels);
@@ -64,19 +67,58 @@ export default function ReaderScreen() {
     audioUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
     audioUrlsRef.current = [];
     audioIndexRef.current = 0;
+    autoWeiterRef.current = false;
     setVorlesenStatus("aus");
   }
 
   useEffect(() => {
-    // Beim Kapitelwechsel laufende Wiedergabe beenden
-    return () => vorlesenStoppen();
+    // Bei einem manuell ausgeloesten Kapitelwechsel laufende Wiedergabe beenden;
+    // beim automatischen Weiterlesen (naechstes Kapitel) läuft sie einfach weiter
+    return () => {
+      if (!autoWeiterRef.current) vorlesenStoppen();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [book, chapter]);
+
+  async function naechstesKapitelBestimmen(): Promise<{ osis: string; chapter: number } | null> {
+    if (!book) return null;
+    if (chapter < chapterCount) return { osis: book.osis, chapter: chapter + 1 };
+    const books = await getAllBooks();
+    const idx = books.findIndex((b) => b.osis === book.osis);
+    const naechstesBuch = idx >= 0 ? books[idx + 1] : undefined;
+    return naechstesBuch ? { osis: naechstesBuch.osis, chapter: 1 } : null;
+  }
+
+  async function kapitelEndeErreicht() {
+    const next = await naechstesKapitelBestimmen();
+    if (!next || !book) {
+      setVorlesenStatus("aus");
+      return;
+    }
+    audioUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
+    audioUrlsRef.current = [];
+    audioIndexRef.current = 0;
+    autoWeiterRef.current = true;
+    if (next.osis === book.osis) {
+      setChapter(next.chapter);
+      navigate(`/lesen/${book.osis}/${next.chapter}`, { replace: true });
+      return;
+    }
+    const nb = await getBookByOsis(next.osis);
+    if (!nb) {
+      autoWeiterRef.current = false;
+      setVorlesenStatus("aus");
+      return;
+    }
+    setBook(nb);
+    setChapter(next.chapter);
+    navigate(`/lesen/${next.osis}/${next.chapter}`, { replace: true });
+  }
 
   function spieleChunk(index: number) {
     const audio = audioRef.current;
     if (!audio || index >= audioUrlsRef.current.length) {
-      setVorlesenStatus("aus");
+      kapitelEndeErreicht();
       return;
     }
     audioIndexRef.current = index;
@@ -85,26 +127,18 @@ export default function ReaderScreen() {
     setVorlesenStatus("spielt");
   }
 
-  async function vorlesenStarten() {
-    if (vorlesenStatus === "spielt") {
-      audioRef.current?.pause();
-      setVorlesenStatus("pausiert");
-      return;
-    }
-    if (vorlesenStatus === "pausiert") {
-      audioRef.current?.play().catch(() => setVorlesenFehler("Wiedergabe konnte nicht gestartet werden."));
-      setVorlesenStatus("spielt");
-      return;
-    }
+  async function starteFrischeWiedergabe() {
     setVorlesenFehler("");
     if (!settings?.elevenlabsVoiceId) {
       setVorlesenFehler("Keine ElevenLabs-Stimme eingerichtet. Öffne Einstellungen → Vorlesen.");
+      setVorlesenStatus("aus");
       return;
     }
     const enc = await kvGet<string>("api_key_elevenlabs");
     const apiKey = enc ? await decryptSecret(enc) : "";
     if (!apiKey) {
       setVorlesenFehler("Kein ElevenLabs-API-Schlüssel hinterlegt. Öffne Einstellungen → Vorlesen.");
+      setVorlesenStatus("aus");
       return;
     }
     setVorlesenStatus("laedt");
@@ -122,6 +156,29 @@ export default function ReaderScreen() {
       setVorlesenStatus("aus");
     }
   }
+
+  async function vorlesenStarten() {
+    if (vorlesenStatus === "spielt") {
+      audioRef.current?.pause();
+      setVorlesenStatus("pausiert");
+      return;
+    }
+    if (vorlesenStatus === "pausiert") {
+      audioRef.current?.play().catch(() => setVorlesenFehler("Wiedergabe konnte nicht gestartet werden."));
+      setVorlesenStatus("spielt");
+      return;
+    }
+    await starteFrischeWiedergabe();
+  }
+
+  // Nach einem automatischen Kapitelwechsel: sobald die Verse des neuen
+  // Kapitels geladen sind, Vorlesen dort nahtlos fortsetzen
+  useEffect(() => {
+    if (!autoWeiterRef.current || verses.length === 0) return;
+    autoWeiterRef.current = false;
+    starteFrischeWiedergabe();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [verses]);
 
   // Initiales Buch/Kapitel bestimmen: aus URL, sonst Lesefortschritt, sonst Johannes 1
   useEffect(() => {
