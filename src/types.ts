@@ -100,6 +100,8 @@ export interface Einstellungen {
   tagesErinnerungZeit: string;
   lernErinnerungAn: boolean;
   lernErinnerungZeit: string;
+  elevenlabsVoiceId: string;
+  elevenlabsVoiceName: string;
 }
 
 export interface LeseFortschritt {

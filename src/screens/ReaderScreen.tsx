@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import type { BookMeta, Farbe, FarbLabels, LesezeichenEintrag, VerseRow } from "../types";
 import {
@@ -12,14 +12,19 @@ import {
   getFarbLabels,
   getLeseFortschritt,
   istKapitelGelesen,
+  kvGet,
   listLesezeichen,
   saveLeseFortschritt,
   setKapitelGelesen,
 } from "../lib/db/userDb";
 import { useSettings } from "../lib/SettingsContext";
 import { useVerseDetail } from "../lib/VerseDetailContext";
+import { decryptSecret } from "../lib/crypto";
+import { chunkText, synthesize } from "../lib/tts/elevenlabs";
 import TranslationSwitch from "../components/TranslationSwitch";
 import BookPickerModal from "../components/BookPickerModal";
+
+type VorlesenStatus = "aus" | "laedt" | "spielt" | "pausiert";
 
 const FARBE_HEX: Record<Farbe, string> = {
   gelb: "#EFE5BC",
@@ -44,9 +49,79 @@ export default function ReaderScreen() {
   const [fertigMsg, setFertigMsg] = useState(false);
   const [farbLabels, setFarbLabels] = useState<FarbLabels | null>(null);
 
+  const [vorlesenStatus, setVorlesenStatus] = useState<VorlesenStatus>("aus");
+  const [vorlesenFehler, setVorlesenFehler] = useState("");
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioUrlsRef = useRef<string[]>([]);
+  const audioIndexRef = useRef(0);
+
   useEffect(() => {
     getFarbLabels().then(setFarbLabels);
   }, []);
+
+  function vorlesenStoppen() {
+    audioRef.current?.pause();
+    audioUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
+    audioUrlsRef.current = [];
+    audioIndexRef.current = 0;
+    setVorlesenStatus("aus");
+  }
+
+  useEffect(() => {
+    // Beim Kapitelwechsel laufende Wiedergabe beenden
+    return () => vorlesenStoppen();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [book, chapter]);
+
+  function spieleChunk(index: number) {
+    const audio = audioRef.current;
+    if (!audio || index >= audioUrlsRef.current.length) {
+      setVorlesenStatus("aus");
+      return;
+    }
+    audioIndexRef.current = index;
+    audio.src = audioUrlsRef.current[index];
+    audio.play().catch(() => setVorlesenFehler("Wiedergabe konnte nicht gestartet werden."));
+    setVorlesenStatus("spielt");
+  }
+
+  async function vorlesenStarten() {
+    if (vorlesenStatus === "spielt") {
+      audioRef.current?.pause();
+      setVorlesenStatus("pausiert");
+      return;
+    }
+    if (vorlesenStatus === "pausiert") {
+      audioRef.current?.play().catch(() => setVorlesenFehler("Wiedergabe konnte nicht gestartet werden."));
+      setVorlesenStatus("spielt");
+      return;
+    }
+    setVorlesenFehler("");
+    if (!settings?.elevenlabsVoiceId) {
+      setVorlesenFehler("Keine ElevenLabs-Stimme eingerichtet. Öffne Einstellungen → Vorlesen.");
+      return;
+    }
+    const enc = await kvGet<string>("api_key_elevenlabs");
+    const apiKey = enc ? await decryptSecret(enc) : "";
+    if (!apiKey) {
+      setVorlesenFehler("Kein ElevenLabs-API-Schlüssel hinterlegt. Öffne Einstellungen → Vorlesen.");
+      return;
+    }
+    setVorlesenStatus("laedt");
+    try {
+      const chunks = chunkText(verses.map((v) => v.text));
+      const urls: string[] = [];
+      for (const chunk of chunks) {
+        const blob = await synthesize(apiKey, settings.elevenlabsVoiceId, chunk);
+        urls.push(URL.createObjectURL(blob));
+      }
+      audioUrlsRef.current = urls;
+      spieleChunk(0);
+    } catch (e) {
+      setVorlesenFehler(e instanceof Error ? e.message : "Vorlesen ist fehlgeschlagen.");
+      setVorlesenStatus("aus");
+    }
+  }
 
   // Initiales Buch/Kapitel bestimmen: aus URL, sonst Lesefortschritt, sonst Johannes 1
   useEffect(() => {
@@ -144,6 +219,36 @@ export default function ReaderScreen() {
       </div>
 
       <TranslationSwitch value={settings.standardUebersetzung} onChange={(t) => update({ standardUebersetzung: t })} />
+
+      <div style={{ display: "flex", gap: 8, marginTop: 10, alignItems: "center", flexWrap: "wrap" }}>
+        <button className="chip" onClick={vorlesenStarten} disabled={vorlesenStatus === "laedt"}>
+          {vorlesenStatus === "laedt" && "⏳ Bereite Vorlesen vor…"}
+          {vorlesenStatus === "spielt" && "⏸ Pause"}
+          {vorlesenStatus === "pausiert" && "▶︎ Weiter"}
+          {vorlesenStatus === "aus" && "🔊 Vorlesen"}
+        </button>
+        {vorlesenStatus !== "aus" && (
+          <button className="icon-btn" onClick={vorlesenStoppen} aria-label="Vorlesen stoppen">⏹</button>
+        )}
+      </div>
+      {vorlesenFehler && (
+        <p style={{ color: "var(--lila-fg)", fontSize: "0.82rem", marginTop: 4 }}>
+          {vorlesenFehler}
+          {vorlesenFehler.includes("Einstellungen") && (
+            <>
+              {" "}
+              <button className="chip" onClick={() => navigate("/einstellungen")} style={{ marginLeft: 6 }}>
+                Zu den Einstellungen
+              </button>
+            </>
+          )}
+        </p>
+      )}
+      <audio
+        ref={audioRef}
+        onEnded={() => spieleChunk(audioIndexRef.current + 1)}
+        style={{ display: "none" }}
+      />
 
       <div style={{ display: "flex", gap: 8, marginTop: 10, marginBottom: 10 }}>
         <select

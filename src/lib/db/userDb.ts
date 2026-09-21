@@ -231,6 +231,8 @@ const DEFAULT_SETTINGS: Einstellungen = {
   tagesErinnerungZeit: "19:00",
   lernErinnerungAn: false,
   lernErinnerungZeit: "08:00",
+  elevenlabsVoiceId: "",
+  elevenlabsVoiceName: "",
 };
 
 export async function getSettings(): Promise<Einstellungen> {
