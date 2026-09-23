@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import type { Topic } from "../lib/db/bibleDb";
-import { getTopicVerses, getTopics, searchFullText } from "../lib/db/bibleDb";
+import { getTopicVerses, getTopics, getVerseRange, searchFullText } from "../lib/db/bibleDb";
 import { useSettings } from "../lib/SettingsContext";
 import { askEssay } from "../lib/ai/provider";
 import { kvGet, kvSet } from "../lib/db/userDb";
@@ -14,6 +14,7 @@ const ERFORSCHEN_PRAEFIX = "Erforschen: ";
 export default function ExploreScreen() {
   const { settings } = useSettings();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [topics, setTopics] = useState<Topic[]>([]);
   const [customThema, setCustomThema] = useState("");
   const [busy, setBusy] = useState(false);
@@ -22,12 +23,45 @@ export default function ExploreScreen() {
   const [gespeicherteThemen, setGespeicherteThemen] = useState<ChatGespraech[]>([]);
   const [stichwort, setStichwort] = useState("");
   const [stil, setStil] = useState<"text" | "stichworte">("text");
+  const versAusReaderVerarbeitet = useRef(false);
 
   useEffect(() => {
     getTopics().then(setTopics);
     ladeGespeicherteThemen();
     kvGet<"text" | "stichworte">("erforschen_stil").then((v) => v && setStil(v));
   }, []);
+
+  // Kommt man mit einem konkreten Vers aus dem Lese-Bildschirm hierher
+  // (VerseDetailModal -> "Erforschen"), direkt einen Aufsatz zu genau
+  // diesem Vers schreiben, statt per Stichwortsuche passende Verse zu suchen.
+  useEffect(() => {
+    if (versAusReaderVerarbeitet.current || !settings) return;
+    const osis = searchParams.get("osis");
+    const kapitel = searchParams.get("kapitel");
+    const von = searchParams.get("von");
+    const bis = searchParams.get("bis");
+    if (!osis || !kapitel || !von || !bis) return;
+    versAusReaderVerarbeitet.current = true;
+    setSearchParams({}, { replace: true });
+    (async () => {
+      const verse = await getVerseRange(
+        osis,
+        parseInt(kapitel, 10),
+        parseInt(von, 10),
+        parseInt(bis, 10),
+        settings.standardUebersetzung
+      );
+      if (verse.length === 0) return;
+      const erster = verse[0];
+      const letzter = verse[verse.length - 1];
+      const thema =
+        erster.verse === letzter.verse
+          ? `${erster.bookName} ${erster.chapter},${erster.verse}`
+          : `${erster.bookName} ${erster.chapter},${erster.verse}-${letzter.verse}`;
+      erstelleAufsatz(thema, { verseOverride: verse });
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams, settings]);
 
   function stilWaehlen(neu: "text" | "stichworte") {
     setStil(neu);
@@ -49,7 +83,10 @@ export default function ExploreScreen() {
     return hits.slice(0, 18);
   }
 
-  async function erstelleAufsatz(thema: string, topicId?: number) {
+  async function erstelleAufsatz(
+    thema: string,
+    opts?: { topicId?: number; verseOverride?: VerseRow[] }
+  ) {
     if (!settings) return;
     if (settings.aiProvider === "aus") {
       setError("Kein KI-Anbieter eingerichtet. Öffne Einstellungen → KI.");
@@ -59,7 +96,7 @@ export default function ExploreScreen() {
     setError("");
     setEssay(null);
     try {
-      const verse = await verseForThema(thema, topicId);
+      const verse = opts?.verseOverride ?? (await verseForThema(thema, opts?.topicId));
       if (verse.length === 0) {
         setError("Zu diesem Thema wurden keine passenden Bibelstellen gefunden. Versuch ein anderes Stichwort.");
         return;
@@ -125,7 +162,7 @@ export default function ExploreScreen() {
 
       <div className="chip-row" style={{ marginBottom: 14 }}>
         {topics.map((t) => (
-          <button key={t.id} className="chip" onClick={() => erstelleAufsatz(t.name, t.id)} disabled={busy}>
+          <button key={t.id} className="chip" onClick={() => erstelleAufsatz(t.name, { topicId: t.id })} disabled={busy}>
             {t.name}
           </button>
         ))}
