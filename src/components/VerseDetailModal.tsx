@@ -184,6 +184,14 @@ export default function VerseDetailModal() {
     navigate(`/lesen/${target.osis}/${target.chapter}`);
   }
 
+  function erforschenVers() {
+    if (!target) return;
+    close();
+    navigate(
+      `/erforschen?osis=${target.osis}&kapitel=${target.chapter}&von=${target.verseVon}&bis=${target.verseBis}`
+    );
+  }
+
   return (
     <div className="modal-overlay" onClick={close}>
       <div className="modal-sheet card" onClick={(e) => e.stopPropagation()}>
@@ -211,6 +219,7 @@ export default function VerseDetailModal() {
           <button className="chip" onClick={copyText}>📋 Kopieren</button>
           <button className="chip" onClick={readChapter}>📖 Kapitel lesen</button>
           <button className="chip" onClick={askInChat}>💬 Dazu fragen</button>
+          <button className="chip" onClick={erforschenVers}>🔍 Erforschen</button>
         </div>
 
         {zeigeFarbauswahl && (
