@@ -26,7 +26,7 @@ const DEFAULT_MODELS: Record<Exclude<AiProvider, "aus">, string> = {
 // Derselbe Worker leitet unter "/elevenlabs-tts" auch die Vorlese-Anfragen weiter
 // (siehe lib/tts/elevenlabs.ts) - ElevenLabs erlaubt dafuer keine direkten
 // Browser-Anfragen (CORS), daher der Umweg ueber den Worker.
-export const GEMEINSAMER_PROXY_URL: string = "";
+export const GEMEINSAMER_PROXY_URL: string = "https://green-wind-cbf9.michapeterson.workers.dev";
 
 function klarheitsHinweis(stufe: Klarheitsstufe): string {
   if (stufe === "kurz") return "Klarheitsstufe: kurz (erklaerung: 3-4 Saetze).";
