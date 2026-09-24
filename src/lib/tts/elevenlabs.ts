@@ -1,6 +1,20 @@
 // Vorlesen des Bibeltexts über die ElevenLabs Text-to-Speech-API.
 // Der API-Schlüssel wird - wie bei den KI-Anbietern - lokal verschlüsselt
-// gespeichert und nur direkt an ElevenLabs gesendet.
+// gespeichert.
+//
+// Die eigentliche Sprachausgabe (POST .../text-to-speech/...) laesst sich
+// nicht direkt aus dem Browser aufrufen - ElevenLabs blockiert das per CORS
+// (im Browser sichtbar als generischer Netzwerkfehler wie "Load failed").
+// Deshalb laeuft dieser eine Aufruf ueber denselben Cloudflare-Worker-Proxy,
+// der auch den "Gemeinsam"-KI-Modus bedient (siehe ai/provider.ts und
+// cloudflare-worker/README.md); der Worker reicht dabei nur den vom Nutzer
+// selbst eingegebenen Schluessel weiter, ohne ihn zu speichern.
+// Das Laden der Stimmenliste (GET .../voices) funktioniert dagegen direkt.
+import { GEMEINSAMER_PROXY_URL } from "../ai/provider";
+
+const ELEVENLABS_TTS_PROXY = GEMEINSAMER_PROXY_URL
+  ? `${GEMEINSAMER_PROXY_URL.replace(/\/+$/, "")}/elevenlabs-tts`
+  : "";
 
 export interface ElevenLabsVoice {
   voice_id: string;
@@ -19,17 +33,20 @@ export async function listVoices(apiKey: string): Promise<ElevenLabsVoice[]> {
 }
 
 export async function synthesize(apiKey: string, voiceId: string, text: string): Promise<Blob> {
-  const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+  if (!ELEVENLABS_TTS_PROXY) {
+    throw new Error(
+      "Vorlesen braucht noch den Zwischenserver (siehe cloudflare-worker/README.md, Abschnitt Vorlesen)."
+    );
+  }
+  const res = await fetch(ELEVENLABS_TTS_PROXY, {
     method: "POST",
-    headers: {
-      "xi-api-key": apiKey,
-      "Content-Type": "application/json",
-      Accept: "audio/mpeg",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
+      apiKey,
+      voiceId,
       text,
-      model_id: "eleven_multilingual_v2",
-      voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+      modelId: "eleven_multilingual_v2",
+      voiceSettings: { stability: 0.5, similarity_boost: 0.75 },
     }),
   });
   if (!res.ok) {
