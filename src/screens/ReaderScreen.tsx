@@ -57,9 +57,22 @@ export default function ReaderScreen() {
   // true, waehrend ein automatischer Kapitelwechsel läuft, damit die
   // laufende Wiedergabe dabei nicht durch den Kapitelwechsel-Cleanup gestoppt wird
   const autoWeiterRef = useRef(false);
+  // Audio fuer das naechste Kapitel, das schon waehrend der letzten Passage des
+  // aktuellen Kapitels im Hintergrund geladen wird - dadurch entsteht beim
+  // Kapitelwechsel keine Ladeluecke, in der Handy/Browser die Wiedergabe (z.B.
+  // bei gesperrtem Bildschirm) als beendet ansehen und die Seite pausieren koennten
+  const praefetchRef = useRef<{ key: string; urls: string[] } | null>(null);
+  const praefetchInFlightKeyRef = useRef<string | null>(null);
+  const vorgeladenFuerNaechstesRef = useRef<string[] | null>(null);
 
   useEffect(() => {
     getFarbLabels().then(setFarbLabels);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      praefetchRef.current?.urls.forEach((url) => URL.revokeObjectURL(url));
+    };
   }, []);
 
   function vorlesenStoppen() {
@@ -68,6 +81,11 @@ export default function ReaderScreen() {
     audioUrlsRef.current = [];
     audioIndexRef.current = 0;
     autoWeiterRef.current = false;
+    vorgeladenFuerNaechstesRef.current = null;
+    if (praefetchRef.current) {
+      praefetchRef.current.urls.forEach((url) => URL.revokeObjectURL(url));
+      praefetchRef.current = null;
+    }
     setVorlesenStatus("aus");
   }
 
@@ -89,12 +107,45 @@ export default function ReaderScreen() {
     return naechstesBuch ? { osis: naechstesBuch.osis, chapter: 1 } : null;
   }
 
+  async function praefetchNaechstesKapitel() {
+    if (!settings?.elevenlabsVoiceId) return;
+    const next = await naechstesKapitelBestimmen();
+    if (!next) return;
+    const key = `${next.osis}:${next.chapter}`;
+    if (praefetchRef.current?.key === key || praefetchInFlightKeyRef.current === key) return;
+    praefetchInFlightKeyRef.current = key;
+    try {
+      const enc = await kvGet<string>("api_key_elevenlabs");
+      const apiKey = enc ? await decryptSecret(enc) : "";
+      if (!apiKey) return;
+      const naechsteVerse = await getChapterVerses(next.osis, next.chapter, settings.standardUebersetzung);
+      const chunks = chunkText(naechsteVerse.map((v) => v.text));
+      const urls: string[] = [];
+      for (const chunk of chunks) {
+        const blob = await synthesize(apiKey, settings.elevenlabsVoiceId, chunk);
+        urls.push(URL.createObjectURL(blob));
+      }
+      praefetchRef.current = { key, urls };
+    } catch {
+      // Vorab-Laden ist nur eine Optimierung - bei Fehler wird beim eigentlichen
+      // Kapitelwechsel ganz normal nachgeladen
+    } finally {
+      if (praefetchInFlightKeyRef.current === key) praefetchInFlightKeyRef.current = null;
+    }
+  }
+
   async function kapitelEndeErreicht() {
     const next = await naechstesKapitelBestimmen();
     if (!next || !book) {
       setVorlesenStatus("aus");
       return;
     }
+    const key = `${next.osis}:${next.chapter}`;
+    vorgeladenFuerNaechstesRef.current = praefetchRef.current?.key === key ? praefetchRef.current.urls : null;
+    if (praefetchRef.current && praefetchRef.current.key !== key) {
+      praefetchRef.current.urls.forEach((url) => URL.revokeObjectURL(url));
+    }
+    praefetchRef.current = null;
     audioUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
     audioUrlsRef.current = [];
     audioIndexRef.current = 0;
@@ -125,9 +176,21 @@ export default function ReaderScreen() {
     audio.src = audioUrlsRef.current[index];
     audio.play().catch(() => setVorlesenFehler("Wiedergabe konnte nicht gestartet werden."));
     setVorlesenStatus("spielt");
+    // Ab der letzten Passage des Kapitels schon das naechste im Hintergrund laden,
+    // damit beim Kapitelende sofort und ohne Ladepause weitergelesen werden kann
+    if (index === audioUrlsRef.current.length - 1) {
+      praefetchNaechstesKapitel();
+    }
   }
 
   async function starteFrischeWiedergabe() {
+    const vorgeladen = vorgeladenFuerNaechstesRef.current;
+    vorgeladenFuerNaechstesRef.current = null;
+    if (vorgeladen) {
+      audioUrlsRef.current = vorgeladen;
+      spieleChunk(0);
+      return;
+    }
     setVorlesenFehler("");
     if (!settings?.elevenlabsVoiceId) {
       setVorlesenFehler("Keine ElevenLabs-Stimme eingerichtet. Öffne Einstellungen → Vorlesen.");
@@ -180,13 +243,42 @@ export default function ReaderScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [verses]);
 
+  // Media-Session-Infos setzen, solange vorgelesen wird: das ist das Signal, mit
+  // dem iOS/Android eine Seite als aktive Audiowiedergabe erkennen, Sperrbildschirm-
+  // Steuerung anzeigen und die Wiedergabe bei gesperrtem Bildschirm weiterlaufen lassen
+  useEffect(() => {
+    if (!("mediaSession" in navigator) || !book) return;
+    if (vorlesenStatus === "aus") {
+      navigator.mediaSession.metadata = null;
+      navigator.mediaSession.playbackState = "none";
+      navigator.mediaSession.setActionHandler("play", null);
+      navigator.mediaSession.setActionHandler("pause", null);
+      navigator.mediaSession.setActionHandler("stop", null);
+      return;
+    }
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: `${book.name_de} ${chapter}`,
+      artist: settings?.elevenlabsVoiceName ? `Amibel – ${settings.elevenlabsVoiceName}` : "Amibel liest vor",
+    });
+    navigator.mediaSession.playbackState = vorlesenStatus === "spielt" ? "playing" : "paused";
+    navigator.mediaSession.setActionHandler("play", () => vorlesenStarten());
+    navigator.mediaSession.setActionHandler("pause", () => vorlesenStarten());
+    navigator.mediaSession.setActionHandler("stop", () => vorlesenStoppen());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vorlesenStatus, book, chapter]);
+
   // Initiales Buch/Kapitel bestimmen: aus URL, sonst Lesefortschritt, sonst Johannes 1
   useEffect(() => {
     (async () => {
       if (osisParam) {
         const b = await getBookByOsis(osisParam);
         if (b) {
-          setBook(b);
+          // Referenz nur wechseln, wenn es tatsaechlich ein anderes Buch ist - sonst
+          // loest ein programmatischer navigate() (z.B. beim automatischen
+          // Kapitelwechsel beim Vorlesen) hier unnoetig einen zweiten, verzoegerten
+          // Zustandswechsel mit neuer Objektreferenz aus und reisst laufende
+          // Wiedergabe wieder ab
+          setBook((prev) => (prev && prev.osis === b.osis ? prev : b));
           setChapter(kapitelParam ? parseInt(kapitelParam, 10) : 1);
           return;
         }
