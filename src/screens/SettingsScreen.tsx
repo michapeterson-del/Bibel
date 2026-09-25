@@ -50,6 +50,7 @@ export default function SettingsScreen() {
   const [elevenlabsVoices, setElevenlabsVoices] = useState<ElevenLabsVoice[]>([]);
   const [elevenlabsLadeVoices, setElevenlabsLadeVoices] = useState(false);
   const [elevenlabsMsg, setElevenlabsMsg] = useState("");
+  const [updateMsg, setUpdateMsg] = useState("");
 
   useEffect(() => {
     listFeedback().then((f) => setFeedbackCount(f.length));
@@ -92,6 +93,26 @@ export default function SettingsScreen() {
     const result = await testConnection({ provider: settings!.aiProvider, apiKey, model: settings!.aiModell || undefined });
     setTestMsg(result.message);
     setTesting(false);
+  }
+
+  async function appAktualisieren() {
+    setUpdateMsg("Aktualisiere…");
+    try {
+      if ("serviceWorker" in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((r) => r.unregister()));
+      }
+      if ("caches" in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((k) => caches.delete(k)));
+      }
+      setUpdateMsg("Fertig - lädt neu…");
+      window.location.reload();
+    } catch (e) {
+      setUpdateMsg(
+        "Aktualisieren fehlgeschlagen: " + (e instanceof Error ? e.message : "unbekannter Fehler")
+      );
+    }
   }
 
   async function saveElevenlabsKey() {
@@ -354,6 +375,16 @@ export default function SettingsScreen() {
           </button>
         </Row>
         {dataMsg && <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>{dataMsg}</p>}
+      </Section>
+
+      <Section title="App">
+        <button className="btn secondary" onClick={appAktualisieren}>🔄 App aktualisieren</button>
+        <p style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
+          Holt eine frische Version der App, falls sich Funktionen komisch verhalten oder ein Update
+          nicht ankommt. Deine Lesezeichen, Notizen, Fortschritt usw. bleiben dabei erhalten - hier
+          wird nur der zwischengespeicherte App-Programmcode erneuert, nicht deine Daten.
+        </p>
+        {updateMsg && <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>{updateMsg}</p>}
       </Section>
 
       <Section title="Über">
