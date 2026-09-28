@@ -1,0 +1,3296 @@
+{
+ "1": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "2": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "3": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "4": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "5": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "6": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ },
+ "7": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 11,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Matthäus 11,28",
+  "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+ },
+ "8": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 46,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 46,1",
+  "text": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben."
+ },
+ "9": {
+  "osis": "1CO",
+  "buch": "1. Korinther",
+  "kapitel": 13,
+  "versVon": 4,
+  "versBis": 7,
+  "referenz": "1. Korinther 13,4-7",
+  "text": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu, sie freut sich nicht der Ungerechtigkeit, sie freut sich aber der Wahrheit; sie verträgt alles, sie glaubet alles, sie hoffet alles, sie duldet alles."
+ },
+ "10": {
+  "osis": "JOS",
+  "buch": "Josua",
+  "kapitel": 1,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Josua 1,9",
+  "text": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst."
+ },
+ "11": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 121,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 121,1-2",
+  "text": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat."
+ },
+ "12": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 5,
+  "versVon": 22,
+  "versBis": 23,
+  "referenz": "Galater 5,22-23",
+  "text": "Die Frucht aber des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Glaube, Sanftmut, Keuschheit. Wider solche ist das Gesetz nicht."
+ },
+ "13": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Matthäus 6,33",
+  "text": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen."
+ },
+ "14": {
+  "osis": "2TI",
+  "buch": "2. Timotheus",
+  "kapitel": 1,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "2. Timotheus 1,7",
+  "text": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht."
+ },
+ "15": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 27,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 27,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!"
+ },
+ "16": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 12,
+  "versVon": 2,
+  "versBis": 2,
+  "referenz": "Römer 12,2",
+  "text": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille."
+ },
+ "17": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 11,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Hebräer 11,1",
+  "text": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht."
+ },
+ "18": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 34,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "Psalmen 34,18",
+  "text": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+ },
+ "19": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 2,
+  "versVon": 8,
+  "versBis": 9,
+  "referenz": "Epheser 2,8-9",
+  "text": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme."
+ },
+ "20": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 40,
+  "versVon": 31,
+  "versBis": 31,
+  "referenz": "Jesaja 40,31",
+  "text": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden."
+ },
+ "21": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 14,
+  "versVon": 6,
+  "versBis": 6,
+  "referenz": "Johannes 14,6",
+  "text": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich."
+ },
+ "22": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 91,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 91,1-2",
+  "text": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe."
+ },
+ "23": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 6,
+  "versBis": 7,
+  "referenz": "Philipper 4,6-7",
+  "text": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!"
+ },
+ "24": {
+  "osis": "MIC",
+  "buch": "Micha",
+  "kapitel": 6,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Micha 6,8",
+  "text": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott."
+ },
+ "25": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Matthäus 5,16",
+  "text": "Also laßt euer Licht leuchten vor den Leuten, daß sie eure guten Werke sehen und euren Vater im Himmel preisen."
+ },
+ "26": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 15,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Römer 15,13",
+  "text": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes."
+ },
+ "27": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 100,
+  "versVon": 1,
+  "versBis": 5,
+  "referenz": "Psalmen 100,1-5",
+  "text": "Ein Dankpsalm. Jauchzet dem HERRN, alle Welt! Dient dem HERRN mit Freuden; kommt vor sein Angesicht mit Frohlocken! Erkennt, daß der HERR Gott ist! Er hat uns gemacht, und nicht wir selbst, zu seinem Volk und zu Schafen seiner Weide. Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für."
+ },
+ "28": {
+  "osis": "1JN",
+  "buch": "1. Johannes",
+  "kapitel": 4,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "1. Johannes 4,18",
+  "text": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe."
+ },
+ "29": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 139,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "Psalmen 139,14",
+  "text": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+ },
+ "30": {
+  "osis": "JAS",
+  "buch": "Jakobus",
+  "kapitel": 1,
+  "versVon": 2,
+  "versBis": 4,
+  "referenz": "Jakobus 1,2-4",
+  "text": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt. Die Geduld aber soll festbleiben bis ans Ende, auf daß ihr seid vollkommen und ganz und keinen Mangel habet."
+ },
+ "31": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 13,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Hebräer 13,5",
+  "text": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;"
+ },
+ "32": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 28,
+  "versVon": 19,
+  "versBis": 20,
+  "referenz": "Matthäus 28,19-20",
+  "text": "Darum gehet hin und lehret alle Völker und taufet sie im Namen des Vaters und des Sohnes und des heiligen Geistes, und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende."
+ },
+ "33": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 8,
+  "versVon": 12,
+  "versBis": 12,
+  "referenz": "Johannes 8,12",
+  "text": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben."
+ },
+ "34": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 37,
+  "versVon": 4,
+  "versBis": 5,
+  "referenz": "Psalmen 37,4-5",
+  "text": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet. Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen"
+ },
+ "35": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 5,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Römer 5,8",
+  "text": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren."
+ },
+ "36": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 2,
+  "versVon": 20,
+  "versBis": 20,
+  "referenz": "Galater 2,20",
+  "text": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben."
+ },
+ "37": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 119,
+  "versVon": 105,
+  "versBis": 105,
+  "referenz": "Psalmen 119,105",
+  "text": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege."
+ },
+ "38": {
+  "osis": "1PE",
+  "buch": "1. Petrus",
+  "kapitel": 5,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "1. Petrus 5,7",
+  "text": "Alle Sorge werfet auf ihn; denn er sorgt für euch."
+ },
+ "39": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 26,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Jesaja 26,3",
+  "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich."
+ },
+ "40": {
+  "osis": "JOL",
+  "buch": "Joel",
+  "kapitel": 2,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Joel 2,13",
+  "text": "Zerreißet eure Herzen und nicht eure Kleider, und bekehret euch zu dem HERRN, eurem Gott! denn er ist gnädig, barmherzig, geduldig und von großer Güte, und ihn reut bald der Strafe."
+ },
+ "41": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 7,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "Matthäus 7,7",
+  "text": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan."
+ },
+ "42": {
+  "osis": "2CO",
+  "buch": "2. Korinther",
+  "kapitel": 5,
+  "versVon": 17,
+  "versBis": 17,
+  "referenz": "2. Korinther 5,17",
+  "text": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!"
+ },
+ "43": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 103,
+  "versVon": 2,
+  "versBis": 5,
+  "referenz": "Psalmen 103,2-5",
+  "text": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen, der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler."
+ },
+ "44": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 16,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Sprüche 16,3",
+  "text": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen."
+ },
+ "45": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 15,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Johannes 15,5",
+  "text": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun."
+ },
+ "46": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 6,
+  "versVon": 10,
+  "versBis": 11,
+  "referenz": "Epheser 6,10-11",
+  "text": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke. Ziehet an den Harnisch Gottes, daß ihr bestehen könnet gegen die listigen Anläufe des Teufels."
+ },
+ "47": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 10,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Römer 10,9",
+  "text": "Denn so du mit deinem Munde bekennst Jesum, daß er der HERR sei, und glaubst in deinem Herzen, daß ihn Gott von den Toten auferweckt hat, so wirst du selig."
+ },
+ "48": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 143,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Psalmen 143,8",
+  "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+ },
+ "49": {
+  "osis": "COL",
+  "buch": "Kolosser",
+  "kapitel": 3,
+  "versVon": 23,
+  "versBis": 23,
+  "referenz": "Kolosser 3,23",
+  "text": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,"
+ },
+ "50": {
+  "osis": "1TH",
+  "buch": "1. Thessalonicher",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 18,
+  "referenz": "1. Thessalonicher 5,16-18",
+  "text": "Seid allezeit fröhlich, betet ohne Unterlaß, seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch."
+ },
+ "51": {
+  "osis": "LUK",
+  "buch": "Lukas",
+  "kapitel": 1,
+  "versVon": 37,
+  "versBis": 37,
+  "referenz": "Lukas 1,37",
+  "text": "Denn bei Gott ist kein Ding unmöglich."
+ },
+ "52": {
+  "osis": "NUM",
+  "buch": "4. Mose",
+  "kapitel": 6,
+  "versVon": 24,
+  "versBis": 26,
+  "referenz": "4. Mose 6,24-26",
+  "text": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden."
+ },
+ "53": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 62,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 62,1-2",
+  "text": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist."
+ },
+ "54": {
+  "osis": "HAB",
+  "buch": "Habakuk",
+  "kapitel": 3,
+  "versVon": 17,
+  "versBis": 18,
+  "referenz": "Habakuk 3,17-18",
+  "text": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil."
+ },
+ "55": {
+  "osis": "2CH",
+  "buch": "2. Chronik",
+  "kapitel": 7,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "2. Chronik 7,14",
+  "text": "und mein Volk sich demütigt, das nach meinem Namen genannt ist, daß sie beten und mein Angesicht suchen und sich von ihren bösen Wegen bekehren werden: so will ich vom Himmel hören und ihre Sünde vergeben und ihr Land heilen."
+ },
+ "56": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 34,
+  "versBis": 34,
+  "referenz": "Matthäus 6,34",
+  "text": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe."
+ },
+ "57": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 16,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Johannes 16,33",
+  "text": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden."
+ },
+ "58": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 55,
+  "versVon": 22,
+  "versBis": 22,
+  "referenz": "Psalmen 55,22",
+  "text": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen."
+ },
+ "59": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 38,
+  "versBis": 39,
+  "referenz": "Römer 8,38-39",
+  "text": "Denn ich bin gewiß, daß weder Tod noch Leben, weder Engel noch Fürstentümer noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch keine andere Kreatur mag uns scheiden von der Liebe Gottes, die in Christo Jesu ist, unserm HERRN."
+ },
+ "60": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 3,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Johannes 3,16",
+  "text": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."
+ },
+ "61": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "62": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "63": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "64": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "65": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "66": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ },
+ "67": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 11,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Matthäus 11,28",
+  "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+ },
+ "68": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 46,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 46,1",
+  "text": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben."
+ },
+ "69": {
+  "osis": "1CO",
+  "buch": "1. Korinther",
+  "kapitel": 13,
+  "versVon": 4,
+  "versBis": 7,
+  "referenz": "1. Korinther 13,4-7",
+  "text": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu, sie freut sich nicht der Ungerechtigkeit, sie freut sich aber der Wahrheit; sie verträgt alles, sie glaubet alles, sie hoffet alles, sie duldet alles."
+ },
+ "70": {
+  "osis": "JOS",
+  "buch": "Josua",
+  "kapitel": 1,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Josua 1,9",
+  "text": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst."
+ },
+ "71": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 121,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 121,1-2",
+  "text": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat."
+ },
+ "72": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 5,
+  "versVon": 22,
+  "versBis": 23,
+  "referenz": "Galater 5,22-23",
+  "text": "Die Frucht aber des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Glaube, Sanftmut, Keuschheit. Wider solche ist das Gesetz nicht."
+ },
+ "73": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Matthäus 6,33",
+  "text": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen."
+ },
+ "74": {
+  "osis": "2TI",
+  "buch": "2. Timotheus",
+  "kapitel": 1,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "2. Timotheus 1,7",
+  "text": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht."
+ },
+ "75": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 27,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 27,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!"
+ },
+ "76": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 12,
+  "versVon": 2,
+  "versBis": 2,
+  "referenz": "Römer 12,2",
+  "text": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille."
+ },
+ "77": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 11,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Hebräer 11,1",
+  "text": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht."
+ },
+ "78": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 34,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "Psalmen 34,18",
+  "text": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+ },
+ "79": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 2,
+  "versVon": 8,
+  "versBis": 9,
+  "referenz": "Epheser 2,8-9",
+  "text": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme."
+ },
+ "80": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 40,
+  "versVon": 31,
+  "versBis": 31,
+  "referenz": "Jesaja 40,31",
+  "text": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden."
+ },
+ "81": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 14,
+  "versVon": 6,
+  "versBis": 6,
+  "referenz": "Johannes 14,6",
+  "text": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich."
+ },
+ "82": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 91,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 91,1-2",
+  "text": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe."
+ },
+ "83": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 6,
+  "versBis": 7,
+  "referenz": "Philipper 4,6-7",
+  "text": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!"
+ },
+ "84": {
+  "osis": "MIC",
+  "buch": "Micha",
+  "kapitel": 6,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Micha 6,8",
+  "text": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott."
+ },
+ "85": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Matthäus 5,16",
+  "text": "Also laßt euer Licht leuchten vor den Leuten, daß sie eure guten Werke sehen und euren Vater im Himmel preisen."
+ },
+ "86": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 15,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Römer 15,13",
+  "text": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes."
+ },
+ "87": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 100,
+  "versVon": 1,
+  "versBis": 5,
+  "referenz": "Psalmen 100,1-5",
+  "text": "Ein Dankpsalm. Jauchzet dem HERRN, alle Welt! Dient dem HERRN mit Freuden; kommt vor sein Angesicht mit Frohlocken! Erkennt, daß der HERR Gott ist! Er hat uns gemacht, und nicht wir selbst, zu seinem Volk und zu Schafen seiner Weide. Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für."
+ },
+ "88": {
+  "osis": "1JN",
+  "buch": "1. Johannes",
+  "kapitel": 4,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "1. Johannes 4,18",
+  "text": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe."
+ },
+ "89": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 139,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "Psalmen 139,14",
+  "text": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+ },
+ "90": {
+  "osis": "JAS",
+  "buch": "Jakobus",
+  "kapitel": 1,
+  "versVon": 2,
+  "versBis": 4,
+  "referenz": "Jakobus 1,2-4",
+  "text": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt. Die Geduld aber soll festbleiben bis ans Ende, auf daß ihr seid vollkommen und ganz und keinen Mangel habet."
+ },
+ "91": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 13,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Hebräer 13,5",
+  "text": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;"
+ },
+ "92": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 28,
+  "versVon": 19,
+  "versBis": 20,
+  "referenz": "Matthäus 28,19-20",
+  "text": "Darum gehet hin und lehret alle Völker und taufet sie im Namen des Vaters und des Sohnes und des heiligen Geistes, und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende."
+ },
+ "93": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 8,
+  "versVon": 12,
+  "versBis": 12,
+  "referenz": "Johannes 8,12",
+  "text": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben."
+ },
+ "94": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 37,
+  "versVon": 4,
+  "versBis": 5,
+  "referenz": "Psalmen 37,4-5",
+  "text": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet. Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen"
+ },
+ "95": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 5,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Römer 5,8",
+  "text": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren."
+ },
+ "96": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 2,
+  "versVon": 20,
+  "versBis": 20,
+  "referenz": "Galater 2,20",
+  "text": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben."
+ },
+ "97": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 119,
+  "versVon": 105,
+  "versBis": 105,
+  "referenz": "Psalmen 119,105",
+  "text": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege."
+ },
+ "98": {
+  "osis": "1PE",
+  "buch": "1. Petrus",
+  "kapitel": 5,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "1. Petrus 5,7",
+  "text": "Alle Sorge werfet auf ihn; denn er sorgt für euch."
+ },
+ "99": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 26,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Jesaja 26,3",
+  "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich."
+ },
+ "100": {
+  "osis": "JOL",
+  "buch": "Joel",
+  "kapitel": 2,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Joel 2,13",
+  "text": "Zerreißet eure Herzen und nicht eure Kleider, und bekehret euch zu dem HERRN, eurem Gott! denn er ist gnädig, barmherzig, geduldig und von großer Güte, und ihn reut bald der Strafe."
+ },
+ "101": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 7,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "Matthäus 7,7",
+  "text": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan."
+ },
+ "102": {
+  "osis": "2CO",
+  "buch": "2. Korinther",
+  "kapitel": 5,
+  "versVon": 17,
+  "versBis": 17,
+  "referenz": "2. Korinther 5,17",
+  "text": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!"
+ },
+ "103": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 103,
+  "versVon": 2,
+  "versBis": 5,
+  "referenz": "Psalmen 103,2-5",
+  "text": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen, der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler."
+ },
+ "104": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 16,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Sprüche 16,3",
+  "text": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen."
+ },
+ "105": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 15,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Johannes 15,5",
+  "text": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun."
+ },
+ "106": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 6,
+  "versVon": 10,
+  "versBis": 11,
+  "referenz": "Epheser 6,10-11",
+  "text": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke. Ziehet an den Harnisch Gottes, daß ihr bestehen könnet gegen die listigen Anläufe des Teufels."
+ },
+ "107": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 10,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Römer 10,9",
+  "text": "Denn so du mit deinem Munde bekennst Jesum, daß er der HERR sei, und glaubst in deinem Herzen, daß ihn Gott von den Toten auferweckt hat, so wirst du selig."
+ },
+ "108": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 143,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Psalmen 143,8",
+  "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+ },
+ "109": {
+  "osis": "COL",
+  "buch": "Kolosser",
+  "kapitel": 3,
+  "versVon": 23,
+  "versBis": 23,
+  "referenz": "Kolosser 3,23",
+  "text": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,"
+ },
+ "110": {
+  "osis": "1TH",
+  "buch": "1. Thessalonicher",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 18,
+  "referenz": "1. Thessalonicher 5,16-18",
+  "text": "Seid allezeit fröhlich, betet ohne Unterlaß, seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch."
+ },
+ "111": {
+  "osis": "LUK",
+  "buch": "Lukas",
+  "kapitel": 1,
+  "versVon": 37,
+  "versBis": 37,
+  "referenz": "Lukas 1,37",
+  "text": "Denn bei Gott ist kein Ding unmöglich."
+ },
+ "112": {
+  "osis": "NUM",
+  "buch": "4. Mose",
+  "kapitel": 6,
+  "versVon": 24,
+  "versBis": 26,
+  "referenz": "4. Mose 6,24-26",
+  "text": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden."
+ },
+ "113": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 62,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 62,1-2",
+  "text": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist."
+ },
+ "114": {
+  "osis": "HAB",
+  "buch": "Habakuk",
+  "kapitel": 3,
+  "versVon": 17,
+  "versBis": 18,
+  "referenz": "Habakuk 3,17-18",
+  "text": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil."
+ },
+ "115": {
+  "osis": "2CH",
+  "buch": "2. Chronik",
+  "kapitel": 7,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "2. Chronik 7,14",
+  "text": "und mein Volk sich demütigt, das nach meinem Namen genannt ist, daß sie beten und mein Angesicht suchen und sich von ihren bösen Wegen bekehren werden: so will ich vom Himmel hören und ihre Sünde vergeben und ihr Land heilen."
+ },
+ "116": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 34,
+  "versBis": 34,
+  "referenz": "Matthäus 6,34",
+  "text": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe."
+ },
+ "117": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 16,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Johannes 16,33",
+  "text": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden."
+ },
+ "118": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 55,
+  "versVon": 22,
+  "versBis": 22,
+  "referenz": "Psalmen 55,22",
+  "text": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen."
+ },
+ "119": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 38,
+  "versBis": 39,
+  "referenz": "Römer 8,38-39",
+  "text": "Denn ich bin gewiß, daß weder Tod noch Leben, weder Engel noch Fürstentümer noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch keine andere Kreatur mag uns scheiden von der Liebe Gottes, die in Christo Jesu ist, unserm HERRN."
+ },
+ "120": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 3,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Johannes 3,16",
+  "text": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."
+ },
+ "121": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "122": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "123": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "124": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "125": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "126": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ },
+ "127": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 11,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Matthäus 11,28",
+  "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+ },
+ "128": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 46,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 46,1",
+  "text": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben."
+ },
+ "129": {
+  "osis": "1CO",
+  "buch": "1. Korinther",
+  "kapitel": 13,
+  "versVon": 4,
+  "versBis": 7,
+  "referenz": "1. Korinther 13,4-7",
+  "text": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu, sie freut sich nicht der Ungerechtigkeit, sie freut sich aber der Wahrheit; sie verträgt alles, sie glaubet alles, sie hoffet alles, sie duldet alles."
+ },
+ "130": {
+  "osis": "JOS",
+  "buch": "Josua",
+  "kapitel": 1,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Josua 1,9",
+  "text": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst."
+ },
+ "131": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 121,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 121,1-2",
+  "text": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat."
+ },
+ "132": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 5,
+  "versVon": 22,
+  "versBis": 23,
+  "referenz": "Galater 5,22-23",
+  "text": "Die Frucht aber des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Glaube, Sanftmut, Keuschheit. Wider solche ist das Gesetz nicht."
+ },
+ "133": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Matthäus 6,33",
+  "text": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen."
+ },
+ "134": {
+  "osis": "2TI",
+  "buch": "2. Timotheus",
+  "kapitel": 1,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "2. Timotheus 1,7",
+  "text": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht."
+ },
+ "135": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 27,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 27,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!"
+ },
+ "136": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 12,
+  "versVon": 2,
+  "versBis": 2,
+  "referenz": "Römer 12,2",
+  "text": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille."
+ },
+ "137": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 11,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Hebräer 11,1",
+  "text": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht."
+ },
+ "138": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 34,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "Psalmen 34,18",
+  "text": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+ },
+ "139": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 2,
+  "versVon": 8,
+  "versBis": 9,
+  "referenz": "Epheser 2,8-9",
+  "text": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme."
+ },
+ "140": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 40,
+  "versVon": 31,
+  "versBis": 31,
+  "referenz": "Jesaja 40,31",
+  "text": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden."
+ },
+ "141": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 14,
+  "versVon": 6,
+  "versBis": 6,
+  "referenz": "Johannes 14,6",
+  "text": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich."
+ },
+ "142": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 91,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 91,1-2",
+  "text": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe."
+ },
+ "143": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 6,
+  "versBis": 7,
+  "referenz": "Philipper 4,6-7",
+  "text": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!"
+ },
+ "144": {
+  "osis": "MIC",
+  "buch": "Micha",
+  "kapitel": 6,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Micha 6,8",
+  "text": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott."
+ },
+ "145": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Matthäus 5,16",
+  "text": "Also laßt euer Licht leuchten vor den Leuten, daß sie eure guten Werke sehen und euren Vater im Himmel preisen."
+ },
+ "146": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 15,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Römer 15,13",
+  "text": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes."
+ },
+ "147": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 100,
+  "versVon": 1,
+  "versBis": 5,
+  "referenz": "Psalmen 100,1-5",
+  "text": "Ein Dankpsalm. Jauchzet dem HERRN, alle Welt! Dient dem HERRN mit Freuden; kommt vor sein Angesicht mit Frohlocken! Erkennt, daß der HERR Gott ist! Er hat uns gemacht, und nicht wir selbst, zu seinem Volk und zu Schafen seiner Weide. Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für."
+ },
+ "148": {
+  "osis": "1JN",
+  "buch": "1. Johannes",
+  "kapitel": 4,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "1. Johannes 4,18",
+  "text": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe."
+ },
+ "149": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 139,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "Psalmen 139,14",
+  "text": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+ },
+ "150": {
+  "osis": "JAS",
+  "buch": "Jakobus",
+  "kapitel": 1,
+  "versVon": 2,
+  "versBis": 4,
+  "referenz": "Jakobus 1,2-4",
+  "text": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt. Die Geduld aber soll festbleiben bis ans Ende, auf daß ihr seid vollkommen und ganz und keinen Mangel habet."
+ },
+ "151": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 13,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Hebräer 13,5",
+  "text": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;"
+ },
+ "152": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 28,
+  "versVon": 19,
+  "versBis": 20,
+  "referenz": "Matthäus 28,19-20",
+  "text": "Darum gehet hin und lehret alle Völker und taufet sie im Namen des Vaters und des Sohnes und des heiligen Geistes, und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende."
+ },
+ "153": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 8,
+  "versVon": 12,
+  "versBis": 12,
+  "referenz": "Johannes 8,12",
+  "text": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben."
+ },
+ "154": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 37,
+  "versVon": 4,
+  "versBis": 5,
+  "referenz": "Psalmen 37,4-5",
+  "text": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet. Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen"
+ },
+ "155": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 5,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Römer 5,8",
+  "text": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren."
+ },
+ "156": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 2,
+  "versVon": 20,
+  "versBis": 20,
+  "referenz": "Galater 2,20",
+  "text": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben."
+ },
+ "157": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 119,
+  "versVon": 105,
+  "versBis": 105,
+  "referenz": "Psalmen 119,105",
+  "text": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege."
+ },
+ "158": {
+  "osis": "1PE",
+  "buch": "1. Petrus",
+  "kapitel": 5,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "1. Petrus 5,7",
+  "text": "Alle Sorge werfet auf ihn; denn er sorgt für euch."
+ },
+ "159": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 26,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Jesaja 26,3",
+  "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich."
+ },
+ "160": {
+  "osis": "JOL",
+  "buch": "Joel",
+  "kapitel": 2,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Joel 2,13",
+  "text": "Zerreißet eure Herzen und nicht eure Kleider, und bekehret euch zu dem HERRN, eurem Gott! denn er ist gnädig, barmherzig, geduldig und von großer Güte, und ihn reut bald der Strafe."
+ },
+ "161": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 7,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "Matthäus 7,7",
+  "text": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan."
+ },
+ "162": {
+  "osis": "2CO",
+  "buch": "2. Korinther",
+  "kapitel": 5,
+  "versVon": 17,
+  "versBis": 17,
+  "referenz": "2. Korinther 5,17",
+  "text": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!"
+ },
+ "163": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 103,
+  "versVon": 2,
+  "versBis": 5,
+  "referenz": "Psalmen 103,2-5",
+  "text": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen, der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler."
+ },
+ "164": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 16,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Sprüche 16,3",
+  "text": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen."
+ },
+ "165": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 15,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Johannes 15,5",
+  "text": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun."
+ },
+ "166": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 6,
+  "versVon": 10,
+  "versBis": 11,
+  "referenz": "Epheser 6,10-11",
+  "text": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke. Ziehet an den Harnisch Gottes, daß ihr bestehen könnet gegen die listigen Anläufe des Teufels."
+ },
+ "167": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 10,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Römer 10,9",
+  "text": "Denn so du mit deinem Munde bekennst Jesum, daß er der HERR sei, und glaubst in deinem Herzen, daß ihn Gott von den Toten auferweckt hat, so wirst du selig."
+ },
+ "168": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 143,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Psalmen 143,8",
+  "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+ },
+ "169": {
+  "osis": "COL",
+  "buch": "Kolosser",
+  "kapitel": 3,
+  "versVon": 23,
+  "versBis": 23,
+  "referenz": "Kolosser 3,23",
+  "text": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,"
+ },
+ "170": {
+  "osis": "1TH",
+  "buch": "1. Thessalonicher",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 18,
+  "referenz": "1. Thessalonicher 5,16-18",
+  "text": "Seid allezeit fröhlich, betet ohne Unterlaß, seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch."
+ },
+ "171": {
+  "osis": "LUK",
+  "buch": "Lukas",
+  "kapitel": 1,
+  "versVon": 37,
+  "versBis": 37,
+  "referenz": "Lukas 1,37",
+  "text": "Denn bei Gott ist kein Ding unmöglich."
+ },
+ "172": {
+  "osis": "NUM",
+  "buch": "4. Mose",
+  "kapitel": 6,
+  "versVon": 24,
+  "versBis": 26,
+  "referenz": "4. Mose 6,24-26",
+  "text": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden."
+ },
+ "173": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 62,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 62,1-2",
+  "text": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist."
+ },
+ "174": {
+  "osis": "HAB",
+  "buch": "Habakuk",
+  "kapitel": 3,
+  "versVon": 17,
+  "versBis": 18,
+  "referenz": "Habakuk 3,17-18",
+  "text": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil."
+ },
+ "175": {
+  "osis": "2CH",
+  "buch": "2. Chronik",
+  "kapitel": 7,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "2. Chronik 7,14",
+  "text": "und mein Volk sich demütigt, das nach meinem Namen genannt ist, daß sie beten und mein Angesicht suchen und sich von ihren bösen Wegen bekehren werden: so will ich vom Himmel hören und ihre Sünde vergeben und ihr Land heilen."
+ },
+ "176": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 34,
+  "versBis": 34,
+  "referenz": "Matthäus 6,34",
+  "text": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe."
+ },
+ "177": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 16,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Johannes 16,33",
+  "text": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden."
+ },
+ "178": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 55,
+  "versVon": 22,
+  "versBis": 22,
+  "referenz": "Psalmen 55,22",
+  "text": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen."
+ },
+ "179": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 38,
+  "versBis": 39,
+  "referenz": "Römer 8,38-39",
+  "text": "Denn ich bin gewiß, daß weder Tod noch Leben, weder Engel noch Fürstentümer noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch keine andere Kreatur mag uns scheiden von der Liebe Gottes, die in Christo Jesu ist, unserm HERRN."
+ },
+ "180": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 3,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Johannes 3,16",
+  "text": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."
+ },
+ "181": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "182": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "183": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "184": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "185": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "186": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ },
+ "187": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 11,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Matthäus 11,28",
+  "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+ },
+ "188": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 46,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 46,1",
+  "text": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben."
+ },
+ "189": {
+  "osis": "1CO",
+  "buch": "1. Korinther",
+  "kapitel": 13,
+  "versVon": 4,
+  "versBis": 7,
+  "referenz": "1. Korinther 13,4-7",
+  "text": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu, sie freut sich nicht der Ungerechtigkeit, sie freut sich aber der Wahrheit; sie verträgt alles, sie glaubet alles, sie hoffet alles, sie duldet alles."
+ },
+ "190": {
+  "osis": "JOS",
+  "buch": "Josua",
+  "kapitel": 1,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Josua 1,9",
+  "text": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst."
+ },
+ "191": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 121,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 121,1-2",
+  "text": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat."
+ },
+ "192": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 5,
+  "versVon": 22,
+  "versBis": 23,
+  "referenz": "Galater 5,22-23",
+  "text": "Die Frucht aber des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Glaube, Sanftmut, Keuschheit. Wider solche ist das Gesetz nicht."
+ },
+ "193": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Matthäus 6,33",
+  "text": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen."
+ },
+ "194": {
+  "osis": "2TI",
+  "buch": "2. Timotheus",
+  "kapitel": 1,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "2. Timotheus 1,7",
+  "text": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht."
+ },
+ "195": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 27,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 27,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!"
+ },
+ "196": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 12,
+  "versVon": 2,
+  "versBis": 2,
+  "referenz": "Römer 12,2",
+  "text": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille."
+ },
+ "197": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 11,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Hebräer 11,1",
+  "text": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht."
+ },
+ "198": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 34,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "Psalmen 34,18",
+  "text": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+ },
+ "199": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 2,
+  "versVon": 8,
+  "versBis": 9,
+  "referenz": "Epheser 2,8-9",
+  "text": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme."
+ },
+ "200": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 40,
+  "versVon": 31,
+  "versBis": 31,
+  "referenz": "Jesaja 40,31",
+  "text": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden."
+ },
+ "201": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 14,
+  "versVon": 6,
+  "versBis": 6,
+  "referenz": "Johannes 14,6",
+  "text": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich."
+ },
+ "202": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 91,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 91,1-2",
+  "text": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe."
+ },
+ "203": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 6,
+  "versBis": 7,
+  "referenz": "Philipper 4,6-7",
+  "text": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!"
+ },
+ "204": {
+  "osis": "MIC",
+  "buch": "Micha",
+  "kapitel": 6,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Micha 6,8",
+  "text": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott."
+ },
+ "205": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Matthäus 5,16",
+  "text": "Also laßt euer Licht leuchten vor den Leuten, daß sie eure guten Werke sehen und euren Vater im Himmel preisen."
+ },
+ "206": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 15,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Römer 15,13",
+  "text": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes."
+ },
+ "207": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 100,
+  "versVon": 1,
+  "versBis": 5,
+  "referenz": "Psalmen 100,1-5",
+  "text": "Ein Dankpsalm. Jauchzet dem HERRN, alle Welt! Dient dem HERRN mit Freuden; kommt vor sein Angesicht mit Frohlocken! Erkennt, daß der HERR Gott ist! Er hat uns gemacht, und nicht wir selbst, zu seinem Volk und zu Schafen seiner Weide. Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für."
+ },
+ "208": {
+  "osis": "1JN",
+  "buch": "1. Johannes",
+  "kapitel": 4,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "1. Johannes 4,18",
+  "text": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe."
+ },
+ "209": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 139,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "Psalmen 139,14",
+  "text": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+ },
+ "210": {
+  "osis": "JAS",
+  "buch": "Jakobus",
+  "kapitel": 1,
+  "versVon": 2,
+  "versBis": 4,
+  "referenz": "Jakobus 1,2-4",
+  "text": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt. Die Geduld aber soll festbleiben bis ans Ende, auf daß ihr seid vollkommen und ganz und keinen Mangel habet."
+ },
+ "211": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 13,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Hebräer 13,5",
+  "text": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;"
+ },
+ "212": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 28,
+  "versVon": 19,
+  "versBis": 20,
+  "referenz": "Matthäus 28,19-20",
+  "text": "Darum gehet hin und lehret alle Völker und taufet sie im Namen des Vaters und des Sohnes und des heiligen Geistes, und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende."
+ },
+ "213": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 8,
+  "versVon": 12,
+  "versBis": 12,
+  "referenz": "Johannes 8,12",
+  "text": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben."
+ },
+ "214": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 37,
+  "versVon": 4,
+  "versBis": 5,
+  "referenz": "Psalmen 37,4-5",
+  "text": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet. Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen"
+ },
+ "215": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 5,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Römer 5,8",
+  "text": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren."
+ },
+ "216": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 2,
+  "versVon": 20,
+  "versBis": 20,
+  "referenz": "Galater 2,20",
+  "text": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben."
+ },
+ "217": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 119,
+  "versVon": 105,
+  "versBis": 105,
+  "referenz": "Psalmen 119,105",
+  "text": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege."
+ },
+ "218": {
+  "osis": "1PE",
+  "buch": "1. Petrus",
+  "kapitel": 5,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "1. Petrus 5,7",
+  "text": "Alle Sorge werfet auf ihn; denn er sorgt für euch."
+ },
+ "219": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 26,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Jesaja 26,3",
+  "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich."
+ },
+ "220": {
+  "osis": "JOL",
+  "buch": "Joel",
+  "kapitel": 2,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Joel 2,13",
+  "text": "Zerreißet eure Herzen und nicht eure Kleider, und bekehret euch zu dem HERRN, eurem Gott! denn er ist gnädig, barmherzig, geduldig und von großer Güte, und ihn reut bald der Strafe."
+ },
+ "221": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 7,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "Matthäus 7,7",
+  "text": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan."
+ },
+ "222": {
+  "osis": "2CO",
+  "buch": "2. Korinther",
+  "kapitel": 5,
+  "versVon": 17,
+  "versBis": 17,
+  "referenz": "2. Korinther 5,17",
+  "text": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!"
+ },
+ "223": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 103,
+  "versVon": 2,
+  "versBis": 5,
+  "referenz": "Psalmen 103,2-5",
+  "text": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen, der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler."
+ },
+ "224": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 16,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Sprüche 16,3",
+  "text": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen."
+ },
+ "225": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 15,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Johannes 15,5",
+  "text": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun."
+ },
+ "226": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 6,
+  "versVon": 10,
+  "versBis": 11,
+  "referenz": "Epheser 6,10-11",
+  "text": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke. Ziehet an den Harnisch Gottes, daß ihr bestehen könnet gegen die listigen Anläufe des Teufels."
+ },
+ "227": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 10,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Römer 10,9",
+  "text": "Denn so du mit deinem Munde bekennst Jesum, daß er der HERR sei, und glaubst in deinem Herzen, daß ihn Gott von den Toten auferweckt hat, so wirst du selig."
+ },
+ "228": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 143,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Psalmen 143,8",
+  "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+ },
+ "229": {
+  "osis": "COL",
+  "buch": "Kolosser",
+  "kapitel": 3,
+  "versVon": 23,
+  "versBis": 23,
+  "referenz": "Kolosser 3,23",
+  "text": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,"
+ },
+ "230": {
+  "osis": "1TH",
+  "buch": "1. Thessalonicher",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 18,
+  "referenz": "1. Thessalonicher 5,16-18",
+  "text": "Seid allezeit fröhlich, betet ohne Unterlaß, seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch."
+ },
+ "231": {
+  "osis": "LUK",
+  "buch": "Lukas",
+  "kapitel": 1,
+  "versVon": 37,
+  "versBis": 37,
+  "referenz": "Lukas 1,37",
+  "text": "Denn bei Gott ist kein Ding unmöglich."
+ },
+ "232": {
+  "osis": "NUM",
+  "buch": "4. Mose",
+  "kapitel": 6,
+  "versVon": 24,
+  "versBis": 26,
+  "referenz": "4. Mose 6,24-26",
+  "text": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden."
+ },
+ "233": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 62,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 62,1-2",
+  "text": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist."
+ },
+ "234": {
+  "osis": "HAB",
+  "buch": "Habakuk",
+  "kapitel": 3,
+  "versVon": 17,
+  "versBis": 18,
+  "referenz": "Habakuk 3,17-18",
+  "text": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil."
+ },
+ "235": {
+  "osis": "2CH",
+  "buch": "2. Chronik",
+  "kapitel": 7,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "2. Chronik 7,14",
+  "text": "und mein Volk sich demütigt, das nach meinem Namen genannt ist, daß sie beten und mein Angesicht suchen und sich von ihren bösen Wegen bekehren werden: so will ich vom Himmel hören und ihre Sünde vergeben und ihr Land heilen."
+ },
+ "236": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 34,
+  "versBis": 34,
+  "referenz": "Matthäus 6,34",
+  "text": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe."
+ },
+ "237": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 16,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Johannes 16,33",
+  "text": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden."
+ },
+ "238": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 55,
+  "versVon": 22,
+  "versBis": 22,
+  "referenz": "Psalmen 55,22",
+  "text": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen."
+ },
+ "239": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 38,
+  "versBis": 39,
+  "referenz": "Römer 8,38-39",
+  "text": "Denn ich bin gewiß, daß weder Tod noch Leben, weder Engel noch Fürstentümer noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch keine andere Kreatur mag uns scheiden von der Liebe Gottes, die in Christo Jesu ist, unserm HERRN."
+ },
+ "240": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 3,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Johannes 3,16",
+  "text": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."
+ },
+ "241": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "242": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "243": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "244": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "245": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "246": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ },
+ "247": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 11,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Matthäus 11,28",
+  "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+ },
+ "248": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 46,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 46,1",
+  "text": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben."
+ },
+ "249": {
+  "osis": "1CO",
+  "buch": "1. Korinther",
+  "kapitel": 13,
+  "versVon": 4,
+  "versBis": 7,
+  "referenz": "1. Korinther 13,4-7",
+  "text": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu, sie freut sich nicht der Ungerechtigkeit, sie freut sich aber der Wahrheit; sie verträgt alles, sie glaubet alles, sie hoffet alles, sie duldet alles."
+ },
+ "250": {
+  "osis": "JOS",
+  "buch": "Josua",
+  "kapitel": 1,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Josua 1,9",
+  "text": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst."
+ },
+ "251": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 121,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 121,1-2",
+  "text": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat."
+ },
+ "252": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 5,
+  "versVon": 22,
+  "versBis": 23,
+  "referenz": "Galater 5,22-23",
+  "text": "Die Frucht aber des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Glaube, Sanftmut, Keuschheit. Wider solche ist das Gesetz nicht."
+ },
+ "253": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Matthäus 6,33",
+  "text": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen."
+ },
+ "254": {
+  "osis": "2TI",
+  "buch": "2. Timotheus",
+  "kapitel": 1,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "2. Timotheus 1,7",
+  "text": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht."
+ },
+ "255": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 27,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 27,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!"
+ },
+ "256": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 12,
+  "versVon": 2,
+  "versBis": 2,
+  "referenz": "Römer 12,2",
+  "text": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille."
+ },
+ "257": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 11,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Hebräer 11,1",
+  "text": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht."
+ },
+ "258": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 34,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "Psalmen 34,18",
+  "text": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+ },
+ "259": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 2,
+  "versVon": 8,
+  "versBis": 9,
+  "referenz": "Epheser 2,8-9",
+  "text": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme."
+ },
+ "260": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 40,
+  "versVon": 31,
+  "versBis": 31,
+  "referenz": "Jesaja 40,31",
+  "text": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden."
+ },
+ "261": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 14,
+  "versVon": 6,
+  "versBis": 6,
+  "referenz": "Johannes 14,6",
+  "text": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich."
+ },
+ "262": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 91,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 91,1-2",
+  "text": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe."
+ },
+ "263": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 6,
+  "versBis": 7,
+  "referenz": "Philipper 4,6-7",
+  "text": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!"
+ },
+ "264": {
+  "osis": "MIC",
+  "buch": "Micha",
+  "kapitel": 6,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Micha 6,8",
+  "text": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott."
+ },
+ "265": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Matthäus 5,16",
+  "text": "Also laßt euer Licht leuchten vor den Leuten, daß sie eure guten Werke sehen und euren Vater im Himmel preisen."
+ },
+ "266": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 15,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Römer 15,13",
+  "text": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes."
+ },
+ "267": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 100,
+  "versVon": 1,
+  "versBis": 5,
+  "referenz": "Psalmen 100,1-5",
+  "text": "Ein Dankpsalm. Jauchzet dem HERRN, alle Welt! Dient dem HERRN mit Freuden; kommt vor sein Angesicht mit Frohlocken! Erkennt, daß der HERR Gott ist! Er hat uns gemacht, und nicht wir selbst, zu seinem Volk und zu Schafen seiner Weide. Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für."
+ },
+ "268": {
+  "osis": "1JN",
+  "buch": "1. Johannes",
+  "kapitel": 4,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "1. Johannes 4,18",
+  "text": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe."
+ },
+ "269": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 139,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "Psalmen 139,14",
+  "text": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+ },
+ "270": {
+  "osis": "JAS",
+  "buch": "Jakobus",
+  "kapitel": 1,
+  "versVon": 2,
+  "versBis": 4,
+  "referenz": "Jakobus 1,2-4",
+  "text": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt. Die Geduld aber soll festbleiben bis ans Ende, auf daß ihr seid vollkommen und ganz und keinen Mangel habet."
+ },
+ "271": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 13,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Hebräer 13,5",
+  "text": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;"
+ },
+ "272": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 28,
+  "versVon": 19,
+  "versBis": 20,
+  "referenz": "Matthäus 28,19-20",
+  "text": "Darum gehet hin und lehret alle Völker und taufet sie im Namen des Vaters und des Sohnes und des heiligen Geistes, und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende."
+ },
+ "273": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 8,
+  "versVon": 12,
+  "versBis": 12,
+  "referenz": "Johannes 8,12",
+  "text": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben."
+ },
+ "274": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 37,
+  "versVon": 4,
+  "versBis": 5,
+  "referenz": "Psalmen 37,4-5",
+  "text": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet. Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen"
+ },
+ "275": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 5,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Römer 5,8",
+  "text": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren."
+ },
+ "276": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 2,
+  "versVon": 20,
+  "versBis": 20,
+  "referenz": "Galater 2,20",
+  "text": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben."
+ },
+ "277": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 119,
+  "versVon": 105,
+  "versBis": 105,
+  "referenz": "Psalmen 119,105",
+  "text": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege."
+ },
+ "278": {
+  "osis": "1PE",
+  "buch": "1. Petrus",
+  "kapitel": 5,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "1. Petrus 5,7",
+  "text": "Alle Sorge werfet auf ihn; denn er sorgt für euch."
+ },
+ "279": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 26,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Jesaja 26,3",
+  "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich."
+ },
+ "280": {
+  "osis": "JOL",
+  "buch": "Joel",
+  "kapitel": 2,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Joel 2,13",
+  "text": "Zerreißet eure Herzen und nicht eure Kleider, und bekehret euch zu dem HERRN, eurem Gott! denn er ist gnädig, barmherzig, geduldig und von großer Güte, und ihn reut bald der Strafe."
+ },
+ "281": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 7,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "Matthäus 7,7",
+  "text": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan."
+ },
+ "282": {
+  "osis": "2CO",
+  "buch": "2. Korinther",
+  "kapitel": 5,
+  "versVon": 17,
+  "versBis": 17,
+  "referenz": "2. Korinther 5,17",
+  "text": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!"
+ },
+ "283": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 103,
+  "versVon": 2,
+  "versBis": 5,
+  "referenz": "Psalmen 103,2-5",
+  "text": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen, der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler."
+ },
+ "284": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 16,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Sprüche 16,3",
+  "text": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen."
+ },
+ "285": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 15,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Johannes 15,5",
+  "text": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun."
+ },
+ "286": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 6,
+  "versVon": 10,
+  "versBis": 11,
+  "referenz": "Epheser 6,10-11",
+  "text": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke. Ziehet an den Harnisch Gottes, daß ihr bestehen könnet gegen die listigen Anläufe des Teufels."
+ },
+ "287": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 10,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Römer 10,9",
+  "text": "Denn so du mit deinem Munde bekennst Jesum, daß er der HERR sei, und glaubst in deinem Herzen, daß ihn Gott von den Toten auferweckt hat, so wirst du selig."
+ },
+ "288": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 143,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Psalmen 143,8",
+  "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+ },
+ "289": {
+  "osis": "COL",
+  "buch": "Kolosser",
+  "kapitel": 3,
+  "versVon": 23,
+  "versBis": 23,
+  "referenz": "Kolosser 3,23",
+  "text": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,"
+ },
+ "290": {
+  "osis": "1TH",
+  "buch": "1. Thessalonicher",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 18,
+  "referenz": "1. Thessalonicher 5,16-18",
+  "text": "Seid allezeit fröhlich, betet ohne Unterlaß, seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch."
+ },
+ "291": {
+  "osis": "LUK",
+  "buch": "Lukas",
+  "kapitel": 1,
+  "versVon": 37,
+  "versBis": 37,
+  "referenz": "Lukas 1,37",
+  "text": "Denn bei Gott ist kein Ding unmöglich."
+ },
+ "292": {
+  "osis": "NUM",
+  "buch": "4. Mose",
+  "kapitel": 6,
+  "versVon": 24,
+  "versBis": 26,
+  "referenz": "4. Mose 6,24-26",
+  "text": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden."
+ },
+ "293": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 62,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 62,1-2",
+  "text": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist."
+ },
+ "294": {
+  "osis": "HAB",
+  "buch": "Habakuk",
+  "kapitel": 3,
+  "versVon": 17,
+  "versBis": 18,
+  "referenz": "Habakuk 3,17-18",
+  "text": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil."
+ },
+ "295": {
+  "osis": "2CH",
+  "buch": "2. Chronik",
+  "kapitel": 7,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "2. Chronik 7,14",
+  "text": "und mein Volk sich demütigt, das nach meinem Namen genannt ist, daß sie beten und mein Angesicht suchen und sich von ihren bösen Wegen bekehren werden: so will ich vom Himmel hören und ihre Sünde vergeben und ihr Land heilen."
+ },
+ "296": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 34,
+  "versBis": 34,
+  "referenz": "Matthäus 6,34",
+  "text": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe."
+ },
+ "297": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 16,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Johannes 16,33",
+  "text": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden."
+ },
+ "298": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 55,
+  "versVon": 22,
+  "versBis": 22,
+  "referenz": "Psalmen 55,22",
+  "text": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen."
+ },
+ "299": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 38,
+  "versBis": 39,
+  "referenz": "Römer 8,38-39",
+  "text": "Denn ich bin gewiß, daß weder Tod noch Leben, weder Engel noch Fürstentümer noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch keine andere Kreatur mag uns scheiden von der Liebe Gottes, die in Christo Jesu ist, unserm HERRN."
+ },
+ "300": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 3,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Johannes 3,16",
+  "text": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."
+ },
+ "301": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "302": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "303": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "304": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "305": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "306": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ },
+ "307": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 11,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Matthäus 11,28",
+  "text": "Kommet her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken."
+ },
+ "308": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 46,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 46,1",
+  "text": "Ein Lied der Kinder Korah, von der Jugend, vorzusingen. Gott ist unsre Zuversicht und Stärke. Eine Hilfe in den großen Nöten, die uns getroffen haben."
+ },
+ "309": {
+  "osis": "1CO",
+  "buch": "1. Korinther",
+  "kapitel": 13,
+  "versVon": 4,
+  "versBis": 7,
+  "referenz": "1. Korinther 13,4-7",
+  "text": "Die Liebe ist langmütig und freundlich, die Liebe eifert nicht, die Liebe treibt nicht Mutwillen, sie blähet sich nicht, sie stellet sich nicht ungebärdig, sie suchet nicht das Ihre, sie läßt sich nicht erbittern, sie rechnet das Böse nicht zu, sie freut sich nicht der Ungerechtigkeit, sie freut sich aber der Wahrheit; sie verträgt alles, sie glaubet alles, sie hoffet alles, sie duldet alles."
+ },
+ "310": {
+  "osis": "JOS",
+  "buch": "Josua",
+  "kapitel": 1,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Josua 1,9",
+  "text": "Siehe, ich habe dir geboten, daß du getrost und freudig seist. Laß dir nicht grauen und entsetze dich nicht; denn der HERR, dein Gott, ist mit dir in allem, was du tun wirst."
+ },
+ "311": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 121,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 121,1-2",
+  "text": "Ein Lied im höhern Chor. Ich hebe meine Augen auf zu den Bergen von welchen mir Hilfe kommt. Meine Hilfe kommt von dem HERRN, der Himmel und Erde gemacht hat."
+ },
+ "312": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 5,
+  "versVon": 22,
+  "versBis": 23,
+  "referenz": "Galater 5,22-23",
+  "text": "Die Frucht aber des Geistes ist Liebe, Freude, Friede, Geduld, Freundlichkeit, Gütigkeit, Glaube, Sanftmut, Keuschheit. Wider solche ist das Gesetz nicht."
+ },
+ "313": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Matthäus 6,33",
+  "text": "Trachtet am ersten nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch solches alles zufallen."
+ },
+ "314": {
+  "osis": "2TI",
+  "buch": "2. Timotheus",
+  "kapitel": 1,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "2. Timotheus 1,7",
+  "text": "Denn Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Zucht."
+ },
+ "315": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 27,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 27,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten! Der HERR ist meines Lebens Kraft; vor wem sollte mir grauen!"
+ },
+ "316": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 12,
+  "versVon": 2,
+  "versBis": 2,
+  "referenz": "Römer 12,2",
+  "text": "Und stellet euch nicht dieser Welt gleich, sondern verändert euch durch die Erneuerung eures Sinnes, auf daß ihr prüfen möget, welches da sei der gute, wohlgefällige und vollkommene Gotteswille."
+ },
+ "317": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 11,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Hebräer 11,1",
+  "text": "Es ist aber der Glaube eine gewisse Zuversicht des, das man hofft, und ein Nichtzweifeln an dem, das man nicht sieht."
+ },
+ "318": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 34,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "Psalmen 34,18",
+  "text": "Der HERR ist nahe bei denen, die zerbrochnes Herzens sind, und hilft denen, die ein zerschlagen Gemüt haben."
+ },
+ "319": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 2,
+  "versVon": 8,
+  "versBis": 9,
+  "referenz": "Epheser 2,8-9",
+  "text": "Denn aus Gnade seid ihr selig geworden durch den Glauben, und das nicht aus euch: Gottes Gabe ist es, nicht aus den Werken, auf daß sich nicht jemand rühme."
+ },
+ "320": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 40,
+  "versVon": 31,
+  "versBis": 31,
+  "referenz": "Jesaja 40,31",
+  "text": "aber die auf den HERRN harren, kriegen neue Kraft, daß sie auffahren mit Flügeln wie Adler, daß sie laufen und nicht matt werden, daß sie wandeln und nicht müde werden."
+ },
+ "321": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 14,
+  "versVon": 6,
+  "versBis": 6,
+  "referenz": "Johannes 14,6",
+  "text": "Jesus spricht zu ihm: Ich bin der Weg und die Wahrheit und das Leben; niemand kommt zum Vater denn durch mich."
+ },
+ "322": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 91,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 91,1-2",
+  "text": "Wer unter dem Schirm des Höchsten sitzt und unter dem Schatten des Allmächtigen bleibt, der spricht zu dem HERRN: Meine Zuversicht und meine Burg, mein Gott, auf den ich hoffe."
+ },
+ "323": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 6,
+  "versBis": 7,
+  "referenz": "Philipper 4,6-7",
+  "text": "Sorget nichts! sondern in allen Dingen lasset eure Bitten im Gebet und Flehen mit Danksagung vor Gott kund werden. Und der Friede Gottes, welcher höher ist denn alle Vernunft, bewahre eure Herzen und Sinne in Christo Jesu!"
+ },
+ "324": {
+  "osis": "MIC",
+  "buch": "Micha",
+  "kapitel": 6,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Micha 6,8",
+  "text": "Es ist dir gesagt, Mensch, was gut ist und was der HERR von dir fordert, nämlich Gottes Wort halten und Liebe üben und demütig sein vor deinem Gott."
+ },
+ "325": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Matthäus 5,16",
+  "text": "Also laßt euer Licht leuchten vor den Leuten, daß sie eure guten Werke sehen und euren Vater im Himmel preisen."
+ },
+ "326": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 15,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Römer 15,13",
+  "text": "Der Gott aber der Hoffnung erfülle euch mit aller Freude und Frieden im Glauben, daß ihr völlige Hoffnung habet durch die Kraft des heiligen Geistes."
+ },
+ "327": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 100,
+  "versVon": 1,
+  "versBis": 5,
+  "referenz": "Psalmen 100,1-5",
+  "text": "Ein Dankpsalm. Jauchzet dem HERRN, alle Welt! Dient dem HERRN mit Freuden; kommt vor sein Angesicht mit Frohlocken! Erkennt, daß der HERR Gott ist! Er hat uns gemacht, und nicht wir selbst, zu seinem Volk und zu Schafen seiner Weide. Geht zu seinen Toren ein mit Danken, zu seinen Vorhöfen mit Loben; danket ihm, lobet seinen Namen! Denn der HERR ist freundlich, und seine Gnade währet ewig und seine Wahrheit für und für."
+ },
+ "328": {
+  "osis": "1JN",
+  "buch": "1. Johannes",
+  "kapitel": 4,
+  "versVon": 18,
+  "versBis": 18,
+  "referenz": "1. Johannes 4,18",
+  "text": "Furcht ist nicht in der Liebe, sondern die völlige Liebe treibt die Furcht aus; denn die Furcht hat Pein. Wer sich aber fürchtet, der ist nicht völlig in der Liebe."
+ },
+ "329": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 139,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "Psalmen 139,14",
+  "text": "Ich danke dir dafür, daß ich wunderbar gemacht bin; wunderbar sind deine Werke, und das erkennt meine Seele wohl."
+ },
+ "330": {
+  "osis": "JAS",
+  "buch": "Jakobus",
+  "kapitel": 1,
+  "versVon": 2,
+  "versBis": 4,
+  "referenz": "Jakobus 1,2-4",
+  "text": "Meine lieben Brüder, achtet es für eitel Freude, wenn ihr in mancherlei Anfechtungen fallet, und wisset, daß euer Glaube, wenn er rechtschaffen ist, Geduld wirkt. Die Geduld aber soll festbleiben bis ans Ende, auf daß ihr seid vollkommen und ganz und keinen Mangel habet."
+ },
+ "331": {
+  "osis": "HEB",
+  "buch": "Hebräer",
+  "kapitel": 13,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Hebräer 13,5",
+  "text": "Der Wandel sei ohne Geiz; und laßt euch genügen an dem, was da ist. Denn er hat gesagt: “Ich will dich nicht verlassen noch versäumen”;"
+ },
+ "332": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 28,
+  "versVon": 19,
+  "versBis": 20,
+  "referenz": "Matthäus 28,19-20",
+  "text": "Darum gehet hin und lehret alle Völker und taufet sie im Namen des Vaters und des Sohnes und des heiligen Geistes, und lehret sie halten alles, was ich euch befohlen habe. Und siehe, ich bin bei euch alle Tage bis an der Welt Ende."
+ },
+ "333": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 8,
+  "versVon": 12,
+  "versBis": 12,
+  "referenz": "Johannes 8,12",
+  "text": "Da redete Jesus abermals zu ihnen und sprach: Ich bin das Licht der Welt; wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wir das Licht des Lebens haben."
+ },
+ "334": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 37,
+  "versVon": 4,
+  "versBis": 5,
+  "referenz": "Psalmen 37,4-5",
+  "text": "Habe Deine Lust am HERRN; der wird dir geben, was dein Herz wünschet. Befiehl dem HERRN deine Wege und hoffe auf ihn; er wird's wohl machen"
+ },
+ "335": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 5,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Römer 5,8",
+  "text": "Darum preiset Gott seine Liebe gegen uns, daß Christus für uns gestorben ist, da wir noch Sünder waren."
+ },
+ "336": {
+  "osis": "GAL",
+  "buch": "Galater",
+  "kapitel": 2,
+  "versVon": 20,
+  "versBis": 20,
+  "referenz": "Galater 2,20",
+  "text": "Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir. Denn was ich jetzt lebe im Fleisch, das lebe ich in dem Glauben des Sohnes Gottes, der mich geliebt hat und sich selbst für mich dargegeben."
+ },
+ "337": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 119,
+  "versVon": 105,
+  "versBis": 105,
+  "referenz": "Psalmen 119,105",
+  "text": "Dein Wort ist meine Fußes Leuchte und ein Licht auf meinem Wege."
+ },
+ "338": {
+  "osis": "1PE",
+  "buch": "1. Petrus",
+  "kapitel": 5,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "1. Petrus 5,7",
+  "text": "Alle Sorge werfet auf ihn; denn er sorgt für euch."
+ },
+ "339": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 26,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Jesaja 26,3",
+  "text": "Du erhältst stets Frieden nach gewisser Zusage; denn man verläßt sich auf dich."
+ },
+ "340": {
+  "osis": "JOL",
+  "buch": "Joel",
+  "kapitel": 2,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Joel 2,13",
+  "text": "Zerreißet eure Herzen und nicht eure Kleider, und bekehret euch zu dem HERRN, eurem Gott! denn er ist gnädig, barmherzig, geduldig und von großer Güte, und ihn reut bald der Strafe."
+ },
+ "341": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 7,
+  "versVon": 7,
+  "versBis": 7,
+  "referenz": "Matthäus 7,7",
+  "text": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan."
+ },
+ "342": {
+  "osis": "2CO",
+  "buch": "2. Korinther",
+  "kapitel": 5,
+  "versVon": 17,
+  "versBis": 17,
+  "referenz": "2. Korinther 5,17",
+  "text": "Darum, ist jemand in Christo, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, es ist alles neu geworden!"
+ },
+ "343": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 103,
+  "versVon": 2,
+  "versBis": 5,
+  "referenz": "Psalmen 103,2-5",
+  "text": "Lobe den HERRN, meine Seele, und vergiß nicht, was er dir Gutes getan hat: der dir alle deine Sünden vergibt und heilet alle deine Gebrechen, der dein Leben vom Verderben erlöst, der dich krönt mit Gnade und Barmherzigkeit, der deinen Mund fröhlich macht, und du wieder jung wirst wie ein Adler."
+ },
+ "344": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 16,
+  "versVon": 3,
+  "versBis": 3,
+  "referenz": "Sprüche 16,3",
+  "text": "Befiehl dem HERRN deine Werke, so werden deine Anschläge fortgehen."
+ },
+ "345": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 15,
+  "versVon": 5,
+  "versBis": 5,
+  "referenz": "Johannes 15,5",
+  "text": "Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viele Frucht, denn ohne mich könnt ihr nichts tun."
+ },
+ "346": {
+  "osis": "EPH",
+  "buch": "Epheser",
+  "kapitel": 6,
+  "versVon": 10,
+  "versBis": 11,
+  "referenz": "Epheser 6,10-11",
+  "text": "Zuletzt, meine Brüder, seid stark in dem HERRN und in der Macht seiner Stärke. Ziehet an den Harnisch Gottes, daß ihr bestehen könnet gegen die listigen Anläufe des Teufels."
+ },
+ "347": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 10,
+  "versVon": 9,
+  "versBis": 9,
+  "referenz": "Römer 10,9",
+  "text": "Denn so du mit deinem Munde bekennst Jesum, daß er der HERR sei, und glaubst in deinem Herzen, daß ihn Gott von den Toten auferweckt hat, so wirst du selig."
+ },
+ "348": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 143,
+  "versVon": 8,
+  "versBis": 8,
+  "referenz": "Psalmen 143,8",
+  "text": "Laß mich frühe hören deine Gnade; denn ich hoffe auf dich. Tue mir kund den Weg, darauf ich gehen soll; denn mich verlangt nach dir."
+ },
+ "349": {
+  "osis": "COL",
+  "buch": "Kolosser",
+  "kapitel": 3,
+  "versVon": 23,
+  "versBis": 23,
+  "referenz": "Kolosser 3,23",
+  "text": "Alles, was ihr tut, das tut von Herzen als dem HERRN und nicht den Menschen,"
+ },
+ "350": {
+  "osis": "1TH",
+  "buch": "1. Thessalonicher",
+  "kapitel": 5,
+  "versVon": 16,
+  "versBis": 18,
+  "referenz": "1. Thessalonicher 5,16-18",
+  "text": "Seid allezeit fröhlich, betet ohne Unterlaß, seid dankbar in allen Dingen; denn das ist der Wille Gottes in Christo Jesu an euch."
+ },
+ "351": {
+  "osis": "LUK",
+  "buch": "Lukas",
+  "kapitel": 1,
+  "versVon": 37,
+  "versBis": 37,
+  "referenz": "Lukas 1,37",
+  "text": "Denn bei Gott ist kein Ding unmöglich."
+ },
+ "352": {
+  "osis": "NUM",
+  "buch": "4. Mose",
+  "kapitel": 6,
+  "versVon": 24,
+  "versBis": 26,
+  "referenz": "4. Mose 6,24-26",
+  "text": "Der HERR segne dich und behüte dich; der HERR lasse sein Angesicht leuchten über dir und sei dir gnädig; der HERR hebe sein Angesicht über dich und gebe dir Frieden."
+ },
+ "353": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 62,
+  "versVon": 1,
+  "versBis": 2,
+  "referenz": "Psalmen 62,1-2",
+  "text": "Ein Psalm Davids für Jeduthun, vorzusingen. Meine Seele sei stille zu Gott, der mir hilft. Denn er ist mein Hort, meine Hilfe, meine Schutz, daß mich kein Fall stürzen wird, wie groß er ist."
+ },
+ "354": {
+  "osis": "HAB",
+  "buch": "Habakuk",
+  "kapitel": 3,
+  "versVon": 17,
+  "versBis": 18,
+  "referenz": "Habakuk 3,17-18",
+  "text": "Denn der Feigenbaum wird nicht grünen, und wird kein Gewächs sein an den Weinstöcken; die Arbeit am Ölbaum ist vergeblich, und die Äcker bringen keine Nahrung; und Schafe werden aus den Hürden gerissen, und werden keine Rinder in den Ställen sein. Aber ich will mich freuen des HERRN und fröhlich sein in Gott, meinem Heil."
+ },
+ "355": {
+  "osis": "2CH",
+  "buch": "2. Chronik",
+  "kapitel": 7,
+  "versVon": 14,
+  "versBis": 14,
+  "referenz": "2. Chronik 7,14",
+  "text": "und mein Volk sich demütigt, das nach meinem Namen genannt ist, daß sie beten und mein Angesicht suchen und sich von ihren bösen Wegen bekehren werden: so will ich vom Himmel hören und ihre Sünde vergeben und ihr Land heilen."
+ },
+ "356": {
+  "osis": "MAT",
+  "buch": "Matthäus",
+  "kapitel": 6,
+  "versVon": 34,
+  "versBis": 34,
+  "referenz": "Matthäus 6,34",
+  "text": "Darum sorgt nicht für den andern Morgen; denn der morgende Tag wird für das Seine sorgen. Es ist genug, daß ein jeglicher Tag seine eigene Plage habe."
+ },
+ "357": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 16,
+  "versVon": 33,
+  "versBis": 33,
+  "referenz": "Johannes 16,33",
+  "text": "Solches habe ich mit euch geredet, daß ihr in mir Frieden habet. In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden."
+ },
+ "358": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 55,
+  "versVon": 22,
+  "versBis": 22,
+  "referenz": "Psalmen 55,22",
+  "text": "Wirf dein Anliegen auf den HERRN; der wird dich versorgen und wird den Gerechten nicht ewiglich in Unruhe lassen."
+ },
+ "359": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 38,
+  "versBis": 39,
+  "referenz": "Römer 8,38-39",
+  "text": "Denn ich bin gewiß, daß weder Tod noch Leben, weder Engel noch Fürstentümer noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch keine andere Kreatur mag uns scheiden von der Liebe Gottes, die in Christo Jesu ist, unserm HERRN."
+ },
+ "360": {
+  "osis": "JHN",
+  "buch": "Johannes",
+  "kapitel": 3,
+  "versVon": 16,
+  "versBis": 16,
+  "referenz": "Johannes 3,16",
+  "text": "Also hat Gott die Welt geliebt, daß er seinen eingeborenen Sohn gab, auf daß alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben."
+ },
+ "361": {
+  "osis": "PSA",
+  "buch": "Psalmen",
+  "kapitel": 23,
+  "versVon": 1,
+  "versBis": 1,
+  "referenz": "Psalmen 23,1",
+  "text": "Ein Psalm Davids. Der HERR ist mein Hirte; mir wird nichts mangeln."
+ },
+ "362": {
+  "osis": "PHP",
+  "buch": "Philipper",
+  "kapitel": 4,
+  "versVon": 13,
+  "versBis": 13,
+  "referenz": "Philipper 4,13",
+  "text": "Ich vermag alles durch den, der mich mächtig macht, Christus."
+ },
+ "363": {
+  "osis": "JER",
+  "buch": "Jeremia",
+  "kapitel": 29,
+  "versVon": 11,
+  "versBis": 11,
+  "referenz": "Jeremia 29,11",
+  "text": "Denn ich weiß wohl, was ich für Gedanken über euch habe, spricht der HERR: Gedanken des Friedens und nicht des Leidens, daß ich euch gebe das Ende, des ihr wartet."
+ },
+ "364": {
+  "osis": "ROM",
+  "buch": "Römer",
+  "kapitel": 8,
+  "versVon": 28,
+  "versBis": 28,
+  "referenz": "Römer 8,28",
+  "text": "Wir wissen aber, daß denen, die Gott lieben, alle Dinge zum Besten dienen, denen, die nach dem Vorsatz berufen sind."
+ },
+ "365": {
+  "osis": "ISA",
+  "buch": "Jesaja",
+  "kapitel": 41,
+  "versVon": 10,
+  "versBis": 10,
+  "referenz": "Jesaja 41,10",
+  "text": "fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott; ich stärke dich, ich helfe dir auch, ich erhalte dich durch die rechte Hand meiner Gerechtigkeit."
+ },
+ "366": {
+  "osis": "PRO",
+  "buch": "Sprüche",
+  "kapitel": 3,
+  "versVon": 5,
+  "versBis": 6,
+  "referenz": "Sprüche 3,5-6",
+  "text": "Verlaß dich auf den HERRN von ganzem Herzen und verlaß dich nicht auf deinen Verstand; sondern gedenke an ihn in allen deinen Wegen, so wird er dich recht führen."
+ }
+}
