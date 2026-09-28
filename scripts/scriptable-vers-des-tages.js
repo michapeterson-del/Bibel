@@ -22,7 +22,31 @@ async function ladeVersDesTages() {
   return alle[String(heute)] ?? null;
 }
 
-async function erstelleWidget(vers) {
+function kuerzeText(text, maxLen) {
+  if (text.length <= maxLen) return text;
+  return text.slice(0, maxLen - 1).trim() + "…";
+}
+
+// Sperrbildschirm-Widgets (klein, iOS zeigt dort ohnehin nur gedimmtes
+// Grau statt eigener Farben) - hier soll der Bibeltext selbst so viel
+// Platz wie moeglich bekommen, ohne Ueberschrift, Referenz nur klein.
+function widgetFuerSperrbildschirm(vers) {
+  const w = new ListWidget();
+  if (!vers) {
+    w.addText("Vers konnte nicht geladen werden.");
+    return w;
+  }
+  const text = w.addText(kuerzeText(vers.text, 110));
+  text.font = Font.systemFont(15);
+  text.minimumScaleFactor = 0.7;
+  w.addSpacer(2);
+  const ref = w.addText(vers.referenz);
+  ref.font = Font.systemFont(11);
+  return w;
+}
+
+// Homescreen-Widget (mehr Platz, eigene Farben moeglich)
+function widgetFuerHomescreen(vers) {
   const w = new ListWidget();
   w.backgroundColor = new Color("#FCF9F3");
   w.setPadding(16, 16, 16, 16);
@@ -52,7 +76,13 @@ async function erstelleWidget(vers) {
 }
 
 const vers = await ladeVersDesTages();
-const widget = await erstelleWidget(vers);
+
+const aufSperrbildschirm =
+  config.widgetFamily === "accessoryRectangular" ||
+  config.widgetFamily === "accessoryInline" ||
+  config.widgetFamily === "accessoryCircular";
+
+const widget = aufSperrbildschirm ? widgetFuerSperrbildschirm(vers) : widgetFuerHomescreen(vers);
 
 if (config.runsInWidget) {
   Script.setWidget(widget);
