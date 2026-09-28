@@ -8,7 +8,13 @@
 // Zeigt denselben "Vers des Tages" an, den auch die Amibel-App auf dem
 // Startbildschirm zeigt (beide berechnen den Tag-im-Jahr identisch).
 
-const URL = "https://michapeterson-del.github.io/Bibel/vers-des-tages.json";
+const APP_BASIS_URL = "https://michapeterson-del.github.io/Bibel/";
+const DATEN_URL = "https://michapeterson-del.github.io/Bibel/vers-des-tages.json";
+
+function versLinkZurApp(vers) {
+  if (!vers) return APP_BASIS_URL;
+  return `${APP_BASIS_URL}#/lesen/${vers.osis}/${vers.kapitel}`;
+}
 
 function tagImJahr(datum) {
   const jan0 = new Date(datum.getFullYear(), 0, 0);
@@ -16,7 +22,7 @@ function tagImJahr(datum) {
 }
 
 async function ladeVersDesTages() {
-  const req = new Request(URL);
+  const req = new Request(DATEN_URL);
   const alle = await req.loadJSON();
   const heute = tagImJahr(new Date());
   return alle[String(heute)] ?? null;
@@ -83,6 +89,8 @@ const aufSperrbildschirm =
   config.widgetFamily === "accessoryCircular";
 
 const widget = aufSperrbildschirm ? widgetFuerSperrbildschirm(vers) : widgetFuerHomescreen(vers);
+// Tipp auf das Widget oeffnet Amibel direkt beim heutigen Kapitel
+widget.url = versLinkZurApp(vers);
 
 if (config.runsInWidget) {
   Script.setWidget(widget);
