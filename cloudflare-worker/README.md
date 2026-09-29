@@ -55,6 +55,17 @@ Ausgabenlimit für deinen API-Schlüssel (z. B. 5-10 €). Das ist dein Sicherhe
 falls doch mal jemand den Dienst missbraucht - dann kostet es dich höchstens diesen
 Betrag, nie mehr.
 
+## Schritt 4b: Missbrauchsschutz (empfohlen)
+
+Der Worker leitet nur Anfragen weiter, die zur App passen (festes Modell, höchstens
+2400 Tokens, begrenzte Textlänge) und bremst jede IP auf 10 Anfragen pro Minute.
+Nach jeder Änderung an `worker.js` den neuen Code im Cloudflare-Dashboard einfügen
+(Worker → **„Edit code"** → alles ersetzen → **„Deploy"**).
+
+Zusätzlich im Cloudflare-Dashboard unter **Security → WAF → Rate limiting rules**
+eine Regel für die Worker-Adresse anlegen (z. B. 20 Anfragen pro Minute und IP),
+weil das Limit im Worker nur pro Instanz gilt.
+
 ## Schritt 5: Die Worker-Adresse an mich schicken
 
 Nach dem Deploy zeigt Cloudflare dir eine Adresse wie
