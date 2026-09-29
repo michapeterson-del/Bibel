@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useVerseDetail } from "../lib/VerseDetailContext";
-import type { Farbe, FarbLabels, LesezeichenEintrag, Translation } from "../types";
+import type { Farbe, FarbLabels, LernVers, LesezeichenEintrag, Translation } from "../types";
 import { getVerseRange } from "../lib/db/bibleDb";
 import { deleteLesezeichen, getFarbLabels, listLesezeichen, saveLesezeichen } from "../lib/db/userDb";
-import { createChat, saveChat } from "../lib/db/userDb";
+import { addLernVers, createChat, listLernverse, removeLernVers, saveChat } from "../lib/db/userDb";
 import TranslationSwitch from "./TranslationSwitch";
 import { useSettings } from "../lib/SettingsContext";
 
@@ -29,6 +29,7 @@ export default function VerseDetailModal() {
   const [farbLabels, setFarbLabels] = useState<FarbLabels | null>(null);
   const [bestehendeMarkierung, setBestehendeMarkierung] = useState<LesezeichenEintrag | null>(null);
   const [bestehendeNotiz, setBestehendeNotiz] = useState<LesezeichenEintrag | null>(null);
+  const [bestehenderLernVers, setBestehenderLernVers] = useState<LernVers | null>(null);
 
   useEffect(() => {
     if (!target) return;
@@ -53,6 +54,12 @@ export default function VerseDetailModal() {
     const notiz = alle.find((m) => m.typ === "notiz" && passtAufVers(m)) ?? null;
     setBestehendeNotiz(notiz);
     setNoteText(notiz?.notiz ?? "");
+
+    const lernverse = await listLernverse();
+    setBestehenderLernVers(
+      lernverse.find((l) => l.osis === target.osis && l.kapitel === target.chapter && l.vers === target.verseVon) ??
+        null
+    );
   }
 
   useEffect(() => {
@@ -184,6 +191,24 @@ export default function VerseDetailModal() {
     navigate(`/lesen/${target.osis}/${target.chapter}`);
   }
 
+  async function lernenUmschalten() {
+    if (!target) return;
+    if (bestehenderLernVers) {
+      await removeLernVers(bestehenderLernVers.id);
+      setBestehenderLernVers(null);
+      setSavedMsg("Aus der Lernliste entfernt.");
+      return;
+    }
+    const neu = await addLernVers({
+      osis: target.osis,
+      kapitel: target.chapter,
+      vers: target.verseVon,
+      uebersetzung: translation,
+    });
+    setBestehenderLernVers(neu);
+    setSavedMsg("Zur Lernliste hinzugefügt.");
+  }
+
   function erforschenVers() {
     if (!target) return;
     close();
@@ -220,6 +245,9 @@ export default function VerseDetailModal() {
           <button className="chip" onClick={readChapter}>📖 Kapitel lesen</button>
           <button className="chip" onClick={askInChat}>💬 Dazu fragen</button>
           <button className="chip" onClick={erforschenVers}>🔍 Erforschen</button>
+          <button className={`chip ${bestehenderLernVers ? "active" : ""}`} onClick={lernenUmschalten}>
+            📚 {bestehenderLernVers ? "In Lernliste" : "Lernen"}
+          </button>
         </div>
 
         {zeigeFarbauswahl && (
