@@ -26,6 +26,25 @@ const ERLAUBTE_URSPRUENGE = [
   "http://localhost:5173",
 ];
 
+// Grenzen fuer den gemeinsamen KI-Zugang (passend zu dem, was die App schickt).
+const ERLAUBTE_MODELLE = ["claude-sonnet-5"];
+const MAX_TOKENS = 2400;
+const MAX_NACHRICHTEN = 40;
+const MAX_ZEICHEN = 60000;
+
+// Einfaches Tempolimit pro IP (pro Worker-Instanz). Zusaetzlich im
+// Cloudflare-Dashboard eine Rate-Limiting-Regel anlegen, siehe README.
+const LIMIT_PRO_MINUTE = 10;
+const anfragen = new Map();
+function zuVieleAnfragen(ip) {
+  const jetzt = Date.now();
+  const liste = (anfragen.get(ip) || []).filter((t) => jetzt - t < 60000);
+  liste.push(jetzt);
+  anfragen.set(ip, liste);
+  if (anfragen.size > 5000) anfragen.clear();
+  return liste.length > LIMIT_PRO_MINUTE;
+}
+
 function corsHeaders(origin, zusatz = {}) {
   const erlaubt = ERLAUBTE_URSPRUENGE.includes(origin);
   return {
@@ -43,7 +62,34 @@ async function anthropicProxy(request, env, origin) {
     );
   }
 
-  const body = await request.text();
+  // Nur das weiterleiten, was die App wirklich braucht. Sonst koennte jeder
+  // (der Origin-Header ist mit curl faelschbar) beliebige Modelle und
+  // Token-Mengen auf deine Rechnung abrufen.
+  let eingang;
+  try {
+    eingang = await request.json();
+  } catch {
+    return new Response("Ungueltiges JSON", { status: 400, headers: corsHeaders(origin) });
+  }
+  const nachrichten = Array.isArray(eingang?.messages) ? eingang.messages : [];
+  const textLaenge =
+    String(eingang?.system ?? "").length +
+    nachrichten.reduce((n, m) => n + (typeof m?.content === "string" ? m.content.length : 1e9), 0);
+  if (
+    !nachrichten.length ||
+    nachrichten.length > MAX_NACHRICHTEN ||
+    textLaenge > MAX_ZEICHEN ||
+    nachrichten.some((m) => m?.role !== "user" && m?.role !== "assistant")
+  ) {
+    return new Response("Anfrage zu gross oder ungueltig", { status: 400, headers: corsHeaders(origin) });
+  }
+  const body = JSON.stringify({
+    model: ERLAUBTE_MODELLE.includes(eingang.model) ? eingang.model : ERLAUBTE_MODELLE[0],
+    max_tokens: Math.min(Number(eingang.max_tokens) || MAX_TOKENS, MAX_TOKENS),
+    temperature: typeof eingang.temperature === "number" ? eingang.temperature : 0.25,
+    system: String(eingang.system ?? ""),
+    messages: nachrichten.map((m) => ({ role: m.role, content: m.content })),
+  });
 
   const antwort = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -117,6 +163,10 @@ export default {
 
     if (request.method !== "POST") {
       return new Response("Nur POST erlaubt", { status: 405 });
+    }
+
+    if (zuVieleAnfragen(request.headers.get("CF-Connecting-IP") || "unbekannt")) {
+      return new Response("Zu viele Anfragen - bitte kurz warten", { status: 429, headers: corsHeaders(origin) });
     }
 
     if (pathname === "/elevenlabs-tts") {
