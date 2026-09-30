@@ -25,6 +25,7 @@ interface LernVersMitText extends LernVers {
 export default function LearnScreen() {
   const [verse, setVerse] = useState<LernVersMitText[]>([]);
   const [uebeIndex, setUebeIndex] = useState<number | null>(null);
+  const [phase, setPhase] = useState<"lesen" | "abfragen">("lesen");
   const [aufgeloest, setAufgeloest] = useState(false);
   const { target } = useVerseDetail();
 
@@ -62,12 +63,19 @@ export default function LearnScreen() {
 
   function naechste() {
     setAufgeloest(false);
+    setPhase("lesen");
     if (uebeIndex === null) return;
     if (uebeIndex + 1 < verse.length) setUebeIndex(uebeIndex + 1);
     else {
       setUebeIndex(null);
       refresh();
     }
+  }
+
+  function starteVers(i: number) {
+    setAufgeloest(false);
+    setPhase("lesen");
+    setUebeIndex(i);
   }
 
   if (uebeIndex !== null && aktuell) {
@@ -80,13 +88,22 @@ export default function LearnScreen() {
           <p style={{ fontWeight: 700, marginBottom: 10 }}>
             {aktuell.bookName} {aktuell.kapitel},{aktuell.vers}
           </p>
-          <p style={{ fontSize: "1.1rem" }}>{aufgeloest ? aktuell.text : lueckentext(aktuell.text)}</p>
+          <p style={{ fontSize: "1.1rem" }}>
+            {phase === "lesen" || aufgeloest ? aktuell.text : lueckentext(aktuell.text)}
+          </p>
         </div>
-        <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
-          <button className="btn" onClick={markGewusst}>Gewusst</button>
-          <button className="btn secondary" onClick={() => setAufgeloest(true)}>Auflösen</button>
-          <button className="btn secondary" onClick={naechste}>Überspringen</button>
-        </div>
+        {phase === "lesen" ? (
+          <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
+            <button className="btn" onClick={() => setPhase("abfragen")}>Weiter zur Abfrage</button>
+            <button className="btn secondary" onClick={naechste}>Überspringen</button>
+          </div>
+        ) : (
+          <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
+            <button className="btn" onClick={markGewusst}>Gewusst</button>
+            <button className="btn secondary" onClick={() => setAufgeloest(true)}>Auflösen</button>
+            <button className="btn secondary" onClick={naechste}>Überspringen</button>
+          </div>
+        )}
       </div>
     );
   }
@@ -111,7 +128,7 @@ export default function LearnScreen() {
       )}
 
       {verse.length > 0 && (
-        <button className="btn" style={{ width: "100%", marginBottom: 14 }} onClick={() => setUebeIndex(0)}>
+        <button className="btn" style={{ width: "100%", marginBottom: 14 }} onClick={() => starteVers(0)}>
           Jetzt üben ({verse.length})
         </button>
       )}
@@ -125,7 +142,7 @@ export default function LearnScreen() {
             </p>
           </div>
           <div style={{ display: "flex", gap: 4 }}>
-            <button className="icon-btn" onClick={() => setUebeIndex(i)}>▶</button>
+            <button className="icon-btn" onClick={() => starteVers(i)}>▶</button>
             <button className="icon-btn" onClick={() => removeLernVers(v.id).then(refresh)}>✕</button>
           </div>
         </div>
