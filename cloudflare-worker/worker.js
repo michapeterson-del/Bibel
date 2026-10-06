@@ -86,7 +86,8 @@ async function anthropicProxy(request, env, origin) {
   const body = JSON.stringify({
     model: ERLAUBTE_MODELLE.includes(eingang.model) ? eingang.model : ERLAUBTE_MODELLE[0],
     max_tokens: Math.min(Number(eingang.max_tokens) || MAX_TOKENS, MAX_TOKENS),
-    temperature: typeof eingang.temperature === "number" ? eingang.temperature : 0.25,
+    // Kein "temperature" mitschicken - Anthropic lehnt das fuer neuere
+    // Modelle wie claude-sonnet-5 als "deprecated for this model" ab.
     system: String(eingang.system ?? ""),
     messages: nachrichten.map((m) => ({ role: m.role, content: m.content })),
   });
