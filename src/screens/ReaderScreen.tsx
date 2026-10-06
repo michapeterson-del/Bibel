@@ -117,7 +117,6 @@ export default function ReaderScreen() {
     try {
       const enc = await kvGet<string>("api_key_elevenlabs");
       const apiKey = enc ? await decryptSecret(enc) : "";
-      if (!apiKey) return;
       const naechsteVerse = await getChapterVerses(next.osis, next.chapter, settings.standardUebersetzung);
       const chunks = chunkText(naechsteVerse.map((v) => v.text));
       const urls: string[] = [];
@@ -199,11 +198,6 @@ export default function ReaderScreen() {
     }
     const enc = await kvGet<string>("api_key_elevenlabs");
     const apiKey = enc ? await decryptSecret(enc) : "";
-    if (!apiKey) {
-      setVorlesenFehler("Kein ElevenLabs-API-Schlüssel hinterlegt. Öffne Einstellungen → Vorlesen.");
-      setVorlesenStatus("aus");
-      return;
-    }
     setVorlesenStatus("laedt");
     try {
       const chunks = chunkText(verses.map((v) => v.text));

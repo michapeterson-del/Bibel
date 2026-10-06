@@ -107,7 +107,7 @@ async function anthropicProxy(request, env, origin) {
   return new Response(antwort.body, { status: antwort.status, headers });
 }
 
-async function elevenlabsProxy(request, origin) {
+async function elevenlabsProxy(request, env, origin) {
   let payload;
   try {
     payload = await request.json();
@@ -115,9 +115,12 @@ async function elevenlabsProxy(request, origin) {
     return new Response("Ungueltiges JSON", { status: 400, headers: corsHeaders(origin) });
   }
 
-  const { apiKey, voiceId, text, modelId, voiceSettings } = payload || {};
+  const { voiceId, text, modelId, voiceSettings } = payload || {};
+  // Eigener Schluessel des Nutzers hat Vorrang; ohne eigenen Schluessel auf
+  // den gemeinsamen, hier als Secret hinterlegten Zugang zurueckfallen.
+  const apiKey = payload?.apiKey || env.ELEVENLABS_API_KEY;
   if (!apiKey || !voiceId || !text) {
-    return new Response("apiKey, voiceId und text sind erforderlich", {
+    return new Response("apiKey (oder gemeinsamer Zugang), voiceId und text sind erforderlich", {
       status: 400,
       headers: corsHeaders(origin),
     });
@@ -140,6 +143,24 @@ async function elevenlabsProxy(request, origin) {
   const headers = new Headers();
   for (const [k, v] of Object.entries(corsHeaders(origin))) headers.set(k, v);
   headers.set("Content-Type", antwort.headers.get("Content-Type") || "application/octet-stream");
+  return new Response(antwort.body, { status: antwort.status, headers });
+}
+
+/** Stimmenliste ueber den gemeinsamen Zugang - fuer Nutzer ohne eigenen
+ * ElevenLabs-Schluessel, damit sie trotzdem eine Stimme auswaehlen koennen. */
+async function elevenlabsVoicesProxy(env, origin) {
+  if (!env.ELEVENLABS_API_KEY) {
+    return new Response(
+      JSON.stringify({ error: "Kein ELEVENLABS_API_KEY-Secret im Worker hinterlegt." }),
+      { status: 500, headers: corsHeaders(origin, { "Content-Type": "application/json" }) }
+    );
+  }
+  const antwort = await fetch("https://api.elevenlabs.io/v1/voices", {
+    headers: { "xi-api-key": env.ELEVENLABS_API_KEY },
+  });
+  const headers = new Headers();
+  for (const [k, v] of Object.entries(corsHeaders(origin))) headers.set(k, v);
+  headers.set("Content-Type", antwort.headers.get("Content-Type") || "application/json");
   return new Response(antwort.body, { status: antwort.status, headers });
 }
 
@@ -171,7 +192,11 @@ export default {
     }
 
     if (pathname === "/elevenlabs-tts") {
-      return elevenlabsProxy(request, origin);
+      return elevenlabsProxy(request, env, origin);
+    }
+
+    if (pathname === "/elevenlabs-voices") {
+      return elevenlabsVoicesProxy(env, origin);
     }
 
     return anthropicProxy(request, env, origin);

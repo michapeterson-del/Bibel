@@ -48,12 +48,33 @@ anbieten, kannst du diesen Schritt überspringen - Vorlesen funktioniert auch oh
      damit ihn niemand - auch du später nicht mehr - im Klartext einsehen kann.
 3. Speichern und erneut deployen, falls danach gefragt wird.
 
-## Schritt 4: Wichtig - Ausgabenlimit setzen (nur falls Schritt 3 gemacht wurde)
+## Schritt 3b: Vorlesen ohne eigenen Schlüssel für alle Nutzer (optional)
+
+Normalerweise trägt jeder Nutzer seinen eigenen ElevenLabs-Schlüssel in den
+Einstellungen ein. Willst du stattdessen - wie beim KI-Chat - Vorlesen für
+alle Besucher ohne eigenen Schlüssel anbieten, trag zusätzlich einen zweiten
+Secret ein:
+
+1. Im Worker wieder **„Settings"** → **„Variables and Secrets"**
+2. Neue Variable: **Name:** `ELEVENLABS_API_KEY`, **Wert:** dein ElevenLabs-API-Schlüssel,
+   **Typ:** unbedingt **„Secret"**
+3. Speichern
+
+Hat ein Nutzer selbst einen Schlüssel eingetragen, wird dieser bevorzugt; nur
+ohne eigenen Schlüssel greift die App auf diesen gemeinsamen Zugang zurück.
+
+## Schritt 4: Wichtig - Ausgabenlimit setzen
 
 Geh zu **https://console.anthropic.com/settings/limits** und setze ein monatliches
-Ausgabenlimit für deinen API-Schlüssel (z. B. 5-10 €). Das ist dein Sicherheitsnetz,
-falls doch mal jemand den Dienst missbraucht - dann kostet es dich höchstens diesen
-Betrag, nie mehr.
+Ausgabenlimit für deinen Anthropic-Schlüssel (z. B. 5-10 €). Das ist dein
+Sicherheitsnetz, falls doch mal jemand den Dienst missbraucht - dann kostet es
+dich höchstens diesen Betrag, nie mehr.
+
+Hast du auch Schritt 3b gemacht (gemeinsamer ElevenLabs-Zugang): ElevenLabs
+berechnet nach Zeichenanzahl und kann teurer werden als der KI-Chat, vor allem
+bei langen Kapiteln. Schau in deinem ElevenLabs-Konto unter **Abrechnung/Usage**
+nach einer Möglichkeit, ein monatliches Limit oder eine Benachrichtigung
+einzurichten.
 
 ## Schritt 4b: Missbrauchsschutz (empfohlen)
 
@@ -79,8 +100,10 @@ auch der schlüssellose KI-Chat).
   statt direkt an Anthropic bzw. ElevenLabs.
 - Beim KI-Chat hängt der Worker deinen hinterlegten Schlüssel an (den nur er
   kennt) und leitet die Anfrage an Anthropic weiter.
-- Beim Vorlesen reicht der Worker nur den Schlüssel durch, den der jeweilige
+- Beim Vorlesen reicht der Worker den Schlüssel durch, den der jeweilige
   Nutzer selbst in der App eingegeben hat - der Worker speichert ihn nicht.
+  Hat ein Nutzer keinen eigenen Schlüssel UND ist Schritt 3b eingerichtet,
+  nutzt der Worker stattdessen seinen eigenen, dort hinterlegten Schlüssel.
 - Nur Anfragen von deiner Amibel-Seite werden angenommen (siehe `ERLAUBTE_URSPRUENGE`
   im Code) - das hält beiläufigen Missbrauch ab, ist aber kein hundertprozentiger
   Schutz. Das Ausgabenlimit aus Schritt 4 ist dein eigentliches Sicherheitsnetz

@@ -7,14 +7,18 @@
 // (im Browser sichtbar als generischer Netzwerkfehler wie "Load failed").
 // Deshalb laeuft dieser eine Aufruf ueber denselben Cloudflare-Worker-Proxy,
 // der auch den "Gemeinsam"-KI-Modus bedient (siehe ai/provider.ts und
-// cloudflare-worker/README.md); der Worker reicht dabei nur den vom Nutzer
-// selbst eingegebenen Schluessel weiter, ohne ihn zu speichern.
-// Das Laden der Stimmenliste (GET .../voices) funktioniert dagegen direkt.
+// cloudflare-worker/README.md).
+//
+// Hat der Nutzer selbst einen Schluessel eingetragen, reicht der Worker nur
+// diesen weiter (speichert ihn nicht). Hat der Nutzer KEINEN eigenen
+// Schluessel, nutzt der Worker stattdessen seinen eigenen, dort als Secret
+// hinterlegten ELEVENLABS_API_KEY - dann funktioniert Vorlesen fuer alle
+// Besucher ohne eigenen Schluessel, genau wie der "Gemeinsam"-KI-Modus.
 import { GEMEINSAMER_PROXY_URL } from "../ai/provider";
 
-const ELEVENLABS_TTS_PROXY = GEMEINSAMER_PROXY_URL
-  ? `${GEMEINSAMER_PROXY_URL.replace(/\/+$/, "")}/elevenlabs-tts`
-  : "";
+const WORKER_BASIS = GEMEINSAMER_PROXY_URL.replace(/\/+$/, "");
+const ELEVENLABS_TTS_PROXY = GEMEINSAMER_PROXY_URL ? `${WORKER_BASIS}/elevenlabs-tts` : "";
+const ELEVENLABS_VOICES_PROXY = GEMEINSAMER_PROXY_URL ? `${WORKER_BASIS}/elevenlabs-voices` : "";
 
 export interface ElevenLabsVoice {
   voice_id: string;
@@ -22,9 +26,23 @@ export interface ElevenLabsVoice {
 }
 
 export async function listVoices(apiKey: string): Promise<ElevenLabsVoice[]> {
-  const res = await fetch("https://api.elevenlabs.io/v1/voices", {
-    headers: { "xi-api-key": apiKey },
-  });
+  if (apiKey) {
+    const res = await fetch("https://api.elevenlabs.io/v1/voices", {
+      headers: { "xi-api-key": apiKey },
+    });
+    if (!res.ok) {
+      throw new Error(`ElevenLabs: Stimmen konnten nicht geladen werden (${res.status}).`);
+    }
+    const data = (await res.json()) as { voices: { voice_id: string; name: string }[] };
+    return data.voices.map((v) => ({ voice_id: v.voice_id, name: v.name }));
+  }
+  // Kein eigener Schluessel: Stimmenliste ueber den gemeinsamen Zugang laden
+  if (!ELEVENLABS_VOICES_PROXY) {
+    throw new Error(
+      "Kein eigener Schlüssel hinterlegt und kein gemeinsamer Zugang eingerichtet."
+    );
+  }
+  const res = await fetch(ELEVENLABS_VOICES_PROXY, { method: "POST" });
   if (!res.ok) {
     throw new Error(`ElevenLabs: Stimmen konnten nicht geladen werden (${res.status}).`);
   }
