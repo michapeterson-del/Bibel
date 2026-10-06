@@ -135,7 +135,9 @@ function anthropicRequestBody(model: string, messages: ChatTurn[]) {
   return JSON.stringify({
     model,
     max_tokens: 2400,
-    temperature: 0.25,
+    // Kein "temperature" mehr mitschicken - bei neueren Modellen (z.B.
+    // claude-sonnet-5) lehnt die Anthropic-API diesen Parameter als
+    // "deprecated for this model" ab.
     system,
     messages: rest.map((m) => ({ role: m.role, content: m.content })),
   });
