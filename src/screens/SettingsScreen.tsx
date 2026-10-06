@@ -202,10 +202,16 @@ export default function SettingsScreen() {
           </select>
         </Row>
         {settings.aiProvider === "gemeinsam" && (
-          <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", margin: 0 }}>
-            Der Chat läuft über einen von der Betreiberin/dem Betreiber bereitgestellten Zugang.
-            Du musst keinen eigenen API-Schlüssel eintragen.
-          </p>
+          <>
+            <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", margin: 0 }}>
+              Der Chat läuft über einen von der Betreiberin/dem Betreiber bereitgestellten Zugang.
+              Du musst keinen eigenen API-Schlüssel eintragen.
+            </p>
+            <button className="btn secondary" onClick={handleTest} disabled={testing}>
+              {testing ? "Teste…" : "Verbindung testen"}
+            </button>
+            {testMsg && <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>{testMsg}</p>}
+          </>
         )}
         {settings.aiProvider !== "aus" && settings.aiProvider !== "gemeinsam" && (
           <>
