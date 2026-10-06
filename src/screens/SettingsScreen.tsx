@@ -130,10 +130,6 @@ export default function SettingsScreen() {
     try {
       const enc = await kvGet<string>("api_key_elevenlabs");
       const apiKey = enc ? await decryptSecret(enc) : elevenlabsKeyInput.trim();
-      if (!apiKey) {
-        setElevenlabsMsg("Bitte zuerst einen API-Schlüssel speichern.");
-        return;
-      }
       const voices = await listVoices(apiKey);
       setElevenlabsVoices(voices);
       if (voices.length === 0) setElevenlabsMsg("Keine Stimmen gefunden.");
@@ -314,7 +310,8 @@ export default function SettingsScreen() {
         <p style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
           Mit einem eigenen ElevenLabs-Konto kannst du dir Bibelkapitel beim Lesen mit einer natürlichen
           Stimme vorlesen lassen. Der Schlüssel wird lokal verschlüsselt gespeichert und nur direkt an
-          ElevenLabs gesendet.
+          ElevenLabs gesendet. Ohne eigenen Schlüssel kannst du direkt auf „Stimmen laden" tippen - falls
+          ein gemeinsamer Zugang eingerichtet ist, funktioniert Vorlesen auch so.
         </p>
       </Section>
 
