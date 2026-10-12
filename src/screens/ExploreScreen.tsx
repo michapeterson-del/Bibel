@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { Topic } from "../lib/db/bibleDb";
 import { getTopicVerses, getTopics, getVerseRange, searchFullText } from "../lib/db/bibleDb";
 import { useSettings } from "../lib/SettingsContext";
@@ -13,7 +14,7 @@ const ERFORSCHEN_PRAEFIX = "Erforschen: ";
 
 export default function ExploreScreen() {
   const { settings } = useSettings();
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [topics, setTopics] = useState<Topic[]>([]);
   const [customThema, setCustomThema] = useState("");

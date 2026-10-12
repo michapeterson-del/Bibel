@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { ChatGespraech } from "../types";
 import { createChat, deleteChat, listChats } from "../lib/db/userDb";
 
 export default function ChatListScreen() {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [chats, setChats] = useState<ChatGespraech[]>([]);
 
   function refresh() {

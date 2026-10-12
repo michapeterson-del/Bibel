@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import { getDailyVerse, getChapterCountsAllBooks, type DailyVerseInfo } from "../lib/db/bibleDb";
 import { getCurrentStreakCount, getSettings, listChats, listLesezeichen, listStilleZeit } from "../lib/db/userDb";
 import { anzahlGeleseneKapitel, createChat, getGeleseneKapitel, saveChat } from "../lib/db/userDb";
@@ -21,7 +21,7 @@ const TILES = [
 ];
 
 export default function HomeScreen() {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const { open: openVerseDetail } = useVerseDetail();
   const [name, setName] = useState("");
   const [daily, setDaily] = useState<DailyVerseInfo | null>(null);

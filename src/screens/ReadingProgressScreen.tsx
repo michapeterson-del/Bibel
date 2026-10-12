@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { BookMeta } from "../types";
 import { getAllBooks, getChapterCountsAllBooks } from "../lib/db/bibleDb";
 import { anzahlGeleseneKapitel, getGeleseneKapitel, type GeleseneKapitel } from "../lib/db/userDb";
@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import BookPickerModal from "../components/BookPickerModal";
 
 export default function ReadingProgressScreen() {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [books, setBooks] = useState<BookMeta[]>([]);
   const [chapterCounts, setChapterCounts] = useState<Record<string, number>>({});
   const [gelesen, setGelesen] = useState<GeleseneKapitel>({});

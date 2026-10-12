@@ -21,6 +21,7 @@ import { useSettings } from "../lib/SettingsContext";
 import { useVerseDetail } from "../lib/VerseDetailContext";
 import { decryptSecret } from "../lib/crypto";
 import { chunkText, synthesize } from "../lib/tts/elevenlabs";
+import { flipPage, hauptbereichRef } from "../lib/pageFlip";
 import TranslationSwitch from "../components/TranslationSwitch";
 import BookPickerModal from "../components/BookPickerModal";
 
@@ -64,6 +65,7 @@ export default function ReaderScreen() {
   const praefetchRef = useRef<{ key: string; urls: string[] } | null>(null);
   const praefetchInFlightKeyRef = useRef<string | null>(null);
   const vorgeladenFuerNaechstesRef = useRef<string[] | null>(null);
+  const cardRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     getFarbLabels().then(setFarbLabels);
@@ -149,6 +151,7 @@ export default function ReaderScreen() {
     audioUrlsRef.current = [];
     audioIndexRef.current = 0;
     autoWeiterRef.current = true;
+    flipPage(cardRef.current, "vor");
     if (next.osis === book.osis) {
       setChapter(next.chapter);
       navigate(`/lesen/${book.osis}/${next.chapter}`, { replace: true });
@@ -318,6 +321,7 @@ export default function ReaderScreen() {
   function goChapter(delta: number) {
     const next = chapter + delta;
     if (next < 1 || next > chapterCount) return;
+    flipPage(cardRef.current, delta > 0 ? "vor" : "zurueck");
     setChapter(next);
     navigate(`/lesen/${book!.osis}/${next}`, { replace: true });
   }
@@ -340,6 +344,7 @@ export default function ReaderScreen() {
     if (neuerStatus) {
       await addAktivMinuten(5);
       setFertigMsg(neuerStatus);
+      flipPage(hauptbereichRef.current, "vor");
       navigate(`/stillezeit/${book!.osis}/${chapter}`);
       return;
     }
@@ -353,7 +358,13 @@ export default function ReaderScreen() {
           {book.name_de} {chapter} ▾
         </button>
         <div style={{ marginLeft: "auto", display: "flex", gap: 4, alignItems: "center" }}>
-          <button className="chip" onClick={() => navigate(`/stillezeit/kapitel/${book.osis}/${chapter}`)}>
+          <button
+            className="chip"
+            onClick={() => {
+              flipPage(hauptbereichRef.current, "vor");
+              navigate(`/stillezeit/kapitel/${book.osis}/${chapter}`);
+            }}
+          >
             📋 Einträge
           </button>
           <button className="icon-btn" onClick={() => goChapter(-1)} disabled={chapter <= 1}>‹</button>
@@ -380,7 +391,14 @@ export default function ReaderScreen() {
           {vorlesenFehler.includes("Einstellungen") && (
             <>
               {" "}
-              <button className="chip" onClick={() => navigate("/einstellungen")} style={{ marginLeft: 6 }}>
+              <button
+                className="chip"
+                onClick={() => {
+                  flipPage(hauptbereichRef.current, "vor");
+                  navigate("/einstellungen");
+                }}
+                style={{ marginLeft: 6 }}
+              >
                 Zu den Einstellungen
               </button>
             </>
@@ -423,8 +441,8 @@ export default function ReaderScreen() {
       </div>
 
       <div
-        key={`${book.osis}-${chapter}`}
-        className="card kapitel-blaettern"
+        ref={cardRef}
+        className="card"
         style={{ fontSize: "var(--base-font-size)", lineHeight: "var(--base-line-height)" }}
       >
         {verses.map((v) => {
@@ -482,6 +500,8 @@ export default function ReaderScreen() {
           onClose={() => setShowPicker(false)}
           onSelect={(osis, ch) => {
             setShowPicker(false);
+            const richtung = osis === book.osis ? (ch >= chapter ? "vor" : "zurueck") : "vor";
+            flipPage(cardRef.current, richtung);
             navigate(`/lesen/${osis}/${ch}`);
           }}
         />

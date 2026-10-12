@@ -1,5 +1,7 @@
+import { useRef } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import VerseDetailModal from "./VerseDetailModal";
+import { flipPage, hauptbereichRef } from "../lib/pageFlip";
 
 const NAV_ITEMS = [
   { to: "/", label: "Start", icon: "🏠" },
@@ -9,26 +11,40 @@ const NAV_ITEMS = [
   { to: "/einstellungen", label: "Mehr", icon: "⚙️" },
 ];
 
+function bereichsIndex(pathname: string): number {
+  const gefunden = [...NAV_ITEMS]
+    .map((item, i) => ({ item, i }))
+    .reverse()
+    .find(({ item }) => (item.to === "/" ? pathname === "/" : pathname.startsWith(item.to)));
+  return gefunden ? gefunden.i : 0;
+}
+
 export default function Layout() {
   const location = useLocation();
-  // Nur am obersten Pfadsegment festmachen (z.B. "lesen", "chat"), NICHT am
-  // kompletten Pfad: sonst wuerde z.B. jeder Kapitelwechsel im Lese-Bildschirm
-  // (/lesen/:osis/:kapitel) die ganze Seite neu mounten und damit den
-  // laufenden Vorlese-Zustand (Audio, Vorab-Laden usw.) zerstoeren - den
-  // Umblaetter-Effekt dafuer uebernimmt ReaderScreen bereits selbst.
-  const bereich = location.pathname.split("/")[1] || "start";
+  const mainRef = useRef<HTMLElement | null>(null);
+  const aktiverIndex = bereichsIndex(location.pathname);
+
   return (
     <div className="app-shell">
-      <main className="app-main kapitel-blaettern" key={bereich}>
+      <main
+        className="app-main"
+        ref={(el) => {
+          mainRef.current = el;
+          hauptbereichRef.current = el;
+        }}
+      >
         <Outlet />
       </main>
       <nav className="bottom-nav">
-        {NAV_ITEMS.map((item) => (
+        {NAV_ITEMS.map((item, i) => (
           <NavLink
             key={item.to}
             to={item.to}
             end={item.to === "/"}
             className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => {
+              if (i !== aktiverIndex) flipPage(mainRef.current, i > aktiverIndex ? "vor" : "zurueck");
+            }}
           >
             <span style={{ fontSize: "1.15rem" }}>{item.icon}</span>
             <span>{item.label}</span>

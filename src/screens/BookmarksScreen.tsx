@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { LesezeichenEintrag, LesezeichenTyp } from "../types";
 import { deleteLesezeichen, exportLesezeichen, importLesezeichen, listLesezeichen, saveLesezeichen } from "../lib/db/userDb";
 import { getAllBooks } from "../lib/db/bibleDb";
@@ -10,7 +10,7 @@ const TYP_LABEL: Record<Exclude<LesezeichenTyp, "markierung">, string> = {
 };
 
 export default function BookmarksScreen() {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [items, setItems] = useState<LesezeichenEintrag[]>([]);
   const [bookNames, setBookNames] = useState<Record<string, string>>({});
   const [filterTyp, setFilterTyp] = useState<"alle" | "lesezeichen" | "notiz">("alle");
