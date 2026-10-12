@@ -26,12 +26,29 @@
   --salbei-bg: #B2D2C2; --salbei-fg: #254836;
   --lila-bg: #D3B4CC; --lila-fg: #532A4A;
 
+  /* Gold/Bordeaux-Akzente des Bibel-Looks - theme-unabhaengig nutzbar
+     (Fokus-Ringe, Checkbox-Haken usw.), in Dunkel zusaetzlich fuer die
+     Bedienelemente/Tableiste eingesetzt */
+  --gold: #a67c2e;
+  --gold-hell: #c9a14a;
+  --bordeaux: #7a1f1f;
+
+  --chip-active-bg: var(--salbei-bg);
+  --chip-active-fg: var(--salbei-fg);
+  --chip-active-border: transparent;
+  --nav-bg: var(--card);
+  --nav-border: var(--border);
+  --nav-fg: var(--text-muted);
+  --nav-active-bg: var(--salbei-bg);
+  --nav-active-fg: var(--salbei-fg);
+
   --radius-sm: 10px;
   --radius-md: 14px;
   --radius-lg: 20px;
   --shadow-card: 0 1px 3px rgba(62, 54, 41, 0.08), 0 1px 2px rgba(62, 54, 41, 0.06);
   --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Cormorant Garamond", Georgia, "Iowan Old Style", serif;
+  --font-display: "Cinzel Decorative", var(--font-serif);
 
   /* Papier-Look fuer die aufgeschlagene Bibelseite beim Lesen (eigene Palette,
      bewusst kraeftiger/papieriger als die neutralen --creme-Tokens) */
@@ -45,12 +62,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --bg: #1B1D21;
-    --card: #26292E;
-    --border: #373C44;
-    --text: #E7E2D8;
-    --text-2: #BEB8AB;
-    --text-muted: #A69E8F;
+    --bg: linear-gradient(180deg, #1A130D 0%, #241A12 100%);
+    --card: #2A1F15;
+    --border: rgba(166, 124, 46, 0.4);
+    --text: #E8DCC0;
+    --text-2: #E8DCC0;
+    --text-muted: #C7B596;
 
     --creme-bg: #3A3123; --creme-fg: #E8C795;
     --bibel-bg: #3A3820; --bibel-fg: #E4E2AE;
@@ -59,11 +76,23 @@
     --send-bg: #3E2418; --send-fg: #E2A28C;
     --rose-bg: #3E222B; --rose-fg: #E5A9BB;
     --lavendel-bg: #2E2431; --lavendel-fg: #C9A7D0;
-    --blau-hell-bg: #1E2835; --blau-hell-fg: #A9C4E4;
-    --blau-bg: #1D2A3C; --blau-fg: #A5C5EC;
-    --blau-weich-bg: #1D2E3A; --blau-weich-fg: #A8D3EC;
+    /* "blau"-Familie bewusst warm statt blau: nur fuer Bedeutungs-Badges
+       (Belegstufe/Bibelstellen-Chip) genutzt, bleiben als eigene Token
+       erhalten, nur die Farbe wechselt von Blau auf Terrakotta/Khaki */
+    --blau-hell-bg: #332A12; --blau-hell-fg: #D9C07A;
+    --blau-bg: #3A2015; --blau-fg: #E6A878;
+    --blau-weich-bg: #2E2415; --blau-weich-fg: #D9B98A;
     --salbei-bg: #1F2D26; --salbei-fg: #A6CDB6;
     --lila-bg: #2E1F2C; --lila-fg: #D3A6CA;
+
+    --chip-active-bg: var(--bordeaux);
+    --chip-active-fg: #F0DFC0;
+    --chip-active-border: var(--gold);
+    --nav-bg: #140E09;
+    --nav-border: rgba(166, 124, 46, 0.5);
+    --nav-fg: #E8DCC0;
+    --nav-active-bg: transparent;
+    --nav-active-fg: var(--gold-hell);
 
     --papier-bg-1: #2B2213;
     --papier-bg-2: #1E160B;
@@ -75,12 +104,12 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #1B1D21;
-  --card: #26292E;
-  --border: #373C44;
-  --text: #E7E2D8;
-  --text-2: #BEB8AB;
-  --text-muted: #A69E8F;
+  --bg: linear-gradient(180deg, #1A130D 0%, #241A12 100%);
+  --card: #2A1F15;
+  --border: rgba(166, 124, 46, 0.4);
+  --text: #E8DCC0;
+  --text-2: #E8DCC0;
+  --text-muted: #C7B596;
 
   --creme-bg: #3A3123; --creme-fg: #E8C795;
   --bibel-bg: #3A3820; --bibel-fg: #E4E2AE;
@@ -89,11 +118,20 @@
   --send-bg: #3E2418; --send-fg: #E2A28C;
   --rose-bg: #3E222B; --rose-fg: #E5A9BB;
   --lavendel-bg: #2E2431; --lavendel-fg: #C9A7D0;
-  --blau-hell-bg: #1E2835; --blau-hell-fg: #A9C4E4;
-  --blau-bg: #1D2A3C; --blau-fg: #A5C5EC;
-  --blau-weich-bg: #1D2E3A; --blau-weich-fg: #A8D3EC;
+  --blau-hell-bg: #332A12; --blau-hell-fg: #D9C07A;
+  --blau-bg: #3A2015; --blau-fg: #E6A878;
+  --blau-weich-bg: #2E2415; --blau-weich-fg: #D9B98A;
   --salbei-bg: #1F2D26; --salbei-fg: #A6CDB6;
   --lila-bg: #2E1F2C; --lila-fg: #D3A6CA;
+
+  --chip-active-bg: var(--bordeaux);
+  --chip-active-fg: #F0DFC0;
+  --chip-active-border: var(--gold);
+  --nav-bg: #140E09;
+  --nav-border: rgba(166, 124, 46, 0.5);
+  --nav-fg: #E8DCC0;
+  --nav-active-bg: transparent;
+  --nav-active-fg: var(--gold-hell);
 
   --papier-bg-1: #2B2213;
   --papier-bg-2: #1E160B;
