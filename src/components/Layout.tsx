@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import VerseDetailModal from "./VerseDetailModal";
 
 const NAV_ITEMS = [
@@ -10,9 +10,16 @@ const NAV_ITEMS = [
 ];
 
 export default function Layout() {
+  const location = useLocation();
+  // Nur am obersten Pfadsegment festmachen (z.B. "lesen", "chat"), NICHT am
+  // kompletten Pfad: sonst wuerde z.B. jeder Kapitelwechsel im Lese-Bildschirm
+  // (/lesen/:osis/:kapitel) die ganze Seite neu mounten und damit den
+  // laufenden Vorlese-Zustand (Audio, Vorab-Laden usw.) zerstoeren - den
+  // Umblaetter-Effekt dafuer uebernimmt ReaderScreen bereits selbst.
+  const bereich = location.pathname.split("/")[1] || "start";
   return (
     <div className="app-shell">
-      <main className="app-main">
+      <main className="app-main kapitel-blaettern" key={bereich}>
         <Outlet />
       </main>
       <nav className="bottom-nav">

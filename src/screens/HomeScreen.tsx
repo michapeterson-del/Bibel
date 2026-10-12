@@ -13,11 +13,11 @@ function greeting(name: string): string {
 }
 
 const TILES = [
-  { to: "/lesen", titel: "Bibel lesen", sub: "Weiterlesen", bg: "var(--bibel-bg)", fg: "var(--bibel-fg)" },
-  { to: "/suche", titel: "Eine Stelle finden", sub: "Volltextsuche", bg: "var(--blau-weich-bg)", fg: "var(--blau-weich-fg)" },
-  { to: "/spiele", titel: "BibelSpiele", sub: "Quiz, Tabu, Spion", bg: "var(--lavendel-bg)", fg: "var(--lavendel-fg)" },
-  { to: "/lernen", titel: "Bibelverse lernen", sub: "Merkverse üben", bg: "var(--blau-hell-bg)", fg: "var(--blau-hell-fg)" },
-  { to: "/erforschen", titel: "Erforschen", sub: "Themen-Aufsätze", bg: "var(--salbei-bg)", fg: "var(--salbei-fg)" },
+  { to: "/lesen", titel: "Bibel lesen", sub: "Weiterlesen", bg: "var(--creme-bg)", fg: "var(--creme-fg)" },
+  { to: "/suche", titel: "Eine Stelle finden", sub: "Volltextsuche", bg: "var(--apricot-bg)", fg: "var(--apricot-fg)" },
+  { to: "/spiele", titel: "BibelSpiele", sub: "Quiz, Tabu, Spion", bg: "var(--creme-bg)", fg: "var(--creme-fg)" },
+  { to: "/lernen", titel: "Bibelverse lernen", sub: "Merkverse üben", bg: "var(--apricot-bg)", fg: "var(--apricot-fg)" },
+  { to: "/erforschen", titel: "Erforschen", sub: "Themen-Aufsätze", bg: "var(--creme-bg)", fg: "var(--creme-fg)" },
 ];
 
 export default function HomeScreen() {
@@ -59,7 +59,11 @@ export default function HomeScreen() {
 
       <button
         className="tile"
-        style={{ background: "var(--rose-bg)", color: "var(--rose-fg)", marginBottom: 14 }}
+        style={{
+          background: "linear-gradient(135deg, var(--creme-bg), var(--apricot-bg) 130%)",
+          color: "var(--creme-fg)",
+          marginBottom: 14,
+        }}
         onClick={() => startChat("alltag", "Etwas beschäftigt mich")}
       >
         <span className="tile-title">Etwas beschäftigt mich</span>
@@ -69,7 +73,7 @@ export default function HomeScreen() {
       <div className="tile-grid">
         <button
           className="tile"
-          style={{ background: "var(--gelb-bg)", color: "var(--gelb-fg)" }}
+          style={{ background: "var(--apricot-bg)", color: "var(--apricot-fg)" }}
           onClick={() => startChat("bibel", "Einen Vers verstehen")}
         >
           <span className="tile-title">Einen Vers verstehen</span>
@@ -89,10 +93,10 @@ export default function HomeScreen() {
       </div>
 
       {daily && (
-        <div className="card" style={{ marginTop: 16, background: "var(--bibel-bg)", borderColor: "transparent" }}>
-          <p style={{ margin: "0 0 6px", fontWeight: 700, color: "var(--bibel-fg)" }}>Vers des Tages</p>
+        <div className="card" style={{ marginTop: 16, background: "var(--creme-bg)", borderColor: "transparent" }}>
+          <p style={{ margin: "0 0 6px", fontWeight: 700, color: "var(--creme-fg)" }}>Vers des Tages</p>
           <p
-            style={{ margin: "0 0 8px", color: "var(--bibel-fg)", cursor: "pointer" }}
+            style={{ margin: "0 0 8px", color: "var(--creme-fg)", cursor: "pointer" }}
             onClick={() =>
               openVerseDetail({
                 osis: daily.osis,
@@ -105,7 +109,7 @@ export default function HomeScreen() {
           >
             „{daily.text}"
           </p>
-          <p style={{ margin: 0, color: "var(--bibel-fg)", fontWeight: 600 }}>
+          <p style={{ margin: 0, color: "var(--creme-fg)", fontWeight: 600 }}>
             {daily.bookName} {daily.chapter},{daily.verse}
           </p>
         </div>
