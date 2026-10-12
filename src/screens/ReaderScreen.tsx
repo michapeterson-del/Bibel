@@ -423,7 +423,8 @@ export default function ReaderScreen() {
       </div>
 
       <div
-        className="card"
+        key={`${book.osis}-${chapter}`}
+        className="card kapitel-blaettern"
         style={{ fontSize: "var(--base-font-size)", lineHeight: "var(--base-line-height)" }}
       >
         {verses.map((v) => {
