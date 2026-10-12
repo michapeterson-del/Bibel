@@ -41,6 +41,10 @@ export function flipPage(container: HTMLElement | null, richtung: FlipRichtung =
   glanz.className = "page-flip-shine";
   blatt.appendChild(glanz);
 
+  const kante = document.createElement("div");
+  kante.className = "page-flip-kante";
+  blatt.appendChild(kante);
+
   const overlay = document.createElement("div");
   overlay.className = `page-flip-overlay page-flip-${richtung}`;
   overlay.style.top = `${Math.max(rect.top, 0)}px`;
