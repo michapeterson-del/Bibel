@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
+import BookIntro from "./components/BookIntro";
 import HomeScreen from "./screens/HomeScreen";
 import ReaderScreen from "./screens/ReaderScreen";
 import SearchScreen from "./screens/SearchScreen";
@@ -23,32 +24,35 @@ import StilleZeitListScreen from "./screens/StilleZeitListScreen";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/lesen" element={<ReaderScreen />} />
-        <Route path="/lesen/:osis/:kapitel" element={<ReaderScreen />} />
-        <Route path="/suche" element={<SearchScreen />} />
-        <Route path="/lesezeichen" element={<BookmarksScreen />} />
-        <Route path="/markierungen" element={<MarkierungenScreen />} />
-        <Route path="/chat" element={<ChatListScreen />} />
-        <Route path="/chat/:id" element={<ChatScreen />} />
-        <Route path="/lernen" element={<LearnScreen />} />
-        <Route path="/erforschen" element={<ExploreScreen />} />
-        <Route path="/spiele" element={<GamesHomeScreen />} />
-        <Route path="/spiele/quiz" element={<QuizScreen />} />
-        <Route path="/spiele/tabu" element={<TabuScreen />} />
-        <Route path="/spiele/headsup" element={<HeadsUpScreen />} />
-        <Route path="/spiele/spion" element={<SpionScreen />} />
-        <Route path="/fortschritt" element={<ReadingProgressScreen />} />
-        <Route path="/stillezeit" element={<StilleZeitListScreen />} />
-        <Route path="/stillezeit/kapitel/:osis/:kapitel" element={<StilleZeitListScreen />} />
-        <Route path="/stillezeit/:osis/:kapitel" element={<StilleZeitScreen />} />
-        <Route path="/stillezeit-eintrag/:id" element={<StilleZeitScreen />} />
-        <Route path="/leseplan" element={<ComingSoonScreen titel="Leseplan" />} />
-        <Route path="/einstellungen" element={<SettingsScreen />} />
-        <Route path="/ueber" element={<AboutScreen />} />
-      </Route>
-    </Routes>
+    <>
+      <BookIntro />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/lesen" element={<ReaderScreen />} />
+          <Route path="/lesen/:osis/:kapitel" element={<ReaderScreen />} />
+          <Route path="/suche" element={<SearchScreen />} />
+          <Route path="/lesezeichen" element={<BookmarksScreen />} />
+          <Route path="/markierungen" element={<MarkierungenScreen />} />
+          <Route path="/chat" element={<ChatListScreen />} />
+          <Route path="/chat/:id" element={<ChatScreen />} />
+          <Route path="/lernen" element={<LearnScreen />} />
+          <Route path="/erforschen" element={<ExploreScreen />} />
+          <Route path="/spiele" element={<GamesHomeScreen />} />
+          <Route path="/spiele/quiz" element={<QuizScreen />} />
+          <Route path="/spiele/tabu" element={<TabuScreen />} />
+          <Route path="/spiele/headsup" element={<HeadsUpScreen />} />
+          <Route path="/spiele/spion" element={<SpionScreen />} />
+          <Route path="/fortschritt" element={<ReadingProgressScreen />} />
+          <Route path="/stillezeit" element={<StilleZeitListScreen />} />
+          <Route path="/stillezeit/kapitel/:osis/:kapitel" element={<StilleZeitListScreen />} />
+          <Route path="/stillezeit/:osis/:kapitel" element={<StilleZeitScreen />} />
+          <Route path="/stillezeit-eintrag/:id" element={<StilleZeitScreen />} />
+          <Route path="/leseplan" element={<ComingSoonScreen titel="Leseplan" />} />
+          <Route path="/einstellungen" element={<SettingsScreen />} />
+          <Route path="/ueber" element={<AboutScreen />} />
+        </Route>
+      </Routes>
+    </>
   );
 }

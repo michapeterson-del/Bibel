@@ -245,3 +245,71 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
 @media (min-width: 640px) {
   .app-shell { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
 }
+
+/* Buch-Intro: beim App-Start schlaegt sich ein Bucheinband wie ein
+   Buchdeckel auf und gibt den Blick auf die App frei. */
+.book-intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #241a10;
+  perspective: 1400px;
+}
+
+.book-intro-cover {
+  width: min(84vw, 380px);
+  height: min(62vh, 520px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(160deg, var(--creme-bg), var(--apricot-bg) 75%);
+  border: 2px solid var(--creme-fg);
+  border-radius: 6px 16px 16px 6px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), inset 0 0 36px rgba(0, 0, 0, 0.18);
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.6s cubic-bezier(0.5, 0, 0.5, 1), opacity 0.6s ease 0.08s;
+}
+.book-intro-cover--offen {
+  transform: rotateY(-115deg);
+  opacity: 0;
+}
+
+.book-intro-title {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--creme-fg);
+  letter-spacing: 0.02em;
+}
+.book-intro-subtitle {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--apricot-fg);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-intro-cover { transition: opacity 0.3s ease; }
+  .book-intro-cover--offen { transform: none; }
+}
+
+/* Kapitelwechsel beim Lesen: leichtes Umblaettern statt hartem Wechsel */
+@keyframes amibel-seite-blaettern {
+  from { transform: rotateY(-12deg); opacity: 0; }
+  to { transform: rotateY(0deg); opacity: 1; }
+}
+.kapitel-blaettern {
+  transform-origin: left center;
+  animation: amibel-seite-blaettern 0.38s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kapitel-blaettern { animation: none; }
+}
