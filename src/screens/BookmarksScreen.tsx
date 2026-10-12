@@ -64,7 +64,7 @@ export default function BookmarksScreen() {
 
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8 }}>
+      <div className="header-bar">
         <h1 style={{ fontSize: "1.3rem" }}>Meine Lesezeichen</h1>
       </div>
 

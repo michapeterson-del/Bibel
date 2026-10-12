@@ -353,7 +353,7 @@ export default function ReaderScreen() {
 
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8, flexWrap: "wrap" }}>
+      <div className="header-bar">
         <button className="chip bibelstelle-titel" onClick={() => setShowPicker(true)}>
           {book.name_de} {chapter} ▾
         </button>

@@ -20,7 +20,7 @@ export default function ChatListScreen() {
 
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8 }}>
+      <div className="header-bar">
         <h1 style={{ fontSize: "1.3rem" }}>Chat</h1>
       </div>
 

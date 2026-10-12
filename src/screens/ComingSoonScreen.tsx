@@ -1,7 +1,7 @@
 export default function ComingSoonScreen({ titel }: { titel: string }) {
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8 }}>
+      <div className="header-bar">
         <h1 style={{ fontSize: "1.3rem" }}>{titel}</h1>
       </div>
       <div className="card">

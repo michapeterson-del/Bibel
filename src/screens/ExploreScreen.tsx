@@ -146,7 +146,7 @@ export default function ExploreScreen() {
 
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8 }}>
+      <div className="header-bar">
         <h1 style={{ fontSize: "1.3rem" }}>Erforschen</h1>
       </div>
 

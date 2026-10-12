@@ -81,7 +81,7 @@ export default function LearnScreen() {
   if (uebeIndex !== null && aktuell) {
     return (
       <div>
-        <div className="header-bar" style={{ paddingTop: 8 }}>
+        <div className="header-bar">
           <h1 style={{ fontSize: "1.3rem" }}>Jetzt üben</h1>
         </div>
         <div className="card">
@@ -110,7 +110,7 @@ export default function LearnScreen() {
 
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8 }}>
+      <div className="header-bar">
         <h1 style={{ fontSize: "1.3rem" }}>Bibelverse lernen</h1>
       </div>
 
