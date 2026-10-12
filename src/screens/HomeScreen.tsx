@@ -52,11 +52,9 @@ export default function HomeScreen() {
 
   return (
     <div>
-      <div className="header-bar" style={{ paddingTop: 8 }}>
-        <div>
-          <h1 style={{ fontSize: "1.5rem" }}>Amibel</h1>
-          <p style={{ margin: 0, color: "var(--text-muted)" }}>{greeting(name)}</p>
-        </div>
+      <div className="home-bible-header">
+        <h1>Amibel</h1>
+        <p>{greeting(name)}</p>
       </div>
 
       <button
