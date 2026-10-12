@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { ChatGespraech, ChatMessage } from "../types";
 import { getChat, kvGet, saveChat } from "../lib/db/userDb";
 import { useSettings } from "../lib/SettingsContext";
@@ -12,7 +13,7 @@ import Header from "../components/Header";
 
 export default function ChatScreen() {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { settings, update } = useSettings();
   const [chat, setChat] = useState<ChatGespraech | null>(null);

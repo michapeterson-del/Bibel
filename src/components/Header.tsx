@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { ReactNode } from "react";
 
 export default function Header({
@@ -10,7 +10,7 @@ export default function Header({
   onBack?: boolean;
   right?: ReactNode;
 }) {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   return (
     <div className="header-bar">
       {onBack && (

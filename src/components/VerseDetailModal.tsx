@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import { useVerseDetail } from "../lib/VerseDetailContext";
 import type { Farbe, FarbLabels, LernVers, LesezeichenEintrag, Translation } from "../types";
 import { getVerseRange } from "../lib/db/bibleDb";
@@ -19,7 +19,7 @@ const FARBEN: { value: Farbe; hex: string }[] = [
 export default function VerseDetailModal() {
   const { target, close, bumpMarksVersion } = useVerseDetail();
   const { settings } = useSettings();
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [translation, setTranslation] = useState<Translation>(settings?.standardUebersetzung ?? "LUT1912");
   const [text, setText] = useState<string>("");
   const [zeigeFarbauswahl, setZeigeFarbauswahl] = useState(false);

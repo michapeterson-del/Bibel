@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../../lib/pageFlip";
 import Header from "../../components/Header";
 
 const SPIELE = [
@@ -9,7 +9,7 @@ const SPIELE = [
 ];
 
 export default function GamesHomeScreen() {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   return (
     <div>
       <Header title="BibelSpiele" onBack />

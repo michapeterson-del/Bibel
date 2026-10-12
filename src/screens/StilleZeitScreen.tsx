@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { BookMeta } from "../types";
 import { getBookByOsis } from "../lib/db/bibleDb";
 import { deleteStilleZeit, getStilleZeit, saveStilleZeit, updateStilleZeit } from "../lib/db/userDb";
@@ -41,7 +42,7 @@ function Feld({
 
 export default function StilleZeitScreen() {
   const { osis: osisParam, kapitel: kapitelParam, id } = useParams();
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [book, setBook] = useState<BookMeta | null>(null);
   const [osis, setOsis] = useState(osisParam ?? "");
   const [kapitelNr, setKapitelNr] = useState(kapitelParam ? parseInt(kapitelParam, 10) : 0);

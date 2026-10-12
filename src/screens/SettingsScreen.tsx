@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import { useSettings } from "../lib/SettingsContext";
 import type { AiProvider } from "../types";
 import { decryptSecret, encryptSecret, maskSecret } from "../lib/crypto";
@@ -38,7 +38,7 @@ function Row({ label, children }: { label: string; children: ReactNode }) {
 
 export default function SettingsScreen() {
   const { settings, update } = useSettings();
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [apiKeyInput, setApiKeyInput] = useState("");
   const [savedKeyMasked, setSavedKeyMasked] = useState("");
   const [testMsg, setTestMsg] = useState("");

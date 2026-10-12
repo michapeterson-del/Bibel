@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { BookMeta, StilleZeitEintrag } from "../types";
 import { getBookByOsis } from "../lib/db/bibleDb";
 import { getStilleZeitFuerKapitel, listStilleZeit } from "../lib/db/userDb";
@@ -11,7 +12,7 @@ function formatDatum(iso: string): string {
 
 export default function StilleZeitListScreen() {
   const { osis, kapitel } = useParams();
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [book, setBook] = useState<BookMeta | null>(null);
   const [eintraege, setEintraege] = useState<StilleZeitEintrag[]>([]);
   const [geladen, setGeladen] = useState(false);

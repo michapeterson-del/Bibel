@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useFlipNavigate } from "../lib/pageFlip";
 import type { Farbe, FarbLabels, LesezeichenEintrag } from "../types";
 import {
   deleteLesezeichen,
@@ -17,7 +17,7 @@ const FARBE_HEX: Record<Farbe, string> = {
 const ALLE_FARBEN: Farbe[] = ["gelb", "gruen", "blau", "rosa", "lila"];
 
 export default function MarkierungenScreen() {
-  const navigate = useNavigate();
+  const navigate = useFlipNavigate();
   const [items, setItems] = useState<LesezeichenEintrag[]>([]);
   const [bookNames, setBookNames] = useState<Record<string, string>>({});
   const [filterFarbe, setFilterFarbe] = useState<Farbe | "alle">("alle");
