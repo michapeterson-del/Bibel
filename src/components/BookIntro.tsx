@@ -1,29 +1,26 @@
-import { useEffect, useState } from "react";
-
-const DECKEL_DAUER = 650;
-const GESAMT_DAUER = 1250;
+import { useState } from "react";
 
 export default function BookIntro() {
   const [oeffnetSich, setOeffnetSich] = useState(false);
   const [fertig, setFertig] = useState(false);
 
-  useEffect(() => {
-    const t1 = setTimeout(() => setOeffnetSich(true), DECKEL_DAUER);
-    const t2 = setTimeout(() => setFertig(true), GESAMT_DAUER);
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-    };
-  }, []);
-
   if (fertig) return null;
 
   return (
-    <div className="book-intro-overlay" aria-hidden="true">
-      <div className={`book-intro-cover ${oeffnetSich ? "book-intro-cover--offen" : ""}`}>
+    <div className="book-intro-overlay">
+      <button
+        type="button"
+        className={`book-intro-cover ${oeffnetSich ? "book-intro-cover--offen" : ""}`}
+        aria-label="Buch öffnen"
+        onClick={() => setOeffnetSich(true)}
+        onTransitionEnd={(e) => {
+          if (e.propertyName === "opacity" && oeffnetSich) setFertig(true);
+        }}
+      >
         <span className="book-intro-title">Amibel</span>
         <span className="book-intro-subtitle">Die Bibel</span>
-      </div>
+        {!oeffnetSich && <span className="book-intro-hint">Zum Öffnen tippen</span>}
+      </button>
     </div>
   );
 }

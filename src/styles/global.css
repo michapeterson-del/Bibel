@@ -275,10 +275,14 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
   transform-style: preserve-3d;
   backface-visibility: hidden;
   transition: transform 0.6s cubic-bezier(0.5, 0, 0.5, 1), opacity 0.6s ease 0.08s;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
 }
 .book-intro-cover--offen {
   transform: rotateY(-115deg);
   opacity: 0;
+  pointer-events: none;
 }
 
 .book-intro-title {
@@ -295,10 +299,23 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
   letter-spacing: 0.32em;
   text-transform: uppercase;
 }
+.book-intro-hint {
+  margin-top: 18px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--creme-fg);
+  opacity: 0.75;
+  animation: amibel-hint-pulse 1.8s ease-in-out infinite;
+}
+@keyframes amibel-hint-pulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 0.9; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .book-intro-cover { transition: opacity 0.3s ease; }
   .book-intro-cover--offen { transform: none; }
+  .book-intro-hint { animation: none; }
 }
 
 /* Kapitelwechsel beim Lesen: leichtes Umblaettern statt hartem Wechsel */
@@ -312,4 +329,24 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
 }
 @media (prefers-reduced-motion: reduce) {
   .kapitel-blaettern { animation: none; }
+}
+
+/* Start-Bildschirm: warmer, "bibel-farbiger" Banner statt neutralem Header,
+   greift die Farben/Schrift vom Buchdeckel-Intro wieder auf */
+.home-bible-header {
+  background: linear-gradient(135deg, var(--creme-bg), var(--apricot-bg) 130%);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  margin: 0 -16px 16px;
+  padding: calc(env(safe-area-inset-top, 0) + 18px) 16px 20px;
+  box-shadow: 0 4px 16px rgba(62, 54, 41, 0.14);
+}
+.home-bible-header h1 {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  color: var(--creme-fg);
+  letter-spacing: 0.01em;
+}
+.home-bible-header p {
+  margin: 0;
+  color: var(--apricot-fg);
 }
