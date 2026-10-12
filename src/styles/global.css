@@ -1,9 +1,29 @@
 @import "./tokens.css";
 
+/* Lokal eingebundene Schriften fuer den Bibel-Look (keine externen Font-CDNs) */
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("../assets/fonts/cinzel-decorative-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/cormorant-garamond-var.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * { box-sizing: border-box; }
 
 html, body, #root {
   height: 100%;
+}
+
+html {
+  background: var(--bg);
 }
 
 body {
@@ -30,6 +50,15 @@ button, input, textarea, select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  accent-color: var(--gold);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
 .app-shell {
@@ -92,10 +121,18 @@ button, input, textarea, select {
   white-space: nowrap;
 }
 .chip.active {
-  background: var(--salbei-bg);
-  color: var(--salbei-fg);
-  border-color: transparent;
+  background: var(--chip-active-bg);
+  color: var(--chip-active-fg);
+  border-color: var(--chip-active-border);
   font-weight: 600;
+}
+
+/* Buch-/Kapitel-Titel beim Lesen ("Jesaja 19"): verschnoerkelte Bibelschrift */
+.bibelstelle-titel {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
 }
 
 .chip-row {
@@ -128,8 +165,8 @@ button, input, textarea, select {
 .btn:disabled { opacity: 0.5; cursor: default; }
 
 .icon-btn {
-  background: transparent;
-  border: none;
+  background: var(--card);
+  border: 1px solid var(--border);
   cursor: pointer;
   color: var(--text-2);
   padding: 8px;
@@ -139,6 +176,7 @@ button, input, textarea, select {
   justify-content: center;
 }
 .icon-btn:active { background: var(--border); }
+.icon-btn:disabled { opacity: 0.4; cursor: default; }
 
 .header-bar {
   position: sticky;
@@ -158,8 +196,8 @@ button, input, textarea, select {
   bottom: 0;
   display: flex;
   justify-content: space-around;
-  background: var(--card);
-  border-top: 1px solid var(--border);
+  background: var(--nav-bg);
+  border-top: 1px solid var(--nav-border);
   padding: 8px 4px calc(8px + env(safe-area-inset-bottom, 0));
   z-index: 10;
 }
@@ -170,13 +208,14 @@ button, input, textarea, select {
   gap: 2px;
   font-size: 0.68rem;
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--nav-fg);
   padding: 4px 8px;
   border-radius: 10px;
 }
+.bottom-nav a svg { display: block; }
 .bottom-nav a.active {
-  color: var(--salbei-fg);
-  background: var(--salbei-bg);
+  color: var(--nav-active-fg);
+  background: var(--nav-active-bg);
 }
 
 .belegstufe {

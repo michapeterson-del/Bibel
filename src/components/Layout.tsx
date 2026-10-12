@@ -1,14 +1,15 @@
 import { useRef } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import VerseDetailModal from "./VerseDetailModal";
+import NavIcon from "./NavIcons";
 import { flipPage, hauptbereichRef } from "../lib/pageFlip";
 
 const NAV_ITEMS = [
-  { to: "/", label: "Start", icon: "🏠" },
-  { to: "/lesen", label: "Lesen", icon: "📖" },
-  { to: "/suche", label: "Suche", icon: "🔍" },
-  { to: "/chat", label: "Chat", icon: "💬" },
-  { to: "/einstellungen", label: "Mehr", icon: "⚙️" },
+  { to: "/", label: "Start", icon: "start" as const },
+  { to: "/lesen", label: "Lesen", icon: "lesen" as const },
+  { to: "/suche", label: "Suche", icon: "suche" as const },
+  { to: "/chat", label: "Chat", icon: "chat" as const },
+  { to: "/einstellungen", label: "Mehr", icon: "mehr" as const },
 ];
 
 function bereichsIndex(pathname: string): number {
@@ -46,7 +47,7 @@ export default function Layout() {
               if (i !== aktiverIndex) flipPage(mainRef.current, i > aktiverIndex ? "vor" : "zurueck");
             }}
           >
-            <span style={{ fontSize: "1.15rem" }}>{item.icon}</span>
+            <NavIcon name={item.icon} />
             <span>{item.label}</span>
           </NavLink>
         ))}
