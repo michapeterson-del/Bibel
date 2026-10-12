@@ -442,10 +442,10 @@ export default function ReaderScreen() {
 
       <div
         ref={cardRef}
-        className="card"
+        className="bibel-seite"
         style={{ fontSize: "var(--base-font-size)", lineHeight: "var(--base-line-height)" }}
       >
-        {verses.map((v) => {
+        {verses.map((v, idx) => {
           const mark = markForVerse(v.verse);
           const istMarkierung = mark?.typ === "markierung";
           const istLesezeichen = mark?.typ === "lesezeichen";
@@ -475,7 +475,14 @@ export default function ReaderScreen() {
             >
               {settings.versnummernAn && <sup className="verse-num">{v.verse}</sup>}
               {istLesezeichen && <span title="Lesezeichen" style={{ marginRight: 2 }}>⭐</span>}
-              {v.text}
+              {idx === 0 ? (
+                <>
+                  <span className="drop-cap">{v.text.charAt(0)}</span>
+                  {v.text.slice(1)}
+                </>
+              ) : (
+                v.text
+              )}
               {notiz && (
                 <span title={notiz.notiz} style={{ marginLeft: 3, marginRight: 3 }}>
                   ✏️
