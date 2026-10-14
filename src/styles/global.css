@@ -428,29 +428,49 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
   background: var(--bg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  box-shadow: 2px 0 0 rgba(20, 14, 6, 0.08);
+  will-change: transform;
 }
 .page-flip-vor .page-flip-sheet {
   transform-origin: left center;
-  animation: amibel-blatt-vor 0.68s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: amibel-blatt-vor 0.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
 .page-flip-zurueck .page-flip-sheet {
   transform-origin: right center;
-  animation: amibel-blatt-zurueck 0.68s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: amibel-blatt-zurueck 0.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
+/* Nur transform wird animiert (compositor-fähig, laeuft auf der GPU) - frueher
+   liefen hier zusaetzlich filter/box-shadow mit, die bei jedem Frame einen
+   kompletten Repaint des (oft textreichen) geklonten Inhalts erzwungen und
+   dadurch auf dem Handy sichtbar gestockt haben. Der Schatten-/Verdunklungs-
+   Effekt kommt jetzt stattdessen von der eigenen .page-flip-schatten-Ebene
+   (nur opacity), der Lichtschein von .page-flip-shine/-kante (ebenfalls nur
+   opacity/transform) - alles drei zusammen bleibt auf dem Compositor. */
 @keyframes amibel-blatt-vor {
-  0%   { transform: rotateY(0deg) scaleX(1); filter: brightness(1); box-shadow: 0 0 0 rgba(20, 14, 6, 0); }
-  25%  { transform: rotateY(-38deg) scaleX(0.98); filter: brightness(0.9); box-shadow: 18px 0 36px rgba(20, 14, 6, 0.28); }
-  50%  { transform: rotateY(-90deg) scaleX(0.88); filter: brightness(0.6); box-shadow: 50px 0 80px rgba(20, 14, 6, 0.52); }
-  75%  { transform: rotateY(-142deg) scaleX(0.98); filter: brightness(0.9); box-shadow: 18px 0 36px rgba(20, 14, 6, 0.28); }
-  100% { transform: rotateY(-180deg) scaleX(1); filter: brightness(1); box-shadow: 0 0 0 rgba(20, 14, 6, 0); }
+  0%   { transform: rotateY(0deg) scaleX(1); }
+  50%  { transform: rotateY(-90deg) scaleX(0.9); }
+  100% { transform: rotateY(-180deg) scaleX(1); }
 }
 @keyframes amibel-blatt-zurueck {
-  0%   { transform: rotateY(0deg) scaleX(1); filter: brightness(1); box-shadow: 0 0 0 rgba(20, 14, 6, 0); }
-  25%  { transform: rotateY(38deg) scaleX(0.98); filter: brightness(0.9); box-shadow: -18px 0 36px rgba(20, 14, 6, 0.28); }
-  50%  { transform: rotateY(90deg) scaleX(0.88); filter: brightness(0.6); box-shadow: -50px 0 80px rgba(20, 14, 6, 0.52); }
-  75%  { transform: rotateY(142deg) scaleX(0.98); filter: brightness(0.9); box-shadow: -18px 0 36px rgba(20, 14, 6, 0.28); }
-  100% { transform: rotateY(180deg) scaleX(1); filter: brightness(1); box-shadow: 0 0 0 rgba(20, 14, 6, 0); }
+  0%   { transform: rotateY(0deg) scaleX(1); }
+  50%  { transform: rotateY(90deg) scaleX(0.9); }
+  100% { transform: rotateY(180deg) scaleX(1); }
+}
+.page-flip-schatten {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+}
+.page-flip-vor .page-flip-schatten,
+.page-flip-zurueck .page-flip-schatten {
+  animation: amibel-schatten 0.5s ease forwards;
+}
+@keyframes amibel-schatten {
+  0%   { opacity: 0; }
+  50%  { opacity: 0.38; }
+  100% { opacity: 0; }
 }
 .page-flip-shine {
   position: absolute;
@@ -459,9 +479,10 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
   mix-blend-mode: overlay;
   opacity: 0;
   pointer-events: none;
+  will-change: opacity, transform;
 }
-.page-flip-vor .page-flip-shine { animation: amibel-blatt-glanz-vor 0.68s ease forwards; }
-.page-flip-zurueck .page-flip-shine { animation: amibel-blatt-glanz-zurueck 0.68s ease forwards; }
+.page-flip-vor .page-flip-shine { animation: amibel-blatt-glanz-vor 0.5s ease forwards; }
+.page-flip-zurueck .page-flip-shine { animation: amibel-blatt-glanz-zurueck 0.5s ease forwards; }
 @keyframes amibel-blatt-glanz-vor {
   0%   { opacity: 0; transform: translateX(-45%); }
   50%  { opacity: 0.9; transform: translateX(5%); }
@@ -478,16 +499,17 @@ input[type="text"], input[type="search"], input[type="password"], input[type="nu
   bottom: 0;
   width: 20px;
   pointer-events: none;
+  will-change: opacity;
 }
 .page-flip-vor .page-flip-kante {
   right: 0;
   background: linear-gradient(90deg, transparent, rgba(255, 250, 235, 0.65));
-  animation: amibel-kante-vor 0.68s ease forwards;
+  animation: amibel-kante-vor 0.5s ease forwards;
 }
 .page-flip-zurueck .page-flip-kante {
   left: 0;
   background: linear-gradient(270deg, transparent, rgba(255, 250, 235, 0.65));
-  animation: amibel-kante-zurueck 0.68s ease forwards;
+  animation: amibel-kante-zurueck 0.5s ease forwards;
 }
 @keyframes amibel-kante-vor {
   0%   { opacity: 0; }

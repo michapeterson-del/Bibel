@@ -37,6 +37,10 @@ export function flipPage(container: HTMLElement | null, richtung: FlipRichtung =
   blatt.style.marginTop = `${Math.min(rect.top, 0)}px`;
   blatt.appendChild(klon);
 
+  const schatten = document.createElement("div");
+  schatten.className = "page-flip-schatten";
+  blatt.appendChild(schatten);
+
   const glanz = document.createElement("div");
   glanz.className = "page-flip-shine";
   blatt.appendChild(glanz);
@@ -46,7 +50,11 @@ export function flipPage(container: HTMLElement | null, richtung: FlipRichtung =
   blatt.appendChild(kante);
 
   const overlay = document.createElement("div");
-  overlay.className = `page-flip-overlay page-flip-${richtung}`;
+  // Richtungsklasse (loest die Animation aus) bewusst noch NICHT gesetzt -
+  // erst layouten/kompositieren lassen, dann in einem eigenen Frame starten
+  // (siehe unten), sonst faellt genau dieser teure erste Layout-Schritt in
+  // den ersten Animations-Frame und sorgt fuer einen sichtbaren Ruckler.
+  overlay.className = "page-flip-overlay";
   overlay.style.top = `${Math.max(rect.top, 0)}px`;
   overlay.style.left = `${rect.left}px`;
   overlay.style.width = `${rect.width}px`;
@@ -54,10 +62,15 @@ export function flipPage(container: HTMLElement | null, richtung: FlipRichtung =
   overlay.appendChild(blatt);
 
   document.body.appendChild(overlay);
+  void blatt.offsetHeight; // Layout/Kompositierung jetzt erzwingen, nicht erst mit der Animation
 
   const entfernen = () => overlay.remove();
   blatt.addEventListener("animationend", entfernen, { once: true });
-  window.setTimeout(entfernen, 900);
+  window.setTimeout(entfernen, 700);
+
+  requestAnimationFrame(() => {
+    overlay.classList.add(`page-flip-${richtung}`);
+  });
 }
 
 /**
