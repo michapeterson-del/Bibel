@@ -284,8 +284,27 @@ export default function ReaderScreen() {
       if (progress) {
         const b = await getBookByOsis(progress.osis);
         if (b) {
-          setBook(b);
-          setChapter(progress.kapitel);
+          // Ist das zuletzt gelesene Kapitel schon als "gelesen" markiert (ueber
+          // "Als gelesen markieren"), beim naechsten Oeffnen von "Lesen" gleich
+          // mit dem naechsten Kapitel weitermachen statt wieder das fertige zu
+          // zeigen - erspart das manuelle Nachschauen/Weiterklicken
+          const schonGelesen = await istKapitelGelesen(progress.osis, progress.kapitel);
+          if (!schonGelesen) {
+            setBook(b);
+            setChapter(progress.kapitel);
+            return;
+          }
+          const kapitelzahlDort = await getChapterCount(progress.osis);
+          if (progress.kapitel < kapitelzahlDort) {
+            setBook(b);
+            setChapter(progress.kapitel + 1);
+            return;
+          }
+          const books = await getAllBooks();
+          const idx = books.findIndex((x) => x.osis === b.osis);
+          const naechstesBuch = idx >= 0 ? books[idx + 1] : undefined;
+          setBook(naechstesBuch ?? b);
+          setChapter(naechstesBuch ? 1 : progress.kapitel);
           return;
         }
       }
