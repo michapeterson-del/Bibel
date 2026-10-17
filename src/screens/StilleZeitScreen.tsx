@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useFlipNavigate } from "../lib/pageFlip";
 import type { BookMeta } from "../types";
 import { getBookByOsis } from "../lib/db/bibleDb";
@@ -43,6 +43,9 @@ function Feld({
 export default function StilleZeitScreen() {
   const { osis: osisParam, kapitel: kapitelParam, id } = useParams();
   const navigate = useFlipNavigate();
+  const location = useLocation();
+  const naechstesKapitel = (location.state as { naechstesKapitel?: { osis: string; chapter: number } } | null)
+    ?.naechstesKapitel;
   const [book, setBook] = useState<BookMeta | null>(null);
   const [osis, setOsis] = useState(osisParam ?? "");
   const [kapitelNr, setKapitelNr] = useState(kapitelParam ? parseInt(kapitelParam, 10) : 0);
@@ -94,7 +97,11 @@ export default function StilleZeitScreen() {
       navigate("/stillezeit");
     } else {
       await saveStilleZeit(daten);
-      navigate(-1);
+      if (naechstesKapitel) {
+        navigate(`/lesen/${naechstesKapitel.osis}/${naechstesKapitel.chapter}`);
+      } else {
+        navigate(-1);
+      }
     }
   }
 

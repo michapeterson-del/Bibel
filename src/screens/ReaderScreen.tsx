@@ -364,7 +364,13 @@ export default function ReaderScreen() {
       await addAktivMinuten(5);
       setFertigMsg(neuerStatus);
       flipPage(hauptbereichRef.current, "vor");
-      navigate(`/stillezeit/${book!.osis}/${chapter}`);
+      // Naechstes Kapitel schon jetzt mitgeben: landet der Nutzer nach dem
+      // Speichern des Stille-Zeit-Eintrags per navigate(-1) sonst wieder genau
+      // auf der URL dieses (gerade fertig gelesenen) Kapitels - die Auto-
+      // Weiterspring-Logik beim Oeffnen von "Lesen" greift dort nicht, weil
+      // Buch/Kapitel dann explizit in der URL stehen.
+      const naechstesKapitel = await naechstesKapitelBestimmen();
+      navigate(`/stillezeit/${book!.osis}/${chapter}`, { state: { naechstesKapitel } });
       return;
     }
     setFertigMsg(neuerStatus);
