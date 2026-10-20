@@ -167,6 +167,11 @@ async function elevenlabsVoicesProxy(env, origin) {
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
+    // Zusätzliche erlaubte Adressen (z. B. beim Betrieb auf dem eigenen Server)
+    for (const o of String(env.ALLOWED_ORIGINS || "").split(",")) {
+      const sauber = o.trim().replace(/\/+$/, "");
+      if (sauber && !ERLAUBTE_URSPRUENGE.includes(sauber)) ERLAUBTE_URSPRUENGE.push(sauber);
+    }
     const { pathname } = new URL(request.url);
 
     if (request.method === "OPTIONS") {
