@@ -2,7 +2,17 @@
 
 Bibel-App mit KI-gestütztem Chat, Lesemodus und Volltextsuche – als Progressive
 Web App. Läuft komplett im Browser (SQLite per `sql.js`/WASM, Nutzerdaten in
-IndexedDB), außer den optionalen KI-Anfragen gibt es keinen eigenen Server.
+IndexedDB). Ein kleiner eigener Server (`server.mjs`) liefert den Produktions-
+build aus und übernimmt den optionalen KI-/Vorlese-Proxy unter `/api`.
+
+## Hosting
+
+Läuft auf einem eigenen Server (Hetzner) über Coolify, nicht mehr auf GitHub
+Pages/Cloudflare. Coolify ist per GitHub App mit diesem Repo verbunden und baut
+bei jedem Push auf den in Coolify eingestellten Branch automatisch neu
+(`npm run build` → `npm start`, `server.mjs` hört auf `process.env.PORT`).
+Umgebungsvariablen (`ANTHROPIC_API_KEY`, optional `ELEVENLABS_API_KEY`) werden
+in Coolify gepflegt, nicht im Code oder in einer `.env`-Datei.
 
 ## Aktueller Stand (erste Ausbaustufe)
 
@@ -35,6 +45,7 @@ Up, Der Spion unter uns), Leseplan-Import.
 npm install
 npm run dev       # Dev-Server
 npm run build     # Produktionsbuild (tsc + vite build)
+npm start         # server.mjs startet, liefert dist/ aus (process.env.PORT, Standard 3000)
 ```
 
 ## Bibel-Datenbank neu bauen
