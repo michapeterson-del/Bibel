@@ -5,20 +5,21 @@
 // Die eigentliche Sprachausgabe (POST .../text-to-speech/...) laesst sich
 // nicht direkt aus dem Browser aufrufen - ElevenLabs blockiert das per CORS
 // (im Browser sichtbar als generischer Netzwerkfehler wie "Load failed").
-// Deshalb laeuft dieser eine Aufruf ueber denselben Cloudflare-Worker-Proxy,
-// der auch den "Gemeinsam"-KI-Modus bedient (siehe ai/provider.ts und
-// cloudflare-worker/README.md).
+// Deshalb laeuft dieser eine Aufruf ueber denselben eigenen Server (server.mjs,
+// same-origin unter "/api"), der auch den "Gemeinsam"-KI-Modus bedient
+// (siehe ai/provider.ts).
 //
-// Hat der Nutzer selbst einen Schluessel eingetragen, reicht der Worker nur
+// Hat der Nutzer selbst einen Schluessel eingetragen, reicht der Server nur
 // diesen weiter (speichert ihn nicht). Hat der Nutzer KEINEN eigenen
-// Schluessel, nutzt der Worker stattdessen seinen eigenen, dort als Secret
-// hinterlegten ELEVENLABS_API_KEY - dann funktioniert Vorlesen fuer alle
-// Besucher ohne eigenen Schluessel, genau wie der "Gemeinsam"-KI-Modus.
+// Schluessel, nutzt der Server stattdessen seinen eigenen, dort als
+// Umgebungsvariable hinterlegten ELEVENLABS_API_KEY - dann funktioniert
+// Vorlesen fuer alle Besucher ohne eigenen Schluessel, genau wie der
+// "Gemeinsam"-KI-Modus.
 import { GEMEINSAMER_PROXY_URL } from "../ai/provider";
 
-const WORKER_BASIS = GEMEINSAMER_PROXY_URL.replace(/\/+$/, "");
-const ELEVENLABS_TTS_PROXY = GEMEINSAMER_PROXY_URL ? `${WORKER_BASIS}/elevenlabs-tts` : "";
-const ELEVENLABS_VOICES_PROXY = GEMEINSAMER_PROXY_URL ? `${WORKER_BASIS}/elevenlabs-voices` : "";
+const PROXY_BASIS = GEMEINSAMER_PROXY_URL.replace(/\/+$/, "");
+const ELEVENLABS_TTS_PROXY = GEMEINSAMER_PROXY_URL ? `${PROXY_BASIS}/elevenlabs-tts` : "";
+const ELEVENLABS_VOICES_PROXY = GEMEINSAMER_PROXY_URL ? `${PROXY_BASIS}/elevenlabs-voices` : "";
 
 export interface ElevenLabsVoice {
   voice_id: string;
@@ -52,9 +53,7 @@ export async function listVoices(apiKey: string): Promise<ElevenLabsVoice[]> {
 
 export async function synthesize(apiKey: string, voiceId: string, text: string): Promise<Blob> {
   if (!ELEVENLABS_TTS_PROXY) {
-    throw new Error(
-      "Vorlesen braucht noch den Zwischenserver (siehe cloudflare-worker/README.md, Abschnitt Vorlesen)."
-    );
+    throw new Error("Vorlesen braucht den Server-Proxy unter \"/api\" (server.mjs).");
   }
   const res = await fetch(ELEVENLABS_TTS_PROXY, {
     method: "POST",
